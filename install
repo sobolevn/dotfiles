@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+
+set -e
+
+# Standard dotbot pre-configuration:
+
+CONFIG="install.conf.yaml"
+DOTBOT_DIR="dotbot"
+
+DOTBOT_BIN="bin/dotbot"
+BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+cd "${BASEDIR}"
+git submodule update --init --recursive "${DOTBOT_DIR}"
+
+
+# Custom steps:
+
+# Configuring macOS:
+bash ./macos
+
+# Installing `brew`
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+# Installing `brew` dependencies:
+brew bundle
+
+# Installing python global dependencies:
+pip install -r requirements.txt
+
+# Linking dotfiles:
+
+"${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${CONFIG}" "${@}"

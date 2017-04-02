@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+# This file contains settings for mac which makes me happy.
+# It is not a full list.
+
+echo 'Configuring macOS...'
+
+defaults write com.apple.finder AppleShowAllFiles YES
+
+# This line deactivates rubber scrolling:
+# http://osxdaily.com/2012/05/10/disable-elastic-rubber-band-scrolling-in-mac-os-x/
+defaults write -g NSScrollViewRubberbanding -int 0
+
+defaults write -g AppleActionOnDoubleClick 'Maximize'
+defaults write -g AppleEnableSwipeNavigateWithScrolls -int 0
+defaults write -g AppleInterfaceStyle 'Dark'
+
+# Restarting apps:
+echo 'Restarting apps...'
+killall Finder

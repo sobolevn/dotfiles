@@ -1,0 +1,48 @@
+#!/usr/bin/env bash
+
+# `shell_env.sh` is a main file for any general-case 
+# bash utils, containing everything not related to any
+# specific shell or env.
+# 
+# This file is used as a source file for multiple shells:
+# 1. bash
+# 2. zsh
+
+
+# === General ===
+
+# Editor:
+export EDITOR=$(which nano)
+
+# GPG agent:
+export GPG_TTY=$(tty)
+eval "$(gpg-agent --daemon --allow-preset-passphrase)"
+
+
+# === Versions ===
+
+# nvm:
+export NVM_DIR="$HOME/.nvm"
+source "$(brew --prefix nvm)/nvm.sh"
+
+# kiex:
+test -s "$HOME/.kiex/scripts/kiex" && source "$HOME/.kiex/scripts/kiex"
+
+# rvm (should be the last line):
+source "$HOME/.rvm/scripts/rvm"
+
+
+# === Custom apps ===
+
+# transfer.sh
+# See https://transfer.sh/
+transfer() { if [ $# -eq 0 ]; then echo "No arguments specified. Usage:\necho transfer /tmp/test.md\ncat /tmp/test.md | transfer test.md"; return 1; fi 
+tmpfile=$( mktemp -t transferXXX ); if tty -s; then basefile=$(basename "$1" | sed -e 's/[^a-zA-Z0-9._-]/-/g'); curl --progress-bar --upload-file "$1" "https://transfer.sh/$basefile" >> $tmpfile; else curl --progress-bar --upload-file "-" "https://transfer.sh/$1" >> $tmpfile ; fi; cat $tmpfile; rm -f $tmpfile; } 
+
+
+# === Commonly used functions ===
+
+pyclean () {
+   # Cleans py[cod] and __pychache__ dirs in the current tree:
+   find . | grep -E "(__pycache__|\.py[cod]$)" | xargs rm -rf
+}

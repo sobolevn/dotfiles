@@ -1,0 +1,18 @@
+[credential]
+	helper = osxkeychain
+[http]
+	postBuffer = 524288000
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+[commit]
+	gpgsign = true
+[push]
+	default = simple
+[user]
+	useConfigOnly = true
+
+# Allow local customizations in the .gitconfig_local file
+[include]
+	path = ~/.gitconfig_local

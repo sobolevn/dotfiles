@@ -1,0 +1,10 @@
+- clean: ['~']
+
+- link:
+    ~/.shell_env: shell_env
+    ~/.bash_profile: bash_profile
+    ~/.bashrc: bashrc
+    ~/.gitconfig: gitconfig
+    ~/.zshrc: zshrc
+
+
