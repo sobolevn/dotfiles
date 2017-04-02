@@ -24,4 +24,4 @@ Here's the full list:
 
 1. `git`
 
-  * `~/.gitconfig_local` to store any user-specific data
+    1.1 `~/.gitconfig_local` to store any user-specific data
