@@ -1,10 +1,12 @@
 - clean: ['~']
 
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
+
 - link:
     ~/.shell_env: shell_env
     ~/.bash_profile: bash_profile
     ~/.bashrc: bashrc
     ~/.gitconfig: gitconfig
+    ~/.gitignore_global: gitignore
     ~/.zshrc: zshrc
-
-
