@@ -9,14 +9,30 @@
 # 2. zsh
 
 
+# === Path modifications ===
+# These lines should be the first ones
+
+# GPG agent:
+export PATH="/usr/local/opt/gpg-agent/bin:$PATH"
+
+# Wildfly:
+# export JBOSS_HOME="/usr/local/opt/wildfly-as/libexec"
+# export PATH="$PATH:${JBOSS_HOME}/bin"
+
 # === General ===
 
 # Editor:
 export EDITOR=$(which nano)
 
-# GPG agent:
+# GPG:
 export GPG_TTY=$(tty)
 eval "$(gpg-agent --daemon --allow-preset-passphrase)"
+
+
+# === Virtualenvs ===
+
+export WORKON_HOME="~/.virtualenvs"
+source "/usr/local/bin/virtualenvwrapper.sh"
 
 
 # === Versions ===

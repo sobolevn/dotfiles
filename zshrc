@@ -16,7 +16,7 @@ CASE_SENSITIVE="false"
 HYPHEN_INSENSITIVE="false"
 
 # Uncomment the following line to enable command auto-correction.
-ENABLE_CORRECTION="true"
+# ENABLE_CORRECTION="false"
 
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
@@ -42,10 +42,9 @@ export PATH="/usr/local/sbin:/usr/local/share/npm/bin:/usr/local/opt/php56/bin:/
 # Custom envs:
 source ~/.shell_env
 source $ZSH/oh-my-zsh.sh
-
 # source /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
 
-# You may need to manually set your language environment
+# You may seed to manually set your language environment
 # export LANG=en_US.UTF-8
 
 # Compilation flags
