@@ -1,3 +1,19 @@
+- clean: ['~']
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
+
+- link:
+    ~/.shell_env: shell_env
+    ~/.bash_profile: bash_profile
+    ~/.bashrc: bashrc
+    ~/.gitconfig: gitconfig
+    ~/.gitignore_global: gitignore
+    ~/.zshrc: zshrc
+
 - brewfile: 
     file: Brewfile
     no-upgrage: true
+
+- link:
+    ~/.oh-my-zsh/custom/themes/sobole.zsh-theme: sobole-zsh-theme/sobole.zsh-theme
