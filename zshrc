@@ -32,7 +32,7 @@ HIST_IGNORE_SPACE="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 
-plugins=(git django osx python brew docker)
+plugins=(gitfast django osx python brew docker extract)
 
 # User configuration
 

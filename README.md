@@ -25,3 +25,7 @@ Here's the full list:
 1. `git`
 
     1.1 `~/.gitconfig_local` to store any user-specific data
+
+2. `shell`
+
+    2.1 `~/.shell_env_local` to store local shell envs
