@@ -14,6 +14,8 @@
 	default = simple
 [user]
 	useConfigOnly = true
+[gpg]
+	program = gpg2
 
 # Allow local customizations in the .gitconfig_local file
 [include]

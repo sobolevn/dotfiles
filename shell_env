@@ -65,4 +65,4 @@ pyclean () {
 
 
 # === Local variables and overrides ===
-source "./.shell_env_local"
+source "$HOME/.shell_env_local"
