@@ -10,6 +10,7 @@
     ~/.gitconfig: gitconfig
     ~/.gitignore_global: gitignore
     ~/.zshrc: zshrc
+    ~/.nanorc: nanorc
 
 - brewfile: 
     file: Brewfile
