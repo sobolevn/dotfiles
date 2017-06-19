@@ -64,5 +64,8 @@ pyclean () {
 }
 
 
+# Pretty print XML (use `jq` for json):
+alias xq="xmllint --format"
+
 # === Local variables and overrides ===
 source "$HOME/.shell_env_local"
