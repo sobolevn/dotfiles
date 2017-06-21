@@ -1,0 +1,24 @@
+{
+	"color_scheme": "Packages/ayu/ayu-dark.tmTheme",
+	"font_size": 16,
+	"ignored_packages":
+	[
+		"RestructuredText",
+		"JavaScript",
+		"Vintage"
+	],
+	"rulers":
+	[
+		80
+	],
+	"save_on_focus_lost": true,
+	"spell_check": true,
+	"theme": "ayu-dark.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"ui_big_tabs": true,
+	"ui_font_size_small": false,
+	"ui_separator": false,
+	"update_check": false,
+	"word_wrap": true,
+	"wrap_width": 80
+}

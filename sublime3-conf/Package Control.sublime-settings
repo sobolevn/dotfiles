@@ -1,0 +1,29 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"ayu",
+		"Babel",
+		"Bats (Bash Automated Testing System)",
+		"DashDoc",
+		"Dockerfile Syntax Highlighting",
+		"EditorConfig",
+		"Elixir",
+		"ElixirSublime",
+		"Git",
+		"GitGutter",
+		"Highlight",
+		"INI",
+		"JSX",
+		"Markdown Preview",
+		"Package Control",
+		"Sass",
+		"SublimeLinter",
+		"SublimeLinter-shellcheck",
+		"SublimeREPL",
+		"Vue Syntax Highlight"
+	]
+}

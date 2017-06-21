@@ -27,3 +27,17 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+#### custom ####
+*.bak
+*.last-run
+
+# Certificates:
+*.crt
+*.user-ca-bundle
+*.merged-ca-bundle
+
+# Folders:
+.SublimeREPLHistory/
+Package Control.cache/
+
+

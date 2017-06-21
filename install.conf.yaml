@@ -11,10 +11,13 @@
     ~/.gitignore_global: gitignore
     ~/.zshrc: zshrc
     ~/.nanorc: nanorc
+    "~/Library/Application Support/Sublime Text 3/Packages/User": 
+        path: sublime3-conf
+        create: true
 
-- brewfile: 
-    file: Brewfile
-    no-upgrage: true
+#- brewfile: 
+#    file: Brewfile
+#    no-upgrage: true
 
 - link:
     ~/.oh-my-zsh/custom/themes/sobole.zsh-theme: sobole-zsh-theme/sobole.zsh-theme
