@@ -7,10 +7,16 @@
     ~/.shell_env: shell_env
     ~/.bash_profile: bash_profile
     ~/.bashrc: bashrc
+    ~/.zshrc: zshrc
+    
     ~/.gitconfig: gitconfig
     ~/.gitignore_global: gitignore
-    ~/.zshrc: zshrc
+
+    # Editors settings:
+    ~/.editorconfig: editorconfig
     ~/.nanorc: nanorc
+
+    # Sublime text settings:
     "~/Library/Application Support/Sublime Text 3/Packages/User": 
         path: sublime3-conf
         create: true

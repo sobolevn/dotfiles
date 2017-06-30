@@ -1,2 +1,1 @@
-
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+# This file should be empty

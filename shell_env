@@ -28,6 +28,9 @@ export EDITOR=$(which nano)
 export GPG_TTY=$(tty)
 eval "$(gpg-agent --daemon --allow-preset-passphrase)"
 
+# Homebrew:
+export HOMEBREW_NO_ANALYTICS=1  # disables statistics that brew collects
+
 
 # === Virtualenvs ===
 
@@ -67,5 +70,7 @@ pyclean () {
 # Pretty print XML (use `jq` for json):
 alias xq="xmllint --format"
 
+
 # === Local variables and overrides ===
+
 source "$HOME/.shell_env_local"
