@@ -8,7 +8,7 @@
     ~/.bash_profile: bash_profile
     ~/.bashrc: bashrc
     ~/.zshrc: zshrc
-    
+
     ~/.gitconfig: gitconfig
     ~/.gitignore_global: gitignore
 
@@ -17,13 +17,13 @@
     ~/.nanorc: nanorc
 
     # Sublime text settings:
-    "~/Library/Application Support/Sublime Text 3/Packages/User": 
+    "~/Library/Application Support/Sublime Text 3/Packages/User":
         path: sublime3-conf
         create: true
 
-#- brewfile: 
-#    file: Brewfile
-#    no-upgrage: true
+- brewfile:
+   file: Brewfile
+   no-upgrage: true
 
 - link:
     ~/.oh-my-zsh/custom/themes/sobole.zsh-theme: sobole-zsh-theme/sobole.zsh-theme
