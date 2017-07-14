@@ -3,8 +3,8 @@
 	"font_size": 18,
 	"ignored_packages":
 	[
-		"RestructuredText",
 		"JavaScript",
+		"RestructuredText",
 		"Vintage"
 	],
 	"rulers":
