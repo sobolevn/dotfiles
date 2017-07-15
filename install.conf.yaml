@@ -16,6 +16,9 @@
     ~/.editorconfig: editorconfig
     ~/.nanorc: nanorc
 
+    # Version management:
+    ~/.asdfrc: asdfrc
+
     # Sublime text settings:
     "~/Library/Application Support/Sublime Text 3/Packages/User":
         path: sublime3-conf
@@ -27,3 +30,11 @@
 
 - link:
     ~/.oh-my-zsh/custom/themes/sobole.zsh-theme: sobole-zsh-theme/sobole.zsh-theme
+
+- asdf:
+    - plugin: python
+      url: https://github.com/tuvistavie/asdf-python.git
+    - plugin: nodejs
+      url: https://github.com/asdf-vm/asdf-nodejs.git
+    - plugin: ruby
+      url: https://github.com/asdf-vm/asdf-ruby.git

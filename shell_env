@@ -33,15 +33,9 @@ source "/usr/local/bin/virtualenvwrapper.sh"
 
 # === Versions ===
 
-# nvm:
-export NVM_DIR="$HOME/.nvm"
-source "$(brew --prefix nvm)/nvm.sh"
-
-# kiex:
-test -s "$HOME/.kiex/scripts/kiex" && source "$HOME/.kiex/scripts/kiex"
-
-# rvm (should be the last line):
-source "$HOME/.rvm/scripts/rvm"
+# asdf handles every possible language:
+source "/usr/local/opt/asdf/asdf.sh"
+source "/usr/local/etc/bash_completion.d/asdf.bash"
 
 
 # === Custom apps ===
@@ -89,4 +83,6 @@ alias xq="xmllint --format"
 
 # === Local variables and overrides ===
 
-source "$HOME/.shell_env_local"
+if [[ -f "$HOME/.shell_env_local" ]]; then
+  source "$HOME/.shell_env_local"
+fi
