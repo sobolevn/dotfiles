@@ -1,6 +1,25 @@
 {
+	"binary_file_patterns":
+	[
+		"*.dds",
+		"*.eot",
+		"*.gif",
+		"*.ico",
+		"*.jar",
+		"*.jpeg",
+		"*.jpg",
+		"*.pdf",
+		"*.png",
+		"*.swf",
+		"*.tga",
+		"*.ttf",
+		"*.zip",
+		"dist/**",
+		"node_modules/**"
+	],
 	"color_scheme": "Packages/ayu/ayu-dark.tmTheme",
 	"font_size": 18,
+	"highlight_line": true,
 	"ignored_packages":
 	[
 		"JavaScript",
@@ -13,12 +32,15 @@
 	],
 	"save_on_focus_lost": true,
 	"spell_check": true,
+	"tab_size": 4,
 	"theme": "ayu-dark.sublime-theme",
 	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
 	"ui_big_tabs": true,
 	"ui_font_size_small": false,
 	"ui_separator": false,
 	"update_check": false,
+	"wide_caret": true,
 	"word_wrap": true,
 	"wrap_width": 80
 }

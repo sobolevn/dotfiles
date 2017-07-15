@@ -40,9 +40,8 @@ export PATH="/usr/local/sbin:/usr/local/share/npm/bin:/usr/local/opt/php56/bin:/
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # Custom envs:
-source ~/.shell_env
 source $ZSH/oh-my-zsh.sh
-# source /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
+source ~/.shell_env
 
 # You may seed to manually set your language environment
 # export LANG=en_US.UTF-8

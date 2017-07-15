@@ -1,12 +1,8 @@
 #!/usr/bin/env bash
 
-# `shell_env.sh` is a main file for any general-case 
-# bash utils, containing everything not related to any
-# specific shell or env.
-# 
-# This file is used as a source file for multiple shells:
-# 1. bash
-# 2. zsh
+# `shell_env.sh` is a main file for any general-case utils.
+#
+# This file is used as a source file for zsh.
 
 
 # === Path modifications ===
@@ -15,9 +11,6 @@
 # GPG agent:
 export PATH="/usr/local/opt/gpg-agent/bin:$PATH"
 
-# Wildfly:
-# export JBOSS_HOME="/usr/local/opt/wildfly-as/libexec"
-# export PATH="$PATH:${JBOSS_HOME}/bin"
 
 # === General ===
 
@@ -55,8 +48,31 @@ source "$HOME/.rvm/scripts/rvm"
 
 # transfer.sh
 # See https://transfer.sh/
-transfer() { if [ $# -eq 0 ]; then echo "No arguments specified. Usage:\necho transfer /tmp/test.md\ncat /tmp/test.md | transfer test.md"; return 1; fi 
-tmpfile=$( mktemp -t transferXXX ); if tty -s; then basefile=$(basename "$1" | sed -e 's/[^a-zA-Z0-9._-]/-/g'); curl --progress-bar --upload-file "$1" "https://transfer.sh/$basefile" >> $tmpfile; else curl --progress-bar --upload-file "-" "https://transfer.sh/$1" >> $tmpfile ; fi; cat $tmpfile; rm -f $tmpfile; } 
+transfer () { if [ $# -eq 0 ]; then echo "No arguments specified. Usage:\necho transfer /tmp/test.md\ncat /tmp/test.md | transfer test.md"; return 1; fi
+tmpfile=$( mktemp -t transferXXX ); if tty -s; then basefile=$(basename "$1" | sed -e 's/[^a-zA-Z0-9._-]/-/g'); curl --progress-bar --upload-file "$1" "https://transfer.sh/$basefile" >> $tmpfile; else curl --progress-bar --upload-file "-" "https://transfer.sh/$1" >> $tmpfile ; fi; cat $tmpfile; rm -f $tmpfile; }
+
+
+# === fzf ===
+
+if [[ ! "$PATH" == */usr/local/opt/fzf/bin* ]]; then
+  export PATH="$PATH:/usr/local/opt/fzf/bin"
+fi
+
+# Auto-completion
+[[ $- == *i* ]] && source "/usr/local/opt/fzf/shell/completion.zsh" 2> /dev/null
+
+# Key bindings
+source "/usr/local/opt/fzf/shell/key-bindings.zsh"
+
+# Setting ag as the default source for fzf
+export FZF_DEFAULT_COMMAND='ag -g ""'
+
+# To apply the command to CTRL-T as well
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+
+_fzf_compgen_path() {
+  ag -g "" "$1"
+}
 
 
 # === Commonly used functions ===
