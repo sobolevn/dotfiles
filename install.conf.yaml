@@ -9,8 +9,10 @@
     ~/.bashrc: bashrc
     ~/.zshrc: zshrc
 
+    # Tools:
     ~/.gitconfig: gitconfig
     ~/.gitignore_global: gitignore
+    ~/.httpie/config.json: httpie
 
     # Editors settings:
     ~/.editorconfig: editorconfig
