@@ -15,7 +15,10 @@
 		"*.ttf",
 		"*.zip",
 		"dist/**",
-		"node_modules/**"
+		"deps/**",
+		"_build/**",
+		"node_modules/**",
+		"bower_components/**"
 	],
 	"color_scheme": "Packages/ayu/ayu-dark.tmTheme",
 	"font_size": 18,

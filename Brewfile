@@ -1,6 +1,7 @@
 tap "caskroom/cask"
 tap "caskroom/fonts"
 tap "caskroom/versions"
+tap "homebrew/apache"
 tap "homebrew/bundle"
 tap "homebrew/core"
 tap "homebrew/dupes"
@@ -85,6 +86,7 @@ brew "yarn"
 brew "zlib"
 brew "zsh"
 brew "zsh-syntax-highlighting"
+brew "homebrew/apache/httpd24", args: ["with-mpm-event", "with-privileged-ports"]
 brew "homebrew/php/php56", args: ["with-homebrew-curl"]
 brew "homebrew/php/php56-opcache"
 brew "homebrew/php/php56-xdebug"
