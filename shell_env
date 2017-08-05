@@ -24,18 +24,14 @@ eval "$(gpg-agent --daemon --allow-preset-passphrase)"
 # Homebrew:
 export HOMEBREW_NO_ANALYTICS=1  # disables statistics that brew collects
 
+# exa:
+alias la="exa -bghl --git"
+
 
 # === Virtualenvs ===
 
 export WORKON_HOME="~/.virtualenvs"
 source "/usr/local/bin/virtualenvwrapper.sh"
-
-
-# === Versions ===
-
-# asdf handles every possible language:
-source "/usr/local/opt/asdf/asdf.sh"
-source "/usr/local/etc/bash_completion.d/asdf.bash"
 
 
 # === Custom apps ===
