@@ -24,8 +24,15 @@ eval "$(gpg-agent --daemon --allow-preset-passphrase)"
 # Homebrew:
 export HOMEBREW_NO_ANALYTICS=1  # disables statistics that brew collects
 
+# npm:
+source <(npm completion)  # adds normal autocomplete to `npm` commands
+source <(npx --shell-auto-fallback zsh)  # adds fallback to per-porject deps
+
 # exa:
-alias la="exa -bghl --git"
+alias la="exa -abghl --git --color=automatic"
+
+# z:
+source "/usr/local/etc/profile.d/z.sh"
 
 
 # === Virtualenvs ===
