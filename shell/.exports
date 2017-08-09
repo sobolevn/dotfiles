@@ -1,0 +1,49 @@
+#!/usr/bin/env bash
+
+# `.exports` is used to provide custom variables.
+#
+# This file is used as a part of `.shell_env`
+
+
+# === Path modifications ===
+
+# These lines should be the first ones
+
+# GPG agent:
+export PATH="/usr/local/opt/gpg-agent/bin:$PATH"
+
+
+# === General ===
+
+# Editor:
+export EDITOR=$(which nano)
+
+# GPG:
+export GPG_TTY=$(tty)
+eval "$(gpg-agent --daemon --allow-preset-passphrase)"
+
+# Make Python use UTF-8 encoding for output to stdin, stdout, and stderr.
+export PYTHONIOENCODING='UTF-8'
+
+# Homebrew:
+export HOMEBREW_NO_ANALYTICS=1  # disables statistics that brew collects
+
+# Highlight section titles in manual pages.
+export LESS_TERMCAP_md="${yellow}"
+
+# Don’t clear the screen after quitting a manual page.
+export MANPAGER='less -X'
+
+
+# === Virtualenvs ===
+
+export WORKON_HOME="$HOME/.virtualenvs"
+source "/usr/local/bin/virtualenvwrapper.sh"
+
+
+# === Histories ===
+
+# Enable persistent REPL history for `node`.
+export NODE_REPL_HISTORY="$HOME/.node_history"
+# Use sloppy mode by default, matching web browsers.
+export NODE_REPL_MODE='sloppy'

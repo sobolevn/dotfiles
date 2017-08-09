@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+
+# `.aliases` is used to provide custom variables.
+#
+# This file is used as a part of `.shell_env`
+
+
+# === Aliases ===
+
+# exa:
+alias la="exa -abghl --git --color=automatic"
+
+# Pretty print XML (use `jq` for json):
+alias xq="xmllint --format"
+
+# `cat` with beautiful colors. requires: pip install -U Pygments
+alias c='pygmentize -O style=colorful -f console256 -g'
+
+# Show local ip:
+alias localip="ipconfig getifaddr en0"
+
+# Bell when the program is finished. It is useful for some
+# time-consuming operations. Like:
+# > npm install && alert
+alias alert="tput bel"
+
+# Lock the screen (when going AFK)
+alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
+

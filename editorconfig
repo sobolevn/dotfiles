@@ -1,6 +1,6 @@
 # Check http://editorconfig.org for more information
 
-# This file is used a fallback for projects with missing 
+# This file is used a fallback for projects with missing
 # .editorconfig plugin
 root = true
 
@@ -14,3 +14,7 @@ indent_size = 2
 
 [*.py]
 indent_size = 4
+
+[*.{js,jsx,ts,vue,html,css,scss,sass}]
+indent_size = 2
+

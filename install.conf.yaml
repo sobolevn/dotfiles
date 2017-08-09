@@ -4,10 +4,15 @@
   - [git submodule update --init --recursive, Installing submodules]
 
 - link:
+    # Terminal:
+    ~/.shell:
+      path: shell
+      create: true
     ~/.shell_env: shell_env
     ~/.bash_profile: bash_profile
     ~/.bashrc: bashrc
     ~/.zshrc: zshrc
+    ~/.hushlogin: hushlogin
 
     # Tools:
     ~/.gitconfig: gitconfig

@@ -4,89 +4,10 @@
 #
 # This file is used as a source file for zsh.
 
-
-# === Path modifications ===
-# These lines should be the first ones
-
-# GPG agent:
-export PATH="/usr/local/opt/gpg-agent/bin:$PATH"
-
-
-# === General ===
-
-# Editor:
-export EDITOR=$(which nano)
-
-# GPG:
-export GPG_TTY=$(tty)
-eval "$(gpg-agent --daemon --allow-preset-passphrase)"
-
-# Homebrew:
-export HOMEBREW_NO_ANALYTICS=1  # disables statistics that brew collects
-
-# npm:
-source <(npm completion)  # adds normal autocomplete to `npm` commands
-source <(npx --shell-auto-fallback zsh)  # adds fallback to per-porject deps
-
-# exa:
-alias la="exa -abghl --git --color=automatic"
-
-# z:
-source "/usr/local/etc/profile.d/z.sh"
-
-
-# === Virtualenvs ===
-
-export WORKON_HOME="~/.virtualenvs"
-source "/usr/local/bin/virtualenvwrapper.sh"
-
-
-# === Custom apps ===
-
-# transfer.sh
-# See https://transfer.sh/
-transfer () { if [ $# -eq 0 ]; then echo "No arguments specified. Usage:\necho transfer /tmp/test.md\ncat /tmp/test.md | transfer test.md"; return 1; fi
-tmpfile=$( mktemp -t transferXXX ); if tty -s; then basefile=$(basename "$1" | sed -e 's/[^a-zA-Z0-9._-]/-/g'); curl --progress-bar --upload-file "$1" "https://transfer.sh/$basefile" >> $tmpfile; else curl --progress-bar --upload-file "-" "https://transfer.sh/$1" >> $tmpfile ; fi; cat $tmpfile; rm -f $tmpfile; }
-
-
-# === fzf ===
-
-if [[ ! "$PATH" == */usr/local/opt/fzf/bin* ]]; then
-  export PATH="$PATH:/usr/local/opt/fzf/bin"
-fi
-
-# Auto-completion
-[[ $- == *i* ]] && source "/usr/local/opt/fzf/shell/completion.zsh" 2> /dev/null
-
-# Key bindings
-source "/usr/local/opt/fzf/shell/key-bindings.zsh"
-
-# Setting ag as the default source for fzf
-export FZF_DEFAULT_COMMAND='ag -g ""'
-
-# To apply the command to CTRL-T as well
-export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
-
-_fzf_compgen_path() {
-  ag -g "" "$1"
-}
-
-
-# === Commonly used functions ===
-
-pyclean () {
-   # Cleans py[cod] and __pychache__ dirs in the current tree:
-   find . | grep -E "(__pycache__|\.py[cod]$)" | xargs rm -rf
-}
-
-
-# Pretty print XML (use `jq` for json):
-alias xq="xmllint --format"
-
-
-# === Syntax highlight ===
-
-source "/usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+source "$HOME/.shell/.exports"
+source "$HOME/.shell/.aliases"
+source "$HOME/.shell/.functions"
+source "$HOME/.shell/.external"
 
 
 # === Local variables and overrides ===
