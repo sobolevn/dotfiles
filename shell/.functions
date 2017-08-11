@@ -34,7 +34,7 @@ cdf () {
 }
 
 
-log () {
+commits () {
   # git commit browser. needs fzf
   git log --graph --color=always \
       --format="%C(auto)%h%d %s %C(black)%C(bold)%cr" "$@" |

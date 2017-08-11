@@ -14,7 +14,3 @@ indent_size = 2
 
 [*.py]
 indent_size = 4
-
-[*.{js,jsx,ts,vue,html,css,scss,sass}]
-indent_size = 2
-
