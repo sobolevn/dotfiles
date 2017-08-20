@@ -20,7 +20,7 @@ tmpfile=$( mktemp -t transferXXX ); if tty -s; then basefile=$(basename "$1" | s
 }
 
 
-md () {
+mc () {
   # Create a new directory and enter it
   mkdir -p "$@" && cd "$@"
 }

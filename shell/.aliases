@@ -14,7 +14,7 @@ alias la="exa -abghl --git --color=automatic"
 alias xq="xmllint --format"
 
 # `cat` with beautiful colors. requires: pip install -U Pygments
-alias c='pygmentize -O style=colorful -f console256 -g'
+alias c='pygmentize -O style=borland -f console256 -g'
 
 # Show local ip:
 alias localip="ipconfig getifaddr en0"
