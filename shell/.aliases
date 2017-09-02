@@ -8,7 +8,7 @@
 # === Aliases ===
 
 # exa:
-alias la="exa -abghl --git --color=automatic"
+alias la="exa -abghl --git"
 
 # Pretty print XML (use `jq` for json):
 alias xq="xmllint --format"
