@@ -12,18 +12,13 @@
 		"EditorConfig",
 		"Elixir",
 		"ElixirSublime",
-		"Git",
 		"GitGutter",
 		"Highlight",
 		"INI",
 		"JSX",
-		"Markdown Preview",
 		"Package Control",
 		"Sass",
 		"SideBarEnhancements",
-		"SublimeLinter",
-		"SublimeLinter-shellcheck",
-		"SublimeREPL",
 		"Vue Syntax Highlight"
 	]
 }
