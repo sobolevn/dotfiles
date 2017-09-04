@@ -7,6 +7,3 @@
 [submodule "sobole-zsh-theme"]
 	path = sobole-zsh-theme
 	url = https://github.com/sobolevn/sobole-zsh-theme.git
-[submodule "dotbot-asdf"]
-	path = dotbot-asdf
-	url = https://github.com/sobolevn/dotbot-asdf.git
