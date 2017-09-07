@@ -8,22 +8,24 @@
     ~/.shell:
       path: shell
       create: true
-    ~/.shell_env: shell_env
-    ~/.bash_profile: bash_profile
-    ~/.bashrc: bashrc
-    ~/.zshrc: zshrc
-    ~/.hushlogin: hushlogin
+    ~/.shell_env: config/shell_env
+    ~/.bash_profile: config/bash_profile
+    ~/.bashrc: config/bashrc
+    ~/.zshrc: config/zshrc
+    ~/.hushlogin: config/hushlogin
+
+    # Git:
+    ~/.gitconfig: config/gitconfig
+    ~/.gitignore_global: config/gitignore
 
     # Tools:
-    ~/.gitconfig: gitconfig
-    ~/.gitignore_global: gitignore
-    ~/.httpie/config.json: httpie
+    ~/.httpie/config.json: config/httpie
 
-    # Editors settings:
-    ~/.editorconfig: editorconfig
-    ~/.nanorc: nanorc
+    # Editors:
+    ~/.editorconfig: config/editorconfig
+    ~/.nanorc: config/nanorc
 
-    # Sublime text settings:
+    # Sublime text:
     "~/Library/Application Support/Sublime Text 3/Packages/User":
         path: sublime3-conf
         create: true
@@ -34,4 +36,4 @@
 
 - link:
     ~/.oh-my-zsh/custom/themes/sobole.zsh-theme: sobole-zsh-theme/sobole.zsh-theme
-    ~/.gnupg/gpg-agent.conf: gpgagent
+    ~/.gnupg/gpg-agent.conf: config/gpgagent

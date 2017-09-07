@@ -40,3 +40,10 @@ FROM pg_stat_activity
 WHERE pg_stat_activity.datname = '$1'
   AND pid <> pg_backend_pid();"
 }
+
+
+pyenv_activate () {
+  # Activates pyenv by setting `PATH` variable:
+  # https://github.com/pyenv/pyenv#understanding-shims
+  export PATH="$(pyenv root)/shims:$PATH"
+}

@@ -41,6 +41,18 @@ export WORKON_HOME="$HOME/.virtualenvs"
 source "/usr/local/bin/virtualenvwrapper.sh"
 
 
+# === Version managers ===
+
+# nvm:
+export NVM_DIR="$HOME/.nvm"
+source "/usr/local/opt/nvm/nvm.sh"
+
+# pyenv:
+# I don't like pyenv being always active.
+# To activate it, just use `pyenv_activate` function
+# export PATH="$(pyenv root)/shims:$PATH"
+
+
 # === Histories ===
 
 # Enable persistent REPL history for `node`.

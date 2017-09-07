@@ -7,10 +7,10 @@
 
 What's in there?
 
-* all my `brew` dependencies including: applications, fonts, etc
-* all my `macOS` configuration
-* all my shell configuration
-* all my `sublime-text3` configuration
+- all my `brew` dependencies including: applications, fonts, etc. See `Brewfile`
+- all my `macOS` configuration. See `macos`
+- all my shell configuration. See `shell/` and `config/zshrc`
+- all my `sublime-text3` configuration. See `sublime3-conf/`
 
 
 ## Installation
