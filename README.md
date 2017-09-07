@@ -45,11 +45,11 @@ I also have `php`, `ruby`, and `java` installed. But I not using them on a daily
 
 I love my `Sublime`. It is fast and beautiful. Here what it looks like for `elixir`:
 
-![sobolevn's Sublime for Elixir]((https://raw.githubusercontent.com/sobolevn/dotfiles/master/media/sublime-elixir.png))
+![sobolevn's Sublime for Elixir](https://raw.githubusercontent.com/sobolevn/dotfiles/master/media/sublime-elixir.png)
 
 And `Vue`:
 
-![sobolevn's Sublime for Elixir]((https://raw.githubusercontent.com/sobolevn/dotfiles/master/media/sublime-vue.png))
+![sobolevn's Sublime for Elixir](https://raw.githubusercontent.com/sobolevn/dotfiles/master/media/sublime-vue.png)
 
 Here's a list of packages I use:
 
