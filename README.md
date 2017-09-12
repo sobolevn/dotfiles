@@ -28,7 +28,9 @@ You will need to do some extra steps with `sublime`. Open an editor and run this
 
 ## CLI
 
-I am using `zsh` with `oh-my-zsh` as a main shell. I also have a lot of tools to make my working experience better. Here's a good article I wrote about my shell experience: ["Instant +100% command line productivity boost"](https://dev.to/sobolevn/instant-100-command-line-productivity-boost).
+I am using `zsh` with `oh-my-zsh` as a main shell. I also have a lot of tools to make my working experience better. Here's a good article I wrote about my shell experience:
+
+- ["Instant +100% command line productivity boost"](https://dev.to/sobolevn/instant-100-command-line-productivity-boost)
 
 I mainly work with three stacks:
 
@@ -38,7 +40,7 @@ I mainly work with three stacks:
 
 So, they are configured nice and smoothly.
 
-I also have `php`, `ruby`, and `java` installed. But I not using them on a daily basis.
+I also have `php`, `ruby`, and `java` installed. But I am not using them on a daily basis.
 
 
 ## Sublime

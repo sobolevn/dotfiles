@@ -1,5 +1,5 @@
 [core]
-    excludesfile = ~/.gitignore_global
+  excludesfile = ~/.gitignore_global
 [credential]
 	helper = osxkeychain
 [http]
