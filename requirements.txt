@@ -1,3 +1,10 @@
 virtualenvwrapper
-pygments
+mercurial
 readline
+pipsi
+
+# pipsi dependencies:
+#
+# pygmentize
+# pipenv
+# cookiecutter

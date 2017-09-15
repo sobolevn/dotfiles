@@ -12,6 +12,9 @@
 # GPG agent:
 export PATH="/usr/local/opt/gpg-agent/bin:$PATH"
 
+# Now `python` points to `python2` from `brew`:
+export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+
 
 # === General ===
 
@@ -37,8 +40,16 @@ export MANPAGER='less -X'
 
 # === Virtualenvs ===
 
+# virtualenv-wrapper:
 export WORKON_HOME="$HOME/.virtualenvs"
 source "/usr/local/bin/virtualenvwrapper.sh"
+
+# pipsi:
+export PIPSI_HOME="$HOME/.pipsi"
+export PIPSI_BIN_DIR="/usr/local/bin"
+
+# pipenv:
+export PIPENV_NOSPIN=true  # disables spinner for cleaner logs
 
 
 # === Version managers ===
