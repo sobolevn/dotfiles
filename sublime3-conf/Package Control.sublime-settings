@@ -15,11 +15,13 @@
 		"GitGutter",
 		"Highlight",
 		"INI",
+		"Jedi - Python autocompletion",
 		"JSX",
 		"Package Control",
 		"Sass",
 		"SideBarEnhancements",
 		"TOML",
-		"Vue Syntax Highlight"
+		"Vue Syntax Highlight",
+		"WakaTime"
 	]
 }

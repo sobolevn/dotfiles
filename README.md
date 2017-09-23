@@ -68,7 +68,7 @@ And syntax highlighting for all the things:
 - `Bats` syntax highlighting
 - `Dockerfile` syntax highlighting
 - `Elixir` syntax highlighting
-- `INI` syntax highlighting
+- `INI` and `TOML` syntax highlighting
 - `JSX` syntax highlighting
 - `Sass` syntax highlighting
 - `Vue` syntax highlight

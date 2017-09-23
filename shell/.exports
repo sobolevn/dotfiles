@@ -49,7 +49,9 @@ export PIPSI_HOME="$HOME/.pipsi"
 export PIPSI_BIN_DIR="/usr/local/bin"
 
 # pipenv:
-export PIPENV_NOSPIN=true  # disables spinner for cleaner logs
+export PIPENV_SHELL_COMPAT=true
+export PIPENV_COLORBLIND=true # disables colors, so colorful!
+export PIPENV_NOSPIN=true # disables spinner for cleaner logs
 
 
 # === Version managers ===
@@ -59,9 +61,7 @@ export NVM_DIR="$HOME/.nvm"
 source "/usr/local/opt/nvm/nvm.sh"
 
 # pyenv:
-# I don't like pyenv being always active.
-# To activate it, just use `pyenv_activate` function
-# export PATH="$(pyenv root)/shims:$PATH"
+eval "$(pyenv init -)"
 
 
 # === Histories ===
@@ -70,3 +70,6 @@ source "/usr/local/opt/nvm/nvm.sh"
 export NODE_REPL_HISTORY="$HOME/.node_history"
 # Use sloppy mode by default, matching web browsers.
 export NODE_REPL_MODE='sloppy'
+
+# Erlang and Elixir shell history:
+export ERL_AFLAGS="-kernel shell_history enabled"
