@@ -7,9 +7,6 @@
 
 # === Aliases ===
 
-# hub:
-alias git="hub"
-
 # exa:
 alias la="exa -abghl --git"
 
