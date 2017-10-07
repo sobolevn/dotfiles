@@ -20,7 +20,7 @@
 		"node_modules/**",
 		"bower_components/**"
 	],
-	"font_size": 18,
+	"font_size": 23,
 	"highlight_line": true,
 	"ignored_packages":
 	[
@@ -44,6 +44,8 @@
 	"wide_caret": true,
 	"word_wrap": true,
   "theme": "ayu-dark.sublime-theme",
-"color_scheme": "Packages/ayu/ayu-dark.tmTheme",
+  "color_scheme": "Packages/ayu/ayu-dark.tmTheme",
+  // "color_scheme": "Packages/ayu/ayu-light.tmTheme",
+  // "theme": "ayu-light.sublime-theme",
 	"wrap_width": 80
 }

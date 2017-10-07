@@ -40,4 +40,8 @@ Temporary Items
 .SublimeREPLHistory/
 Package Control.cache/
 
+#### custom ####
+WakaTime.sublime-settings
+# *.crt
+# *.key
 
