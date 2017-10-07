@@ -31,6 +31,7 @@ You will need to do some extra steps with `sublime`. Open an editor and run this
 I am using `zsh` with `oh-my-zsh` as a main shell. I also have a lot of tools to make my working experience better. Here's a good article I wrote about my shell experience:
 
 - ["Instant +100% command line productivity boost"](https://dev.to/sobolevn/instant-100-command-line-productivity-boost)
+- ["Using better CLIs"](https://dev.to/sobolevn/using-better-clis-6o8)
 
 I mainly work with three stacks:
 
