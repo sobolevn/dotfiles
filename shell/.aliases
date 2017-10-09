@@ -10,6 +10,9 @@
 # exa:
 alias la="exa -abghl --git"
 
+# git with hub:
+alias git="hub"
+
 # Pretty print XML (use `jq` for json):
 alias xq="xmllint --format"
 

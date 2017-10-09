@@ -20,7 +20,8 @@
 		"node_modules/**",
 		"bower_components/**"
 	],
-	"font_size": 23,
+	"color_scheme": "Packages/ayu/ayu-dark.tmTheme",
+	"font_size": 18,
 	"highlight_line": true,
 	"ignored_packages":
 	[
@@ -35,6 +36,7 @@
 	"save_on_focus_lost": true,
 	"spell_check": true,
 	"tab_size": 4,
+	"theme": "ayu-dark.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"ui_big_tabs": true,
@@ -43,9 +45,5 @@
 	"update_check": false,
 	"wide_caret": true,
 	"word_wrap": true,
-  "theme": "ayu-dark.sublime-theme",
-  "color_scheme": "Packages/ayu/ayu-dark.tmTheme",
-  // "color_scheme": "Packages/ayu/ayu-light.tmTheme",
-  // "theme": "ayu-light.sublime-theme",
 	"wrap_width": 80
 }

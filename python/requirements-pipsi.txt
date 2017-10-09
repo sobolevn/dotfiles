@@ -1,0 +1,7 @@
+# `pipsi` dependencies
+
+pygments
+pew
+pipenv
+cookiecutter
+glances

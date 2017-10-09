@@ -7,3 +7,6 @@
 [submodule "sobole-zsh-theme"]
 	path = sobole-zsh-theme
 	url = https://github.com/sobolevn/sobole-zsh-theme.git
+[submodule "dotbot-pip"]
+	path = dotbot-pip
+	url = https://github.com/sobolevn/dotbot-pip.git

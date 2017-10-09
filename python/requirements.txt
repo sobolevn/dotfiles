@@ -1,0 +1,4 @@
+virtualenvwrapper
+mercurial
+readline
+pipsi

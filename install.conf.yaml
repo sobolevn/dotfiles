@@ -34,6 +34,13 @@
    file: Brewfile
    no-upgrage: true
 
+- pip:
+    file: python/requirements.txt
+    binary: /usr/local/opt/python/libexec/bin/pip
+
+- pipsi:
+    file: python/requirements-pipsi.txt
+
 - link:
     ~/.oh-my-zsh/custom/themes/sobole.zsh-theme: sobole-zsh-theme/sobole.zsh-theme
     ~/.gnupg/gpg-agent.conf: config/gpgagent
