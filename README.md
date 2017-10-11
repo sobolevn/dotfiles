@@ -94,3 +94,8 @@ Here's the full list:
 2. `shell`
 
     2.1 `~/.shell_env_local` to store local shell config, like: usernames, passwords, tokens, `gpg` keys and so on
+
+
+## License
+
+[WTFPL](https://en.wikipedia.org/wiki/WTFPL): do the fuck you want. Enjoy!
