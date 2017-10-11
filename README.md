@@ -9,6 +9,7 @@ What's in there?
 
 - all my `brew` dependencies including: applications, fonts, etc. See `Brewfile`
 - all my `macOS` configuration. See `macos`
+- all my `python` dependencies. See `python/`
 - all my shell configuration. See `shell/` and `config/zshrc`
 - all my `sublime-text3` configuration. See `sublime3-conf/`
 
@@ -23,7 +24,12 @@ We are using `dotbot` to handle any installations. Steps:
 
 ### Setting up SublimeText
 
-You will need to do some extra steps with `sublime`. Open an editor and run this command in "Command Palette": `Package Control: Satisfy Dependencies`. Restart `sublime`. You are all set!
+You will need to do some extra steps with `sublime`:
+1. Open an editor
+2. Run this command in "Command Palette": `Package Control: Satisfy Dependencies`
+3. Restart `sublime`
+
+You are all set!
 
 
 ## CLI
@@ -87,4 +93,4 @@ Here's the full list:
 
 2. `shell`
 
-    2.1 `~/.shell_env_local` to store local shell config, like: username, passwords, `gpg` keys and so on
+    2.1 `~/.shell_env_local` to store local shell config, like: usernames, passwords, tokens, `gpg` keys and so on

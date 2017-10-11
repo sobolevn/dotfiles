@@ -4,4 +4,4 @@ pygments
 pew
 pipenv
 cookiecutter
-glances
+glances[docker,gpu,ip]
