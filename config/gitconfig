@@ -1,5 +1,6 @@
 [core]
   excludesfile = ~/.gitignore_global
+	pager = diff-so-fancy | less --tabs=4 -RFX
 [credential]
 	helper = osxkeychain
 [http]
@@ -16,6 +17,22 @@
 	useConfigOnly = true
 [diff]
 	indentHeuristic = on
+
+# Colors
+[color]
+  ui = true
+[color "diff-highlight"]
+  oldNormal = red bold
+  oldHighlight = white bold 52
+  newNormal = green bold
+  newHighlight = white bold 22
+[color "diff"]
+  meta = black
+  frag = blue bold
+  commit = black bold
+  old = red bold
+  new = green bold
+  whitespace = red reverse
 
 # Allow local customizations in the .gitconfig_local file
 [include]

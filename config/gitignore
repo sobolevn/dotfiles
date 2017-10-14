@@ -163,3 +163,17 @@ com_crashlytics_export_strings.xml
 crashlytics.properties
 crashlytics-build.properties
 fabric.properties
+#### yeoman ####
+node_modules/
+bower_components/
+*.log
+
+build/
+dist/
+#### elixir ####
+/_build
+/cover
+/deps
+erl_crash.dump
+*.ez
+*.beam
