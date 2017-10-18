@@ -34,7 +34,7 @@ You are all set!
 
 ## CLI
 
-I am using `zsh` with `oh-my-zsh` as a main shell. I also have a lot of tools to make my working experience better. Here's a good article I wrote about my shell experience:
+I am using `zsh` with `oh-my-zsh` as a main shell. I also have a lot of tools to make my working experience better. Here are some good articles I wrote about my environment:
 
 - ["Instant +100% command line productivity boost"](https://dev.to/sobolevn/instant-100-command-line-productivity-boost)
 - ["Using better CLIs"](https://dev.to/sobolevn/using-better-clis-6o8)
