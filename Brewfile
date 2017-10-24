@@ -65,6 +65,7 @@ brew "hub"
 brew "libtool"
 brew "imagemagick"
 brew "jq"
+brew "mas"
 brew "mercurial"
 brew "mongodb"
 brew "mysql", restart_service: true
@@ -81,6 +82,7 @@ brew "qt"
 brew "redis"
 brew "rmtrash"
 brew "ruby"
+brew "rust"
 brew "shellcheck"
 brew "ssh-copy-id"
 brew "swig"
@@ -124,3 +126,13 @@ cask "caskroom/fonts/font-inconsolata"
 cask "caskroom/fonts/font-inconsolata-for-powerline"
 cask "caskroom/fonts/font-roboto-mono"
 cask "caskroom/fonts/font-roboto-mono-for-powerline"
+mas "App Cleaner", id: 1013897218
+mas "CopyClip", id: 595191960
+mas "iA Writer", id: 775737590
+mas "iMovie", id: 408981434
+mas "Keynote", id: 409183694
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "SimpleCleaner", id: 867373024
+mas "Todoist", id: 585829637
+mas "Xcode", id: 497799835
