@@ -69,6 +69,8 @@ Here's a list of packages I use:
 - `GitGutter` for nice `git` integration
 - `Highlight` to export `rtf` highlighted text
 - `SideBarEnhancements` for custom actions in sidebar
+- `Jedi` for `python` autocomplete
+- `TypeScriptPlugin` for `typescript` autocomplete
 
 And syntax highlighting for all the things:
 
