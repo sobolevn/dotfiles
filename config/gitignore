@@ -168,7 +168,7 @@ node_modules/
 bower_components/
 *.log
 
-build/
+# build/
 dist/
 #### elixir ####
 /_build
@@ -177,3 +177,5 @@ dist/
 erl_crash.dump
 *.ez
 *.beam
+#### custom ####
+.vscode

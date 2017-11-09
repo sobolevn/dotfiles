@@ -13,6 +13,12 @@ pyclean () {
 }
 
 
+git-dowloadfolder () {
+  url="$1"
+  svn checkout ${url/tree\/master/trunk}
+}
+
+
 pipenv-shell () {
   # pipenv shell breaks sometimes. This does not.
   source "$(pipenv --venv)/bin/activate"

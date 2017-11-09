@@ -1,22 +1,22 @@
 [core]
   excludesfile = ~/.gitignore_global
-	pager = diff-so-fancy | less --tabs=4 -RFX
+  pager = diff-so-fancy | less --tabs=4 -RFX
 [credential]
-	helper = osxkeychain
+  helper = osxkeychain
 [http]
-	postBuffer = 524288000
+  postBuffer = 524288000
 [filter "lfs"]
-	clean = git-lfs clean %f
-	smudge = git-lfs smudge %f
-	required = true
+  clean = git-lfs clean %f
+  smudge = git-lfs smudge %f
+  required = true
 [commit]
-	gpgsign = true
+  gpgsign = true
 [push]
-	default = simple
+  default = simple
 [user]
-	useConfigOnly = true
+  useConfigOnly = true
 [diff]
-	indentHeuristic = on
+  indentHeuristic = on
 
 # Colors
 [color]
@@ -36,4 +36,4 @@
 
 # Allow local customizations in the .gitconfig_local file
 [include]
-	path = ~/.gitconfig_local
+  path = ~/.gitconfig_local
