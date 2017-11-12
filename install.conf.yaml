@@ -20,6 +20,7 @@
 
     # Tools:
     ~/.httpie/config.json: config/httpie
+    ~/.psqlrc: config/psqlrc
 
     # Editors:
     ~/.editorconfig: config/editorconfig

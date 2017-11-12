@@ -1,7 +1,5 @@
 # `pipsi` dependencies
 
 pygments
-pew
-pipenv
 cookiecutter
 glances[docker,gpu,ip]
