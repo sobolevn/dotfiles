@@ -45,5 +45,4 @@
 
 # These links should be created after everything is installed:
 - link:
-    ~/.oh-my-zsh/custom/sobole.zsh-theme: sobole-zsh-theme/sobole.zsh-theme
     ~/.gnupg/gpg-agent.conf: config/gpgagent
