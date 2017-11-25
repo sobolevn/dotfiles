@@ -4,16 +4,9 @@
 #
 # This file is used as a part of `.shell_env`
 
-
 # === Autocomplete ===
 
-# npm:
 source <(npm completion)  # adds normal autocomplete to `npm` commands
-
-
-# === Syntax highlight ===
-
-source "/usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 
 
 # === fzf ===

@@ -13,6 +13,7 @@
     ~/.bashrc: config/bashrc
     ~/.zshrc: config/zshrc
     ~/.hushlogin: config/hushlogin
+    ~/.antibody: config/antibody.txt
 
     # Git:
     ~/.gitconfig: config/gitconfig
@@ -42,6 +43,7 @@
 - pipsi:
     file: python/requirements-pipsi.txt
 
+# These links should be created after everything is installed:
 - link:
-    ~/.oh-my-zsh/custom/themes/sobole.zsh-theme: sobole-zsh-theme/sobole.zsh-theme
+    ~/.oh-my-zsh/custom/sobole.zsh-theme: sobole-zsh-theme/sobole.zsh-theme
     ~/.gnupg/gpg-agent.conf: config/gpgagent

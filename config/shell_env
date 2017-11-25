@@ -1,8 +1,16 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 
 # `shell_env.sh` is a main file for any general-case utils.
 #
 # This file is used as a source file for zsh.
+
+# === Plugin management ===
+
+antibody bundle < .antibody > "$HOME/.zsh_plugins.sh"
+source "$HOME/.zsh_plugins.sh"
+
+
+# === Shell parts ===
 
 source "$HOME/.shell/.exports"
 source "$HOME/.shell/.aliases"

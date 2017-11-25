@@ -47,7 +47,7 @@ I mainly work with three stacks:
 
 So, they are configured nice and smoothly.
 
-I also have `php`, `ruby`, and `java` installed. But I am not using them on a daily basis.
+I also have `php`, `ruby`, `rust`, and `java` installed. But I am not using them on a daily basis.
 
 
 ## Sublime
