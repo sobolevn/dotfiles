@@ -6,8 +6,8 @@
 
 # === Plugin management ===
 
-antibody bundle < .antibody > "$HOME/.zsh_plugins.sh"
-source "$HOME/.zsh_plugins.sh"
+antibody bundle < "$HOME/.antibody" > "$HOME/.zsh-plugins"
+source "$HOME/.zsh-plugins"
 
 
 # === Shell parts ===
