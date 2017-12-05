@@ -21,6 +21,7 @@
 		"bower_components/**"
 	],
 	"color_scheme": "Packages/ayu/ayu-dark.tmTheme",
+	"font_face": "Fira Code",
 	"font_size": 18,
 	"highlight_line": true,
 	"ignored_packages":
