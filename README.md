@@ -50,6 +50,18 @@ So, they are configured nice and smoothly.
 I also have `php`, `ruby`, `rust`, and `java` installed. But I am not using them on a daily basis.
 
 
+## Infrastructure
+
+I try to containerize everything. So `docker` is my main development and deployment tool. You can install it from its [official site](https://docs.docker.com/docker-for-mac/) (`brew` [version](https://github.com/Homebrew/homebrew-core/blob/master/Formula/docker.rb) is also an option).
+However, I also use several databases and other services locally:
+
+- `postgresql` (with `postgis`)
+- `mysql`
+- `mongodb`
+- `redis`
+- `rabbitmq`
+
+
 ## Sublime
 
 I love my `Sublime`. It is fast and beautiful. Here what it looks like for `elixir`:
@@ -76,6 +88,7 @@ And syntax highlighting for all the things:
 
 - `Bats` syntax highlighting
 - `Dockerfile` syntax highlighting
+- `DotEnv` syntax highlighting
 - `Elixir` syntax highlighting
 - `INI` and `TOML` syntax highlighting
 - `JSX` syntax highlighting
