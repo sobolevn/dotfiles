@@ -1,5 +1,5 @@
 # Sorted alphabetically (by author's name):
-wbingli/zsh-wakatime
+sobolevn/wakatime-zsh-plugin
 zsh-users/zsh-syntax-highlighting
 
 

@@ -16,7 +16,7 @@ PATH="/usr/local/opt/gpg-agent/bin:$PATH"
 PATH="/usr/local/opt/python/libexec/bin:$PATH"
 
 # Adds pipsi binary files:
-PATH="~/.local/bin:$PATH"
+PATH="$HOME/.local/bin:$PATH"
 
 export PATH
 
