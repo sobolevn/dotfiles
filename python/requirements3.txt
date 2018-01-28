@@ -1,1 +1,3 @@
 pipenv
+cookiecutter
+jinja2-git

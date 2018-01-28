@@ -26,13 +26,12 @@
 	"highlight_line": true,
 	"ignored_packages":
 	[
-		"JavaScript",
 		"RestructuredText",
 		"Vintage"
 	],
 	"rulers":
 	[
-		80
+    79
 	],
 	"save_on_focus_lost": true,
 	"spell_check": true,

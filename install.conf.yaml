@@ -40,6 +40,10 @@
     file: python/requirements.txt
     binary: /usr/local/opt/python/libexec/bin/pip
 
+- pip:
+    file: python/requirements3.txt
+    binary: /usr/local/bin/pip3
+
 - pipsi:
     file: python/requirements-pipsi.txt
 

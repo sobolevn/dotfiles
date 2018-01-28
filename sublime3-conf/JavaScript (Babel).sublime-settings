@@ -1,6 +1,7 @@
 {
 	"extensions":
 	[
-		"js"
+		"js",
+    "Gulpfile.js"
 	]
 }

@@ -1,4 +1,5 @@
 # Sorted alphabetically (by author's name):
+wbingli/zsh-wakatime
 zsh-users/zsh-syntax-highlighting
 
 

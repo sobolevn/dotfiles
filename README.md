@@ -96,6 +96,17 @@ And syntax highlighting for all the things:
 - `Vue` syntax highlight
 
 
+## External services
+
+I use [`wakatime`](https://wakatime.com/) for all my projects. It is a great tool to track time of your work. It is a free service.
+
+There are three main plugins I am using:
+
+1. For `sublime`: https://wakatime.com/sublime-text
+2. For `idea`: https://wakatime.com/intellij-idea
+3. For `zsh`: https://wakatime.com/terminal
+
+
 ## Local configuration
 
 Some of the used tools requires local configuration. Such as `git` with username and email.

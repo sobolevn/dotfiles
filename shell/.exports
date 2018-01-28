@@ -49,10 +49,6 @@ export MANPAGER='less -X'
 export WORKON_HOME="$HOME/.virtualenvs"
 source "/usr/local/bin/virtualenvwrapper.sh"
 
-# pipsi:
-export PIPSI_HOME="$HOME/.pipsi"
-export PIPSI_BIN_DIR="~/.local/bin"
-
 # pipenv:
 export PIPENV_SHELL_COMPAT=true
 export PIPENV_COLORBLIND=true # disables colors, so colorful!
