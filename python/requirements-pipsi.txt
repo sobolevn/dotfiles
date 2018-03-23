@@ -1,5 +1,4 @@
 # `pipsi` dependencies
 
 pygments
-glances[docker,gpu,ip]
 wakatime

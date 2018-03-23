@@ -1,6 +1,8 @@
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
+export SOBOLE_THEME_MODE=light
+
 # Theme is set via `antibody`, see `config/antibody.txt`.
 # ZSH_THEME="sobole"
 
