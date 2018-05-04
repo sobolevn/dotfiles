@@ -1,0 +1,35 @@
+{
+    "window.newWindowDimensions": "maximized",
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "Fira Code",
+    "editor.fontSize": 17,
+    "editor.wordWrap": "on",
+    "editor.wordWrapColumn": 80,
+    "editor.rulers": [80],
+    "editor.minimap.enabled": false,
+    "explorer.confirmDelete": false,
+    "emmet.showExpandedAbbreviation": "never",
+    "files.autoSave": "onFocusChange",
+    "files.associations": {
+      ".babelrc": "jsonc",
+      ".eslintrc": "jsonc"
+    },
+    "files.exclude": {
+      "**/.git": true,
+      "**/.DS_Store": true,
+      ".nuxt": true,
+      "node_modules": true,
+      "flow-typed": true,
+      "_deps": true,
+      ".pytest_cache": true,
+      "__pycache__": true
+    },
+    "workbench.colorTheme": "Ayu Dark",
+    "workbench.iconTheme": "ayu",
+    "vetur.validation.script": false,
+    "vetur.validation.style": false,
+    "vetur.validation.template": false,
+    "workbench.statusBar.feedback.visible": false,
+    "extensions.ignoreRecommendations": true,
+    "window.zoomLevel": 0
+  }

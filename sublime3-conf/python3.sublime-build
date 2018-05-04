@@ -1,3 +1,0 @@
-{
-    "shell_cmd": "/usr/local/bin/python3 -u $file"
-}

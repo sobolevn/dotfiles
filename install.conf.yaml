@@ -27,14 +27,9 @@
     ~/.editorconfig: config/editorconfig
     ~/.nanorc: config/nanorc
 
-    # Sublime text:
-    "~/Library/Application Support/Sublime Text 3/Packages/User":
-        path: sublime3-conf
-        create: true
-
 - brewfile:
-   file: Brewfile
-   no-upgrage: true
+    file: Brewfile
+    no-upgrage: true
 
 - pip:
     file: python/requirements.txt
@@ -50,3 +45,15 @@
 # These links should be created after everything is installed:
 - link:
     ~/.gnupg/gpg-agent.conf: config/gpgagent
+
+- link:
+    # vscode:
+    "~/Library/Application Support/Code/User/settings.json":
+        path: vscode/settings.json
+        create: true
+    "~/Library/Application Support/Code/User/snippets":
+        path: vscode/snippets
+        create: true
+
+- shell:
+  - bash ./vscode/install.sh

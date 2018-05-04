@@ -11,7 +11,7 @@ What's in there?
 - all my `macOS` configuration. See `macos`
 - all my `python` dependencies. See `python/`
 - all my shell configuration. See `shell/` and `config/zshrc`
-- all my `sublime-text3` configuration. See `sublime3-conf/`
+- all my `vscode` configuration. See `vscode/`
 
 
 ## Installation
@@ -22,19 +22,12 @@ We are using `dotbot` to handle any installations. Steps:
 2. `cd` into `dotfiles/` folder
 3. Run `install` script
 
-### Setting up SublimeText
-
-You will need to do some extra steps with `sublime`:
-1. Open an editor
-2. Run this command in "Command Palette": `Package Control: Satisfy Dependencies`
-3. Restart `sublime`
-
-You are all set!
-
 
 ## CLI
 
-I am using `zsh` with `oh-my-zsh` as a main shell. I also have a lot of tools to make my working experience better. Here are some good articles I wrote about my environment:
+I am using `zsh` with `oh-my-zsh` as a main shell.
+I also have a lot of tools to make my working experience better.
+Here are some good articles I wrote about my environment:
 
 - ["Instant +100% command line productivity boost"](https://dev.to/sobolevn/instant-100-command-line-productivity-boost)
 - ["Using better CLIs"](https://dev.to/sobolevn/using-better-clis-6o8)
@@ -47,12 +40,19 @@ I mainly work with three stacks:
 
 So, they are configured nice and smoothly.
 
-I also have `php`, `ruby`, `rust`, and `java` installed. But I am not using them on a daily basis.
+I also have `php`, `ruby`, `rust`, and `java` installed.
+But I am not using them on a daily basis.
 
 
 ## Infrastructure
 
-I try to containerize everything. So `docker` is my main development and deployment tool. You can install it from its [official site](https://docs.docker.com/docker-for-mac/) (`brew` [version](https://github.com/Homebrew/homebrew-core/blob/master/Formula/docker.rb) is also an option).
+I try to containerize everything.
+So `docker` is my main development and deployment tool.
+You can install it from its [official site](https://docs.docker.com/docker-for-mac/) (`brew` [version](https://github.com/Homebrew/homebrew-core/blob/master/Formula/docker.rb) is also an option).
+
+I prefer to use `edge` version of `docker`.
+So, you will have to download it manually.
+
 However, I also use several databases and other services locally:
 
 - `postgresql` (with `postgis`)
@@ -60,40 +60,35 @@ However, I also use several databases and other services locally:
 - `mongodb`
 - `redis`
 - `rabbitmq`
+- `consul`
 
 
-## Sublime
+## VS Code
 
-I love my `Sublime`. It is fast and beautiful. Here what it looks like for `elixir`:
+I loved my `Sublime`. It was fast and beautiful.
+But I have switched to `vscode`.
+The main reason is that `Sublime` is almost unmainteined.
+Packages are also abandoned.
 
-![sobolevn's Sublime for Elixir](https://raw.githubusercontent.com/sobolevn/dotfiles/master/media/sublime-elixir.png)
+I have switched to `vscode`.
+It solved almost all issues I had with `Sublime`.
+So, here's how my new `vscode` setup looks like:
+
+![sobolevn's vscode for Elixir](https://raw.githubusercontent.com/sobolevn/dotfiles/master/media/vscode-elixir.png)
 
 And `Vue`:
 
-![sobolevn's Sublime for Elixir](https://raw.githubusercontent.com/sobolevn/dotfiles/master/media/sublime-vue.png)
+![sobolevn's vscode for Elixir](https://raw.githubusercontent.com/sobolevn/dotfiles/master/media/vscode-vue.png)
 
 Here's a list of packages I use:
 
 - `ayu` theme
-- `Babel` for better `js` support
-- `EditorConfig` for consistent styles
-- `ElixirSublime` code completions
-- `GitGutter` for nice `git` integration
-- `Highlight` to export `rtf` highlighted text
-- `SideBarEnhancements` for custom actions in sidebar
-- `Jedi` for `python` autocomplete
-- `TypeScriptPlugin` for `typescript` autocomplete
-
-And syntax highlighting for all the things:
-
-- `Bats` syntax highlighting
-- `Dockerfile` syntax highlighting
-- `DotEnv` syntax highlighting
+- `A File Icon` icons
 - `Elixir` syntax highlighting
-- `INI` and `TOML` syntax highlighting
-- `JSX` syntax highlighting
-- `Sass` syntax highlighting
-- `Vue` syntax highlight
+- `Vetur` for `Vue` features
+- Copy relative path plugin
+- `editoconfig` integration
+- `wakatime` integration
 
 
 ## External services
@@ -102,9 +97,9 @@ I use [`wakatime`](https://wakatime.com/) for all my projects. It is a great too
 
 There are three main plugins I am using:
 
-1. For `sublime`: https://wakatime.com/sublime-text
+1. For `vscode`: https://wakatime.com/sublime-text
 2. For `idea`: https://wakatime.com/intellij-idea
-3. For `zsh`: https://wakatime.com/terminal
+3. For `zsh`: https://github.com/sobolevn/wakatime-zsh-plugin#wakatime-zsh-plugin
 
 
 ## Local configuration
