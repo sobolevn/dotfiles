@@ -82,11 +82,10 @@ And `Vue`:
 
 Here's a list of packages I use:
 
-- `ayu` theme
-- `A File Icon` icons
+- `ayu` theme and `A File Icon` icons
 - `Elixir` syntax highlighting
-- `Vetur` for `Vue` features
-- Copy relative path plugin
+- [`Vetur`](https://github.com/vuejs/vetur) for `Vue` features
+- [`Python`](https://github.com/Microsoft/vscode-python) plugin
 - `editoconfig` integration
 - `wakatime` integration
 

@@ -17,12 +17,11 @@
     "files.exclude": {
       "**/.git": true,
       "**/.DS_Store": true,
-      ".nuxt": true,
-      "node_modules": true,
-      "flow-typed": true,
-      "_deps": true,
       ".pytest_cache": true,
-      "__pycache__": true
+      ".cache": true,
+      "**/__pycache__": true,
+      ".venv": true,
+      ".idea": true
     },
     "workbench.colorTheme": "Ayu Dark",
     "workbench.iconTheme": "ayu",
@@ -31,5 +30,12 @@
     "vetur.validation.template": false,
     "workbench.statusBar.feedback.visible": false,
     "extensions.ignoreRecommendations": true,
-    "window.zoomLevel": 0
+    "window.zoomLevel": 0,
+    "telemetry.enableTelemetry": false,
+    "telemetry.enableCrashReporter": false,
+    "python.formatting.provider": "none",
+    "python.workspaceSymbols.enabled": true,
+    "python.terminal.activateEnvironment": true,
+    "python.linting.enabled": false,
+    "python.pythonPath": "${workspaceFolder}/.venv/bin/python3",
   }

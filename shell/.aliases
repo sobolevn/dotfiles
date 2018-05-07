@@ -16,12 +16,6 @@ alias git="hub"
 # Pretty print XML (use `jq` for json):
 alias xq="xmllint --format"
 
-# Glances, fixes colors for white terminal:
-alias glances="glances --theme-white"
-
-# `cat` with beautiful colors. requires: pip install -U Pygments
-alias c='pygmentize -O style=borland -f console256 -g'
-
 # Show local ip:
 alias localip="ipconfig getifaddr en0"
 
