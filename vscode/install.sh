@@ -1,9 +1,13 @@
 code --install-extension EditorConfig.EditorConfig
 code --install-extension WakaTime.vscode-wakatime
 code --install-extension alexdima.copy-relative-path
+code --install-extension dbaeumer.vscode-eslint
 code --install-extension formulahendry.auto-close-tag
 code --install-extension formulahendry.auto-rename-tag
 code --install-extension mjmcloug.vscode-elixir
 code --install-extension ms-python.python
+code --install-extension msjsdiag.debugger-for-chrome
 code --install-extension octref.vetur
+code --install-extension streetsidesoftware.code-spell-checker
+code --install-extension streetsidesoftware.code-spell-checker-russian
 code --install-extension teabyii.ayu

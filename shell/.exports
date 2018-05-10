@@ -36,11 +36,9 @@ export PYTHONIOENCODING='UTF-8'
 # Homebrew:
 export HOMEBREW_NO_ANALYTICS=1  # disables statistics that brew collects
 
-# Highlight section titles in manual pages.
-export LESS_TERMCAP_md="${yellow}"
-
-# Don’t clear the screen after quitting a manual page.
-export MANPAGER='less -X'
+# Pagers:
+export LESS="-R"  # argument to allow less to show colors
+export MANPAGER='bat --color always --style plain'
 
 
 # === Virtualenvs ===
