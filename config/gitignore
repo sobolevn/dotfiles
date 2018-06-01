@@ -178,5 +178,4 @@ dist/
 erl_crash.dump
 *.ez
 *.beam
-#### custom ####
-.vscode
+

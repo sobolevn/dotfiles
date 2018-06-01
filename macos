@@ -15,6 +15,10 @@ defaults write -g AppleActionOnDoubleClick 'Maximize'
 defaults write -g AppleEnableSwipeNavigateWithScrolls -int 0
 defaults write -g AppleInterfaceStyle 'Dark'
 
+# Dock size and location:
+defaults write com.apple.Dock size-immutable -bool yes
+defaults write com.apple.Dock size-immutable -bool yes
+
 # Restarting apps:
 echo 'Restarting apps...'
-killall Finder
+killall Finder Dock
