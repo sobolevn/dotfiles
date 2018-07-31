@@ -73,6 +73,7 @@
     "gitDecoration.modifiedResourceForeground": "#d4cb68"
   },
   "workbench.colorTheme": "Ayu Dark",
+  "workbench.editor.labelFormat": "short",
   "workbench.iconTheme": "ayu",
   "workbench.startupEditor": "newUntitledFile",
   "workbench.statusBar.feedback.visible": false,
