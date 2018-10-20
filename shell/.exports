@@ -15,8 +15,11 @@ PATH="/usr/local/opt/gpg-agent/bin:$PATH"
 # Now `python` points to `python2` from `brew`:
 PATH="/usr/local/opt/python2/libexec/bin:$PATH"
 
-# Adds pipsi binary files:
+# Adds `pipsi` binary files:
 PATH="$HOME/.local/bin:$PATH"
+
+# Adds `poetry` binary:
+PATH="$HOME/.poetry/bin:$PATH"
 
 export PATH
 
