@@ -14,13 +14,13 @@
     ~/.zshrc: config/zshrc
     ~/.hushlogin: config/hushlogin
     ~/.antibody: config/antibody.txt
+    ~/.hyper.js: config/hyper.js
 
     # Git:
     ~/.gitconfig: config/gitconfig
     ~/.gitignore_global: config/gitignore
 
     # Tools:
-    ~/.httpie/config.json: config/httpie
     ~/.psqlrc: config/psqlrc
 
     # Editors:

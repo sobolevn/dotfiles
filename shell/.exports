@@ -18,8 +18,8 @@ PATH="/usr/local/opt/python2/libexec/bin:$PATH"
 # Adds `pipsi` binary files:
 PATH="$HOME/.local/bin:$PATH"
 
-# Adds `poetry` binary:
-PATH="$HOME/.poetry/bin:$PATH"
+# Adds `poetry` binary, should be added to the end:
+PATH="$PATH:$HOME/.poetry/bin"
 
 export PATH
 

@@ -1,6 +1,6 @@
 # sobolevn's dotfiles
 
-![sobolevn's dotfiles](https://raw.githubusercontent.com/sobolevn/dotfiles/master/media/tty.gif)
+![sobolevn's dotfiles](https://raw.githubusercontent.com/sobolevn/dotfiles/master/media/hyper.png)
 
 
 ## Contents
@@ -25,6 +25,7 @@ We are using `dotbot` to handle any installations. Steps:
 
 ## CLI
 
+I am using both [`hyper`](https://hyper.is/) and `Terminal App` as terminal emulators.
 I am using `zsh` with `oh-my-zsh` as a main shell.
 I also have a lot of tools to make my working experience better.
 Here are some good articles I wrote about my environment:
@@ -39,8 +40,10 @@ I mainly work with three stacks:
 - `elixir`
 
 So, they are configured nice and smoothly.
+You will have configured version managers, best practices, and useful tools.
+And some productivity hacks!
 
-I also have `php`, `ruby`, `rust`, and `java` installed.
+I also have `php`, `go`, `haskell`, `ruby`, `rust`, and `java` installed.
 But I am not using them on a daily basis.
 
 
@@ -57,10 +60,8 @@ However, I also use several databases and other services locally:
 
 - `postgresql` (with `postgis`)
 - `mysql`
-- `mongodb`
 - `redis`
 - `rabbitmq`
-- `consul`
 
 
 ## VS Code
@@ -88,11 +89,13 @@ Here's a list of packages I use:
 - [`Python`](https://github.com/Microsoft/vscode-python) plugin
 - `editoconfig` integration
 - `wakatime` integration
+- [`Git Lens`](https://github.com/eamodio/vscode-gitlens)
 
 
 ## External services
 
-I use [`wakatime`](https://wakatime.com/) for all my projects. It is a great tool to track time of your work. It is a free service.
+I use [`wakatime`](https://wakatime.com/) for all my projects.
+It is a great tool to track time of your work. It is a free service.
 
 There are three main plugins I am using:
 
