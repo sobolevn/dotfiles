@@ -110,5 +110,6 @@
   "gitlens.statusBar.enabled": false,
   "gitlens.advanced.messages": {
     "suppressShowKeyBindingsNotice": true
-  }
+  },
+  "git.showInlineOpenFileAction": false
 }

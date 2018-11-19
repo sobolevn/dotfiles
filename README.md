@@ -91,6 +91,8 @@ Here's a list of packages I use:
 - `wakatime` integration
 - [`Git Lens`](https://github.com/eamodio/vscode-gitlens)
 
+I also use `nano` for in-terminal editing.
+
 
 ## External services
 
