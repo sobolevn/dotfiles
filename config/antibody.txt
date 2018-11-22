@@ -1,4 +1,4 @@
-# Sorted alphabetically (by author's name):
+# Sorted in order of appearance (new at the bottom):
 sobolevn/wakatime-zsh-plugin
 zsh-users/zsh-syntax-highlighting
 

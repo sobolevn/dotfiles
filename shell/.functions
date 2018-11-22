@@ -19,12 +19,6 @@ git-dowloadfolder () {
 }
 
 
-pipenv-shell () {
-  # pipenv shell breaks sometimes. This does not.
-  source "$(pipenv --venv)/bin/activate"
-}
-
-
 transfer () {
   # See https://transfer.sh/
   if [ $# -eq 0 ]; then echo "No arguments specified. Usage:\necho transfer /tmp/test.md\ncat /tmp/test.md | transfer test.md"; return 1; fi
