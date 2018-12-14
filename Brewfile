@@ -80,6 +80,7 @@ brew "mkcert"
 brew "mysql"
 brew "nano"
 brew "nmap"
+brew "nnn"
 brew "node"
 brew "nss"
 brew "nvm"
@@ -150,6 +151,8 @@ cask "virtualbox"
 cask "visual-studio-code"
 cask "wkhtmltopdf"
 mas "App Cleaner", id: 1013897218
+mas "Be Focused", id: 973134470
+mas "Be Focused Pro", id: 961632517
 mas "CopyClip", id: 595191960
 mas "HazeOver", id: 430798174
 mas "iA Writer", id: 775737590
