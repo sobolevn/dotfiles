@@ -10,6 +10,7 @@ source <(npm completion)  # adds normal autocomplete to `npm` commands
 
 
 # === fzf ===
+# https://github.com/junegunn/fzf
 
 if [[ ! "$PATH" == */usr/local/opt/fzf/bin* ]]; then
   export PATH="$PATH:/usr/local/opt/fzf/bin"
@@ -33,5 +34,21 @@ _fzf_compgen_path() {
 
 
 # === z ===
+# https://github.com/rupa/z
 
 source "/usr/local/etc/profile.d/z.sh"
+
+
+# === nnn ===
+# https://github.com/jarun/nnn
+
+export NNN_TMPFILE="/tmp/nnn"
+export NNN_SHOW_HIDDEN=1
+
+n() {
+  nnn "$@"
+  if [ -f "$NNN_TMPFILE" ]; then
+    source "$NNN_TMPFILE"
+    rm -f "$NNN_TMPFILE"
+  fi
+}

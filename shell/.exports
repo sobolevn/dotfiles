@@ -41,8 +41,8 @@ export HOMEBREW_NO_ANALYTICS=1  # disables statistics that brew collects
 
 # Pagers:
 export LESS="-R"  # argument to allow less to show colors
-export PAGER='bat --color always --style plain'
-export MANPAGER='bat --color always --style plain'
+export PAGER='bat'
+export MANPAGER='bat'
 
 
 # === Virtualenvs ===
