@@ -10,8 +10,9 @@ tap "homebrew/dupes"
 tap "homebrew/php"
 tap "homebrew/services"
 tap "homebrew/versions"
-cask "java"
+tap "wagoodman/dive"
 brew "adns"
+brew "adr-tools"
 brew "gettext", link: true
 brew "libyaml"
 brew "openssl"
@@ -88,7 +89,7 @@ brew "openjpeg"
 brew "openshift-cli"
 brew "optipng"
 brew "pandoc"
-brew "postgresql", restart_service: true
+brew "postgresql"
 brew "pgcli"
 brew "php@5.6", args: ["with-homebrew-curl"]
 brew "pinentry-mac"
@@ -121,6 +122,7 @@ brew "zlib"
 brew "zsh"
 brew "getantibody/tap/antibody"
 brew "heroku/brew/heroku"
+brew "wagoodman/dive/dive"
 cask "brave-browser"
 cask "enpass"
 cask "flux"
@@ -131,6 +133,7 @@ cask "font-inconsolata-for-powerline"
 cask "font-roboto-mono"
 cask "font-roboto-mono-for-powerline"
 cask "hyper"
+cask "java"
 cask "keyboard-cleaner"
 cask "lastfm"
 cask "netbeans"
@@ -151,7 +154,6 @@ cask "virtualbox"
 cask "visual-studio-code"
 cask "wkhtmltopdf"
 mas "App Cleaner", id: 1013897218
-mas "Be Focused", id: 973134470
 mas "Be Focused Pro", id: 961632517
 mas "CopyClip", id: 595191960
 mas "HazeOver", id: 430798174

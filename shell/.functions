@@ -14,12 +14,14 @@ pyclean () {
 
 
 git-dowloadfolder () {
+  # Downloads folder from git repository.
   url="$1"
   svn checkout ${url/tree\/master/trunk}
 }
 
 
 transfer () {
+  # Transfers text file as sharable link.
   # See https://transfer.sh/
   if [ $# -eq 0 ]; then echo "No arguments specified. Usage:\necho transfer /tmp/test.md\ncat /tmp/test.md | transfer test.md"; return 1; fi
 tmpfile=$( mktemp -t transferXXX ); if tty -s; then basefile=$(basename "$1" | sed -e 's/[^a-zA-Z0-9._-]/-/g'); curl --progress-bar --upload-file "$1" "https://transfer.sh/$basefile" >> $tmpfile; else curl --progress-bar --upload-file "-" "https://transfer.sh/$1" >> $tmpfile ; fi; cat $tmpfile; rm -f $tmpfile;
@@ -41,8 +43,23 @@ cdf () {
 
 
 pgkill () {
+  # Kills postgres process.
   psql postgres -c "SELECT pg_terminate_backend(pg_stat_activity.pid)
 FROM pg_stat_activity
 WHERE pg_stat_activity.datname = '$1'
   AND pid <> pg_backend_pid();"
+}
+
+# From Dan Ryan's blog - http://danryan.co/using-antigen-for-zsh.html
+man() {
+  # Shows pretty `man` page.
+  env \
+    LESS_TERMCAP_mb=$(printf "\e[1;31m") \
+    LESS_TERMCAP_md=$(printf "\e[1;31m") \
+    LESS_TERMCAP_me=$(printf "\e[0m") \
+    LESS_TERMCAP_se=$(printf "\e[0m") \
+    LESS_TERMCAP_so=$(printf "\e[1;44;33m") \
+    LESS_TERMCAP_ue=$(printf "\e[0m") \
+    LESS_TERMCAP_us=$(printf "\e[1;32m") \
+      man "$@"
 }

@@ -56,4 +56,7 @@
         create: true
 
 - shell:
-  - bash ./vscode/install.sh
+  - [bash ./vscode/install.sh, Installing vscode extensions]
+
+- shell:
+  - [brew cleanup, Cleaning up]

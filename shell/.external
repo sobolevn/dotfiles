@@ -44,6 +44,8 @@ source "/usr/local/etc/profile.d/z.sh"
 
 export NNN_TMPFILE="/tmp/nnn"
 export NNN_SHOW_HIDDEN=1
+export NNN_USE_EDITOR=1
+export DISABLE_FILE_OPEN_ON_NAV=1
 
 n() {
   nnn "$@"
