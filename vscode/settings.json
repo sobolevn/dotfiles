@@ -9,7 +9,7 @@
     "vue",
     "HTML (Eex)"
   ],
-  "cSpell.language": "en,ru,en-GB,en-US",
+  "cSpell.language": "en,en-GB,en-US,ru",
   "cSpell.showStatus": false,
   "debug.allowBreakpointsEverywhere": true,
   "editor.accessibilitySupport": "off",
@@ -27,7 +27,7 @@
   ],
   "editor.scrollBeyondLastLine": false,
   "editor.snippetSuggestions": "none",
-  "editor.tabCompletion": true,
+  "editor.tabCompletion": "on",
   "editor.wordWrap": "on",
   "editor.wordWrapColumn": 80,
   "emmet.showExpandedAbbreviation": "never",
@@ -78,38 +78,5 @@
   "workbench.statusBar.feedback.visible": false,
   "workbench.tips.enabled": false,
   "python.linting.enabled": false,
-  "gitlens.menus": {
-    "editor": {
-      "blame": false,
-      "clipboard": true,
-      "compare": true,
-      "details": true,
-      "history": false,
-      "remote": true
-    },
-    "editorGroup": {
-      "blame": true,
-      "compare": true,
-      "history": false,
-      "remote": false
-    },
-    "editorTab": {
-      "compare": false,
-      "history": false,
-      "remote": true
-    }
-  },
-  "gitlens.codeLens.recentChange.enabled": false,
-  "gitlens.codeLens.authors.enabled": false,
-  "gitlens.codeLens.enabled": false,
-  "gitlens.currentLine.enabled": false,
-  "gitlens.hovers.currentLine.over": "line",
-  "gitlens.keymap": "alternate",
-  "gitlens.mode.statusBar.enabled": false,
-  "gitlens.mode.active": "zen",
-  "gitlens.statusBar.enabled": false,
-  "gitlens.advanced.messages": {
-    "suppressShowKeyBindingsNotice": true
-  },
   "git.showInlineOpenFileAction": false
 }
