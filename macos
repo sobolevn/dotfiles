@@ -8,6 +8,7 @@
 #
 # Some parts are taken from:
 # - https://github.com/rootbeersoup/dotfiles
+# - https://github.com/skwp/dotfiles
 #
 # All values are sorted inside their blocks: newest are on the top.
 #
@@ -16,6 +17,10 @@ echo 'Configuring your mac. Hang tight.'
 osascript -e 'tell application "System Preferences" to quit'
 
 # === General ===
+
+# Show remaining battery time; hide percentage
+defaults write com.apple.menuextra.battery ShowPercent -string "NO"
+defaults write com.apple.menuextra.battery ShowTime -string "YES"
 
 # Disable dashboard:
 defaults write com.apple.dashboard mcx-disabled -bool true
@@ -43,6 +48,13 @@ defaults write -g AppleActionOnDoubleClick 'Maximize'
 # Disable multitouch swipes:
 defaults write -g AppleEnableSwipeNavigateWithScrolls -int 0
 
+# Enable full keyboard access for all controls (e.g. enable Tab in modal dialogs)
+defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
+
+# Require password immediately after sleep or screen saver begins
+defaults write com.apple.screensaver askForPassword -int 1
+defaults write com.apple.screensaver askForPasswordDelay -int 0
+
 
 # === Dock ===
 
@@ -51,6 +63,12 @@ defaults write com.apple.dock show-process-indicators -bool true
 
 # Dock size and location:
 defaults write com.apple.Dock size-immutable -bool yes
+
+# Show Dock instantly:
+defaults write com.apple.dock autohide-delay -float 0
+
+# Automatically hide and show the Dock
+defaults write com.apple.dock autohide -bool true
 
 
 # === Finder ===
@@ -69,6 +87,21 @@ defaults write com.apple.finder AppleShowAllFiles YES
 
 # Show file extensions in Finder:
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+
+# Allow quitting Finder via ⌘ + Q; doing so will also hide desktop icons
+defaults write com.apple.finder QuitMenuItem -bool true
+
+# Allow text selection in Quick Look
+defaults write com.apple.finder QLEnableTextSelection -bool true
+
+# Display full POSIX path as Finder window title
+defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
+
+# Avoid creating .DS_Store files on network volumes
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+
+# Disable the warning when changing a file extension
+defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 
 
 # === Safari ===
