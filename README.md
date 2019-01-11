@@ -7,16 +7,16 @@
 
 What's in there?
 
-- all my `brew` dependencies including: applications, fonts, etc. See `Brewfile`
-- all my `macOS` configuration. See `macos`
-- all my `python` dependencies. See `python/`
-- all my shell configuration. See `shell/` and `config/zshrc`
+- all my `brew` dependencies including: applications, fonts, etc. See [`Brewfile`](https://github.com/sobolevn/dotfiles/blob/master/Brewfile)
+- all my `macOS` configuration. See [`macos`](https://github.com/sobolevn/dotfiles/blob/master/macos)
+- all my shell configuration. See [`shell/`](https://github.com/sobolevn/dotfiles/tree/master/shell) and [`config/zshrc`](https://github.com/sobolevn/dotfiles/blob/master/config/zshrc)
 - all my `vscode` configuration. See `vscode/`
 
 
 ## Installation
 
-We are using `dotbot` to handle any installations. Steps:
+We are using [`dotbot`](https://github.com/anishathalye/dotbot/)
+to set things up. Steps:
 
 1. Clone this repo
 2. `cd` into `dotfiles/` folder
@@ -25,8 +25,11 @@ We are using `dotbot` to handle any installations. Steps:
 
 ## CLI
 
-I am using both [`hyper`](https://hyper.is/) and `Terminal App` as terminal emulators.
-I am using `zsh` with `oh-my-zsh` as a main shell.
+I am using both [`hyper`](https://hyper.is/)
+and default `Terminal App` as terminal emulators.
+I am using `zsh` with [`oh-my-zsh`](https://github.com/robbyrussell/oh-my-zsh)
+as a main shell.
+And [`antibody`](https://github.com/getantibody/antibody) to manage shell plugins.
 I also have a lot of tools to make my working experience better.
 Here are some good articles I wrote about my environment:
 
@@ -36,7 +39,7 @@ Here are some good articles I wrote about my environment:
 I mainly work with three stacks:
 
 - `python`
-- `node`
+- `node` + `vue`
 - `elixir`
 
 So, they are configured nice and smoothly.
@@ -68,12 +71,12 @@ However, I also use several databases and other services locally:
 
 I loved my `Sublime`. It was fast and beautiful.
 But I have switched to `vscode`.
-The main reason is that `Sublime` is almost unmainteined.
+The main reason is that `Sublime` is almost unmaintained.
 Packages are also abandoned.
 
-I have switched to `vscode`.
+So, I have switched to `vscode`.
 It solved almost all issues I had with `Sublime`.
-So, here's how my new `vscode` setup looks like:
+Here's how my new `vscode` setup looks like:
 
 ![sobolevn's vscode for Elixir](https://raw.githubusercontent.com/sobolevn/dotfiles/master/media/vscode-elixir.png)
 
@@ -81,17 +84,17 @@ And `Vue`:
 
 ![sobolevn's vscode for Elixir](https://raw.githubusercontent.com/sobolevn/dotfiles/master/media/vscode-vue.png)
 
-Here's a list of packages I use:
+Here's [a list of packages](https://github.com/sobolevn/dotfiles/blob/master/vscode/install.sh) I use:
 
-- `ayu` theme and `A File Icon` icons
+- [`ayu`](https://github.com/ayu-theme/vscode-ayu) theme and `A File Icon` icons
 - `Elixir` syntax highlighting
 - [`Vetur`](https://github.com/vuejs/vetur) for `Vue` features
 - [`Python`](https://github.com/Microsoft/vscode-python) plugin
 - `editoconfig` integration
 - `wakatime` integration
-- [`Git Lens`](https://github.com/eamodio/vscode-gitlens)
 
-I also use `nano` for in-terminal editing.
+I also use [powered-up `nano`](https://github.com/sobolevn/dotfiles/blob/master/config/nanorc)
+for in-terminal editing.
 
 
 ## External services
