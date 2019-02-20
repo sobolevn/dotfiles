@@ -5,6 +5,16 @@
 # This file is used as a part of `.shell_env`
 
 
+# === Compiler flags ===
+
+# This is required because `openssl` is keg-only in `brew`,
+# see: `brew info openssl` for more information.
+export LDFLAGS="-L/usr/local/opt/openssl/lib"
+export CPPFLAGS="-I/usr/local/opt/openssl/include"
+export CFLAGS="-I$(xcrun --show-sdk-path)/usr/include"
+export PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
+
+
 # === Path modifications ===
 
 # These lines should be the first ones

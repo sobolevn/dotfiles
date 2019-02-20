@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -e
+
 # This file contains settings for mac which makes me happy.
 # It is not a full list.
 #

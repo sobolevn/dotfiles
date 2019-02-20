@@ -37,7 +37,8 @@
   "extensions.ignoreRecommendations": true,
   "files.associations": {
     ".babelrc": "jsonc",
-    ".eslintrc": "jsonc"
+    ".eslintrc": "jsonc",
+    "*.pyi": "python"
   },
   "files.autoSave": "onFocusChange",
   "files.exclude": {
