@@ -41,7 +41,7 @@ export EDITOR=$(which nano)
 
 # GPG:
 export GPG_TTY=$(tty)
-eval "$(gpg-agent --daemon --allow-preset-passphrase)"
+eval "$(gpg-agent --daemon --allow-preset-passphrase > /dev/null 2>&1)"
 
 # Make Python use UTF-8 encoding for output to stdin, stdout, and stderr.
 export PYTHONIOENCODING='UTF-8'
