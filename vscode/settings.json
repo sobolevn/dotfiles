@@ -1,14 +1,4 @@
 {
-  "auto-close-tag.activationOnLanguage": [
-    "xml",
-    "php",
-    "jinja",
-    "javascriptreact",
-    "typescriptreact",
-    "markdown",
-    "vue",
-    "HTML (Eex)"
-  ],
   "cSpell.language": "en,en-GB,en-US,ru",
   "cSpell.showStatus": false,
   "debug.allowBreakpointsEverywhere": true,
@@ -63,9 +53,6 @@
     "SOBOLE_THEME_MODE": "dark"
   },
   "terminal.integrated.enableBell": true,
-  "vetur.validation.script": false,
-  "vetur.validation.style": false,
-  "vetur.validation.template": false,
   "window.clickThroughInactive": false,
   "window.newWindowDimensions": "maximized",
   "window.zoomLevel": 0,
@@ -79,5 +66,6 @@
   "workbench.statusBar.feedback.visible": false,
   "workbench.tips.enabled": false,
   "python.linting.enabled": false,
-  "git.showInlineOpenFileAction": false
+  "git.showInlineOpenFileAction": false,
+  "typescript.updateImportsOnFileMove.enabled": "never",
 }

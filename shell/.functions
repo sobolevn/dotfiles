@@ -63,3 +63,13 @@ man() {
     LESS_TERMCAP_us=$(printf "\e[1;32m") \
       man "$@"
 }
+
+loadenv() {
+  while read line; do
+    if [ "${line:0:1}" = '#' ]; then
+      continue
+    fi
+    export $line > /dev/null
+  done < "$1"
+  echo 'Loaded!'
+}
