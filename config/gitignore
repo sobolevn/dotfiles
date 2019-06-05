@@ -19,6 +19,7 @@ Icon
 .Trashes
 .VolumeIcon.icns
 .com.apple.timemachine.donotpresent
+.svn/
 
 # Directories potentially created on remote AFP share
 .AppleDB
@@ -48,6 +49,7 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+pip-wheel-metadata/
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
