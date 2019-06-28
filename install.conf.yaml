@@ -16,6 +16,9 @@
     ~/.antibody: config/antibody.txt
     ~/.hyper.js: config/hyper.js
 
+    # SSH:
+    ~/.ssh/config: config/ssh_config
+
     # Git:
     ~/.gitconfig: config/gitconfig
     ~/.gitignore_global: config/gitignore
@@ -27,25 +30,16 @@
     ~/.editorconfig: config/editorconfig
     ~/.nanorc: config/nanorc
 
+# Installing dependencies:
 - brewfile:
     file: Brewfile
     no-upgrage: true
-
-- pip:
-    file: python/requirements.txt
-    binary: /usr/local/opt/python/libexec/bin/pip
-
-- pip:
-    file: python/requirements3.txt
-    binary: /usr/local/bin/pip3
-
-- pipsi:
-    file: python/requirements-pipsi.txt
 
 # These links should be created after everything is installed:
 - link:
     ~/.gnupg/gpg-agent.conf: config/gpgagent
 
+# Setting up vscode:
 - link:
     # vscode:
     "~/Library/Application Support/Code/User/settings.json":
@@ -58,5 +52,6 @@
 - shell:
   - [bash ./vscode/install.sh, Installing vscode extensions]
 
+# Cleaning up:
 - shell:
   - [brew cleanup, Cleaning up]

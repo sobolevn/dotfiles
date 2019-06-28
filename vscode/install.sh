@@ -1,24 +1,16 @@
-#!/usr/bin/env bash
-
-set -e
-
-# Can be updated with:
-# code --list-extensions
-CODE_EXTENSIONS=(
-  alexdima.copy-relative-path
-  alexkrechik.cucumberautocomplete
-  EditorConfig.EditorConfig
-  formulahendry.auto-close-tag
-  mjmcloug.vscode-elixir
-  ms-python.python
-  octref.vetur
-  stevejpurves.cucumber
-  streetsidesoftware.code-spell-checker
-  streetsidesoftware.code-spell-checker-russian
-  teabyii.ayu
-  WakaTime.vscode-wakatime
-)
-
-for ext in "$CODE_EXNTENSIONS"; do
-  code --install-extension "$ext"
-done
+code --install-extension alexdima.copy-relative-path
+code --install-extension alexkrechik.cucumberautocomplete
+code --install-extension CoenraadS.bracket-pair-colorizer
+code --install-extension dakshmiglani.hex-to-rgba
+code --install-extension dariofuzinato.vue-peek
+code --install-extension dbaeumer.vscode-eslint
+code --install-extension EditorConfig.EditorConfig
+code --install-extension mjmcloug.vscode-elixir
+code --install-extension ms-python.python
+code --install-extension octref.vetur
+code --install-extension Orta.vscode-jest
+code --install-extension stevejpurves.cucumber
+code --install-extension streetsidesoftware.code-spell-checker
+code --install-extension streetsidesoftware.code-spell-checker-russian
+code --install-extension teabyii.ayu
+code --install-extension WakaTime.vscode-wakatime

@@ -68,4 +68,38 @@
   "python.linting.enabled": false,
   "git.showInlineOpenFileAction": false,
   "typescript.updateImportsOnFileMove.enabled": "never",
+  "vetur.completion.autoImport": false,
+  "vetur.experimental.templateInterpolationService": true,
+  "bracketPairColorizer.independentPairColors": [
+    [
+      "()",
+      [
+        "rgb(177, 179, 173)",
+        "rgb(177, 179, 173)",
+        "rgb(51, 181, 228)"
+      ],
+      "Red"
+    ],
+    [
+      "[]",
+      [
+        "rgb(177, 179, 173)",
+        "rgb(177, 179, 173)",
+        "rgb(51, 181, 228)"
+      ],
+      "Red"
+    ],
+    [
+      "{}",
+      [
+        "rgb(177, 179, 173)",
+        "rgb(177, 179, 173)",
+        "rgb(51, 181, 228)"
+      ],
+      "Red"
+    ]
+  ],
+  "bracketPairColorizer.colorMode": "Independent",
+  "bracketPairColorizer.showHorizontalScopeLine": false,
+  "bracketPairColorizer.scopeLineRelativePosition": false
 }
