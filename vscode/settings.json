@@ -73,33 +73,21 @@
   "bracketPairColorizer.independentPairColors": [
     [
       "()",
-      [
-        "rgb(177, 179, 173)",
-        "rgb(177, 179, 173)",
-        "rgb(51, 181, 228)"
-      ],
+      ["rgb(177, 179, 173)"],
       "Red"
     ],
     [
       "[]",
-      [
-        "rgb(177, 179, 173)",
-        "rgb(177, 179, 173)",
-        "rgb(51, 181, 228)"
-      ],
+      ["rgb(177, 179, 173)"],
       "Red"
     ],
     [
       "{}",
-      [
-        "rgb(177, 179, 173)",
-        "rgb(177, 179, 173)",
-        "rgb(51, 181, 228)"
-      ],
+      ["rgb(177, 179, 173)"],
       "Red"
     ]
   ],
   "bracketPairColorizer.colorMode": "Independent",
   "bracketPairColorizer.showHorizontalScopeLine": false,
-  "bracketPairColorizer.scopeLineRelativePosition": false
+  "breadcrumbs.enabled": false
 }

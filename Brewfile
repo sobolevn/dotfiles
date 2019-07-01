@@ -7,6 +7,7 @@ tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
+tap "jesseduffield/lazydocker"
 tap "mongodb/brew"
 tap "valelint/vale"
 tap "wagoodman/dive"
@@ -92,12 +93,12 @@ brew "optipng"
 brew "pandoc"
 brew "pgcli"
 brew "pinentry-mac"
-brew "postgresql@9.6"
+brew "postgresql@9.6", restart_service: true
 brew "pyenv"
 brew "rabbitmq"
 brew "ruby-build"
 brew "rbenv"
-brew "redis"
+brew "redis", restart_service: true
 brew "rmtrash"
 brew "ruby"
 brew "rust"
@@ -150,8 +151,8 @@ cask "the-unarchiver"
 cask "tunnelblick"
 cask "visual-studio-code"
 cask "wkhtmltopdf"
-mas "App Cleaner", id: 1013897218
 mas "Be Focused Pro", id: 961632517
+mas "Cleaner-App", id: 1013897218
 mas "CopyClip", id: 595191960
 mas "HazeOver", id: 430798174
 mas "iA Writer", id: 775737590

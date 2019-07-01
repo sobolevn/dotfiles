@@ -1,0 +1,27 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+  {
+      "key": "alt+left",
+      "command": "workbench.action.navigateBack"
+  },
+  {
+      "key": "ctrl+-",
+      "command": "-workbench.action.navigateBack"
+  },
+  {
+      "key": "alt+right",
+      "command": "workbench.action.navigateForward"
+  },
+  {
+      "key": "ctrl+shift+-",
+      "command": "-workbench.action.navigateForward"
+  },
+  {
+      "key": "cmd+,",
+      "command": "workbench.action.openSettingsJson"
+  },
+  {
+      "key": "cmd+,",
+      "command": "-workbench.action.openSettings"
+  }
+]
