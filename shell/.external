@@ -47,7 +47,7 @@ export NNN_SHOW_HIDDEN=1
 export NNN_USE_EDITOR=1
 export NNN_TRASH=1
 export NNN_RESTRICT_NAV_OPEN=1
-export NN_NO_AUTOSELECT=1
+export NNN_NO_AUTOSELECT=1
 export NNN_OPENER="open"
 
 n() {
