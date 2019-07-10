@@ -45,10 +45,13 @@ source "/usr/local/etc/profile.d/z.sh"
 export NNN_TMPFILE="/tmp/nnn"
 export NNN_SHOW_HIDDEN=1
 export NNN_USE_EDITOR=1
-export DISABLE_FILE_OPEN_ON_NAV=1
+export NNN_TRASH=1
+export NNN_RESTRICT_NAV_OPEN=1
+export NN_NO_AUTOSELECT=1
+export NNN_OPENER="open"
 
 n() {
-  nnn "$@"
+  nnn -l "$@"
   if [ -f "$NNN_TMPFILE" ]; then
     source "$NNN_TMPFILE"
     rm -f "$NNN_TMPFILE"
