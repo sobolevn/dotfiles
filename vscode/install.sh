@@ -1,6 +1,5 @@
 code --install-extension alexdima.copy-relative-path
 code --install-extension alexkrechik.cucumberautocomplete
-code --install-extension CoenraadS.bracket-pair-colorizer
 code --install-extension dakshmiglani.hex-to-rgba
 code --install-extension dariofuzinato.vue-peek
 code --install-extension dbaeumer.vscode-eslint

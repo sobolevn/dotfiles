@@ -72,30 +72,5 @@
   "typescript.suggest.autoImports": false,
   "vetur.completion.autoImport": false,
   "vetur.experimental.templateInterpolationService": true,
-  "bracketPairColorizer.independentPairColors": [
-    [
-      "()",
-      [
-        "rgb(177, 179, 173)"
-      ],
-      "Red"
-    ],
-    [
-      "[]",
-      [
-        "rgb(177, 179, 173)"
-      ],
-      "Red"
-    ],
-    [
-      "{}",
-      [
-        "rgb(177, 179, 173)"
-      ],
-      "Red"
-    ]
-  ],
-  "bracketPairColorizer.colorMode": "Independent",
-  "bracketPairColorizer.showHorizontalScopeLine": false,
   "breadcrumbs.enabled": false
 }

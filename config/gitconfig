@@ -1,8 +1,8 @@
 [core]
   excludesfile = ~/.gitignore_global
 [pager]
-  diff = diff-so-fancy | less --tabs=1,5 -RFX
-  show = diff-so-fancy | less --tabs=1,5 -RFX
+  diff = diff-so-fancy | less --tabs=1,5 -RFXM
+  show = diff-so-fancy | less --tabs=1,5 -RFXM
 [credential]
   helper = osxkeychain
 [http]
@@ -23,6 +23,9 @@
   # Remember my merges
   # http://gitfu.wordpress.com/2008/04/20/git-rerere-rereremember-what-you-did-last-time/
 	enabled = 1
+[submodule]
+	recurse = true
+	fetchJobs = 0
 
 # Colors
 [color]

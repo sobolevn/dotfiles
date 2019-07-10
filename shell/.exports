@@ -53,7 +53,15 @@ export PYTHONIOENCODING='UTF-8'
 export HOMEBREW_NO_ANALYTICS=1  # disables statistics that brew collects
 
 # Pagers:
-export LESS="-R"  # argument to allow less to show colors
+# This affects every invocation of `less`.
+#
+#   -i   case-insensitive search unless search string contains uppercase letters
+#   -R   color
+#   -F   exit if there is less than one page of content
+#   -X   keep content on screen after exit
+#   -M   show more info at the bottom prompt line
+#   -x4  tabs are 4 instead of 8
+export LESS="-iRFXMx4"
 export PAGER='bat'
 export MANPAGER='bat'
 
@@ -88,3 +96,10 @@ export NODE_REPL_MODE='sloppy'
 
 # Erlang and Elixir shell history:
 export ERL_AFLAGS="-kernel shell_history enabled"
+
+
+# === Tools ===
+
+# Disables `wakatime` in offline mode:
+# See: https://github.com/sobolevn/wakatime-zsh-plugin
+export WAKATIME_DISABLE_OFFLINE='1'
