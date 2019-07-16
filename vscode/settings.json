@@ -1,6 +1,7 @@
 {
   "cSpell.language": "en,en-GB,en-US,ru",
   "cSpell.showStatus": false,
+  "cSpell.diagnosticLevel": "Hint",
   "debug.allowBreakpointsEverywhere": true,
   "editor.accessibilitySupport": "off",
   "editor.codeLens": true,
@@ -64,6 +65,7 @@
   "workbench.iconTheme": "ayu",
   "workbench.startupEditor": "newUntitledFile",
   "workbench.statusBar.feedback.visible": false,
+  "workbench.tree.renderIndentGuides": "none",
   "workbench.tips.enabled": false,
   "python.linting.enabled": false,
   "git.showInlineOpenFileAction": false,
@@ -72,5 +74,5 @@
   "typescript.suggest.autoImports": false,
   "vetur.completion.autoImport": false,
   "vetur.experimental.templateInterpolationService": true,
-  "breadcrumbs.enabled": false
+  "breadcrumbs.enabled": false,
 }

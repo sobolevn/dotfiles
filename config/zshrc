@@ -39,18 +39,8 @@ plugins=(
 
 # User configuration
 
-export PATH="/usr/local/sbin:/usr/local/share/npm/bin:/usr/local/opt/php56/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-# export MANPATH="/usr/local/man:$MANPATH"
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
 # Custom envs:
 source $ZSH/oh-my-zsh.sh
 source $HOME/.shell_env
-
-# You may seed to manually set your language environment
-# export LANG=en_US.UTF-8
-
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
-
-# ssh
-# export SSH_KEY_PATH="~/.ssh/dsa_id"

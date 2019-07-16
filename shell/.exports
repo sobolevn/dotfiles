@@ -25,7 +25,7 @@ PATH="/usr/local/opt/gpg-agent/bin:$PATH"
 # Now `python` points to `python2` from `brew`:
 PATH="/usr/local/opt/python2/libexec/bin:$PATH"
 
-# Adds `pipsi` binary files:
+# Adds `pipsi` and `pipx` binary files:
 PATH="$HOME/.local/bin:$PATH"
 
 # Adds `poetry` binary, should be added to the end:
@@ -33,6 +33,12 @@ PATH="$PATH:$HOME/.poetry/bin"
 
 # postgres@9.6 utilities like `psql`:
 PATH="/usr/local/opt/postgresql@9.6/bin:$PATH"
+
+# npm:
+PATH="/usr/local/share/npm/bin:$PATH"
+
+# php:
+PATH="/usr/local/opt/php56/bin:$PATH"
 
 export PATH
 
