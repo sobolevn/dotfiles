@@ -154,13 +154,11 @@ cask "wkhtmltopdf"
 mas "Be Focused Pro", id: 961632517
 mas "Cleaner-App", id: 1013897218
 mas "CopyClip", id: 595191960
+mas "Dato", id: 1470584107
 mas "HazeOver", id: 430798174
-mas "iA Writer", id: 775737590
-mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
-mas "SimpleCleaner", id: 867373024
 mas "Telegram", id: 747648890
 mas "Todoist", id: 585829637
 mas "Xcode", id: 497799835
