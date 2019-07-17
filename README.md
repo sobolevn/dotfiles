@@ -104,7 +104,7 @@ It is a great tool to track time of your work. It is a free service.
 
 There are three main plugins I am using:
 
-1. For `vscode`: https://wakatime.com/sublime-text
+1. For `vscode`: https://wakatime.com/vs-code
 2. For `idea`: https://wakatime.com/intellij-idea
 3. For `zsh`: https://github.com/sobolevn/wakatime-zsh-plugin#wakatime-zsh-plugin
 
