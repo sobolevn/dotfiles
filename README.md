@@ -2,6 +2,12 @@
 
 ![sobolevn's dotfiles](https://raw.githubusercontent.com/sobolevn/dotfiles/master/media/hyper.png)
 
+Here are some articles I wrote about my environment:
+
+- ["Instant +100% command line productivity boost"](https://dev.to/sobolevn/instant-100-command-line-productivity-boost)
+- ["Using better CLIs"](https://dev.to/sobolevn/using-better-clis-6o8)
+- ["6 mac apps that fit everyone"](https://sobolevn.me/2019/07/6-best-mac-apps)
+
 
 ## Contents
 
@@ -31,10 +37,6 @@ I am using `zsh` with [`oh-my-zsh`](https://github.com/robbyrussell/oh-my-zsh)
 as a main shell.
 And [`antibody`](https://github.com/getantibody/antibody) to manage shell plugins.
 I also have a lot of tools to make my working experience better.
-Here are some good articles I wrote about my environment:
-
-- ["Instant +100% command line productivity boost"](https://dev.to/sobolevn/instant-100-command-line-productivity-boost)
-- ["Using better CLIs"](https://dev.to/sobolevn/using-better-clis-6o8)
 
 I mainly work with three stacks:
 
@@ -48,6 +50,13 @@ And some productivity hacks!
 
 I also have `php`, `go`, `haskell`, `ruby`, `rust`, and `java` installed.
 But I am not using them on a daily basis.
+
+
+## Apps
+
+I am using `brew` to install all free apps for my mac.
+I also sync apps from AppStore with `brew`, 
+so the resulting [`Brewfile`](https://github.com/sobolevn/dotfiles/blob/master/Brewfile) contains everything.
 
 
 ## Infrastructure
