@@ -138,6 +138,10 @@ defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 # Diable automatic period substitution:
 defaults write NSGlobalDomain NSAutomaticPeriodSubstitutionEnabled -bool false
 
+# === Maccy ===
+# https://github.com/p0deje/Maccy
+defaults write org.p0deje.Maccy pasteByDefault true
+
 # Restarting apps:
 echo 'Restarting apps...'
 killall Finder

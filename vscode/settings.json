@@ -13,16 +13,18 @@
   "editor.fontSize": 17,
   "editor.glyphMargin": true,
   "editor.minimap.enabled": false,
+  "editor.renderWhitespace": "selection",
   "editor.rulers": [
     80
   ],
   "editor.scrollBeyondLastLine": false,
   "editor.snippetSuggestions": "none",
+  "editor.cursorSurroundingLines": 3,
+  "editor.useTabStops": true,
+  "editor.formatOnPaste": false,
   "editor.tabCompletion": "on",
   "editor.wordWrap": "on",
   "editor.wordWrapColumn": 80,
-  "emmet.showExpandedAbbreviation": "never",
-  "emmet.triggerExpansionOnTab": false,
   "explorer.confirmDelete": false,
   "explorer.decorations.badges": false,
   "extensions.ignoreRecommendations": true,
@@ -64,7 +66,7 @@
   "workbench.editor.labelFormat": "short",
   "workbench.iconTheme": "ayu",
   "workbench.startupEditor": "newUntitledFile",
-  "workbench.statusBar.feedback.visible": false,
+  "workbench.statusBar.visible": true,
   "workbench.tree.renderIndentGuides": "none",
   "workbench.tips.enabled": false,
   "python.linting.enabled": false,
@@ -75,4 +77,5 @@
   "vetur.completion.autoImport": false,
   "vetur.experimental.templateInterpolationService": true,
   "breadcrumbs.enabled": false,
+  "eslint.autoFixOnSave": false
 }

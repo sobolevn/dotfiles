@@ -28,6 +28,9 @@ module.exports = {
 
     // terminal background color
     backgroundColor: '#fff',
+   
+    // selection color
+    selectionColor: 'rgb(102, 102, 102)',
 
     // border color (window, tabs)
     borderColor: '#fff',
@@ -114,8 +117,11 @@ module.exports = {
 
     // Change how terminal is opened:
     summon: {
-      hotkey: 'cmd+;'
+      hotkey: 'ctrl+;'
     },
+
+    // custom plugin
+    opacity: 0.95,
   },
 
   // a list of plugins to fetch and install from npm
@@ -124,7 +130,13 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: ["hyper-tabs-enhanced", "hyperminimal", "hyperterm-summon"],
+  plugins: [
+    "hyper-tabs-enhanced",
+    "hyperminimal",
+    "hyperterm-summon",
+    "hypercwd",
+    "hyper-opacity"
+  ],
 
   hyperTabs: {
     trafficButtons: true,

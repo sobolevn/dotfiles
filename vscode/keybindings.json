@@ -23,5 +23,62 @@
   {
       "key": "cmd+,",
       "command": "-workbench.action.openSettings"
-  }
+},
+{
+    "key": "shift+cmd+up",
+    "command": "-list.collapseAll",
+    "when": "listFocus && !inputFocus"
+},
+{
+    "key": "alt+cmd+up",
+    "command": "-editor.action.insertCursorAbove",
+    "when": "editorTextFocus"
+},
+{
+    "key": "alt+cmd+down",
+    "command": "-editor.action.insertCursorBelow",
+    "when": "editorTextFocus"
+},
+{
+    "key": "shift+cmd+up",
+    "command": "editor.action.insertCursorAbove"
+},
+{
+    "key": "shift+cmd+down",
+    "command": "editor.action.insertCursorBelow"
+},
+{
+    "key": "shift+alt+right",
+    "command": "-cursorWordEndRightSelect",
+    "when": "textInputFocus"
+},
+{
+    "key": "shift+cmd+left",
+    "command": "cursorWordStartLeft",
+    "when": "textInputFocus"
+},
+{
+    "key": "alt+left",
+    "command": "-cursorWordStartLeft",
+    "when": "textInputFocus"
+},
+{
+    "key": "shift+alt+right",
+    "command": "cursorWordEndRight",
+    "when": "textInputFocus"
+},
+{
+    "key": "alt+right",
+    "command": "-cursorWordEndRight",
+    "when": "textInputFocus"
+},
+{
+    "key": "shift+alt+left",
+    "command": "-cursorWordStartLeftSelect",
+    "when": "textInputFocus"
+},
+{
+    "key": "shift+alt+left",
+    "command": "cursorWordEndLeft"
+}
 ]
