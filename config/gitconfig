@@ -15,6 +15,11 @@
   gpgsign = true
 [push]
   default = simple
+[fetch]
+  # Prune branches that no longer exist remote.
+  # Same for tags.
+  prune = true
+  pruneTags = true
 [user]
   useConfigOnly = true
 [diff]

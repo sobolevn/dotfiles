@@ -41,14 +41,14 @@ I also have a lot of tools to make my working experience better.
 I mainly work with three stacks:
 
 - `python`
-- `node` + `vue`
+- `node` + `vue` + `typescript`
 - `elixir`
 
 So, they are configured nice and smoothly.
 You will have configured version managers, best practices, and useful tools.
 And some productivity hacks!
 
-I also have `php`, `go`, `haskell`, `ruby`, `rust`, and `java` installed.
+I also have `php`, `haskell`, `ruby`, `rust`, and `java` installed.
 But I am not using them on a daily basis.
 
 
@@ -99,6 +99,7 @@ Here's [a list of packages](https://github.com/sobolevn/dotfiles/blob/master/vsc
 - `Elixir` syntax highlighting
 - [`Vetur`](https://github.com/vuejs/vetur) for `Vue` features
 - [`Python`](https://github.com/Microsoft/vscode-python) plugin
+- [`Rust`](https://github.com/rust-lang/rls-vscode) plugin
 - `editoconfig` integration
 - `wakatime` integration
 

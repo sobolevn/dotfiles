@@ -25,6 +25,7 @@
 
     # Tools:
     ~/.psqlrc: config/psqlrc
+    ~/.sqliterc: config/sqliterc
 
     # Editors:
     ~/.editorconfig: config/editorconfig

@@ -8,6 +8,7 @@ code --install-extension mjmcloug.vscode-elixir
 code --install-extension ms-python.python
 code --install-extension octref.vetur
 code --install-extension Orta.vscode-jest
+code --install-extension rust-lang.rust
 code --install-extension stevejpurves.cucumber
 code --install-extension streetsidesoftware.code-spell-checker
 code --install-extension streetsidesoftware.code-spell-checker-russian
