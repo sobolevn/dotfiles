@@ -22,9 +22,6 @@ export PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
 # GPG agent:
 PATH="/usr/local/opt/gpg-agent/bin:$PATH"
 
-# Now `python` points to `python2` from `brew`:
-PATH="/usr/local/opt/python2/libexec/bin:$PATH"
-
 # Adds `pipsi` and `pipx` binary files:
 PATH="$HOME/.local/bin:$PATH"
 
@@ -36,9 +33,6 @@ PATH="/usr/local/opt/postgresql@9.6/bin:$PATH"
 
 # npm:
 PATH="/usr/local/share/npm/bin:$PATH"
-
-# php:
-PATH="/usr/local/opt/php56/bin:$PATH"
 
 export PATH
 
@@ -68,8 +62,8 @@ export HOMEBREW_NO_ANALYTICS=1  # disables statistics that brew collects
 #   -M   show more info at the bottom prompt line
 #   -x4  tabs are 4 instead of 8
 export LESS="-iRFXMx4"
-export PAGER='bat'
-export MANPAGER='bat'
+export PAGER='less'
+export MANPAGER='less'
 
 
 # === Virtualenvs ===
@@ -94,6 +88,9 @@ eval "$(rbenv init -)"
 
 # rustup:
 source "$HOME/.cargo/env"
+
+# phpbrew:
+[[ -e "$HOME/.phpbrew/bashrc" ]] && source "$HOME/.phpbrew/bashrc"
 
 
 # === Histories ===

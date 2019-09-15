@@ -7,14 +7,8 @@
 
 # === Aliases ===
 
-# exa:
-alias la="exa -abghl --git"
-
 # Sorts directories in top, colors, and prints `/` at directories:
 alias ls="/usr/local/bin/gls --color -h --group-directories-first -F"
-
-# git with hub:
-alias git="hub"
 
 # Pretty print XML (use `jq` for json):
 alias xq="xmllint --format"

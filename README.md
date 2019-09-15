@@ -48,14 +48,14 @@ So, they are configured nice and smoothly.
 You will have configured version managers, best practices, and useful tools.
 And some productivity hacks!
 
-I also have `php`, `haskell`, `ruby`, `rust`, and `java` installed.
+I also have several other languages installed.
 But I am not using them on a daily basis.
 
 
 ## Apps
 
 I am using `brew` to install all free apps for my mac.
-I also sync apps from AppStore with `brew`, 
+I also sync apps from AppStore with `brew`,
 so the resulting [`Brewfile`](https://github.com/sobolevn/dotfiles/blob/master/Brewfile) contains everything.
 
 
@@ -71,9 +71,10 @@ So, you will have to download it manually.
 However, I also use several databases and other services locally:
 
 - `postgresql` (with `postgis`)
-- `mysql`
 - `redis`
-- `rabbitmq`
+
+I use this setup for small and simple projects.
+Other stuff is always dockerized.
 
 
 ## VS Code

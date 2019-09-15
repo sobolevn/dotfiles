@@ -6,7 +6,7 @@
 [credential]
   helper = osxkeychain
 [http]
-  postBuffer = 524288000
+	postBuffer = 157286400
 [filter "lfs"]
   clean = git-lfs clean %f
   smudge = git-lfs smudge %f
