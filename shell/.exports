@@ -102,10 +102,3 @@ export NODE_REPL_MODE='sloppy'
 
 # Erlang and Elixir shell history:
 export ERL_AFLAGS="-kernel shell_history enabled"
-
-
-# === Tools ===
-
-# Disables `wakatime` in offline mode:
-# See: https://github.com/sobolevn/wakatime-zsh-plugin
-export WAKATIME_DISABLE_OFFLINE='1'

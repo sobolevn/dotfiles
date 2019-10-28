@@ -13,4 +13,3 @@ code --install-extension stevejpurves.cucumber
 code --install-extension streetsidesoftware.code-spell-checker
 code --install-extension streetsidesoftware.code-spell-checker-russian
 code --install-extension teabyii.ayu
-code --install-extension WakaTime.vscode-wakatime
