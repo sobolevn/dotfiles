@@ -42,5 +42,5 @@ plugins=(
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
 # Custom envs:
-source $ZSH/oh-my-zsh.sh
-source $HOME/.shell_env
+source "$ZSH/oh-my-zsh.sh"
+source "$HOME/.shell_env"

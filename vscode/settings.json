@@ -60,7 +60,10 @@
   "window.newWindowDimensions": "maximized",
   "window.zoomLevel": 0,
   "workbench.colorCustomizations": {
-    "gitDecoration.modifiedResourceForeground": "#d4cb68"
+    "gitDecoration.modifiedResourceForeground": "#d4cb68",
+    "activityBar.activeBorder": "#e5b358",
+    "editorSuggestWidget.highlightForeground": "#e5b358",
+    "editorSuggestWidget.selectedBackground": "#1c2a42",
   },
   "workbench.colorTheme": "Ayu Dark",
   "workbench.editor.labelFormat": "short",
@@ -71,6 +74,8 @@
   "workbench.tips.enabled": false,
   "python.linting.enabled": false,
   "git.showInlineOpenFileAction": false,
+  "git.autorefresh": true,
+  "git.decorations.enabled": true,
   "typescript.updateImportsOnFileMove.enabled": "never",
   "javascript.suggest.autoImports": false,
   "typescript.suggest.autoImports": false,
