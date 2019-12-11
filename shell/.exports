@@ -102,3 +102,10 @@ export NODE_REPL_MODE='sloppy'
 
 # Erlang and Elixir shell history:
 export ERL_AFLAGS="-kernel shell_history enabled"
+
+
+# === Notifications ===
+# https://github.com/MichaelAquilina/zsh-auto-notify
+
+export AUTO_NOTIFY_THRESHOLD=30
+export AUTO_NOTIFY_EXPIRE_TIME=5000

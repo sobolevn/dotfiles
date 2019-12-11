@@ -81,6 +81,5 @@
   "typescript.suggest.autoImports": false,
   "vetur.completion.autoImport": false,
   "vetur.experimental.templateInterpolationService": true,
-  "breadcrumbs.enabled": false,
-  "eslint.autoFixOnSave": false
+  "breadcrumbs.enabled": false
 }
