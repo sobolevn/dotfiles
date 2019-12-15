@@ -21,3 +21,11 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 
 # Copy public key to clipboard:
 alias pubkey="cat ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pasteboard.'"
+
+# Calculator:
+# https://github.com/arzzen/calc.plugin.zsh
+cc() {
+  python3 -c "from math import *; print($*);"
+}
+
+alias cc='noglob cc'
