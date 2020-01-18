@@ -14,6 +14,7 @@
   "editor.glyphMargin": true,
   "editor.minimap.enabled": false,
   "editor.renderWhitespace": "selection",
+  "explorer.compactFolders": true,
   "editor.rulers": [
     80
   ],

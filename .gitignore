@@ -42,6 +42,4 @@ Package Control.cache/
 
 #### custom ####
 WakaTime.sublime-settings
-# *.crt
-# *.key
-
+.vscode/tags

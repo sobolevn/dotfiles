@@ -12,7 +12,7 @@ module.exports = {
     fontSize: 12,
 
     // font family with optional fallbacks
-    fontFamily: 'Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
+    fontFamily: 'Menlo, monospace',
 
     // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
     cursorColor: 'grey',
@@ -135,7 +135,8 @@ module.exports = {
     "hyperminimal",
     "hyperterm-summon",
     "hypercwd",
-    "hyper-opacity"
+    "hyper-opacity",
+    "hyper-search"
   ],
 
   hyperTabs: {
