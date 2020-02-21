@@ -182,3 +182,7 @@ erl_crash.dump
 *.ez
 *.beam
 
+#### custom ####
+WakaTime.sublime-settings
+.vscode/tags
+.pyre

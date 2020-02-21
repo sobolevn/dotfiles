@@ -1,7 +1,4 @@
 {
-  "cSpell.language": "en,en-GB,en-US,ru",
-  "cSpell.showStatus": false,
-  "cSpell.diagnosticLevel": "Hint",
   "debug.allowBreakpointsEverywhere": true,
   "editor.accessibilitySupport": "off",
   "editor.codeLens": true,
@@ -50,7 +47,7 @@
   "python.formatting.provider": "none",
   "python.pythonPath": "${workspaceFolder}/.venv/bin/python3",
   "python.terminal.activateEnvironment": true,
-  "python.workspaceSymbols.enabled": true,
+  "python.workspaceSymbols.enabled": false,
   "telemetry.enableCrashReporter": false,
   "telemetry.enableTelemetry": false,
   "terminal.integrated.env.osx": {
@@ -65,6 +62,9 @@
     "activityBar.activeBorder": "#e5b358",
     "editorSuggestWidget.highlightForeground": "#e5b358",
     "editorSuggestWidget.selectedBackground": "#1c2a42",
+    "activityBar.foreground": "#797d7b",
+    "tab.inactiveForeground": "#676b6a",
+    "sideBar.foreground": "#565958",
   },
   "workbench.colorTheme": "Ayu Dark",
   "workbench.editor.labelFormat": "short",

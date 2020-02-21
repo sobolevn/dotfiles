@@ -1,8 +1,9 @@
 [core]
   excludesfile = ~/.gitignore_global
+  attributesFile = ~/.gitattributes_global
 [pager]
-  diff = diff-so-fancy | less --tabs=1,5 -RFXM
-  show = diff-so-fancy | less --tabs=1,5 -RFXM
+  diff = "diff-so-fancy | less --tabs=1,5 -RFXM"
+  show = "diff-so-fancy | less --tabs=1,5 -RFXM"
 [credential]
   helper = osxkeychain
 [http]
@@ -25,6 +26,8 @@
 [diff]
   indentHeuristic = on
   noprefix = true
+[diff "nodiff"]
+	command = true
 [rerere]
   # Remember my merges
   # http://gitfu.wordpress.com/2008/04/20/git-rerere-rereremember-what-you-did-last-time/
@@ -48,6 +51,10 @@
   old = red bold
   new = green bold
   whitespace = red reverse
+
+# Aliases:
+[alias]
+  publish = "!git push origin $(git symbolic-ref --short HEAD) -u"
 
 # Allow local customizations in the .gitconfig_local file
 [include]
