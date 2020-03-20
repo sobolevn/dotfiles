@@ -1,2 +1,0 @@
-cookiecutter
-jinja2-git

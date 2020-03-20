@@ -66,14 +66,6 @@ export PAGER='less'
 export MANPAGER='less'
 
 
-# === Virtualenvs ===
-
-export PIPENV_VENV_IN_PROJECT=true # look for `.venv` dir inside project
-export PIPENV_HIDE_EMOJIS=true # no emojis!
-export PIPENV_COLORBLIND=true # disables colors, so colorful!
-export PIPENV_NOSPIN=true # disables spinner for cleaner logs
-
-
 # === Version managers ===
 
 # nvm:
@@ -102,6 +94,13 @@ export NODE_REPL_MODE='sloppy'
 
 # Erlang and Elixir shell history:
 export ERL_AFLAGS="-kernel shell_history enabled"
+
+
+# === Code highlight ===
+# https://github.com/zsh-users/zsh-syntax-highlighting
+
+# We won't highlight code longer than 200 chars, because it is slow:
+ZSH_HIGHLIGHT_MAXLENGTH=200
 
 
 # === Notifications ===

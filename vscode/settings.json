@@ -11,6 +11,7 @@
   "editor.glyphMargin": true,
   "editor.minimap.enabled": false,
   "editor.renderWhitespace": "selection",
+  "editor.padding.top": 15,
   "explorer.compactFolders": true,
   "editor.rulers": [
     80
