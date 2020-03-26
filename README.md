@@ -88,15 +88,11 @@ So, I have switched to `vscode`.
 It solved almost all issues I had with `Sublime`.
 Here's how my new `vscode` setup looks like:
 
-![sobolevn's vscode for Elixir](https://raw.githubusercontent.com/sobolevn/dotfiles/master/media/vscode-elixir.png)
-
-And `Vue`:
-
-![sobolevn's vscode for Elixir](https://raw.githubusercontent.com/sobolevn/dotfiles/master/media/vscode-vue.png)
+![sobolevn's vscode for Python](https://raw.githubusercontent.com/sobolevn/dotfiles/master/media/vscode-python.png)
 
 Here's [a list of packages](https://github.com/sobolevn/dotfiles/blob/master/vscode/install.sh) I use:
 
-- [`ayu`](https://github.com/ayu-theme/vscode-ayu) theme and `A File Icon` icons
+- [`ayu`](https://github.com/ayu-theme/vscode-ayu) theme with modifications and `A File Icon` icons
 - `Elixir` syntax highlighting
 - [`Vetur`](https://github.com/vuejs/vetur) for `Vue` features
 - [`Python`](https://github.com/Microsoft/vscode-python) plugin
