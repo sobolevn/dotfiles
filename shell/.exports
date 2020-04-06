@@ -34,6 +34,9 @@ PATH="/usr/local/opt/postgresql@9.6/bin:$PATH"
 # npm:
 PATH="/usr/local/share/npm/bin:$PATH"
 
+# python2 (required by npm and other tools, installed via pyenv):
+PATH="$PATH:$HOME/.pyenv/versions/2.7.17/bin"
+
 export PATH
 
 
@@ -100,7 +103,7 @@ export ERL_AFLAGS="-kernel shell_history enabled"
 # https://github.com/zsh-users/zsh-syntax-highlighting
 
 # We won't highlight code longer than 200 chars, because it is slow:
-ZSH_HIGHLIGHT_MAXLENGTH=200
+export ZSH_HIGHLIGHT_MAXLENGTH=200
 
 
 # === Notifications ===

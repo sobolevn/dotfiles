@@ -5,14 +5,14 @@
   "editor.colorDecorators": true,
   "editor.dragAndDrop": false,
   "editor.folding": false,
+  "editor.showFoldingControls": "mouseover",
   "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true,
   "editor.fontSize": 17,
   "editor.glyphMargin": true,
   "editor.minimap.enabled": false,
   "editor.renderWhitespace": "selection",
-  "editor.padding.top": 15,
-  "explorer.compactFolders": true,
+  "explorer.compactFolders": false,
   "editor.rulers": [
     80
   ],
@@ -60,13 +60,15 @@
   "window.newWindowDimensions": "maximized",
   "window.zoomLevel": 0,
 
+  "window.menuBarVisibility": "hidden",
   "workbench.colorTheme": "Ayu Dark",
   "workbench.editor.labelFormat": "short",
   "workbench.iconTheme": "ayu",
   "workbench.startupEditor": "newUntitledFile",
+  "workbench.sideBar.location": "right",
   "workbench.statusBar.visible": false,
-  "workbench.tree.renderIndentGuides": "none",
   "workbench.tips.enabled": false,
+  "workbench.tree.renderIndentGuides": "none",
   "python.linting.enabled": false,
   "git.showInlineOpenFileAction": false,
   "git.autorefresh": true,
@@ -78,78 +80,19 @@
   "vetur.experimental.templateInterpolationService": true,
   "breadcrumbs.enabled": false,
   "workbench.activityBar.visible": false,
+  "workbench.editor.showTabs": false,
+  "workbench.editor.highlightModifiedTabs": false,
+  "workbench.editor.showIcons": false,
 
-  // Customizing VSCode and Ayu themes:
   "workbench.colorCustomizations": {
     "activityBar.activeBorder": "#e5b358",
     "activityBar.foreground": "#797d7b",
     "gitDecoration.modifiedResourceForeground": "#d4cb68",
+    "gitDecoration.addedResourceForeground": "#C2D94C",
     "editorSuggestWidget.highlightForeground": "#e5b358",
     "editorSuggestWidget.selectedBackground": "#1c2a42",
     "tab.inactiveForeground": "#676b6a",
-    "sideBar.foreground": "#565958",
-    "sideBarTitle.foreground": "#0a0e14",
-  },
-  "editor.tokenColorCustomizations": {
-    "types": "#b3b1ad",
-    "semanticHighlighting": false,
-    "variables": "#b3b1ad",
-    "textMateRules": [
-      // Reference:
-      // https://github.com/ayu-theme/vscode-ayu/blob/master/ayu-dark.json
-      {
-        "name": "Language variable",
-        "scope": ["variable.language"],
-        "settings": {
-          "fontStyle": "italic",
-          "foreground": "#b3b1ad",
-        },
-      },
-      {
-        "name": "Code constants",
-        "scope": [
-          "variable.identifier_constant",
-          "variable.other.member",
-          "variable.other.constant",
-          "punctuation.definition.variable",
-          "entity.name.constant",
-          "constant.character",
-          "constant.other",
-          "string.regexp",
-        ],
-        "settings": {
-          "foreground": "#ffb454",
-        },
-      },
-
-      // Functions:
-      {
-        "name": "Function arguments",
-        "scope": ["variable.parameter", "meta.parameter"],
-        "settings": {
-          "foreground": "#b3b1ad",
-        },
-      },
-      {
-        "name": "Library function",
-        "scope": ["support.function", "support.macro"],
-        "settings": {
-          "foreground": "#ffb454",
-        },
-      },
-
-      // Classes:
-      {
-        "name": "Inheritance",
-        "scope": [
-          "meta.class.inheritance",
-          "variable.parameter.class-inheritance",
-          "entity.other.inherited-class",
-        ],
-        "settings": {
-          "foreground": "#b3b1ad",
-        },
-      }
-    ]
-  },
+    "sideBar.foreground": "#b3b1adBB",
+    "sideBarTitle.foreground": "#0a0e14"
+  }
 }
