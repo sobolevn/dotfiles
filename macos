@@ -36,7 +36,7 @@ defaults write -g CGFontRenderingFontSmoothingDisabled -bool NO
 # Scrollbars visible when scrolling:
 defaults write NSGlobalDomain AppleShowScrollBars -string "WhenScrolling"
 
-# Allways use expanded save dialog:
+# Always use expanded save dialog:
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
 
