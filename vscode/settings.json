@@ -60,10 +60,12 @@
   "window.newWindowDimensions": "maximized",
   "window.zoomLevel": 0,
 
-  "window.menuBarVisibility": "hidden",
+  // Theme:
   "workbench.colorTheme": "Ayu Dark",
-  "workbench.editor.labelFormat": "short",
   "workbench.iconTheme": "ayu",
+
+  "window.menuBarVisibility": "hidden",
+  "workbench.editor.labelFormat": "medium",
   "workbench.startupEditor": "newUntitledFile",
   "workbench.sideBar.location": "right",
   "workbench.statusBar.visible": false,
