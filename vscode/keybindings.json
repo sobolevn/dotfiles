@@ -80,4 +80,8 @@
     "key":"shift+alt+left",
     "command":"cursorWordEndLeft"
   },
+  {
+    "key": "cmd+e",
+    "command": "-actions.findWithSelection"
+  }
 ]
