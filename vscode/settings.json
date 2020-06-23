@@ -96,5 +96,7 @@
     "tab.inactiveForeground": "#676b6a",
     "sideBar.foreground": "#b3b1adBB",
     "sideBarTitle.foreground": "#0a0e14"
-  }
+  },
+  "javascript.updateImportsOnFileMove.enabled": "never",
+
 }

@@ -83,5 +83,54 @@
   {
     "key": "cmd+e",
     "command": "-actions.findWithSelection"
+  },
+  {
+      "key": "cmd+e",
+      "command": "editor.action.showHover",
+      "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+enter",
+    "command": "-python.datascience.runcurrentcelladvance",
+    "when": "editorTextFocus && python.datascience.featureenabled && python.datascience.hascodecells && !editorHasSelection"
+  },
+  {
+    "key": "shift+enter",
+    "command": "-python.datascience.execSelectionInteractive",
+    "when": "editorTextFocus && python.datascience.featureenabled && python.datascience.ownsSelection && !findInputFocussed && !replaceInputFocussed && editorLangId == 'python'"
+  },
+  {
+    "key": "shift+enter",
+    "command": "-python.execSelectionInTerminal",
+    "when": "editorTextFocus && !findInputFocussed && !python.datascience.ownsSelection && !replaceInputFocussed && editorLangId == 'python'"
+  },
+  {
+    "key": "cmd+l",
+    "command": "copyRelativeFilePath"
+  },
+  {
+    "key": "shift+alt+cmd+c",
+    "command": "-copyRelativeFilePath",
+    "when": "!editorFocus"
+  },
+  {
+    "key": "cmd+l",
+    "command": "-expandLineSelection",
+    "when": "editorFocus"
+  },
+  {
+    "key": "cmd+l",
+    "command": "-expandLineSelection",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "-cursorUp",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "-cursorDown",
+    "when": "textInputFocus"
   }
 ]
