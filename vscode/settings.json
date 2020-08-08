@@ -21,6 +21,7 @@
   "editor.cursorSurroundingLines": 3,
   "editor.useTabStops": true,
   "editor.formatOnPaste": false,
+  "editor.formatOnSave": true,
   "editor.tabCompletion": "on",
   "editor.wordWrap": "on",
   "editor.wordWrapColumn": 80,
@@ -53,7 +54,7 @@
   "telemetry.enableCrashReporter": false,
   "telemetry.enableTelemetry": false,
   "terminal.integrated.env.osx": {
-    "SOBOLE_THEME_MODE": "dark"
+    "SOBOLE_THEME_MODE": "light"
   },
   "terminal.integrated.enableBell": true,
   "window.clickThroughInactive": false,
@@ -61,14 +62,14 @@
   "window.zoomLevel": 0,
 
   // Theme:
-  "workbench.colorTheme": "Ayu Dark",
+  "workbench.colorTheme": "Ayu Mirage",
   "workbench.iconTheme": "ayu",
 
   "window.menuBarVisibility": "hidden",
   "workbench.editor.labelFormat": "medium",
   "workbench.startupEditor": "newUntitledFile",
-  "workbench.sideBar.location": "right",
-  "workbench.statusBar.visible": false,
+  "workbench.sideBar.location": "left",
+  "workbench.statusBar.visible": true,
   "workbench.tips.enabled": false,
   "workbench.tree.renderIndentGuides": "none",
   "python.linting.enabled": false,
@@ -80,9 +81,8 @@
   "typescript.suggest.autoImports": false,
   "vetur.completion.autoImport": false,
   "vetur.experimental.templateInterpolationService": true,
-  "breadcrumbs.enabled": false,
-  "workbench.activityBar.visible": false,
-  "workbench.editor.showTabs": false,
+  "workbench.activityBar.visible": true,
+  "workbench.editor.showTabs": true,
   "workbench.editor.highlightModifiedTabs": false,
   "workbench.editor.showIcons": false,
 
@@ -98,5 +98,8 @@
     "sideBarTitle.foreground": "#0a0e14"
   },
   "javascript.updateImportsOnFileMove.enabled": "never",
+  "terminal.integrated.scrollback": 5000,
+  "editor.defaultFormatter": "JakeBecker.elixir-ls",
+  "git.alwaysSignOff": true,
 
 }

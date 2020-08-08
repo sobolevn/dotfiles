@@ -13,7 +13,7 @@
   smudge = git-lfs smudge %f
   required = true
 [commit]
-  gpgsign = true
+  gpgsign = false
 [push]
   default = simple
 [fetch]
@@ -23,6 +23,8 @@
   pruneTags = true
 [user]
   useConfigOnly = true
+  name = Sky Chin
+  email = sky4just@gmail.com
 [diff]
   indentHeuristic = on
   noprefix = true

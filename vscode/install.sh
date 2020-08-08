@@ -4,7 +4,6 @@ code --install-extension dariofuzinato.vue-peek
 code --install-extension EditorConfig.EditorConfig
 code --install-extension justusadam.language-haskell
 code --install-extension mikestead.dotenv
-code --install-extension mjmcloug.vscode-elixir
 code --install-extension ms-python.python
 code --install-extension ms-vscode.sublime-keybindings
 code --install-extension octref.vetur
@@ -12,3 +11,5 @@ code --install-extension pnp.polacode
 code --install-extension rust-lang.rust
 code --install-extension stevejpurves.cucumber
 code --install-extension teabyii.ayu
+code --install-extension eamodio.gitlens
+code --install-extension jakebecker.elixir-ls

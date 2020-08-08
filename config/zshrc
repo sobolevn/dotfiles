@@ -35,6 +35,7 @@ plugins=(
   osx
   brew
   extract
+  asdf
 )
 
 # User configuration
