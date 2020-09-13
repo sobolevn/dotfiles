@@ -132,5 +132,31 @@
     "key": "ctrl+n",
     "command": "-cursorDown",
     "when": "textInputFocus"
+  },
+  {
+    "key": "shift+cmd+r",
+    "command": "python.execSelectionInTerminal"
+  },
+  {
+    "key": "shift+cmd+r",
+    "command": "-workbench.action.showAllSymbols"
+  },
+  {
+    "key": "cmd+]",
+    "command": "workbench.action.showNextWindowTab"
+  },
+  {
+    "key": "cmd+[",
+    "command": "workbench.action.showPreviousWindowTab"
+  },
+  {
+    "key": "cmd+[",
+    "command": "-editor.action.outdentLines",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+]",
+    "command": "-editor.action.indentLines",
+    "when": "editorTextFocus && !editorReadonly"
   }
 ]

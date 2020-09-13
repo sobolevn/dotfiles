@@ -9,6 +9,7 @@
   "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true,
   "editor.fontSize": 17,
+  "explorer.openEditors.visible": 0,
   "editor.glyphMargin": true,
   "editor.minimap.enabled": false,
   "editor.renderWhitespace": "selection",
@@ -25,9 +26,15 @@
   "editor.wordWrap": "on",
   "editor.wordWrapColumn": 80,
   "editor.hover.enabled": false,
+  "editor.gotoLocation.multipleReferences": "goto",
+  "editor.gotoLocation.multipleDefinitions": "goto",
+  "editor.gotoLocation.multipleDeclarations": "goto",
+  "editor.gotoLocation.multipleImplementations": "goto",
+  "editor.gotoLocation.multipleTypeDefinitions": "goto",
   "explorer.confirmDelete": false,
   "explorer.decorations.badges": false,
   "extensions.ignoreRecommendations": true,
+  "diffEditor.renderSideBySide": false,
   "files.associations": {
     ".babelrc": "jsonc",
     ".eslintrc": "jsonc",
@@ -70,6 +77,7 @@
   "workbench.sideBar.location": "right",
   "workbench.statusBar.visible": false,
   "workbench.tips.enabled": false,
+  "workbench.editor.enablePreview": false,
   "workbench.tree.renderIndentGuides": "none",
   "python.linting.enabled": false,
   "git.showInlineOpenFileAction": false,
@@ -98,5 +106,6 @@
     "sideBarTitle.foreground": "#0a0e14"
   },
   "javascript.updateImportsOnFileMove.enabled": "never",
+  "python.showStartPage": false,
 
 }
