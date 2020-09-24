@@ -2,7 +2,7 @@
   excludesfile = ~/.gitignore_global
   attributesFile = ~/.gitattributes_global
 [pager]
-  diff = "diff-so-fancy | less --tabs=1,5 -RFXM"
+  diff = "delta"
   show = "diff-so-fancy | less --tabs=1,5 -RFXM"
 [credential]
   helper = osxkeychain
@@ -26,6 +26,7 @@
 [diff]
   indentHeuristic = on
   noprefix = true
+  colorMoved = default
 [diff "nodiff"]
 	command = true
 [rerere]
@@ -35,6 +36,20 @@
 [submodule]
 	recurse = true
 	fetchJobs = 0
+
+# Custom plugins:
+[delta]
+  syntax-theme = GitHub
+	navigate = true
+  inspect-raw-lines = false
+  light = true
+  line-numbers = true
+  # diff-so-fancy = true
+
+  # decorations
+  file-style = none
+  file-decoration-style = none
+  minus-style = syntax auto
 
 # Colors
 [color]
