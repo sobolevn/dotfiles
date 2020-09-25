@@ -40,9 +40,9 @@
 # Custom plugins:
 [delta]
   syntax-theme = GitHub
-	navigate = true
-  inspect-raw-lines = false
   light = true
+	navigate = false
+  inspect-raw-lines = false
   line-numbers = true
   # diff-so-fancy = true
 
