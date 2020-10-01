@@ -17,7 +17,7 @@ HYPHEN_INSENSITIVE="false"
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
 # The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
-HIST_STAMPS="dd.mm.yyyy"
+HIST_STAMPS="yyyy-mm-dd"
 HIST_IGNORE_SPACE="true"
 
 # Would you like to use another custom folder than $ZSH/custom?
@@ -30,14 +30,10 @@ HIST_IGNORE_SPACE="true"
 
 plugins=(
   gitfast
-  python
-  django
   osx
-  brew
-  extract
 )
 
-# User configuration
+# User configuration:
 
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
