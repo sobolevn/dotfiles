@@ -18,6 +18,8 @@ HYPHEN_INSENSITIVE="false"
 # stamp shown in the history command output.
 # The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
 HIST_STAMPS="yyyy-mm-dd"
+
+# Commands starting from " " (whitespace) won't be saved in history:
 HIST_IGNORE_SPACE="true"
 
 # Would you like to use another custom folder than $ZSH/custom?
