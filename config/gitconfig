@@ -1,6 +1,8 @@
 [core]
   excludesfile = ~/.gitignore_global
   attributesFile = ~/.gitattributes_global
+	autocrlf = input
+	safecrlf = warn
 [pager]
   diff = "delta"
   show = "diff-so-fancy | less --tabs=1,5 -RFXM"
@@ -51,7 +53,7 @@
   file-decoration-style = none
   minus-style = syntax auto
 
-# Colors
+# Styling:
 [color]
   ui = true
 [color "diff-highlight"]

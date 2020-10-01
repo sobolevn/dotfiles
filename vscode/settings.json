@@ -1,5 +1,8 @@
 {
+  // Debug:
   "debug.allowBreakpointsEverywhere": true,
+
+  // Editor:
   "editor.accessibilitySupport": "off",
   "editor.codeLens": true,
   "editor.colorDecorators": true,
@@ -13,7 +16,12 @@
   "editor.glyphMargin": true,
   "editor.minimap.enabled": false,
   "editor.renderWhitespace": "selection",
+  "editor.renderIndentGuides": false,
+  "editor.renderLineHighlight": "none",
+  "editor.hideCursorInOverviewRuler": false,
   "explorer.compactFolders": false,
+  "editor.occurrencesHighlight": false,
+  "editor.overviewRulerBorder": false,
   "editor.rulers": [
     80
   ],
@@ -35,6 +43,8 @@
   "explorer.decorations.badges": false,
   "extensions.ignoreRecommendations": true,
   "diffEditor.renderSideBySide": false,
+
+  // Files:
   "files.associations": {
     ".babelrc": "jsonc",
     ".eslintrc": "jsonc",
@@ -50,49 +60,62 @@
     "**/.mypy_cache": true,
     "**/.venv": true,
     "**/.coverage": true,
-    "**/*.py[co]": true
+    "**/*.py[co]": true,
   },
-  "git.autofetch": false,
-  "python.formatting.provider": "none",
-  "python.pythonPath": "${workspaceFolder}/.venv/bin/python3",
-  "python.terminal.activateEnvironment": true,
-  "python.workspaceSymbols.enabled": false,
+
+  // Stats and telemetry:
   "telemetry.enableCrashReporter": false,
   "telemetry.enableTelemetry": false,
+
+  // Terminal:
   "terminal.integrated.env.osx": {
-    "SOBOLE_THEME_MODE": "dark"
+    "SOBOLE_THEME_MODE": "dark",
   },
   "terminal.integrated.enableBell": true,
+
+  // Workbench:
+  "window.menuBarVisibility": "hidden",
   "window.clickThroughInactive": false,
   "window.newWindowDimensions": "maximized",
   "window.zoomLevel": 0,
 
-  // Theme:
-  "workbench.colorTheme": "Ayu Dark",
-  "workbench.iconTheme": "ayu",
-
-  "window.menuBarVisibility": "hidden",
   "workbench.editor.labelFormat": "medium",
+  "workbench.editor.tabCloseButton": "off",
   "workbench.startupEditor": "newUntitledFile",
   "workbench.sideBar.location": "right",
   "workbench.statusBar.visible": false,
   "workbench.tips.enabled": false,
   "workbench.editor.enablePreview": false,
   "workbench.tree.renderIndentGuides": "none",
-  "python.linting.enabled": false,
-  "git.showInlineOpenFileAction": false,
-  "git.autorefresh": true,
-  "git.decorations.enabled": true,
-  "typescript.updateImportsOnFileMove.enabled": "never",
-  "javascript.suggest.autoImports": false,
-  "typescript.suggest.autoImports": false,
-  "vetur.completion.autoImport": false,
-  "vetur.experimental.templateInterpolationService": true,
   "breadcrumbs.enabled": false,
   "workbench.activityBar.visible": false,
   "workbench.editor.showTabs": false,
   "workbench.editor.highlightModifiedTabs": false,
   "workbench.editor.showIcons": false,
+
+  // Tools, extensions, and languages:
+  "git.autofetch": false,
+  "git.showInlineOpenFileAction": false,
+  "git.autorefresh": true,
+  "git.decorations.enabled": true,
+
+  "python.showStartPage": false,
+  "python.formatting.provider": "none",
+  "python.pythonPath": "${workspaceFolder}/.venv/bin/python3",
+  "python.terminal.activateEnvironment": true,
+  "python.workspaceSymbols.enabled": false,
+  "python.linting.enabled": false,
+
+  "typescript.updateImportsOnFileMove.enabled": "never",
+  "typescript.suggest.autoImports": false,
+  "javascript.suggest.autoImports": false,
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "vetur.completion.autoImport": false,
+  "vetur.experimental.templateInterpolationService": true,
+
+  // Theme:
+  "workbench.colorTheme": "Ayu Dark",
+  "workbench.iconTheme": "ayu",
 
   "workbench.colorCustomizations": {
     "activityBar.activeBorder": "#e5b358",
@@ -103,9 +126,6 @@
     "editorSuggestWidget.selectedBackground": "#1c2a42",
     "tab.inactiveForeground": "#676b6a",
     "sideBar.foreground": "#b3b1adBB",
-    "sideBarTitle.foreground": "#0a0e14"
+    "sideBarTitle.foreground": "#0a0e14",
   },
-  "javascript.updateImportsOnFileMove.enabled": "never",
-  "python.showStartPage": false,
-
 }
