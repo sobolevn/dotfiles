@@ -104,10 +104,3 @@ export ERL_AFLAGS="-kernel shell_history enabled"
 
 # We won't highlight code longer than 200 chars, because it is slow:
 export ZSH_HIGHLIGHT_MAXLENGTH=200
-
-
-# === Notifications ===
-# https://github.com/MichaelAquilina/zsh-auto-notify
-
-export AUTO_NOTIFY_THRESHOLD=30
-export AUTO_NOTIFY_EXPIRE_TIME=5000

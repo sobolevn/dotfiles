@@ -1,6 +1,5 @@
 # Sorted in order of appearance (new at the bottom):
 zsh-users/zsh-syntax-highlighting
-MichaelAquilina/zsh-auto-notify
 
 
 # Theme, should be the last:
