@@ -47,10 +47,11 @@ man() {
       man "$@"
 }
 
+# Loads `.env` file from a filename passed as an argument
 loadenv() {
   while read line; do
     if [ "${line:0:1}" = '#' ]; then
-      continue
+      continue  # comments are ignored
     fi
     export $line > /dev/null
   done < "$1"
