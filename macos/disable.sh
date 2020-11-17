@@ -28,7 +28,9 @@ TODISABLE+=('com.apple.security.cloudkeychainproxy3' \
 	'com.apple.cloudpaird' \
 	'com.apple.cloudphotosd' \
 	'com.apple.followupd' \
-	'com.apple.protectedcloudstorage.protectedcloudkeysyncing')
+	'com.apple.protectedcloudstorage.protectedcloudkeysyncing' \
+  'com.apple.analyticsd' \
+  'com.apple.icloud.findmydeviced')
 
 # Safari useless stuff
 TODISABLE+=('com.apple.SafariBookmarksSyncAgent' \
@@ -135,18 +137,6 @@ TODISABLE+=('com.apple.telephonyutilities.callservicesd' \
 	'com.apple.mobileassetd' \
 	# 'com.apple.CalendarAgent' \
 	'com.apple.knowledge-agent')
-
-for agent in "${TODISABLE[@]}"
-do
-    mv ./System/Library/LaunchAgents/${agent}.plist ./System/Library/LaunchAgents/${agent}.plist.bak
-    echo "[OK] Agent ${agent} disabled"
-done
-
-# Daemons to disable
-TODISABLE=()
-
-# iCloud
-TODISABLE+=('com.apple.analyticsd', 'com.apple.icloud.findmydeviced')
 
 # Others
 TODISABLE+=('com.apple.netbiosd' \
