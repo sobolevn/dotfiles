@@ -84,9 +84,6 @@ eval "$(rbenv init -)"
 # rustup:
 source "$HOME/.cargo/env"
 
-# phpbrew:
-[[ -e "$HOME/.phpbrew/bashrc" ]] && source "$HOME/.phpbrew/bashrc"
-
 
 # === Histories ===
 

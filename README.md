@@ -49,7 +49,7 @@ You will have configured version managers, best practices, and useful tools.
 And some productivity hacks!
 
 I also have several other languages installed.
-But I am not using them on a daily basis.
+But I don't use them on a daily basis.
 
 
 ## Apps
