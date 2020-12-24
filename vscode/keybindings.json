@@ -1,188 +1,188 @@
 [
-  {
-    "key":"alt+left",
-    "command":"workbench.action.navigateBack"
-  },
-  {
-    "key":"ctrl+-",
-    "command":"-workbench.action.navigateBack"
-  },
-  {
-    "key":"alt+right",
-    "command":"workbench.action.navigateForward"
-  },
-  {
-    "key":"ctrl+shift+-",
-    "command":"-workbench.action.navigateForward"
-  },
-  {
-    "key":"cmd+,",
-    "command":"workbench.action.openSettingsJson"
-  },
-  {
-    "key":"cmd+,",
-    "command":"-workbench.action.openSettings"
-  },
-  {
-    "key":"shift+cmd+up",
-    "command":"-list.collapseAll",
-    "when":"listFocus && !inputFocus"
-  },
-  {
-    "key":"alt+cmd+up",
-    "command":"-editor.action.insertCursorAbove",
-    "when":"editorTextFocus"
-  },
-  {
-    "key":"alt+cmd+down",
-    "command":"-editor.action.insertCursorBelow",
-    "when":"editorTextFocus"
-  },
-  {
-    "key":"shift+cmd+up",
-    "command":"editor.action.insertCursorAbove"
-  },
-  {
-    "key":"shift+cmd+down",
-    "command":"editor.action.insertCursorBelow"
-  },
-  {
-    "key":"shift+alt+right",
-    "command":"-cursorWordEndRightSelect",
-    "when":"textInputFocus"
-  },
-  {
-    "key":"shift+cmd+left",
-    "command":"cursorWordStartLeft",
-    "when":"textInputFocus"
-  },
-  {
-    "key":"alt+left",
-    "command":"-cursorWordStartLeft",
-    "when":"textInputFocus"
-  },
-  {
-    "key":"shift+alt+right",
-    "command":"cursorWordEndRight",
-    "when":"textInputFocus"
-  },
-  {
-    "key":"alt+right",
-    "command":"-cursorWordEndRight",
-    "when":"textInputFocus"
-  },
-  {
-    "key":"shift+alt+left",
-    "command":"-cursorWordStartLeftSelect",
-    "when":"textInputFocus"
-  },
-  {
-    "key":"shift+alt+left",
-    "command":"cursorWordEndLeft"
-  },
-  {
-    "key": "cmd+e",
-    "command": "-actions.findWithSelection"
-  },
-  {
-      "key": "cmd+e",
-      "command": "editor.action.showHover",
-      "when": "editorTextFocus"
-  },
-  {
-    "key": "shift+enter",
-    "command": "-python.datascience.runcurrentcelladvance",
-    "when": "editorTextFocus && python.datascience.featureenabled && python.datascience.hascodecells && !editorHasSelection"
-  },
-  {
-    "key": "shift+enter",
-    "command": "-python.datascience.execSelectionInteractive",
-    "when": "editorTextFocus && python.datascience.featureenabled && python.datascience.ownsSelection && !findInputFocussed && !replaceInputFocussed && editorLangId == 'python'"
-  },
-  {
-    "key": "shift+enter",
-    "command": "-python.execSelectionInTerminal",
-    "when": "editorTextFocus && !findInputFocussed && !python.datascience.ownsSelection && !replaceInputFocussed && editorLangId == 'python'"
-  },
-  {
-    "key": "cmd+l",
-    "command": "copyRelativeFilePath"
-  },
-  {
-    "key": "shift+alt+cmd+c",
-    "command": "-copyRelativeFilePath",
-    "when": "!editorFocus"
-  },
-  {
-    "key": "cmd+l",
-    "command": "-expandLineSelection",
-    "when": "editorFocus"
-  },
-  {
-    "key": "cmd+l",
-    "command": "-expandLineSelection",
-    "when": "textInputFocus"
-  },
-  {
-    "key": "ctrl+p",
-    "command": "-cursorUp",
-    "when": "textInputFocus"
-  },
-  {
-    "key": "ctrl+n",
-    "command": "-cursorDown",
-    "when": "textInputFocus"
-  },
-  {
-    "key": "shift+cmd+r",
-    "command": "python.execSelectionInTerminal"
-  },
-  {
-    "key": "shift+cmd+r",
-    "command": "-workbench.action.showAllSymbols"
-  },
-  {
-    "key": "cmd+]",
-    "command": "workbench.action.showNextWindowTab"
-  },
-  {
-    "key": "cmd+[",
-    "command": "workbench.action.showPreviousWindowTab"
-  },
-  {
-    "key": "cmd+[",
-    "command": "-editor.action.outdentLines",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "cmd+]",
-    "command": "-editor.action.indentLines",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "cmd+k cmd+\\",
-    "command": "-workbench.action.splitEditorOrthogonal"
-  },
-  {
-    "key": "alt+cmd+2",
-    "command": "-workbench.action.splitEditor"
-  },
-  {
-    "key": "cmd+k cmd+up",
-    "command": "-workbench.action.splitEditor"
-  },
-  {
-    "key": "cmd+\\",
-    "command": "-workbench.action.splitEditor"
-  },
-  {
-    "key": "cmd+\\",
-    "command": "-workbench.action.terminal.split",
-    "when": "terminalFocus && terminalProcessSupported"
-  },
-  {
-    "key": "ctrl+shift+5",
-    "command": "-workbench.action.terminal.split",
-    "when": "terminalFocus && terminalProcessSupported"
-  }
+    {
+        "key": "alt+left",
+        "command": "workbench.action.navigateBack"
+    },
+    {
+        "key": "ctrl+-",
+        "command": "-workbench.action.navigateBack"
+    },
+    {
+        "key": "alt+right",
+        "command": "workbench.action.navigateForward"
+    },
+    {
+        "key": "ctrl+shift+-",
+        "command": "-workbench.action.navigateForward"
+    },
+    {
+        "key": "cmd+,",
+        "command": "workbench.action.openSettingsJson"
+    },
+    {
+        "key": "cmd+,",
+        "command": "-workbench.action.openSettings"
+    },
+    {
+        "key": "shift+cmd+up",
+        "command": "-list.collapseAll",
+        "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "alt+cmd+up",
+        "command": "-editor.action.insertCursorAbove",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+cmd+down",
+        "command": "-editor.action.insertCursorBelow",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+cmd+up",
+        "command": "editor.action.insertCursorAbove"
+    },
+    {
+        "key": "shift+cmd+down",
+        "command": "editor.action.insertCursorBelow"
+    },
+    {
+        "key": "shift+alt+right",
+        "command": "-cursorWordEndRightSelect",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "shift+cmd+left",
+        "command": "cursorWordStartLeft",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "alt+left",
+        "command": "-cursorWordStartLeft",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "shift+alt+right",
+        "command": "cursorWordEndRight",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "alt+right",
+        "command": "-cursorWordEndRight",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "shift+alt+left",
+        "command": "-cursorWordStartLeftSelect",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "shift+alt+left",
+        "command": "cursorWordEndLeft"
+    },
+    {
+        "key": "cmd+e",
+        "command": "-actions.findWithSelection"
+    },
+    {
+        "key": "cmd+e",
+        "command": "editor.action.showHover",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+enter",
+        "command": "-jupyter.runcurrentcelladvance",
+        "when": "editorTextFocus && jupyter.featureenabled && jupyter.hascodecells && !editorHasSelection"
+    },
+    {
+        "key": "shift+enter",
+        "command": "-jupyter.execSelectionInteractive",
+        "when": "editorTextFocus && jupyter.featureenabled && jupyter.ownsSelection && !findInputFocussed && !replaceInputFocussed && editorLangId == 'python'"
+    },
+    {
+        "key": "shift+enter",
+        "command": "-python.execSelectionInTerminal",
+        "when": "editorTextFocus && !findInputFocussed && !python.datascience.ownsSelection && !replaceInputFocussed && editorLangId == 'python'"
+    },
+    {
+        "key": "cmd+l",
+        "command": "copyRelativeFilePath"
+    },
+    {
+        "key": "shift+alt+cmd+c",
+        "command": "-copyRelativeFilePath",
+        "when": "!editorFocus"
+    },
+    {
+        "key": "cmd+l",
+        "command": "-expandLineSelection",
+        "when": "editorFocus"
+    },
+    {
+        "key": "cmd+l",
+        "command": "-expandLineSelection",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+p",
+        "command": "-cursorUp",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "-cursorDown",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "shift+cmd+r",
+        "command": "python.execSelectionInTerminal"
+    },
+    {
+        "key": "shift+cmd+r",
+        "command": "-workbench.action.showAllSymbols"
+    },
+    {
+        "key": "cmd+]",
+        "command": "workbench.action.showNextWindowTab"
+    },
+    {
+        "key": "cmd+[",
+        "command": "workbench.action.showPreviousWindowTab"
+    },
+    {
+        "key": "cmd+[",
+        "command": "-editor.action.outdentLines",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "cmd+]",
+        "command": "-editor.action.indentLines",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "cmd+k cmd+\\",
+        "command": "-workbench.action.splitEditorOrthogonal"
+    },
+    {
+        "key": "alt+cmd+2",
+        "command": "-workbench.action.splitEditor"
+    },
+    {
+        "key": "cmd+k cmd+up",
+        "command": "-workbench.action.splitEditor"
+    },
+    {
+        "key": "cmd+\\",
+        "command": "-workbench.action.splitEditor"
+    },
+    {
+        "key": "cmd+\\",
+        "command": "-workbench.action.terminal.split",
+        "when": "terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "ctrl+shift+5",
+        "command": "-workbench.action.terminal.split",
+        "when": "terminalFocus && terminalProcessSupported"
+    }
 ]
