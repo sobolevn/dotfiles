@@ -45,9 +45,8 @@
 # Installing asdf plugins:
 - asdf:
   - plugin: erlang
-    global: 22.3.3
+    global: 22.1.8.1
     versions:
-      - 22.3.3
       - 21.1.4
       - 22.1.8.1
   - plugin: nodejs
@@ -56,10 +55,14 @@
     versions:
       - 14.1.0
       - 12.16.1
+      - 12.16.3
+      - 12.18.3
       - 8.15.1
   - plugin: elixir
-    global: 1.10.3
+    global: 1.11.2-otp-22
     versions:
+      - 1.11.2-otp-22
+      - 1.11.2-otp-21
       - 1.10.3
       - 1.8.1-otp-21
 

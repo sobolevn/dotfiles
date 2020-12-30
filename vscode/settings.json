@@ -101,5 +101,11 @@
   "terminal.integrated.scrollback": 5000,
   "editor.defaultFormatter": "JakeBecker.elixir-ls",
   "git.alwaysSignOff": true,
+  "gitlens.gitCommands.skipConfirmations": [
+    "fetch:command",
+    "stash-push:command",
+    "switch:command",
+    "branch-create:command"
+  ],
 
 }
