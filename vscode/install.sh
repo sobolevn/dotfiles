@@ -1,14 +1,12 @@
-code --install-extension alexdima.copy-relative-path
-code --install-extension alexkrechik.cucumberautocomplete
-code --install-extension dariofuzinato.vue-peek
-code --install-extension EditorConfig.EditorConfig
-code --install-extension justusadam.language-haskell
-code --install-extension mikestead.dotenv
-code --install-extension mjmcloug.vscode-elixir
-code --install-extension ms-python.python
-code --install-extension ms-vscode.sublime-keybindings
-code --install-extension octref.vetur
-code --install-extension pnp.polacode
-code --install-extension rust-lang.rust
-code --install-extension stevejpurves.cucumber
-code --install-extension teabyii.ayu
+#!/usr/bin/env sh
+
+set -o errexit
+set -o nounset
+
+if [ ! $(command -v code) ] && [ $(command -v code-insiders) ]; then
+  # Link `code` to be the same as `code-insiders`:
+  ln -s "$(which code-insiders)" "$(dirname "$(which code-insiders)")/code"
+fi
+
+# Install plugins:
+sh '.vscode/plugins.sh'

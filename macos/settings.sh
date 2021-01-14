@@ -1,6 +1,7 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 
-set -e
+set -o errexit
+set -o nounset
 
 # This file contains settings for mac which makes me happy.
 # It is not a full list.
