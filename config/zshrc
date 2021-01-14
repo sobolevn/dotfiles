@@ -1,7 +1,7 @@
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-# Theme is set via `antibody`, see `config/antibody.txt`.
+# Theme is set via `zplug`, see `config/zplug.txt`.
 # ZSH_THEME="sobole"
 
 # Uncomment the following line to use case-sensitive completion.

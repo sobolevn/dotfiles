@@ -9,14 +9,13 @@ export SHELL
 
 # Standard dotbot pre-configuration:
 
-DOTBOT_DIR='dotbot'
+readonly DOTBOT_DIR='dotbot'
+readonly DOTBOT_BIN='bin/dotbot'
+readonly BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-DOTBOT_BIN='bin/dotbot'
-BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+readonly ARGS="$@"
 
-ARGS="${@}"
-
-cd "${BASEDIR}"
+cd "$BASEDIR"
 git submodule update --init --recursive
 
 # Linking dotfiles:
@@ -29,13 +28,13 @@ run_dotbot () {
     -d "$BASEDIR" \
     --plugin-dir dotbot-brewfile \
     --plugin-dir dotbot-pip \
-    -c "$config" "$ARGS"
+    -c "$config" $ARGS
 }
 
-run_dotbot 'steps/terminal.yml'
-
-run_dotbot 'steps/codespaces.yml'
-source "$HOME/.shell/.codespaces"
-
-run_dotbot 'steps/dependencies.yml'
-run_dotbot 'steps/vscode.yml'
+run_dotbot 'steps/terminal.yml' || true
+if [ "$CODESPACES" = true ]; then
+  run_dotbot 'steps/codespaces.yml' || true
+else
+  run_dotbot 'steps/dependencies.yml' || true
+fi
+run_dotbot 'steps/vscode.yml' || true

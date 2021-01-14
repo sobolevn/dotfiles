@@ -6,8 +6,9 @@
 
 # === Plugin management ===
 
-antibody bundle < "$HOME/.antibody" > "$HOME/.zsh-plugins"
-source "$HOME/.zsh-plugins"
+ZPLUG_HOME=${ZPLUG_HOME:-'/usr/local/opt/zplug'}
+export ZPLUG_HOME
+source "$HOME/.zplugrc"
 
 
 # === Shell parts ===

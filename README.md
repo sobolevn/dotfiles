@@ -35,7 +35,7 @@ I am using both [`hyper`](https://hyper.is/)
 and default `Terminal App` as terminal emulators.
 I am using `zsh` with [`oh-my-zsh`](https://github.com/robbyrussell/oh-my-zsh)
 as a main shell.
-And [`antibody`](https://github.com/getantibody/antibody) to manage shell plugins.
+And [`zplug`](https://github.com/zplug/zplug) to manage shell plugins.
 I also have a lot of tools to make my working experience better.
 
 I mainly work with three stacks:

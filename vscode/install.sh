@@ -1,20 +1,14 @@
-#!/usr/bin/env bash
-
-set -e
-
-if [ ! $(command -v code-insiders) ]; then
-  # Adding `code-insiders` to the `PATH`, it might be missing.
-  ls $HOME/.vscode-remote/bin
-  VSCODE="$HOME/.vscode-remote/bin/$(ls "$HOME/.vscode-remote/bin")"
-  PATH="$VSCODE:$PATH"
-  echo "Added $VSCODE to the PATH"
-fi
-
-if [ ! $(command -v code) ] && [ $(command -v code-insiders) ]; then
-  # Link `code` to be the same as `code-insiders`:
-  ln -s "$(which code-insiders)" "$(dirname "$(which code-insiders)")/code"
-  echo 'Linked `code-insiders` to be accessible as `code`'
-fi
-
-# Install plugins:
-sh 'vscode/plugins.sh'
+code --install-extension alexdima.copy-relative-path
+code --install-extension alexkrechik.cucumberautocomplete
+code --install-extension dariofuzinato.vue-peek
+code --install-extension EditorConfig.EditorConfig
+code --install-extension justusadam.language-haskell
+code --install-extension mikestead.dotenv
+code --install-extension mjmcloug.vscode-elixir
+code --install-extension ms-python.python
+code --install-extension ms-vscode.sublime-keybindings
+code --install-extension octref.vetur
+code --install-extension pnp.polacode
+code --install-extension rust-lang.rust
+code --install-extension stevejpurves.cucumber
+code --install-extension teabyii.ayu

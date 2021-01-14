@@ -13,11 +13,13 @@
     ~/.bashrc:
       path: config/bashrc
       force: true
-    ~/.zshrc: config/zshrc
+    ~/.zshrc:
+      path: config/zshrc
+      force: true
     ~/.shell_env: config/shell_env
 
     ~/.hushlogin: config/hushlogin
-    ~/.antibody: config/antibody.txt
+    ~/.zplugrc: config/zplugrc
     ~/.hyper.js: config/hyper.js
 
     # Git:
