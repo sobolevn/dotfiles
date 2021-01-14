@@ -59,6 +59,7 @@
       if: '[ "$CODESPACES" = true ]'
       path: vscode/settings.json
       create: true
+      force: true
     "~/.vscode-remote/data/Machine/keybindings.json":
       if: '[ "$CODESPACES" = true ]'
       path: vscode/keybindings.json
