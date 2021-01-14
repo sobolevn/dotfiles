@@ -27,14 +27,12 @@ HOMEBREW_PREFIX="$HOME/.linuxbrew"
 mkdir -p "$HOMEBREW_PREFIX"
 cd "$HOMEBREW_PREFIX"
 
-set +x
-
 # Install brew:
 git clone --depth=1 'https://github.com/Homebrew/brew' "$HOMEBREW_PREFIX/Homebrew"
 mkdir -p "$HOMEBREW_PREFIX/bin"
-ln -s "$HOMEBREW_PREFIX/Homebrew/bin/brew" "$HOMEBREW_PREFIX/brew"
+ln -s "$HOMEBREW_PREFIX/Homebrew/bin/brew" "$HOMEBREW_PREFIX/bin/brew"
 eval $("$HOMEBREW_PREFIX"/bin/brew shellenv)
 
+set +x
 cd -
-
-echo 'Done!'
+echo 'Homebrew is installed!'

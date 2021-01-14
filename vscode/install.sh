@@ -3,6 +3,10 @@
 set -o errexit
 set -o nounset
 
+echo 'debug'
+echo "$SHELL"
+echo "$PATH"
+
 if [ ! $(command -v code) ]; then
   echo 'not -v code'
 fi
