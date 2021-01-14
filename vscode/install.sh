@@ -1,7 +1,6 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 
-set -o errexit
-set -o nounset
+set -e
 
 if [ ! $(command -v code-insiders) ]; then
   # Adding `code-insiders` to the `PATH`, it might be missing.
