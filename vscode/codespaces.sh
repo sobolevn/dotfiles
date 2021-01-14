@@ -28,13 +28,14 @@ adduser linuxbrew sudo
 echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
 
 # Create an installation dir:
-PREFIX='/home/linuxbrew/.linuxbrew'
-mkdir -p "$PREFIX"
-chown linuxbrew:sudo "$PREFIX"
+HOMEBREW_PREFIX='/home/linuxbrew/.linuxbrew'
+mkdir -p "$HOMEBREW_PREFIX"
+chown linuxbrew:sudo "$HOMEBREW_PREFIX"
 
 # Install brew:
-su -m linuxbrew \
- -c 'HOMEBREW_PREFIX=/home/linuxbrew/.linuxbrew bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"'
+cd "$HOMEBREW_PREFIX"
+su linuxbrew -l \
+ -c "HOMEBREW_PREFIX=$HOMEBREW_PREFIX bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" < /dev/null"
 
 set +x
 
