@@ -12,8 +12,10 @@ if [ ! $(command -v code) ]; then
   echo 'not -v code'
 fi
 
-if [ $(command -v code-insiders) ]; then
-  echo '-v code-insiders'
+if [ ! $(command -v code-insiders) ]; then
+  # Adding `code-insiders` to the `PATH`, it might be missing.
+  VSCODE="$HOME/.vscode-remote/bin/$(ls "$HOME/.vscode-remote/bin")"
+  PATH="$VSCODE:$PATH"
 fi
 
 if [ ! $(command -v code) ] && [ $(command -v code-insiders) ]; then
