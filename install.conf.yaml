@@ -32,30 +32,54 @@
     ~/.editorconfig: config/editorconfig
     ~/.nanorc: config/nanorc
 
+    # GPG:
+    "~/.gnupg/gpg-agent.conf":
+      path: config/gpgagent
+      create: true
+
+
+# Setting up vscode:
+- shell:
+  - [sh './vscode/codespaces.sh', Setting up codespaces]
+
+- link:
+    # macos:
+    "~/Library/Application Support/Code/User/settings.json":
+      if: '[ `uname` = Darwin ]'
+      path: vscode/settings.json
+      create: true
+    "~/Library/Application Support/Code/User/keybindings.json":
+      if: '[ `uname` = Darwin ]'
+      path: vscode/keybindings.json
+      create: true
+    "~/Library/Application Support/Code/User/snippets":
+      if: '[ `uname` = Darwin ]'
+      path: vscode/snippets
+      create: true
+
+    # codespaces:
+    "~/.vscode-remote/data/Machine/settings.json":
+      if: '[ "$CODESPACES" = true ]'
+      path: vscode/settings.json
+      create: true
+    "~/.vscode-remote/data/Machine/keybindings.json":
+      if: '[ "$CODESPACES" = true ]'
+      path: vscode/keybindings.json
+      create: true
+    "~/.vscode-remote/data/Machine/snippets":
+      if: '[ "$CODESPACES" = true ]'
+      path: vscode/snippets
+      create: true
+
+- shell:
+  - [sh './vscode/install.sh', Installing vscode extensions]
+
+
 # Installing dependencies:
 - brewfile:
     file: Brewfile
     no-upgrage: true
-
-# These links should be created after everything is installed:
-- link:
-    ~/.gnupg/gpg-agent.conf: config/gpgagent
-
-# Setting up vscode:
-- link:
-    # vscode:
-    "~/Library/Application Support/Code/User/settings.json":
-        path: vscode/settings.json
-        create: true
-    "~/Library/Application Support/Code/User/keybindings.json":
-        path: vscode/keybindings.json
-        create: true
-    "~/Library/Application Support/Code/User/snippets":
-        path: vscode/snippets
-        create: true
-
-- shell:
-  - [bash ./vscode/install.sh, Installing vscode extensions]
+    include: ['tap', 'brew']
 
 # Cleaning up:
 - shell:

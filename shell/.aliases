@@ -13,6 +13,13 @@ alias ls="/usr/local/bin/gls --color -h --group-directories-first -F"
 # `bat` styling:
 alias bat="\bat --theme=GitHub"
 
+# Aliasing dev version of `code` to regular `code`,
+# for example in codespaces `code-insiders` is installed,
+# but there's not `code` alias:
+if [ $(command -v code-insiders) ]; then
+  alias code="code-insiders"
+fi
+
 # Pretty print XML (use `jq` for json):
 alias xq="xmllint --format"
 
