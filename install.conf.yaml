@@ -16,9 +16,6 @@
     ~/.antibody: config/antibody.txt
     ~/.hyper.js: config/hyper.js
 
-    # SSH:
-    ~/.ssh/config: config/ssh_config
-
     # Git:
     ~/.gitconfig: config/gitconfig
     ~/.gitignore_global: config/gitignore
@@ -32,11 +29,6 @@
     ~/.editorconfig: config/editorconfig
     ~/.nanorc: config/nanorc
 
-    # GPG:
-    "~/.gnupg/gpg-agent.conf":
-      path: config/gpgagent
-      create: true
-
 
 # Setting up vscode:
 - shell:
@@ -45,29 +37,29 @@
 - link:
     # macos:
     "~/Library/Application Support/Code/User/settings.json":
-      if: '[ `uname` = Darwin ]'
+      if: '[ `uname` = 'Darwin' ]'
       path: vscode/settings.json
       create: true
     "~/Library/Application Support/Code/User/keybindings.json":
-      if: '[ `uname` = Darwin ]'
+      if: '[ `uname` = 'Darwin' ]'
       path: vscode/keybindings.json
       create: true
     "~/Library/Application Support/Code/User/snippets":
-      if: '[ `uname` = Darwin ]'
+      if: '[ `uname` = 'Darwin' ]'
       path: vscode/snippets
       create: true
 
     # codespaces:
     "~/.vscode-remote/data/Machine/settings.json":
-      if: '[ "$CODESPACES" = true ]'
+      if: '[ "$CODESPACES" = 'true' ]'
       path: vscode/settings.json
       create: true
     "~/.vscode-remote/data/Machine/keybindings.json":
-      if: '[ "$CODESPACES" = true ]'
+      if: '[ "$CODESPACES" = 'true' ]'
       path: vscode/keybindings.json
       create: true
     "~/.vscode-remote/data/Machine/snippets":
-      if: '[ "$CODESPACES" = true ]'
+      if: '[ "$CODESPACES" = 'true' ]'
       path: vscode/snippets
       create: true
 
@@ -80,6 +72,15 @@
     file: Brewfile
     no-upgrage: true
     include: ['tap', 'brew']
+
+# These links require deps to be installed:
+- link:
+    # SSH:
+    ~/.ssh/config: config/ssh_config
+
+    # GPG:
+    ~/.gnupg/gpg-agent.conf: config/gpgagent
+
 
 # Cleaning up:
 - shell:
