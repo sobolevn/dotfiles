@@ -1,5 +1,3 @@
 #!/usr/bin/env bash
 
-# We only need to run this file in codespaces,
-# otherwise we are going to use `zsh`:
-source "$HOME/.shell/.codespaces"
+# This file must be empty

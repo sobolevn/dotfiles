@@ -7,12 +7,8 @@
     ~/.shell:
       path: shell
       create: true
-    ~/.bash_profile:
-      path: config/bash_profile
-      force: true
-    ~/.bashrc:
-      path: config/bashrc
-      force: true
+    ~/.bash_profile: config/bash_profile
+    ~/.bashrc: config/bashrc
     ~/.zshrc:
       path: config/zshrc
       force: true

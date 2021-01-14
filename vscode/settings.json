@@ -68,6 +68,8 @@
   "telemetry.enableTelemetry": false,
 
   // Terminal:
+  "terminal.integrated.shell.osx": "zsh",
+  "terminal.integrated.shell.linux": "zsh",
   "terminal.integrated.env.osx": {
     "SOBOLE_THEME_MODE": "dark",
   },

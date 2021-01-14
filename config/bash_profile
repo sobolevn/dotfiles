@@ -3,10 +3,6 @@
 # I do not use bash directly.
 # So this file only includes `brew` binaries.
 
-# We only need to run this file in codespaces,
-# otherwise we are going to use `zsh`:
-source "$HOME/.shell/.codespaces"
-
 # global:
 PATH="/usr/local/bin:$PATH"
 export PATH
