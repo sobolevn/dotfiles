@@ -75,7 +75,7 @@
       create: true
 
 - shell:
-  - command: bash './vscode/install.sh'
+  - command: bash -l './vscode/install.sh'
     description: Installing vscode extensions
     stdout: true
     stderr: true

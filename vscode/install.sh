@@ -6,6 +6,7 @@ set -o nounset
 echo 'debug'
 echo "$SHELL"
 echo "$PATH"
+env
 
 if [ ! $(command -v code) ]; then
   echo 'not -v code'

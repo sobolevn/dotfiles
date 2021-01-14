@@ -16,23 +16,27 @@ fi
 # Brew
 # ====
 
-set -x
+if [ ! $(command -v brew) ]; then
+  echo 'Installing Homebrew'
+  set -x
 
-# Install brew deps:
-DEBIAN_FRONTEND=noninteractive apt-get install -y \
-  build-essential curl procps sudo man
+  # Install brew deps:
+  DEBIAN_FRONTEND=noninteractive apt-get install -y \
+    build-essential curl procps sudo man
 
-# Create an installation dir:
-HOMEBREW_PREFIX="$HOME/.linuxbrew"
-mkdir -p "$HOMEBREW_PREFIX"
-cd "$HOMEBREW_PREFIX"
+  # Create an installation dir:
+  HOMEBREW_PREFIX="$HOME/.linuxbrew"
+  mkdir -p "$HOMEBREW_PREFIX"
+  cd "$HOMEBREW_PREFIX"
 
-# Install brew:
-git clone --depth=1 'https://github.com/Homebrew/brew' "$HOMEBREW_PREFIX/Homebrew"
-mkdir -p "$HOMEBREW_PREFIX/bin"
-ln -s "$HOMEBREW_PREFIX/Homebrew/bin/brew" "$HOMEBREW_PREFIX/bin/brew"
-eval $("$HOMEBREW_PREFIX"/bin/brew shellenv)
+  # Install brew:
+  git clone --depth=1 'https://github.com/Homebrew/brew' "$HOMEBREW_PREFIX/Homebrew"
+  mkdir -p "$HOMEBREW_PREFIX/bin"
+  ln -s "$HOMEBREW_PREFIX/Homebrew/bin/brew" "$HOMEBREW_PREFIX/bin/brew"
+  eval $("$HOMEBREW_PREFIX"/bin/brew shellenv)
 
-set +x
-cd -
+  set +x
+  cd -
+fi
+
 echo 'Homebrew is installed!'
