@@ -39,7 +39,7 @@
 
 # Setting up vscode:
 - shell:
-  - command: sh './vscode/codespaces.sh'
+  - command: bash './vscode/codespaces.sh'
     description: Setting up codespaces
     stdout: true
     stderr: true
@@ -75,7 +75,7 @@
       create: true
 
 - shell:
-  - command: sh './vscode/install.sh'
+  - command: bash './vscode/install.sh'
     description: Installing vscode extensions
     stdout: true
     stderr: true
@@ -104,4 +104,4 @@
 
 # Cleaning up:
 - shell:
-  - [brew cleanup, Cleaning up]
+  - [bash -c 'brew cleanup', Cleaning up]

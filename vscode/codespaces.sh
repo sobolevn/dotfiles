@@ -39,6 +39,7 @@ cd "$HOMEBREW_PREFIX"
 su - linuxbrew \
   -w 'HOMEBREW_PREFIX' \
   -c 'bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" < /dev/null'
+eval $($HOMEBREW_PREFIX/bin/brew shellenv)
 cd -
 
 echo 'Done!'
