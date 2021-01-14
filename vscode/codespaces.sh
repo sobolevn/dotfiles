@@ -32,12 +32,13 @@ HOMEBREW_PREFIX='/home/linuxbrew/.linuxbrew'
 mkdir -p "$HOMEBREW_PREFIX"
 chown linuxbrew:sudo "$HOMEBREW_PREFIX"
 
+set +x
+
 # Install brew:
 cd "$HOMEBREW_PREFIX"
 su - linuxbrew \
   -w 'HOMEBREW_PREFIX' \
-  -c "bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" < /dev/null"
-
-set +x
+  -c 'bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" < /dev/null'
+cd -
 
 echo 'Done!'
