@@ -1,0 +1,13 @@
+---
+
+# Installing dependencies:
+- brewfile:
+    file: Brewfile
+    no-upgrage: true
+    stdout: true
+    stderr: true
+    # You will need to install `cask` and `mas` deps
+    # in a separate `brew bundle` call,
+    # this is done because not everybody needs the same casks and apps,
+    # but most of people would need the same formulas.
+    include: ['tap', 'brew']

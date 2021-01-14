@@ -1,0 +1,46 @@
+---
+
+- clean: ['~']
+
+- link:
+    # Terminal:
+    ~/.shell:
+      path: shell
+      create: true
+    ~/.bash_profile:
+      path: config/bash_profile
+      force: true
+    ~/.bashrc:
+      path: config/bashrc
+      force: true
+    ~/.zshrc: config/zshrc
+    ~/.shell_env: config/shell_env
+
+    ~/.hushlogin: config/hushlogin
+    ~/.antibody: config/antibody.txt
+    ~/.hyper.js: config/hyper.js
+
+    # Git:
+    ~/.gitconfig: config/gitconfig
+    ~/.gitignore_global: config/gitignore
+    ~/.gitattributes_global: config/gitattributes
+
+    # Tools:
+    ~/.psqlrc: config/psqlrc
+    ~/.sqliterc: config/sqliterc
+
+    # Editors:
+    ~/.editorconfig: config/editorconfig
+    ~/.nanorc: config/nanorc
+
+    # SSH:
+    ~/.ssh/config:
+      path: config/ssh_config
+      force: true
+      create: true
+
+    # GPG:
+    ~/.gnupg/gpg-agent.conf:
+      path: config/gpgagent
+      force: true
+      create: true
