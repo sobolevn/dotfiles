@@ -1,1 +1,8 @@
-# This file should be empty
+#!/usr/bin/env bash
+
+# We only need to load `brew` in codespaces here:
+HOMEBREW_PREFIX='/home/linuxbrew/.linuxbrew'
+
+if [ -d "$HOMEBREW_PREFIX" ]; then
+  eval $($HOMEBREW_PREFIX/bin/brew shellenv)
+fi

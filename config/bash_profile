@@ -4,11 +4,5 @@
 # So this file only includes `brew` binaries.
 
 # global:
-if [ -d "$HOME/.linuxbrew" ]; then
-  # codespaces
-  eval $($HOME/.linuxbrew/bin/brew shellenv)
-else
-  # mac
-  PATH="/usr/local/bin:$PATH"
-  export PATH
-fi
+PATH="/usr/local/bin:$PATH"
+export PATH
