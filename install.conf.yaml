@@ -10,10 +10,15 @@
     ~/.shell:
       path: shell
       create: true
-    ~/.shell_env: config/shell_env
-    ~/.bash_profile: config/bash_profile
-    ~/.bashrc: config/bashrc
+    ~/.bash_profile:
+      path: config/bash_profile
+      force: true
+    ~/.bashrc:
+      path: config/bashrc
+      force: true
     ~/.zshrc: config/zshrc
+    ~/.shell_env: config/shell_env
+
     ~/.hushlogin: config/hushlogin
     ~/.antibody: config/antibody.txt
     ~/.hyper.js: config/hyper.js

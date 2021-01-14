@@ -20,7 +20,7 @@ set -x
 
 # Install brew deps:
 DEBIAN_FRONTEND=noninteractive apt-get install -y \
-  build-essential curl procps sudo
+  build-essential curl procps sudo man
 
 # Create a new user:
 adduser --disabled-password --gecos '' linuxbrew
@@ -34,8 +34,9 @@ chown linuxbrew:sudo "$HOMEBREW_PREFIX"
 
 # Install brew:
 cd "$HOMEBREW_PREFIX"
-su linuxbrew -l \
- -c "HOMEBREW_PREFIX=$HOMEBREW_PREFIX bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" < /dev/null"
+su - linuxbrew \
+  -w 'HOMEBREW_PREFIX' \
+  -c "bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" < /dev/null"
 
 set +x
 
