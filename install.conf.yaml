@@ -39,6 +39,7 @@
 
 # Setting up vscode:
 - shell:
+  # TODO: find a way to install `linuxbrew` faster
   - command: bash './vscode/codespaces.sh'
     description: Setting up codespaces
     stdout: true
@@ -85,6 +86,10 @@
 - brewfile:
     file: Brewfile
     no-upgrage: true
+    # You will need to install `cask` and `mas` deps
+    # in a separate `brew bundle` call,
+    # this is done because not everybody needs the same casks and apps,
+    # but most of people would need the same formulas.
     include: ['tap', 'brew']
 
 # These links require deps to be installed:
@@ -104,4 +109,4 @@
 
 # Cleaning up:
 - shell:
-  - [bash -c 'brew cleanup', Cleaning up]
+  - [bash -l -c 'brew cleanup', Cleaning up]

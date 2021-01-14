@@ -9,11 +9,5 @@ if [ ! $(command -v code) ] && [ $(command -v code-insiders) ]; then
   echo 'linked `code-insiders` to be accessible as `code`'
 fi
 
-# There should be `code` bin at the moment:
-if [ ! $(command -v code) ]; then
-  echo 'code executable is not found, abort'
-  exit 1
-fi
-
 # Install plugins:
 sh 'vscode/plugins.sh'
