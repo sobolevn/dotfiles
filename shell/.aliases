@@ -8,7 +8,7 @@
 # === Aliases ===
 
 # Sorts directories in top, colors, and prints `/` at directories:
-alias ls="/usr/local/bin/gls --color -h --group-directories-first -F"
+alias ls="gls --color -h --group-directories-first -F"
 
 # `bat` styling:
 alias bat="\bat --theme=GitHub"

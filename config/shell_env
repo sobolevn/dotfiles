@@ -6,18 +6,24 @@
 
 # === Plugin management ===
 
-ZPLUG_HOME=${ZPLUG_HOME:-'/usr/local/opt/zplug'}
+if [ "$CODESPACES" = true ]; then
+  ZPLUG_HOME="$HOME/.zplug"
+else
+  ZPLUG_HOME='/usr/local/opt/zplug'
+fi
+
 export ZPLUG_HOME
 source "$HOME/.zplugrc"
 
 
 # === Shell parts ===
 
-source "$HOME/.shell/.codespaces"
-source "$HOME/.shell/.exports"
-source "$HOME/.shell/.aliases"
-source "$HOME/.shell/.functions"
-source "$HOME/.shell/.external"
+if [ ! "$CODESPACES" = true ]; then
+  source "$HOME/.shell/.exports"
+  source "$HOME/.shell/.aliases"
+  source "$HOME/.shell/.functions"
+  source "$HOME/.shell/.external"
+fi
 
 
 # === Local variables and overrides ===
