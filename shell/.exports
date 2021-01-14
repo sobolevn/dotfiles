@@ -26,7 +26,7 @@ PATH="/usr/local/opt/gpg-agent/bin:$PATH"
 PATH="$HOME/.local/bin:$PATH"
 
 # Adds `poetry` binary, should be added to the end:
-PATH="$PATH:$HOME/.poetry/bin"
+PATH="$HOME/.poetry/bin:$PATH"
 
 # postgres@9.6 utilities like `psql`:
 PATH="/usr/local/opt/postgresql@9.6/bin:$PATH"

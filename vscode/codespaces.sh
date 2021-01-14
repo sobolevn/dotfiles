@@ -33,9 +33,13 @@ if [ ! $(command -v brew) ]; then
   git clone --depth=1 'https://github.com/Homebrew/brew' "$HOMEBREW_PREFIX/Homebrew"
   mkdir -p "$HOMEBREW_PREFIX/bin"
   ln -s "$HOMEBREW_PREFIX/Homebrew/bin/brew" "$HOMEBREW_PREFIX/bin/brew"
-  eval $("$HOMEBREW_PREFIX"/bin/brew shellenv)
 
   set +x
+  echo 'before'
+  env
+  eval $("$HOMEBREW_PREFIX"/bin/brew shellenv)
+  echo 'after'
+  env
   cd -
 fi
 
