@@ -9,4 +9,4 @@ if [ ! $(command -v code) ] && [ $(command -v code-insiders) ]; then
 fi
 
 # Install plugins:
-sh 'vscode/plugins.sh'
+eval 'vscode/plugins.sh'

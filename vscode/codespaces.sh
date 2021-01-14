@@ -37,3 +37,5 @@ su -m linuxbrew \
  -c 'HOMEBREW_PREFIX=/home/linuxbrew/.linuxbrew bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"'
 
 set +x
+
+echo 'Done!'
