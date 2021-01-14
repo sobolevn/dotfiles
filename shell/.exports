@@ -19,11 +19,6 @@ export PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
 
 # These lines should be the first ones!
 
-# Adding `brew` to path in Codespaces:
-if [ -d "$HOME/.linuxbrew" ]; then
-  eval $($HOME/.linuxbrew/bin/brew shellenv)
-fi
-
 # GPG agent:
 PATH="/usr/local/opt/gpg-agent/bin:$PATH"
 

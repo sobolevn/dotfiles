@@ -12,6 +12,7 @@ source "$HOME/.zsh-plugins"
 
 # === Shell parts ===
 
+source "$HOME/.shell/.codespaces"
 source "$HOME/.shell/.exports"
 source "$HOME/.shell/.aliases"
 source "$HOME/.shell/.functions"

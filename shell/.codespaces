@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+if [ "$CODESPACES" = true ]; then
+  # Installation location:
+  HOMEBREW_PREFIX='/home/linuxbrew/.linuxbrew'
+  export HOMEBREW_PREFIX
+
+  # Adding `brew` to path in Codespaces:
+  if [ -d "$HOMEBREW_PREFIX" ]; then
+    eval $($HOMEBREW_PREFIX/bin/brew shellenv)
+  fi
+fi
