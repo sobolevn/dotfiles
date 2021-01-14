@@ -21,7 +21,7 @@ if [ ! $(command -v brew) ]; then
   set -x
 
   # Install brew deps:
-  DEBIAN_FRONTEND=noninteractive apt-get install -y \
+  DEBIAN_FRONTEND=noninteractive apt-get update && apt-get install -y \
     build-essential curl procps sudo man
 
   # Create an installation dir:
