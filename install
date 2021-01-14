@@ -2,6 +2,11 @@
 
 set -e
 
+# Exporting the specific shell we want to work with:
+
+SHELL='/bin/bash'
+export SHELL
+
 # Standard dotbot pre-configuration:
 
 CONFIG="install.conf.yaml"

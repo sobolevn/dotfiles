@@ -3,17 +3,9 @@
 set -o errexit
 set -o nounset
 
-echo 'debug'
-echo "$SHELL"
-echo "$PATH"
-env
-
-if [ ! $(command -v code) ]; then
-  echo 'not -v code'
-fi
-
 if [ ! $(command -v code-insiders) ]; then
   # Adding `code-insiders` to the `PATH`, it might be missing.
+  ls $HOME/.vscode-remote/bin
   VSCODE="$HOME/.vscode-remote/bin/$(ls "$HOME/.vscode-remote/bin")"
   PATH="$VSCODE:$PATH"
 fi
