@@ -39,7 +39,6 @@
 
 # Setting up vscode:
 - shell:
-  # TODO: find a way to install `linuxbrew` faster
   - command: bash './vscode/codespaces.sh'
     description: Setting up codespaces
     stdout: true

@@ -22,24 +22,19 @@ set -x
 DEBIAN_FRONTEND=noninteractive apt-get install -y \
   build-essential curl procps sudo man
 
-# Create a new user:
-adduser --disabled-password --gecos '' linuxbrew
-adduser linuxbrew sudo
-echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
-
 # Create an installation dir:
-HOMEBREW_PREFIX='/home/linuxbrew/.linuxbrew'
+HOMEBREW_PREFIX="$HOME/.linuxbrew"
 mkdir -p "$HOMEBREW_PREFIX"
-chown linuxbrew:sudo "$HOMEBREW_PREFIX"
+cd "$HOMEBREW_PREFIX"
 
 set +x
 
 # Install brew:
-cd "$HOMEBREW_PREFIX"
-su - linuxbrew \
-  -w 'HOMEBREW_PREFIX' \
-  -c 'bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" < /dev/null'
-eval $($HOMEBREW_PREFIX/bin/brew shellenv)
+git clone --depth=1 'https://github.com/Homebrew/brew' "$HOMEBREW_PREFIX/Homebrew"
+mkdir -p "$HOMEBREW_PREFIX/bin"
+ln -s "$HOMEBREW_PREFIX/Homebrew/bin/brew" "$HOMEBREW_PREFIX/brew"
+eval $("$HOMEBREW_PREFIX"/bin/brew shellenv)
+
 cd -
 
 echo 'Done!'
