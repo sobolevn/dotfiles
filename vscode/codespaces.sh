@@ -13,6 +13,16 @@ if [ ! "$CODESPACES" = 'true' ]; then
 fi
 
 
+# Common utils
+# ============
+
+if [ "${EUID:-${UID}}" = 0 ]; then
+  run_as=''  # root
+else
+  run_as='sudo'  # non-root
+fi
+
+
 # Brew
 # ====
 
@@ -21,8 +31,9 @@ if [ ! $(command -v brew) ]; then
   set -x
 
   # Install brew deps:
-  DEBIAN_FRONTEND=noninteractive apt-get update && apt-get install -y \
-    build-essential curl procps sudo man
+  DEBIAN_FRONTEND=noninteractive $run_as apt-get update \
+    && $run_as apt-get install -y \
+      build-essential curl procps sudo man
 
   # Create an installation dir:
   HOMEBREW_PREFIX="$HOME/.linuxbrew"
@@ -35,11 +46,7 @@ if [ ! $(command -v brew) ]; then
   ln -s "$HOMEBREW_PREFIX/Homebrew/bin/brew" "$HOMEBREW_PREFIX/bin/brew"
 
   set +x
-  echo 'before'
-  env
   eval $("$HOMEBREW_PREFIX"/bin/brew shellenv)
-  echo 'after'
-  env
   cd -
 fi
 
