@@ -1,10 +1,10 @@
 source "$ZPLUG_HOME/init.zsh"
 
-# Sorted in order of appearance (new at the bottom):
-zplug "zsh-users/zsh-syntax-highlighting"
-
 # Theme, should be the last:
 zplug "sobolevn/sobole-zsh-theme", as:theme
+
+# Sorted in order of appearance (new at the bottom):
+zplug "zsh-users/zsh-syntax-highlighting"
 
 # Install plugins if there are plugins that have not been installed:
 if ! zplug check; then

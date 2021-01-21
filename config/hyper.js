@@ -94,7 +94,9 @@ module.exports = {
     shellArgs: ['--login'],
 
     // for environment variables
-    env: {},
+    env: {
+       'SOBOLE_THEME_MODE': 'light'
+    },
 
     // set to false for no bell
     bell: 'SOUND',
