@@ -69,7 +69,7 @@
 
   // Terminal:
   "terminal.integrated.shell.osx": "zsh",
-  "terminal.integrated.shell.linux": "zsh",
+  "terminal.integrated.shell.linux": "bash",
   "terminal.integrated.env.osx": {
     "SOBOLE_THEME_MODE": "dark",
   },
@@ -79,7 +79,6 @@
   "window.menuBarVisibility": "hidden",
   "window.clickThroughInactive": false,
   "window.newWindowDimensions": "maximized",
-  "window.zoomLevel": 0,
 
   "workbench.editor.labelFormat": "medium",
   "workbench.editor.tabCloseButton": "off",
@@ -94,6 +93,8 @@
   "workbench.editor.showTabs": false,
   "workbench.editor.highlightModifiedTabs": false,
   "workbench.editor.showIcons": false,
+  "workbench.editor.decorations.badges": false,
+  "workbench.editor.decorations.colors": false,
 
   // Tools, extensions, and languages:
   "git.autofetch": false,
@@ -116,6 +117,8 @@
   "vetur.completion.autoImport": false,
   "vetur.experimental.templateInterpolationService": true,
 
+  "rust-analyzer.inlayHints.enable": false,
+
   // Theme:
   "workbench.colorTheme": "Ayu Dark",
   "workbench.iconTheme": "ayu",
@@ -131,4 +134,10 @@
     "sideBar.foreground": "#b3b1adBB",
     "sideBarTitle.foreground": "#0a0e14",
   },
+  "workbench.editorAssociations": [
+    {
+      "viewType": "jupyter.notebook.ipynb",
+      "filenamePattern": "*.ipynb"
+    }
+  ],
 }
