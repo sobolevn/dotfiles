@@ -81,9 +81,6 @@ eval "$(pyenv init -)"
 # rbenv:
 eval "$(rbenv init -)"
 
-# rustup:
-source "$HOME/.cargo/env"
-
 
 # === Histories ===
 
