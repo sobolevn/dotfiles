@@ -48,7 +48,8 @@
   "files.associations": {
     ".babelrc": "jsonc",
     ".eslintrc": "jsonc",
-    "*.pyi": "python"
+    "*.pyi": "python",
+    "*.bats": "shellscript",
   },
   "files.autoSave": "onFocusChange",
   "files.exclude": {
@@ -68,8 +69,8 @@
   "telemetry.enableTelemetry": false,
 
   // Terminal:
-  "terminal.integrated.shell.osx": "zsh",
-  "terminal.integrated.shell.linux": "bash",
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.defaultProfile.linux": "bash",
   "terminal.integrated.env.osx": {
     "SOBOLE_THEME_MODE": "dark",
   },
