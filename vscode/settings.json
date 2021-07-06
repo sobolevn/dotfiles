@@ -103,6 +103,7 @@
   "git.autorefresh": true,
   "git.decorations.enabled": true,
 
+
   "python.showStartPage": false,
   "python.formatting.provider": "none",
   "python.pythonPath": "${workspaceFolder}/.venv/bin/python3",
@@ -135,10 +136,7 @@
     "sideBar.foreground": "#b3b1adBB",
     "sideBarTitle.foreground": "#0a0e14",
   },
-  "workbench.editorAssociations": [
-    {
-      "viewType": "jupyter.notebook.ipynb",
-      "filenamePattern": "*.ipynb"
-    }
-  ],
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb"
+  },
 }
