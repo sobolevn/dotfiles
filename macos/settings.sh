@@ -18,6 +18,7 @@ set -e
 echo 'Configuring your mac. Hang tight.'
 osascript -e 'tell application "System Preferences" to quit'
 
+
 # === General ===
 
 # Hide remaining battery time; show percentage
@@ -140,6 +141,24 @@ defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 
 # Diable automatic period substitution:
 defaults write NSGlobalDomain NSAutomaticPeriodSubstitutionEnabled -bool false
+
+
+# === Time Machine ===
+
+# Prevent Time Machine from prompting to use new hard drives as backup volume
+defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
+
+
+# === Activity monitor ===
+
+# Show the main window when launching Activity Monitor
+defaults write com.apple.ActivityMonitor OpenMainWindow -bool true
+
+# Visualize CPU usage in the Activity Monitor Dock icon
+defaults write com.apple.ActivityMonitor IconType -int 5
+
+# Show all processes in Activity Monitor
+defaults write com.apple.ActivityMonitor ShowCategory -int 0
 
 
 # === Maccy ===
