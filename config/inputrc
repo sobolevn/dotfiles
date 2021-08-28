@@ -1,0 +1,1 @@
+set bell-style none

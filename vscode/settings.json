@@ -54,6 +54,10 @@
   "files.autoSave": "onFocusChange",
   "files.exclude": {
     "**/.DS_Store": true,
+
+    "**/node_modules": true,
+    "**/bower_components": true,
+
     "**/__pycache__": true,
     "**/.cache": true,
     "**/.idea": true,
@@ -62,6 +66,8 @@
     "**/.venv": true,
     "**/.coverage": true,
     "**/*.py[co]": true,
+    "**/htmlcoverage": true,
+    "**/docs/build": true,
   },
 
   // Stats and telemetry:

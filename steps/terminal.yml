@@ -15,6 +15,7 @@
     ~/.shell_env: config/shell_env
 
     ~/.hushlogin: config/hushlogin
+    ~/.inputrc: config/inputrc
     ~/.zplugrc: config/zplugrc
     ~/.hyper.js: config/hyper.js
 
