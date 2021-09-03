@@ -90,16 +90,14 @@ Here's how my new `vscode` setup looks like:
 
 ![sobolevn's vscode for Python](https://raw.githubusercontent.com/sobolevn/dotfiles/master/media/vscode-python.png)
 
-It is also fully [configured](https://docs.github.com/en/free-pro-team@latest/github/developing-online-with-codespaces/personalizing-codespaces-for-your-account) to be used with [Codespaces](https://github.com/features/codespaces).
-
 Here's [a list of packages](https://github.com/sobolevn/dotfiles/blob/master/vscode/install.sh) I use:
 
 - [`ayu`](https://github.com/ayu-theme/vscode-ayu) theme with modifications and `A File Icon` icons
-- `Elixir` syntax highlighting
+- [`Elixir`](https://github.com/timmhirsens/vscode-elixir) syntax highlighting
 - [`Vetur`](https://github.com/vuejs/vetur) for `Vue` features
 - [`Python`](https://github.com/Microsoft/vscode-python) plugin
 - [`Rust`](https://github.com/rust-lang/rls-vscode) plugin
-- `editoconfig` integration
+- [`editoconfig`](https://editorconfig.org/) integration
 
 I also use [powered-up `nano`](https://github.com/sobolevn/dotfiles/blob/master/config/nanorc)
 for in-terminal editing.
