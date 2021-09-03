@@ -16,7 +16,7 @@ What's in there?
 - all my `brew` dependencies including: applications, fonts, etc. See [`Brewfile`](https://github.com/sobolevn/dotfiles/blob/master/Brewfile)
 - all my `macOS` configuration. See [`macos`](https://github.com/sobolevn/dotfiles/blob/master/macos/)
 - all my shell configuration including [my own `sobole`](https://github.com/sobolevn/sobole-zsh-theme) theme. See [`shell/`](https://github.com/sobolevn/dotfiles/tree/master/shell) and [`config/zshrc`](https://github.com/sobolevn/dotfiles/blob/master/config/zshrc)
-- all my `vscode` configuration. See `vscode/`
+- all my `vscode` configuration. See [`vscode/`](https://github.com/sobolevn/dotfiles/tree/master/vscode)
 
 
 ## Installation
@@ -24,9 +24,9 @@ What's in there?
 We are using [`dotbot`](https://github.com/anishathalye/dotbot/)
 to set things up. Steps:
 
-1. Clone this repo
-2. `cd` into `dotfiles/` folder
-3. Run: `./install`
+1. Clone this repo with: `git clone https://github.com/sobolevn/dotfiles dotfiles`
+2. `cd dotfiles/`
+3. Run: [`bash ./install`](https://github.com/sobolevn/dotfiles/blob/master/install)
 
 
 ## CLI
