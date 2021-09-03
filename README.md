@@ -33,19 +33,20 @@ to set things up. Steps:
 
 I am using both [`hyper`](https://hyper.is/)
 and default `Terminal App` as terminal emulators.
-I am using `zsh` with [`oh-my-zsh`](https://github.com/robbyrussell/oh-my-zsh)
-as a main shell.
-And [`zplug`](https://github.com/zplug/zplug) to manage shell plugins.
-I also have a lot of tools to make my working experience better.
+I am using [`zsh`](https://github.com/zsh-users/zsh) with [`oh-my-zsh`](https://github.com/robbyrussell/oh-my-zsh)
+as the main shell.
+And [`zplug`](https://github.com/zplug/zplug) to manage shell [plugins](https://github.com/sobolevn/dotfiles/blob/master/config/zplugrc).
+I also have a lot of tools / scripts / aliases to make my working experience better.
 
-I mainly work with three stacks:
+I mainly work with several stacks:
 
 - `python`
 - `node` + `vue` + `typescript`
 - `elixir`
+- `rust`
 
 So, they are configured nice and smoothly.
-You will have configured version managers, best practices, and useful tools.
+You will have configured version managers, editor support, best practices, and useful tools.
 And some productivity hacks!
 
 I also have several other languages installed.
@@ -54,24 +55,20 @@ But I don't use them on a daily basis.
 
 ## Apps
 
-I am using `brew` to install all free apps for my mac.
-I also sync apps from AppStore with `brew`,
+I am using [`brew`](https://brew.sh/) to install all free apps for my mac.
+I also sync apps from AppStore with `brew` via [`mas`](https://formulae.brew.sh/formula/mas),
 so the resulting [`Brewfile`](https://github.com/sobolevn/dotfiles/blob/master/Brewfile) contains everything.
 
 
 ## Infrastructure
 
 I try to containerize everything.
-So `docker` is my main development and deployment tool.
-You can install it from its [official site](https://docs.docker.com/docker-for-mac/) (`brew` [version](https://github.com/Homebrew/homebrew-core/blob/master/Formula/docker.rb) is also an option).
-
-I prefer to use `edge` version of `docker`.
-So, you will have to download it manually.
+So, [`docker`](https://formulae.brew.sh/cask/docker) is my main development and deployment tool.
 
 However, I also use several databases and other services locally:
 
-- `postgresql` (with `postgis`)
-- `redis`
+- [`postgresql@9.6`](https://formulae.brew.sh/formula/postgresql@9.6)
+- [`redis`](https://formulae.brew.sh/formula/redis)
 
 I use this setup for small and simple projects.
 Other stuff is always dockerized.
@@ -80,11 +77,10 @@ Other stuff is always dockerized.
 ## VS Code
 
 I loved my `Sublime`. It was fast and beautiful.
-But I have switched to `vscode`.
 The main reason is that `Sublime` is almost unmaintained.
 Packages are also abandoned.
 
-So, I have switched to `vscode`.
+So, I have switched to [`vscode`](https://formulae.brew.sh/cask/visual-studio-code).
 It solved almost all issues I had with `Sublime`.
 Here's how my new `vscode` setup looks like:
 
@@ -98,6 +94,9 @@ Here's [a list of packages](https://github.com/sobolevn/dotfiles/blob/master/vsc
 - [`Python`](https://github.com/Microsoft/vscode-python) plugin
 - [`Rust`](https://github.com/rust-lang/rls-vscode) plugin
 - [`editoconfig`](https://editorconfig.org/) integration
+
+I try to keep my `vscode` setup as simple as possible.
+It was also heavy influenced by [`makevscodeawesome`](https://makevscodeawesome.com/).
 
 I also use [powered-up `nano`](https://github.com/sobolevn/dotfiles/blob/master/config/nanorc)
 for in-terminal editing.
