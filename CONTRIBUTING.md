@@ -13,5 +13,5 @@ brew bundle dump --force
 ## Dumping `vscode` plugins
 
 ```bash
-code --list-extensions | xargs -L 1 echo code --install-extension > vscode/install.sh
+code --list-extensions --show-versions | xargs -L 1 echo code --install-extension > vscode/install.sh
 ```

@@ -69,6 +69,9 @@
     "**/htmlcoverage": true,
     "**/docs/build": true,
   },
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb"
+  },
 
   // Stats and telemetry:
   "telemetry.enableCrashReporter": false,
@@ -109,7 +112,6 @@
   "git.autorefresh": true,
   "git.decorations.enabled": true,
 
-
   "python.showStartPage": false,
   "python.formatting.provider": "none",
   "python.pythonPath": "${workspaceFolder}/.venv/bin/python3",
@@ -131,6 +133,7 @@
   "workbench.colorTheme": "Ayu Dark",
   "workbench.iconTheme": "ayu",
 
+  "editor.semanticHighlighting.enabled": false,
   "workbench.colorCustomizations": {
     "activityBar.activeBorder": "#e5b358",
     "activityBar.foreground": "#797d7b",
@@ -141,8 +144,5 @@
     "tab.inactiveForeground": "#676b6a",
     "sideBar.foreground": "#b3b1adBB",
     "sideBarTitle.foreground": "#0a0e14",
-  },
-  "workbench.editorAssociations": {
-    "*.ipynb": "jupyter.notebook.ipynb"
   },
 }
