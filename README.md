@@ -93,7 +93,7 @@ Here's [a list of packages](https://github.com/sobolevn/dotfiles/blob/master/vsc
 - [`Vetur`](https://github.com/vuejs/vetur) for `Vue` features
 - [`Python`](https://github.com/Microsoft/vscode-python) plugin
 - [`Rust`](https://github.com/rust-lang/rls-vscode) plugin
-- [`editoconfig`](https://editorconfig.org/) integration
+- [`editorconfig`](https://editorconfig.org/) integration
 
 I try to keep my `vscode` setup as simple as possible.
 It was also heavy influenced by [`makevscodeawesome`](https://makevscodeawesome.com/).
