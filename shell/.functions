@@ -33,6 +33,7 @@ cdf () {
   cd "$path"
 }
 
+
 # From Dan Ryan's blog - http://danryan.co/using-antigen-for-zsh.html
 man() {
   # Shows pretty `man` page.
@@ -47,6 +48,7 @@ man() {
       man "$@"
 }
 
+
 # Loads `.env` file from a filename passed as an argument
 loadenv() {
   while read line; do
@@ -56,4 +58,14 @@ loadenv() {
     export $line > /dev/null
   done < "$1"
   echo 'Loaded!'
+}
+
+
+# Sets up all my working env
+workon() {
+  set -e
+  _z 2>&1 "$1"
+  set +e
+  source '.venv/bin/activate' || true  # There might be no `.venv`
+  code .
 }

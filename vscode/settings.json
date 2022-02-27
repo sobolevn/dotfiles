@@ -13,10 +13,9 @@
   "editor.fontLigatures": true,
   "editor.fontSize": 17,
   "explorer.openEditors.visible": 0,
-  "editor.glyphMargin": true,
+  "editor.glyphMargin": false,
   "editor.minimap.enabled": false,
   "editor.renderWhitespace": "selection",
-  "editor.renderIndentGuides": false,
   "editor.renderLineHighlight": "none",
   "editor.hideCursorInOverviewRuler": false,
   "explorer.compactFolders": false,
@@ -30,7 +29,6 @@
   "editor.cursorSurroundingLines": 3,
   "editor.useTabStops": true,
   "editor.formatOnPaste": false,
-  "editor.tabCompletion": "on",
   "editor.wordWrap": "on",
   "editor.wordWrapColumn": 80,
   "editor.hover.enabled": false,
@@ -43,6 +41,14 @@
   "explorer.decorations.badges": false,
   "extensions.ignoreRecommendations": true,
   "diffEditor.renderSideBySide": false,
+
+  // Controls if suggestions should be accepted on 'Enter' - in addition to 'Tab'.
+  // Helps to avoid ambiguity between inserting new lines or accepting suggestions.
+  // The value 'smart' means only accept a suggestion with Enter
+  // when it makes a textual change.
+  "editor.acceptSuggestionOnEnter": "on",
+  "editor.parameterHints.enabled": false,
+  "editor.tabCompletion": "off",
 
   // Files:
   "files.associations": {
@@ -74,8 +80,7 @@
   },
 
   // Stats and telemetry:
-  "telemetry.enableCrashReporter": false,
-  "telemetry.enableTelemetry": false,
+  "telemetry.telemetryLevel": "off",
 
   // Terminal:
   "terminal.integrated.defaultProfile.osx": "zsh",
@@ -86,7 +91,6 @@
   "terminal.integrated.enableBell": true,
 
   // Workbench:
-  "window.menuBarVisibility": "hidden",
   "window.clickThroughInactive": false,
   "window.newWindowDimensions": "maximized",
 
@@ -107,18 +111,24 @@
   "workbench.editor.decorations.colors": false,
 
   // Tools, extensions, and languages:
+  "problems.decorations.enabled": false,
+
   "git.autofetch": false,
   "git.showInlineOpenFileAction": false,
   "git.autorefresh": true,
   "git.decorations.enabled": true,
 
-  "python.showStartPage": false,
   "python.formatting.provider": "none",
   "python.pythonPath": "${workspaceFolder}/.venv/bin/python3",
   "python.terminal.activateEnvironment": true,
-  "python.workspaceSymbols.enabled": false,
   "python.linting.enabled": false,
-  // "python.languageServer": "Microsoft",
+  "python.languageServer": "Pylance",
+  "python.analysis.typeCheckingMode": "off",
+  "python.analysis.autoImportCompletions": false,
+  "python.analysis.diagnosticSeverityOverrides": {
+    "reportMissingImports": "none",
+    "reportUnusedVariable": "none",
+  },
 
   "typescript.updateImportsOnFileMove.enabled": "never",
   "typescript.suggest.autoImports": false,
@@ -144,5 +154,10 @@
     "tab.inactiveForeground": "#676b6a",
     "sideBar.foreground": "#b3b1adBB",
     "sideBarTitle.foreground": "#0a0e14",
+    // Disable wavy/squiggly underline in vscode
+    "editorError.foreground":   "#00000000",
+    "editorWarning.foreground": "#00000000",
+    "editorInfo.foreground":    "#00000000"
   },
+  "editor.unicodeHighlight.nonBasicASCII": false,
 }
