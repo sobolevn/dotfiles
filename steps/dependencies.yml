@@ -3,7 +3,7 @@
 # Installing dependencies:
 - brewfile:
     file: Brewfile
-    no-upgrage: true
+    no-upgrade: true
     stdout: true
     stderr: true
     # You will need to install `cask` and `mas` deps
