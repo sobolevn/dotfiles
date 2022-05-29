@@ -15,3 +15,10 @@ brew bundle dump --force
 ```bash
 code --list-extensions --show-versions | xargs -L 1 echo code --install-extension > vscode/install.sh
 ```
+
+
+## Dumping `crontab` state
+
+```bash
+crontab -l > crontab/crontab
+```

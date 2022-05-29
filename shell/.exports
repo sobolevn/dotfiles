@@ -22,7 +22,7 @@ export PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
 # GPG agent:
 PATH="/usr/local/opt/gpg-agent/bin:$PATH"
 
-# Adds `pipsi` and `pipx` binary files:
+# Adds `pipx` binary files:
 PATH="$HOME/.local/bin:$PATH"
 
 # Adds `poetry` binary, should be added to the end:

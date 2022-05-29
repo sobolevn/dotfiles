@@ -51,3 +51,9 @@
       path: config/gpgagent
       force: true
       create: true
+
+    # Crontab:
+    ~/.crontab/streamdeck.sh:
+      path: crontab/streamdeck.sh
+      create: true
+      force: true

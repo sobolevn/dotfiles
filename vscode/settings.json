@@ -21,6 +21,7 @@
   "explorer.compactFolders": false,
   "editor.occurrencesHighlight": false,
   "editor.overviewRulerBorder": false,
+  "editor.bracketPairColorization.enabled": false,
   "editor.rulers": [
     80
   ],
@@ -91,24 +92,22 @@
   "terminal.integrated.enableBell": true,
 
   // Workbench:
+  "breadcrumbs.enabled": false,
   "window.clickThroughInactive": false,
   "window.newWindowDimensions": "maximized",
 
   "workbench.editor.labelFormat": "medium",
   "workbench.editor.tabCloseButton": "off",
   "workbench.startupEditor": "newUntitledFile",
-  "workbench.sideBar.location": "right",
   "workbench.statusBar.visible": false,
   "workbench.tips.enabled": false,
-  "workbench.editor.enablePreview": false,
   "workbench.tree.renderIndentGuides": "none",
-  "breadcrumbs.enabled": false,
-  "workbench.activityBar.visible": false,
   "workbench.editor.showTabs": false,
   "workbench.editor.highlightModifiedTabs": false,
   "workbench.editor.showIcons": false,
   "workbench.editor.decorations.badges": false,
   "workbench.editor.decorations.colors": false,
+  "workbench.layoutControl.enabled": false,
 
   // Tools, extensions, and languages:
   "problems.decorations.enabled": false,
@@ -160,4 +159,6 @@
     "editorInfo.foreground":    "#00000000"
   },
   "editor.unicodeHighlight.nonBasicASCII": false,
+  "workbench.activityBar.visible": false,
+  "workbench.sideBar.location": "right",
 }
