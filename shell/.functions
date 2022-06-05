@@ -35,7 +35,7 @@ cdf () {
 
 
 # From Dan Ryan's blog - http://danryan.co/using-antigen-for-zsh.html
-man() {
+man () {
   # Shows pretty `man` page.
   env \
     LESS_TERMCAP_mb=$(printf "\e[1;31m") \
@@ -50,7 +50,7 @@ man() {
 
 
 # Loads `.env` file from a filename passed as an argument
-loadenv() {
+loadenv () {
   while read line; do
     if [ "${line:0:1}" = '#' ]; then
       continue  # comments are ignored
@@ -62,10 +62,9 @@ loadenv() {
 
 
 # Sets up all my working env
-workon() {
-  set -e
-  _z 2>&1 "$1"
-  set +e
-  source '.venv/bin/activate' || true  # There might be no `.venv`
-  code .
+workon () {
+  if _z 2>&1 "$1"; then
+    source '.venv/bin/activate' || true  # There might be no `.venv`
+    code .
+  fi
 }

@@ -5,7 +5,7 @@
 
 if ioreg -p IOUSB | grep -q "Stream Deck"; then
   if ! pgrep "Stream Deck"; then
-    open -a "Stream Deck.app"
+    open -g -a "Stream Deck.app"
   fi
 else
   if pgrep -q "Stream Deck"; then
