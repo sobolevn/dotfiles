@@ -120,7 +120,6 @@
   "git.decorations.enabled": true,
 
   "python.formatting.provider": "none",
-  "python.pythonPath": "${workspaceFolder}/.venv/bin/python3",
   "python.terminal.activateEnvironment": true,
   "python.linting.enabled": false,
   "python.languageServer": "Pylance",
