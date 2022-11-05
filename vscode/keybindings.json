@@ -292,5 +292,15 @@
         "key": "cmd+o",
         "command": "-workbench.action.files.openLocalFileFolder",
         "when": "remoteFileDialogVisible"
+    },
+    {
+        "key": "cmd+k cmd+f",
+        "command": "-editor.action.formatSelection",
+        "when": "editorHasDocumentSelectionFormattingProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "cmd+f",
+        "command": "-list.find",
+        "when": "listFocus && listSupportsFind"
     }
 ]

@@ -109,6 +109,8 @@
   "workbench.editor.decorations.colors": false,
   "workbench.layoutControl.enabled": false,
 
+  "merge-conflict.autoNavigateNextConflict.enabled": false,
+
   // Tools, extensions, and languages:
   "problems.decorations.enabled": false,
 
@@ -161,4 +163,5 @@
   "editor.unicodeHighlight.nonBasicASCII": false,
   "workbench.activityBar.visible": false,
   "workbench.sideBar.location": "right",
+  "terminal.integrated.enableMultiLinePasteWarning": false,
 }
