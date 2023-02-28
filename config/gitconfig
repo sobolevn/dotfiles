@@ -77,6 +77,7 @@
   # Origin: https://stackoverflow.com/a/33548037/4842742
   prune-branches = "!git fetch -p && for branch in $(git for-each-ref --format '%(refname) %(upstream:track)' refs/heads | awk '$2 == \"[gone]\" {sub(\"refs/heads/\", \"\", $1); print $1}'); do git branch -D $branch; done"
   main = "!git checkout $(basename $(git symbolic-ref --short refs/remotes/origin/HEAD))"
+  patch = "!git --no-pager diff"
 
 # Allow local customizations in the .gitconfig_local file
 [include]
