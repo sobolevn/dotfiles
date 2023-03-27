@@ -23,7 +23,7 @@
   "editor.overviewRulerBorder": false,
   "editor.bracketPairColorization.enabled": false,
   "editor.rulers": [
-    80
+    80,
   ],
   "editor.scrollBeyondLastLine": false,
   "editor.snippetSuggestions": "none",
@@ -43,13 +43,22 @@
   "extensions.ignoreRecommendations": true,
   "diffEditor.renderSideBySide": false,
 
-  // Controls if suggestions should be accepted on 'Enter' - in addition to 'Tab'.
-  // Helps to avoid ambiguity between inserting new lines or accepting suggestions.
-  // The value 'smart' means only accept a suggestion with Enter
-  // when it makes a textual change.
+  // Do not modify my code, please:
+  "editor.autoClosingBrackets": "never",
+  "editor.autoClosingQuotes": "never",
+  "editor.autoSurround": "never",
+  "editor.autoClosingOvertype": "never",
+  "editor.suggestOnTriggerCharacters": false,
+  "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.acceptSuggestionOnEnter": "on",
   "editor.parameterHints.enabled": false,
   "editor.tabCompletion": "off",
+  "editor.suggestSelection": "recentlyUsed",
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": false,
+    "strings": false,
+  },
 
   // Files:
   "files.associations": {
