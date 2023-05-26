@@ -37,7 +37,7 @@ plugins=(
 
 # User configuration:
 
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="/opt/homebrew/bin:/usr/local/sbin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
 # Custom envs:
 source "$ZSH/oh-my-zsh.sh"

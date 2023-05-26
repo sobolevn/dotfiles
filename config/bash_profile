@@ -4,5 +4,5 @@
 # So this file only includes `brew` binaries.
 
 # global:
-PATH="/usr/local/bin:$PATH"
+PATH="/opt/homebrew/bin:/usr/local/bin:$PATH"
 export PATH

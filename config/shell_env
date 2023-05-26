@@ -9,7 +9,7 @@
 if [ "$CODESPACES" = true ]; then
   ZPLUG_HOME="$HOME/.zplug"
 else
-  ZPLUG_HOME='/usr/local/opt/zplug'
+  ZPLUG_HOME='/opt/homebrew/opt/zplug'
 fi
 
 export ZPLUG_HOME
