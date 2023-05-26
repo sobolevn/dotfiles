@@ -302,5 +302,15 @@
         "key": "cmd+f",
         "command": "-list.find",
         "when": "listFocus && listSupportsFind"
+    },
+    {
+        "key": "alt+`",
+        "command": "workbench.action.terminal.new",
+        "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
+    },
+    {
+        "key": "ctrl+shift+`",
+        "command": "-workbench.action.terminal.new",
+        "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
     }
 ]
