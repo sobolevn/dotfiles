@@ -9,10 +9,10 @@
 
 # This is required because `openssl` is keg-only in `brew`,
 # see: `brew info openssl` for more information.
-export LDFLAGS="-L/usr/local/opt/openssl/lib"
-export CPPFLAGS="-I/usr/local/opt/openssl/include"
+export LDFLAGS="-L$(brew --prefix)/opt/openssl/lib"
+export CPPFLAGS="-I$(brew --prefix)/opt/openssl/include"
 export CFLAGS="-I$(xcrun --show-sdk-path)/usr/include"
-export PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
+export PKG_CONFIG_PATH="$(brew --prefix)/opt/openssl/lib/pkgconfig"
 
 
 # === Path modifications ===

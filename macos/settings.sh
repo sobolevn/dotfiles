@@ -61,6 +61,9 @@ defaults write com.apple.screensaver askForPasswordDelay -int 0
 
 # === Dock ===
 
+# Size:
+defaults write com.apple.dock tilesize -int 56
+
 # Show indicator lights for open apps in Dock:
 defaults write com.apple.dock show-process-indicators -bool true
 
