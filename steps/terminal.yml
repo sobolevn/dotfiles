@@ -57,3 +57,10 @@
       path: crontab/streamdeck.sh
       create: true
       force: true
+
+- shell:
+  - command: |
+      sh -c "crontab crontab/crontab"
+    description: Install crontab file
+    stdout: true
+    stderr: true

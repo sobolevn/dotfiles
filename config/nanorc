@@ -3,17 +3,12 @@
 # or here: https://www.nano-editor.org/dist/v3/nanorc.5.html
 
 # Editor:
-set morespace
-
 set tabstospaces
 set trimblanks
 
 set softwrap
 set atblanks
 set constantshow
-
-# UX:
-set smooth
 
 # Extra files:
 set backup
