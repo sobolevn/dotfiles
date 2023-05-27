@@ -13,15 +13,15 @@ eval "$(gh completion -s zsh)"  # adds autocomplete for `gh` tool
 # === fzf ===
 # https://github.com/junegunn/fzf
 
-if [[ ! "$PATH" == */opt/homebrew/opt/fzf/bin* ]]; then
-  export PATH="$PATH:/opt/homebrew/opt/fzf/bin"
+if [[ ! "$PATH" == */opt/fzf/bin* ]]; then
+  export PATH="$PATH:$(brew --prefix)/opt/fzf/bin"
+
+  # Auto-completion
+  source "$(brew --prefix)/opt/fzf/shell/completion.zsh" 2> /dev/null
+
+  # Key bindings
+  source "$(brew --prefix)/opt/fzf/shell/key-bindings.zsh"
 fi
-
-# Auto-completion
-[[ $- == *i* ]] && source "/opt/homebrew/opt/fzf/shell/completion.zsh" 2> /dev/null
-
-# Key bindings
-source "/opt/homebrew/opt/fzf/shell/key-bindings.zsh"
 
 # Setting ag as the default source for fzf
 export FZF_DEFAULT_COMMAND='ag -g ""'
@@ -37,4 +37,4 @@ _fzf_compgen_path() {
 # === z ===
 # https://github.com/rupa/z
 
-source '/opt/homebrew/opt/z/etc/profile.d/z.sh'
+source "$(brew --prefix)/opt/z/etc/profile.d/z.sh"

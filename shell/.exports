@@ -28,9 +28,6 @@ PATH="$HOME/.local/bin:$PATH"
 # Adds `poetry` binary, should be added to the end:
 PATH="$HOME/.poetry/bin:$PATH"
 
-# postgres@9.6 utilities like `psql`:
-PATH="/usr/local/opt/postgresql@9.6/bin:$PATH"
-
 # npm:
 PATH="/usr/local/share/npm/bin:$PATH"
 
@@ -68,7 +65,9 @@ export MANPAGER='less'
 
 # nvm:
 export NVM_DIR="$HOME/.nvm"
-[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && source "/opt/homebrew/opt/nvm/nvm.sh"
+if [ -s "$(brew --prefix)/opt/nvm/nvm.sh" ]; then
+  source "$(brew --prefix)/opt/nvm/nvm.sh"
+fi
 
 # pyenv:
 eval "$(pyenv init --path)"
