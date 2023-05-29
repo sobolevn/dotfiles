@@ -31,8 +31,11 @@
       path: vscode/snippets
       create: true
 
-- shell:
-  - command: bash -l './vscode/install.sh'
-    description: Installing vscode extensions
+# Installing dependencies:
+- brewfile:
+    file: Brewfile
+    no-upgrade: true
     stdout: true
     stderr: true
+    # Brewfile now has vscode plugins:
+    include: ['vscode']

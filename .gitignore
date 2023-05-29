@@ -43,3 +43,4 @@ Package Control.cache/
 #### custom ####
 WakaTime.sublime-settings
 .vscode/tags
+Brewfile.lock.json
