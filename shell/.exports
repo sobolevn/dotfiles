@@ -79,6 +79,12 @@ eval "$(rbenv init -)"
 source "$HOME/.cargo/env"
 
 
+# === Poetry ===
+# https://python-poetry.org/docs/configuration/
+
+export POETRY_VIRTUALENVS_IN_PROJECT=true
+
+
 # === Histories ===
 
 # Enable persistent REPL history for `node`.
