@@ -146,10 +146,6 @@
   "typescript.suggest.autoImports": false,
   "javascript.suggest.autoImports": false,
   "javascript.updateImportsOnFileMove.enabled": "never",
-  "vetur.completion.autoImport": false,
-  "vetur.experimental.templateInterpolationService": true,
-
-  "rust-analyzer.inlayHints.enable": false,
 
   // Theme:
   "workbench.colorTheme": "Ayu Dark",
@@ -166,6 +162,11 @@
     "tab.inactiveForeground": "#676b6a",
     "sideBar.foreground": "#b3b1adBB",
     "sideBarTitle.foreground": "#0a0e14",
+    // Lists in command pallete / file tree
+    "quickInputList.focusBackground": "#1c2a42",
+    "quickInputList.focusForeground": "#797d7b",
+    "list.hoverBackground": "#1c2a42",
+    "list.hoverForeground": "#797d7b",
     // Disable wavy/squiggly underline in vscode
     "editorError.foreground":   "#00000000",
     "editorWarning.foreground": "#00000000",

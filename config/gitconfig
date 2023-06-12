@@ -84,3 +84,5 @@
   path = ~/.gitconfig_local
 [diff "generated"]
 	binary = true
+[pull]
+	rebase = false
