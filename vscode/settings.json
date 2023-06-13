@@ -153,24 +153,30 @@
 
   "editor.semanticHighlighting.enabled": false,
   "workbench.colorCustomizations": {
+    // General
     "activityBar.activeBorder": "#e5b358",
     "activityBar.foreground": "#797d7b",
-    "gitDecoration.modifiedResourceForeground": "#d4cb68",
-    "gitDecoration.addedResourceForeground": "#C2D94C",
-    "editorSuggestWidget.highlightForeground": "#e5b358",
-    "editorSuggestWidget.selectedBackground": "#1c2a42",
-    "tab.inactiveForeground": "#676b6a",
     "sideBar.foreground": "#b3b1adBB",
     "sideBarTitle.foreground": "#0a0e14",
+    // Change git colors
+    "gitDecoration.modifiedResourceForeground": "#d4cb68",
+    "gitDecoration.addedResourceForeground": "#C2D94C",
     // Lists in command pallete / file tree
     "quickInputList.focusBackground": "#1c2a42",
-    "quickInputList.focusForeground": "#797d7b",
+    "quickInputList.focusForeground": "#e5b358",
     "list.hoverBackground": "#1c2a42",
-    "list.hoverForeground": "#797d7b",
+    "list.hoverForeground": "#bfbdb6",
+    "list.activeSelectionBackground": "#0d1017",
+    "list.activeSelectionForeground": "#e5b358",
+    "list.inactiveSelectionBackground": "#0d1017",
+    "list.focusAndSelectionOutline": "#0b0e14", // no visial border
+    // Select widget:
+    "editorSuggestWidget.highlightForeground": "#e5b358",
+    "editorSuggestWidget.selectedBackground": "#1c2a42",
     // Disable wavy/squiggly underline in vscode
     "editorError.foreground":   "#00000000",
     "editorWarning.foreground": "#00000000",
-    "editorInfo.foreground":    "#00000000"
+    "editorInfo.foreground":    "#00000000",
   },
   "editor.unicodeHighlight.nonBasicASCII": false,
 }
