@@ -38,3 +38,4 @@ else
  run_dotbot 'steps/dependencies.yml' || true
 fi
 run_dotbot 'steps/vscode.yml' || true
+run_dotbot 'steps/streamdeck.yml' || true
