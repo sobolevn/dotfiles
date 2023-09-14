@@ -43,6 +43,7 @@
   "extensions.ignoreRecommendations": true,
   "diffEditor.renderSideBySide": false,
   "breadcrumbs.enabled": false,
+  "window.commandCenter": false,
 
   // Do not modify my code, please:
   "editor.autoClosingBrackets": "never",
@@ -179,4 +180,5 @@
     "editorInfo.foreground":    "#00000000",
   },
   "editor.unicodeHighlight.nonBasicASCII": false,
+  "git.openRepositoryInParentFolders": "never",
 }
