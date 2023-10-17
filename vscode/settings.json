@@ -12,7 +12,7 @@
   "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true,
   "editor.fontSize": 17,
-  "explorer.openEditors.visible": 0,
+  "explorer.openEditors.visible": 1,
   "editor.glyphMargin": false,
   "editor.minimap.enabled": false,
   "editor.renderWhitespace": "selection",
@@ -33,17 +33,19 @@
   "editor.wordWrap": "on",
   "editor.wordWrapColumn": 80,
   "editor.hover.enabled": false,
-  "editor.gotoLocation.multipleReferences": "peek",
-  "editor.gotoLocation.multipleDefinitions": "peek",
-  "editor.gotoLocation.multipleDeclarations": "peek",
-  "editor.gotoLocation.multipleImplementations": "peek",
-  "editor.gotoLocation.multipleTypeDefinitions": "peek",
   "explorer.confirmDelete": false,
   "explorer.decorations.badges": false,
   "extensions.ignoreRecommendations": true,
   "diffEditor.renderSideBySide": false,
   "breadcrumbs.enabled": false,
   "window.commandCenter": false,
+
+  // Use simple navigation:
+  "editor.gotoLocation.multipleReferences": "peek",
+  "editor.gotoLocation.multipleDefinitions": "peek",
+  "editor.gotoLocation.multipleDeclarations": "peek",
+  "editor.gotoLocation.multipleImplementations": "peek",
+  "editor.gotoLocation.multipleTypeDefinitions": "peek",
 
   // Do not modify my code, please:
   "editor.autoClosingBrackets": "never",
@@ -88,7 +90,7 @@
     "**/docs/build": true,
   },
   "workbench.editorAssociations": {
-    "*.ipynb": "jupyter.notebook.ipynb"
+    "*.ipynb": "jupyter-notebook",
   },
 
   // Stats and telemetry:
