@@ -26,7 +26,7 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 alias pubkey="cat ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pasteboard.'"
 
 # I use this a lot:
-alias shrug="echo '¯\_(ツ)_/¯' | pbcopy"
+alias shrug="echo '¯\_(ツ)_/¯' | pbcopy | echo '=> Copied to pasteboard.'"
 
 # python2 (required by npm and other tools, installed via pyenv):
 # (won't work without `pyenv` and `pyenv install 2.7.17`)
