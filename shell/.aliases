@@ -27,7 +27,3 @@ alias pubkey="cat ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pas
 
 # I use this a lot:
 alias shrug="echo '¯\_(ツ)_/¯' | pbcopy | echo '=> Copied to pasteboard.'"
-
-# python2 (required by npm and other tools, installed via pyenv):
-# (won't work without `pyenv` and `pyenv install 2.7.17`)
-alias python2="$HOME/.pyenv/versions/2.7.17/bin/python2"
