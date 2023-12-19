@@ -76,8 +76,6 @@ brew "jpeg"
 brew "jq"
 # Network authentication protocol
 brew "krb5"
-# Postgres C API library
-brew "libpq"
 # GNOME XML library
 brew "libxml2"
 # YAML Parser
@@ -94,20 +92,14 @@ brew "node"
 brew "nvm"
 # Cryptography and SSL/TLS Toolkit
 brew "openssl@1.1"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.11"
-# CLI for Postgres with auto-completion and syntax highlighting
-brew "pgcli"
 # Pinentry for GPG on Mac
 brew "pinentry-mac"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.11"
 # Execute binaries from Python packages in isolated environments
 brew "pipx"
-# Object-relational database system
-brew "postgresql@14"
 # Python version management
 brew "pyenv"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.9"
 # Install various Ruby versions and implementations
 brew "ruby-build"
 # Ruby version manager

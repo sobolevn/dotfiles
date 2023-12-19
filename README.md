@@ -22,7 +22,7 @@ What's in there?
 
 ## Main principles
 
-- Minimalism in everything: tooling, styling, 
+- Minimalism in everything: tooling, styling,
 - Simplicity
 - Reduced visual noise, only important things should be shown
 - "Please, do not touch my code": no auto-formatting or code flow interruptions
@@ -77,18 +77,11 @@ so the resulting [`Brewfile`](https://github.com/sobolevn/dotfiles/blob/master/B
 I try to containerize everything.
 So, [`docker`](https://formulae.brew.sh/cask/docker) is my main development and deployment tool.
 
-However, I also use several databases and other services locally:
-
-- [`postgresql@9.6`](https://formulae.brew.sh/formula/postgresql@9.6)
-- [`redis`](https://formulae.brew.sh/formula/redis)
-
-I use this setup for small and simple projects.
-Other stuff is always dockerized.
-
 
 ## VS Code
 
-I loved my `Sublime`. It was fast and beautiful.
+I loved [my `Sublime`](https://github.com/sobolevn/dotfiles/tree/34ee628e515f7fc782566b946a3b4ca906bad7ba/sublime3-conf).
+It was fast and beautiful.
 The main reason is that `Sublime` is almost unmaintained.
 Packages are also abandoned.
 
