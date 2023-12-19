@@ -4,8 +4,6 @@ tap "homebrew/cask-versions"
 tap "homebrew/services"
 # C/C++ resolver library and DNS resolver utilities
 brew "adns"
-# Companion library to apr, the Apache Portable Runtime library
-brew "apr-util"
 # Bourne-Again SHell, a UNIX command interpreter
 brew "bash"
 # Clone of cat(1) with syntax highlighting and Git integration
@@ -74,8 +72,6 @@ brew "highlight"
 brew "jpeg"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
-# Network authentication protocol
-brew "krb5"
 # GNOME XML library
 brew "libxml2"
 # YAML Parser
@@ -112,8 +108,6 @@ brew "rustup-init"
 brew "sd"
 # Static analysis and lint tool, for (ba)sh scripts
 brew "shellcheck"
-# Generate scripting interfaces to C/C++ code
-brew "swig"
 # Code-search similar to ack
 brew "the_silver_searcher"
 # Text interface for Git repositories
