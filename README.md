@@ -20,6 +20,16 @@ What's in there?
 - all my [QuickLook](https://github.com/sindresorhus/quick-look-plugins) customizations and [dev utilities](https://github.com/sbarex/SourceCodeSyntaxHighlight)
 
 
+## Main principles
+
+- Minimalism in everything: tooling, styling, 
+- Simplicity
+- Reduced visual noise, only important things should be shown
+- "Please, do not touch my code": no auto-formatting or code flow interruptions
+- History is valuable, let's preserve it everywhere we can
+- Security: do not share anything with anyone
+
+
 ## Installation
 
 We are using [`dotbot`](https://github.com/anishathalye/dotbot/)

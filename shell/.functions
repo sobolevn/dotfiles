@@ -15,13 +15,6 @@ pyclean () {
 }
 
 
-git-dowloadfolder () {
-  # Downloads folder from git repository.
-  url="$1"
-  svn checkout ${url/tree\/master/trunk}
-}
-
-
 mc () {
   # Create a new directory and enter it
   mkdir -p "$@" && cd "$@"

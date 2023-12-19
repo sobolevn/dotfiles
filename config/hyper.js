@@ -95,7 +95,7 @@ module.exports = {
 
     // for environment variables
     env: {
-       'SOBOLE_THEME_MODE': 'light'
+      'SOBOLE_THEME_MODE': 'light',
     },
 
     // set to false for no bell
@@ -138,7 +138,7 @@ module.exports = {
     'hyperterm-summon',
     'hypercwd',
     'hyper-opacity',
-    'hyper-search'
+    'hyper-search',
   ],
 
   hyperTabs: {

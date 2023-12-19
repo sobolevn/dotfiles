@@ -6,7 +6,7 @@ While developing this library I often use these shortcuts.
 ## Dumping `brew` dependencies
 
 ```bash
-brew bundle dump --force
+brew bundle dump --force --describe --no-restart
 ```
 
 

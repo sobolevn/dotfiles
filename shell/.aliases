@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# `.aliases` is used to provide custom variables.
+# `.aliases` is used to provide custom aliases.
 #
 # This file is used as a part of `.shell_env`
 
@@ -12,9 +12,6 @@ alias ls="gls --color -h --group-directories-first -F"
 
 # `bat` styling:
 alias bat="\bat --theme=GitHub"
-
-# Pretty print XML (use `jq` for json):
-alias xq="xmllint --format"
 
 # Show local ip:
 alias localip="ipconfig getifaddr en0"
