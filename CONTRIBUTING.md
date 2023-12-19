@@ -7,6 +7,7 @@ While developing this library I often use these shortcuts.
 
 ```bash
 brew bundle dump --force --describe --no-restart
+bash ./vscode/versions.sh
 ```
 
 
