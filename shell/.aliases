@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 
 # `.aliases` is used to provide custom aliases.
-#
-# This file is used as a part of `.shell_env`
 
 
 # === Aliases ===

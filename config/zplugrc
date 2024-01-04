@@ -6,6 +6,10 @@ zplug "sobolevn/sobole-zsh-theme", as:theme
 # Sorted in order of appearance (new at the bottom):
 zplug "zsh-users/zsh-syntax-highlighting"
 
+# Others might also enjoy this plugin:
+# (but it is not for me)
+# zplug "zsh-users/zsh-autosuggestions"
+
 # Install plugins if there are plugins that have not been installed:
 if ! zplug check; then
   zplug install

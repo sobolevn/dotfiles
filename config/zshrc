@@ -35,10 +35,38 @@ plugins=(
   macos
 )
 
-# User configuration:
+# Sourcing the Oh-My-ZSH source:
 
+source "$ZSH/oh-my-zsh.sh"
+
+# This PATH needs to be set before all other modifications:
 export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/sbin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
-# Custom envs:
-source "$ZSH/oh-my-zsh.sh"
-source "$HOME/.shell_env"
+
+# === Plugin management ===
+
+if [ "$CODESPACES" = true ]; then
+  ZPLUG_HOME="$HOME/.zplug"
+else
+  ZPLUG_HOME='/opt/homebrew/opt/zplug'
+fi
+
+export ZPLUG_HOME
+source "$HOME/.zplugrc"
+
+
+# === Shell parts ===
+
+if [ ! "$CODESPACES" = true ]; then
+  source "$HOME/.shell/.exports"
+  source "$HOME/.shell/.aliases"
+  source "$HOME/.shell/.functions"
+  source "$HOME/.shell/.external"
+fi
+
+
+# === Local variables and overrides ===
+
+if [[ -f "$HOME/.shell_env_local" ]]; then
+  source "$HOME/.shell_env_local"
+fi

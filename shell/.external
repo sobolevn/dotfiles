@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 
 # `.external` handles all external tools.
-#
-# This file is used as a part of `.shell_env`
 
 # === Autocomplete ===
 

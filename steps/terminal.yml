@@ -22,7 +22,6 @@
   ~/.zshrc:
     path: config/zshrc
     force: true
-  ~/.shell_env: config/shell_env
 
   ~/.hushlogin: config/hushlogin
   ~/.inputrc: config/inputrc

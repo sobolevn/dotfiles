@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 
 # `.functions` provides helper functions for shell.
-#
-# This file is used as a part of `.shell_env`
 
 
 # === Commonly used functions ===
