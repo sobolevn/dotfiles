@@ -33,6 +33,7 @@ HIST_IGNORE_SPACE="true"
 plugins=(
   gitfast
   macos
+  safe-paste
 )
 
 # Sourcing the Oh-My-ZSH source:
