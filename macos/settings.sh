@@ -77,6 +77,14 @@ defaults write com.apple.dock autohide-delay -float 0
 defaults write com.apple.dock autohide -bool true
 
 
+# === Menu bar ===
+
+# Make status icons smaller, so they will take less space:
+# https://flaky.build/built-in-workaround-for-applications-hiding-under-the-macbook-pro-notch 
+defaults write -globalDomain NSStatusItemSelectionPadding -int 12
+defaults write -globalDomain NSStatusItemSpacing -int 12
+
+
 # === Finder ===
 
 # Keep folders on top when sorting by name:
