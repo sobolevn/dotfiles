@@ -8,7 +8,7 @@
 pyclean () {
   # Cleans py[cod] and cache dirs in the current tree:
   find . \
-    | grep -E "(__pycache__|\.(mypy_)?cache|\.hypothesis\.py[cod]$)" \
+    | grep -E '(__pycache__|\.(mypy_)?cache|\.hypothesis\.py[cod]$)' \
     | xargs rm -rf
 }
 
@@ -31,13 +31,13 @@ cdf () {
 man () {
   # Shows pretty `man` page.
   env \
-    LESS_TERMCAP_mb=$(printf "\e[1;31m") \
-    LESS_TERMCAP_md=$(printf "\e[1;31m") \
-    LESS_TERMCAP_me=$(printf "\e[0m") \
-    LESS_TERMCAP_se=$(printf "\e[0m") \
-    LESS_TERMCAP_so=$(printf "\e[1;44;33m") \
-    LESS_TERMCAP_ue=$(printf "\e[0m") \
-    LESS_TERMCAP_us=$(printf "\e[1;32m") \
+    LESS_TERMCAP_mb=$(printf '\e[1;31m') \
+    LESS_TERMCAP_md=$(printf '\e[1;31m') \
+    LESS_TERMCAP_me=$(printf '\e[0m') \
+    LESS_TERMCAP_se=$(printf '\e[0m') \
+    LESS_TERMCAP_so=$(printf '\e[1;44;33m') \
+    LESS_TERMCAP_ue=$(printf '\e[0m') \
+    LESS_TERMCAP_us=$(printf '\e[1;32m') \
       man "$@"
 }
 

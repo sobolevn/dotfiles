@@ -11,7 +11,8 @@ if ioreg -p IOUSB | grep -q "$PROCESS_NAME"; then
     open -g -a "$APP_NAME"
   fi
 else
-  if pgrep -q "$PROCESS_NAME"; then
-    killall "$PROCESS_NAME"
-  fi
+  # Let it open for now
+  # if pgrep -q "$PROCESS_NAME"; then
+  #   killall "$PROCESS_NAME"
+  # fi
 fi

@@ -5,11 +5,11 @@ export ZSH="$HOME/.oh-my-zsh"
 # ZSH_THEME="sobole"
 
 # Uncomment the following line to use case-sensitive completion.
-CASE_SENSITIVE="false"
+CASE_SENSITIVE='false'
 
 # Uncomment the following line to use hyphen-insensitive completion. Case
 # sensitive completion must be off. _ and - will be interchangeable.
-HYPHEN_INSENSITIVE="false"
+HYPHEN_INSENSITIVE='false'
 
 # Uncomment the following line to enable command auto-correction.
 # ENABLE_CORRECTION="false"
@@ -17,10 +17,10 @@ HYPHEN_INSENSITIVE="false"
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
 # The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
-HIST_STAMPS="yyyy-mm-dd"
+HIST_STAMPS='yyyy-mm-dd'
 
 # Commands starting from " " (whitespace) won't be saved in history:
-HIST_IGNORE_SPACE="true"
+HIST_IGNORE_SPACE='true'
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
