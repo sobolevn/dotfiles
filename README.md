@@ -8,6 +8,10 @@ Here are some articles I wrote about my environment:
 - ["Using better CLIs"](https://dev.to/sobolevn/using-better-clis-6o8)
 - ["6 mac apps that fit everyone"](https://sobolevn.me/2019/07/6-best-mac-apps)
 
+And talks / podcasts:
+
+- ["Veged and Code podcast"](https://www.youtube.com/watch?v=nEF0I3VkmPA) \[in RU\]
+
 
 ## Contents
 
