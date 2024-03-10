@@ -10,6 +10,8 @@ brew "bash"
 brew "bat"
 # Get/set bluetooth power and discoverable state
 brew "blueutil"
+# Mozilla CA bundle for Python
+brew "certifi"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
 # Reimplementation of ctags(1)
@@ -58,8 +60,6 @@ brew "libgcrypt"
 brew "npth"
 # Passphrase entry dialog utilizing the Assuan protocol
 brew "pinentry"
-# Library for command-line editing
-brew "readline"
 # GNU Pretty Good Privacy (PGP) package
 brew "gnupg"
 # Library access to GnuPG
@@ -76,6 +76,8 @@ brew "jq"
 brew "libxml2"
 # YAML Parser
 brew "libyaml"
+# Next-gen compiler infrastructure
+brew "llvm@16"
 # Mac App Store command-line interface
 brew "mas"
 # Free (GNU) replacement for the Pico text editor
@@ -108,6 +110,8 @@ brew "rustup-init"
 brew "sd"
 # Static analysis and lint tool, for (ba)sh scripts
 brew "shellcheck"
+# Compression/decompression library aiming for high speed
+brew "snappy"
 # Code-search similar to ack
 brew "the_silver_searcher"
 # Text interface for Git repositories
@@ -126,7 +130,7 @@ brew "zplug"
 brew "zsh"
 # Voice and text chat software
 cask "discord"
-# App to build and share containerized applications and microservices
+# App to build and share containerised applications and microservices
 cask "docker"
 # Control your Elgato key lights
 cask "elgato-control-center"
@@ -134,7 +138,7 @@ cask "elgato-control-center"
 cask "elgato-stream-deck"
 # Web browser
 cask "firefox"
-# Screen color temperature controller
+# Screen colour temperature controller
 cask "flux"
 cask "font-consolas-for-powerline"
 # Free monospaced font with programming ligatures
@@ -145,12 +149,14 @@ cask "font-roboto-mono-for-powerline"
 cask "google-chrome"
 # Terminal built on web technologies
 cask "hyper"
-# Keyboard customizer
+# Keyboard customiser
 cask "karabiner-elements"
 # Desktop shield and keystroke interceptor
 cask "keyboard-cleaner"
 # Clipboard manager
 cask "maccy"
+# Open-source software for live streaming and screen recording
+cask "obs"
 # Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
 # Quicklook extension for source files
@@ -174,7 +180,7 @@ mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Xcode", id: 497799835
 vscode "alexdima.copy-relative-path"
-vscode "EditorConfig.EditorConfig"
+vscode "editorconfig.editorconfig"
 vscode "ms-python.python"
 vscode "ms-python.vscode-pylance"
-vscode "teabyii.ayu@0.20.2"
+vscode "teabyii.ayu"

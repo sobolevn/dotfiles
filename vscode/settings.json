@@ -19,7 +19,7 @@
   "editor.renderLineHighlight": "none",
   "editor.hideCursorInOverviewRuler": false,
   "explorer.compactFolders": false,
-  "editor.occurrencesHighlight": false,
+  "editor.occurrencesHighlight": "off",
   "editor.overviewRulerBorder": false,
   "editor.bracketPairColorization.enabled": false,
   "editor.rulers": [
@@ -33,12 +33,15 @@
   "editor.wordWrap": "on",
   "editor.wordWrapColumn": 80,
   "editor.hover.enabled": false,
+  "editor.stickyScroll.enabled": false,
   "explorer.confirmDelete": false,
   "explorer.decorations.badges": false,
   "extensions.ignoreRecommendations": true,
   "diffEditor.renderSideBySide": false,
   "breadcrumbs.enabled": false,
   "window.commandCenter": false,
+  "workbench.activityBar.location": "hidden",
+  "workbench.editor.tabActionCloseVisibility": false,
 
   // Use simple navigation:
   "editor.gotoLocation.multipleReferences": "peek",
@@ -103,7 +106,10 @@
   "terminal.integrated.env.osx": {
     "SOBOLE_THEME_MODE": "dark",
   },
-  "terminal.integrated.enableBell": true,
+  "accessibility.signals.terminalBell": {
+    "sound": "on"
+  },
+  "terminal.integrated.enableVisualBell": true,
 
   // Main editor:
   "window.clickThroughInactive": false,
@@ -116,12 +122,11 @@
   "workbench.tree.renderIndentGuides": "none",
   "workbench.editor.highlightModifiedTabs": false,
   "workbench.editor.showIcons": false,
-  "workbench.editor.showTabs": false,
+  "workbench.editor.showTabs": "single",
   "workbench.editor.decorations.badges": false,
   "workbench.editor.decorations.colors": false,
   "workbench.layoutControl.enabled": false,
   "workbench.editor.enablePreview": false,
-  "workbench.activityBar.visible": false,
   "workbench.sideBar.location": "right",
 
   "merge-conflict.autoNavigateNextConflict.enabled": false,
