@@ -66,6 +66,7 @@
     "comments": false,
     "strings": false,
   },
+  "editor.formatOnType": false,
 
   // Files:
   "files.associations": {
@@ -115,7 +116,6 @@
   "window.clickThroughInactive": false,
   "window.newWindowDimensions": "maximized",
   "workbench.editor.labelFormat": "medium",
-  "workbench.editor.tabCloseButton": "off",
   "workbench.startupEditor": "newUntitledFile",
   "workbench.statusBar.visible": false,
   "workbench.tips.enabled": false,
@@ -139,16 +139,22 @@
   "git.autorefresh": true,
   "git.decorations.enabled": true,
 
-  "python.formatting.provider": "none",
-  "python.terminal.activateEnvironment": true,
-  "python.linting.enabled": false,
+  "python.analysis.completeFunctionParens": false,
+  "python.createEnvironment.trigger": "off",
+  "python.terminal.activateEnvInCurrentTerminal": false,
+  "python.terminal.activateEnvironment": false,
   "python.languageServer": "Pylance",
   "python.analysis.typeCheckingMode": "off",
   "python.analysis.autoImportCompletions": false,
-  "python.analysis.diagnosticSeverityOverrides": {
-    "reportMissingImports": "none",
-    "reportUnusedVariable": "none",
-  },
+  // "python.analysis.diagnosticSeverityOverrides": {
+  //   "reportMissingImports": "none",
+  //   "reportUnusedVariable": "none",
+  // },
+  "python.experiments.enabled": false,
+  "python.testing.autoTestDiscoverOnSaveEnabled": false,
+  // "[python]": {
+  //   "editor.formatOnType": false
+  // },
 
   "typescript.updateImportsOnFileMove.enabled": "never",
   "typescript.suggest.autoImports": false,
