@@ -90,7 +90,7 @@ So, I have switched to [`vscode`](https://formulae.brew.sh/cask/visual-studio-co
 It solved almost all issues I had with `Sublime`.
 Here's how my new `vscode` setup looks like, using my own theme called [`pustota`](https://github.com/sobolevn/pustota):
 
-![sobolevn's vscode for Python](https://raw.githubusercontent.com/sobolevn/pustota/master/assets/main.png)
+![sobolevn's vscode for Python](https://raw.githubusercontent.com/sobolevn/pustota/master/assets/minimal.png)
 
 Here's [a list of packages](https://github.com/sobolevn/dotfiles/blob/master/vscode/install.sh) I use:
 
