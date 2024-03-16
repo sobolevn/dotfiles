@@ -42,6 +42,8 @@
   "window.commandCenter": false,
   "workbench.activityBar.location": "hidden",
   "workbench.editor.tabActionCloseVisibility": false,
+  "editor.scrollbar.vertical": "auto",
+  "editor.scrollbar.horizontal": "hidden",
 
   // Use simple navigation:
   "editor.gotoLocation.multipleReferences": "peek",
@@ -101,6 +103,9 @@
   "telemetry.telemetryLevel": "off",
 
   // Terminal:
+  "terminal.integrated.shellIntegration.enabled": false,
+  "terminal.integrated.shellIntegration.decorationsEnabled": "never",
+  "terminal.integrated.stickyScroll.enabled": false,
   "terminal.integrated.enableMultiLinePasteWarning": false,
   "terminal.integrated.defaultProfile.osx": "zsh",
   "terminal.integrated.defaultProfile.linux": "bash",
@@ -125,9 +130,10 @@
   "workbench.editor.showTabs": "single",
   "workbench.editor.decorations.badges": false,
   "workbench.editor.decorations.colors": false,
-  "workbench.layoutControl.enabled": false,
   "workbench.editor.enablePreview": false,
   "workbench.sideBar.location": "right",
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.layoutControl.enabled": false,
 
   "merge-conflict.autoNavigateNextConflict.enabled": false,
 
@@ -138,6 +144,7 @@
   "git.showInlineOpenFileAction": false,
   "git.autorefresh": true,
   "git.decorations.enabled": true,
+  "git.openRepositoryInParentFolders": "never",
 
   "python.analysis.completeFunctionParens": false,
   "python.createEnvironment.trigger": "off",
@@ -146,15 +153,8 @@
   "python.languageServer": "Pylance",
   "python.analysis.typeCheckingMode": "off",
   "python.analysis.autoImportCompletions": false,
-  // "python.analysis.diagnosticSeverityOverrides": {
-  //   "reportMissingImports": "none",
-  //   "reportUnusedVariable": "none",
-  // },
   "python.experiments.enabled": false,
   "python.testing.autoTestDiscoverOnSaveEnabled": false,
-  // "[python]": {
-  //   "editor.formatOnType": false
-  // },
 
   "typescript.updateImportsOnFileMove.enabled": "never",
   "typescript.suggest.autoImports": false,
@@ -162,36 +162,16 @@
   "javascript.updateImportsOnFileMove.enabled": "never",
 
   // Theme:
-  "workbench.colorTheme": "Ayu Dark",
+  // "workbench.colorTheme": "Ayu Dark",
+  "workbench.colorTheme": "Pustota",
   "workbench.iconTheme": "ayu",
 
   "editor.semanticHighlighting.enabled": false,
   "workbench.colorCustomizations": {
-    // General
-    "activityBar.activeBorder": "#e5b358",
-    "activityBar.foreground": "#797d7b",
-    "sideBar.foreground": "#b3b1adBB",
-    "sideBarTitle.foreground": "#0a0e14",
-    // Change git colors
-    "gitDecoration.modifiedResourceForeground": "#d4cb68",
-    "gitDecoration.addedResourceForeground": "#C2D94C",
-    // Lists in command pallete / file tree
-    "quickInputList.focusBackground": "#1c2a42",
-    "quickInputList.focusForeground": "#e5b358",
-    "list.hoverBackground": "#1c2a42",
-    "list.hoverForeground": "#bfbdb6",
-    "list.activeSelectionBackground": "#0d1017",
-    "list.activeSelectionForeground": "#e5b358",
-    "list.inactiveSelectionBackground": "#0d1017",
-    "list.focusAndSelectionOutline": "#0b0e14", // no visial border
-    // Select widget:
-    "editorSuggestWidget.highlightForeground": "#e5b358",
-    "editorSuggestWidget.selectedBackground": "#1c2a42",
-    // Disable wavy/squiggly underline in vscode
-    "editorError.foreground":   "#00000000",
+    // I customize these two, because other people might
+    // want to have error and warning decorations even in `pustota` theme.
+    "editorError.foreground": "#00000000",
     "editorWarning.foreground": "#00000000",
-    "editorInfo.foreground":    "#00000000",
   },
   "editor.unicodeHighlight.nonBasicASCII": false,
-  "git.openRepositoryInParentFolders": "never",
 }
