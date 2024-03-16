@@ -94,7 +94,7 @@ Here's how my new `vscode` setup looks like, using my own theme called [`pustota
 
 Here's [a list of packages](https://github.com/sobolevn/dotfiles/blob/master/vscode/install.sh) I use:
 
-- [`ayu`](https://github.com/ayu-theme/vscode-ayu) theme with modifications
+- [`pustota`](https://github.com/sobolevn/pustota) theme
 - [`Python`](https://github.com/Microsoft/vscode-python) plugin
 - [`editorconfig`](https://editorconfig.org/) integration
 
