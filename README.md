@@ -79,7 +79,7 @@ I try to containerize everything.
 So, [`docker`](https://formulae.brew.sh/cask/docker) is my main development and deployment tool.
 
 
-## VS Code
+## VSCode
 
 I loved [my `Sublime`](https://github.com/sobolevn/dotfiles/tree/34ee628e515f7fc782566b946a3b4ca906bad7ba/sublime3-conf).
 It was fast and beautiful.
@@ -88,9 +88,9 @@ Packages are also abandoned.
 
 So, I have switched to [`vscode`](https://formulae.brew.sh/cask/visual-studio-code).
 It solved almost all issues I had with `Sublime`.
-Here's how my new `vscode` setup looks like:
+Here's how my new `vscode` setup looks like, using my own theme called [`pustota`](https://github.com/sobolevn/pustota):
 
-![sobolevn's vscode for Python](https://raw.githubusercontent.com/sobolevn/dotfiles/master/media/vscode-python.png)
+![sobolevn's vscode for Python](https://raw.githubusercontent.com/sobolevn/pustota/master/assets/main.png)
 
 Here's [a list of packages](https://github.com/sobolevn/dotfiles/blob/master/vscode/install.sh) I use:
 
