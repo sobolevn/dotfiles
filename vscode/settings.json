@@ -1,6 +1,7 @@
 {
   // Debug:
   "debug.allowBreakpointsEverywhere": true,
+  "debug.javascript.codelens.npmScripts": "never",
 
   // Editor:
   "editor.accessibilitySupport": "off",
@@ -22,9 +23,7 @@
   "editor.occurrencesHighlight": "off",
   "editor.overviewRulerBorder": false,
   "editor.bracketPairColorization.enabled": false,
-  "editor.rulers": [
-    80,
-  ],
+  "editor.rulers": [80],
   "editor.scrollBeyondLastLine": false,
   "editor.snippetSuggestions": "none",
   "editor.cursorSurroundingLines": 3,
@@ -42,6 +41,7 @@
   "window.commandCenter": false,
   "workbench.activityBar.location": "hidden",
   "workbench.editor.tabActionCloseVisibility": false,
+  "workbench.hover.delay": 10000, // ms, TODO: find way to turn this off
   "editor.scrollbar.vertical": "auto",
   "editor.scrollbar.horizontal": "hidden",
 
@@ -163,7 +163,7 @@
 
   // Theme:
   // "workbench.colorTheme": "Ayu Dark",
-  "workbench.colorTheme": "Pustota",
+  "workbench.colorTheme": "pustota",
   "workbench.iconTheme": "ayu",
 
   "editor.semanticHighlighting.enabled": false,
