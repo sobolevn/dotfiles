@@ -20,8 +20,6 @@ brew "ctags"
 brew "libidn2"
 # C library implementing the SSH2 protocol
 brew "libssh2"
-# Open source suite of directory software
-brew "openldap"
 # Tool for downloading RTMP streaming media
 brew "rtmpdump"
 # Get a file from an HTTP, HTTPS or FTP server
@@ -44,6 +42,8 @@ brew "gh"
 brew "git"
 # Syntax-highlighting pager for git and diff output
 brew "git-delta"
+# Statically typed language for the Erlang VM
+brew "gleam"
 # Core application library for C
 brew "glib"
 # Asynchronous event library
@@ -92,12 +92,12 @@ brew "nvm"
 brew "openssl@1.1"
 # Pinentry for GPG on Mac
 brew "pinentry-mac"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.11"
 # Execute binaries from Python packages in isolated environments
 brew "pipx"
 # Python version management
 brew "pyenv"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.11"
 # Install various Ruby versions and implementations
 brew "ruby-build"
 # Ruby version manager
@@ -157,6 +157,8 @@ cask "keyboard-cleaner"
 cask "maccy"
 # Open-source software for live streaming and screen recording
 cask "obs"
+# Finder Toolbar app to open the current directory in Terminal or Editor
+cask "openinterminal"
 # Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
 # Quicklook extension for source files
@@ -165,6 +167,8 @@ cask "syntax-highlight"
 cask "telegram"
 # Unpacks archive files
 cask "the-unarchiver"
+# Utility to hide the notch
+cask "topnotch"
 # Open-source code editor
 cask "visual-studio-code"
 # Unofficial app for Yandex Music
@@ -180,6 +184,7 @@ mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Xcode", id: 497799835
 vscode "alexdima.copy-relative-path"
+vscode "drcika.apc-extension"
 vscode "editorconfig.editorconfig"
 vscode "ms-python.python"
 vscode "ms-python.vscode-pylance"

@@ -14,7 +14,7 @@
   "editor.fontLigatures": true,
   "editor.fontSize": 17,
   "explorer.openEditors.visible": 1,
-  "editor.glyphMargin": false,
+  "editor.glyphMargin": false,  // hide breakpoints
   "editor.minimap.enabled": false,
   "editor.renderWhitespace": "selection",
   "editor.renderLineHighlight": "none",
@@ -174,4 +174,23 @@
     "editorWarning.foreground": "#00000000",
   },
   "editor.unicodeHighlight.nonBasicASCII": false,
+
+  // https://github.com/drcika/apc-extension extension:
+  "apc.electron": {
+    "frame": false,  // removes the title bar
+    "transparent": true,  // removes white line from the top
+    "titleBarStyle": "hidden",
+    "titleBarOverlay": {
+      "height": 38,  // icons and text has the same centring in the title bar
+    }
+  },
+  "window.titleBarStyle": "native",
+  "window.customTitleBarVisibility": "never",
+  // Hide unwanted elements from the UI:
+  "apc.stylesheet": {
+    ".monaco-toolbar, .decorationsOverviewRuler": {
+      "visible": "hidden !important",
+      "display": "none !important",
+    }
+  },
 }
