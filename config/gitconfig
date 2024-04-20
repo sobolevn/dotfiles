@@ -29,6 +29,8 @@
   indentHeuristic = on
   noprefix = true
   colorMoved = default
+[interactive]
+  diffFilter = delta --color-only
 [diff "nodiff"]
 	command = true
 [rerere]

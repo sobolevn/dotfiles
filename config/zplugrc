@@ -1,10 +1,11 @@
 source "$ZPLUG_HOME/init.zsh"
 
-# Theme, should be the last:
-zplug 'sobolevn/sobole-zsh-theme', as:theme
-
 # Sorted in order of appearance (new at the bottom):
 zplug 'zsh-users/zsh-syntax-highlighting'
+zplug 'junegunn/fzf-git.sh', as:command, use:'fzf-git.sh'
+
+# Theme, should be the last:
+zplug 'sobolevn/sobole-zsh-theme', as:theme
 
 # Others might also enjoy this plugin:
 # (but it is not for me)

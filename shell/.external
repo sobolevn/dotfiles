@@ -13,6 +13,10 @@ eval "$(gh completion -s zsh)"  # adds autocomplete for `gh` tool
 if [[ ! "$PATH" == */opt/fzf/bin* ]]; then
   export PATH="$PATH:$(brew --prefix)/opt/fzf/bin"
 
+  # Enable `fzf-git`:
+  # https://github.com/junegunn/fzf-git.sh
+  source 'fzf-git.sh'  # installed via `zplug`
+
   # Auto-completion
   source "$(brew --prefix)/opt/fzf/shell/completion.zsh" 2> /dev/null
 
@@ -20,14 +24,23 @@ if [[ ! "$PATH" == */opt/fzf/bin* ]]; then
   source "$(brew --prefix)/opt/fzf/shell/key-bindings.zsh"
 fi
 
-# Setting ag as the default source for fzf
-export FZF_DEFAULT_COMMAND='ag -g ""'
-
 # To apply the command to CTRL-T as well
+export FZF_DEFAULT_COMMAND='fd --hidden --strip-cwd-prefix --exclude .git'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+export FZF_ALT_C_COMMAND='fd --type=d --hidden --strip-cwd-prefix --exclude .git'
+export FZF_CTRL_T_OPTS="--preview 'test -d {} && tree -C {} || bat -n --color=always --line-range :500 {}'"
+export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -200'"
 
+# Use fd (https://github.com/sharkdp/fd) for listing path candidates.
+# - The first argument to the function ($1) is the base path to start traversal
+# - See the source code (completion.{bash,zsh}) for the details.
 _fzf_compgen_path() {
-  ag -g "" "$1"
+  fd --hidden --exclude .git . "$1"
+}
+
+# Use fd to generate the list for directory completion
+_fzf_compgen_dir() {
+  fd --type=d --hidden --exclude .git . "$1"
 }
 
 
