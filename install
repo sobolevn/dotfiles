@@ -19,9 +19,6 @@ cd "$BASEDIR"
 git submodule sync --quiet --recursive
 git submodule update --init --recursive
 
-# Preparing Brewfile:
-. "$BASEDIR/vscode/versions.sh"
-
 # Linking dotfiles:
 
 run_dotbot () {
