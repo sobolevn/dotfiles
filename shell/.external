@@ -24,7 +24,7 @@ if [[ ! "$PATH" == */opt/fzf/bin* ]]; then
   source "$(brew --prefix)/opt/fzf/shell/key-bindings.zsh"
 fi
 
-# To apply the command to CTRL-T as well
+# Configuration:
 export FZF_DEFAULT_COMMAND='fd --hidden --strip-cwd-prefix --exclude .git'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_ALT_C_COMMAND='fd --type=d --hidden --strip-cwd-prefix --exclude .git'

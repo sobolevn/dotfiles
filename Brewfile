@@ -22,6 +22,8 @@ brew "libidn2"
 brew "libssh2"
 # Tool for downloading RTMP streaming media
 brew "rtmpdump"
+# General-purpose data compression with high compression ratio
+brew "xz"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
 # Good-lookin' diffs with diff-highlight and more
@@ -42,8 +44,6 @@ brew "gh"
 brew "git"
 # Syntax-highlighting pager for git and diff output
 brew "git-delta"
-# Statically typed language for the Erlang VM
-brew "gleam"
 # Core application library for C
 brew "glib"
 # Asynchronous event library
@@ -153,20 +153,18 @@ cask "hyper"
 cask "karabiner-elements"
 # Desktop shield and keystroke interceptor
 cask "keyboard-cleaner"
+# Support for Logitech G gear
+cask "logitech-g-hub"
 # Clipboard manager
 cask "maccy"
 # Open-source software for live streaming and screen recording
 cask "obs"
-# Finder Toolbar app to open the current directory in Terminal or Editor
-cask "openinterminal"
 # Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
 # Quicklook extension for source files
 cask "syntax-highlight"
 # Messaging app with a focus on speed and security
 cask "telegram"
-# Unpacks archive files
-cask "the-unarchiver"
 # Utility to hide the notch
 cask "topnotch"
 # Open-source code editor
@@ -175,7 +173,7 @@ cask "visual-studio-code"
 cask "yandex-music-unofficial"
 # Video communication and virtual meeting platform
 cask "zoom"
-mas "Cleaner-App", id: 1013897218
+mas "Delete Apps", id: 1033808943
 mas "Enpass", id: 732710998
 mas "HazeOver", id: 430798174
 mas "iMovie", id: 408981434
