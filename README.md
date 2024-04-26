@@ -77,7 +77,7 @@ I use `fzf` for several tasks:
 
 ![fzf-history](https://raw.githubusercontent.com/sobolevn/dotfiles/master/media/fzf-history.png)
 
-- `ctrl+t` allows to fuzzy search files and dirs in the current tree to have include paths in commands with instant previews for text files (content) and directories (inner tree)
+- `ctrl+t` allows to fuzzy search files and dirs in the current tree to include paths in commands with instant previews for text files (content) and directories (inner tree)
 
 ![fzf-paths](https://raw.githubusercontent.com/sobolevn/dotfiles/master/media/fzf-paths.png)
 
