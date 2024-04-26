@@ -31,6 +31,13 @@ export FZF_ALT_C_COMMAND='fd --type=d --hidden --strip-cwd-prefix --exclude .git
 export FZF_CTRL_T_OPTS="--preview 'test -d {} && tree -C {} || bat -n --color=always --line-range :500 --theme=GitHub {}'"
 export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -200'"
 
+# Theme: GitHub base24
+# https://github.com/tinted-theming/tinted-fzf
+export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS"\
+" --color=bg+:#f3f4f5,bg:#fafafa,spinner:#4cbf99,hl:#36a3d9"\
+" --color=fg:#828c99,header:#36a3d9,info:#f2ae49,pointer:#4cbf99"\
+" --color=marker:#4cbf99,fg+:#242936,prompt:#f2ae49,hl+:#36a3d9"
+
 # Use fd (https://github.com/sharkdp/fd) for listing path candidates.
 # - The first argument to the function ($1) is the base path to start traversal
 # - See the source code (completion.{bash,zsh}) for the details.
@@ -42,6 +49,29 @@ _fzf_compgen_path() {
 _fzf_compgen_dir() {
   fd --type=d --hidden --exclude .git . "$1"
 }
+
+# --- fzf-tab ---
+# https://github.com/Aloxaf/fzf-tab
+
+# switch group using `,` and `.`
+zstyle ':fzf-tab:*' switch-group ',' '.'
+
+# disable sort when completing `git checkout`
+zstyle ':completion:*:git-checkout:*' sort false
+# set descriptions format to enable group support
+zstyle ':completion:*:descriptions' format '[%d]'
+# force zsh not to show completion menu,
+# which allows fzf-tab to capture the unambiguous prefix
+zstyle ':completion:*' menu no
+# complete and preview env vars
+zstyle ':fzf-tab:complete:(-command-|-parameter-|-brace-parameter-|export|unset|expand|echo):*' \
+	fzf-preview 'echo ${(P)word}'
+
+# complete `ls` / `cat` / etc
+_preview_cmd='test -d $realpath \
+  && tree -C $realpath | head -200 \
+  || bat -n --color=always --line-range :500 --theme=GitHub $realpath'
+zstyle ':fzf-tab:complete:(ls|gls|bat|cat|cd):*' fzf-preview $_preview_cmd
 
 
 # === z ===
