@@ -1,5 +1,8 @@
 source "$ZPLUG_HOME/init.zsh"
 
+# Must be the first one:
+zplug 'Aloxaf/fzf-tab'
+
 # Sorted in order of appearance (new at the bottom):
 zplug 'zsh-users/zsh-syntax-highlighting'
 zplug 'junegunn/fzf-git.sh', as:command, use:'fzf-git.sh'

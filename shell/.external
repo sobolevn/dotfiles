@@ -28,7 +28,7 @@ fi
 export FZF_DEFAULT_COMMAND='fd --hidden --strip-cwd-prefix --exclude .git'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_ALT_C_COMMAND='fd --type=d --hidden --strip-cwd-prefix --exclude .git'
-export FZF_CTRL_T_OPTS="--preview 'test -d {} && tree -C {} || bat -n --color=always --line-range :500 {}'"
+export FZF_CTRL_T_OPTS="--preview 'test -d {} && tree -C {} || bat -n --color=always --line-range :500 --theme=GitHub {}'"
 export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -200'"
 
 # Use fd (https://github.com/sharkdp/fd) for listing path candidates.

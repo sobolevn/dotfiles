@@ -65,6 +65,26 @@ But I don't use them on a daily basis:
 - `elixir`
 - `rust`
 
+### fzf goodies
+
+I use `fzf` for several tasks:
+
+- `tab` to autocomplete probably all the things using [`fzf-tab`](https://github.com/Aloxaf/fzf-tab)
+
+![fzf-tab](https://raw.githubusercontent.com/sobolevn/dotfiles/master/media/fzf-tab.png)
+
+- `ctrl+r` allows me to fuzzy search command history
+
+![fzf-history](https://raw.githubusercontent.com/sobolevn/dotfiles/master/media/fzf-history.png)
+
+- `ctrl+t` allows to fuzzy search files and dirs in the current tree to have include paths in commands with instant previews for text files (content) and directories (inner tree)
+
+![fzf-paths](https://raw.githubusercontent.com/sobolevn/dotfiles/master/media/fzf-paths.png)
+
+- `ctrl+g` to work with [`fzf-git`](https://github.com/junegunn/fzf-git.sh)
+
+![fzf-git](https://raw.githubusercontent.com/sobolevn/dotfiles/master/media/fzf-git.png)
+
 
 ## Apps
 
