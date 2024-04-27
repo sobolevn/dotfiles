@@ -93,7 +93,7 @@ But I don't use them on a daily basis:
 
 ### fzf goodies
 
-I use `fzf` for several [code complition](https://github.com/sobolevn/dotfiles/blob/master/shell/.completions) tasks:
+I use `fzf` for several [code completion](https://github.com/sobolevn/dotfiles/blob/master/shell/.completions) tasks:
 
 - `tab` to autocomplete probably all the things using [`fzf-tab`](https://github.com/Aloxaf/fzf-tab)
 
