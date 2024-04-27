@@ -24,17 +24,11 @@ export FZF_ALT_C_COMMAND='fd --type=d --hidden --strip-cwd-prefix --exclude .git
 export FZF_CTRL_T_OPTS="--preview '_fzf_complete_realpath {}'"
 export FZF_ALT_C_OPTS="--preview '_fzf_complete_realpath {}'"
 
-# Theme: Ayu Light base16
-# https://github.com/tinted-theming/tinted-fzf
 # Use generator to customize:
 # https://vitormv.github.io/fzf-themes/
 # To add wrap lines add:
 # --preview-window=wrap
-export FZF_DEFAULT_OPTS='
- --color=bg:-1,fg:-1,bg+:#dce7f2,fg+:#121212
- --color=hl:#5f87af,hl+:#00bfff
- --color=header:#36a3d9,info:#f2ae49,pointer:#4cbf99
- --color=marker:#4cbf99,prompt:#f2ae49,spinner:#4cbf99'
+export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS --layout=reverse-list"
 
 # Use fd (https://github.com/sharkdp/fd) for listing path candidates.
 # - The first argument to the function ($1) is the base path to start traversal
@@ -60,7 +54,6 @@ export _ZO_FZF_OPTS="
   --cycle --keep-right
   --exit-0 --select-1
   --tabstop=1
-  --info=inline
   --height=50%
   --preview='_fzf_complete_realpath {2..}'"
 eval "$(zoxide init zsh)"

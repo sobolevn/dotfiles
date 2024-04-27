@@ -9,7 +9,7 @@
 alias ls='gls --color -h --group-directories-first -F'
 
 # `bat` styling:
-alias bat='\bat --theme=GitHub'
+alias bat="\bat --theme=$SOBOLE_SYNTAX_THEME"
 
 # Show local ip:
 alias localip='ipconfig getifaddr en0'

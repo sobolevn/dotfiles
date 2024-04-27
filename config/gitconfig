@@ -4,9 +4,9 @@
 	autocrlf = input
 	safecrlf = warn
 [pager]
-  diff = "delta"
-  blame = "delta"
-  show = "delta"
+  diff = "delta --syntax-theme=$SOBOLE_SYNTAX_THEME"
+  blame = "delta --syntax-theme=$SOBOLE_SYNTAX_THEME"
+  show = "delta --syntax-theme=$SOBOLE_SYNTAX_THEME"
 [credential]
   helper = osxkeychain
 [http]
@@ -20,8 +20,7 @@
 [push]
   default = simple
 [fetch]
-  # Prune branches that no longer exist remote.
-  # Same for tags.
+  # Prune branches that no longer exist remote. Same for tags.
   prune = true
   pruneTags = true
 [user]
@@ -31,7 +30,7 @@
   noprefix = true
   colorMoved = default
 [interactive]
-  diffFilter = delta --color-only
+  diffFilter = "delta --color-only --features=interactive --syntax-theme=$SOBOLE_SYNTAX_THEME"
 [diff "nodiff"]
 	command = true
 [rerere]
@@ -44,9 +43,7 @@
 
 # Custom plugins:
 [delta]
-  syntax-theme = GitHub
-  light = true
-	navigate = false
+  navigate = false
   inspect-raw-lines = false
   line-numbers = true
 
@@ -54,15 +51,12 @@
   file-style = none
   file-decoration-style = none
   minus-style = syntax auto
+[delta "interactive"]
+  keep-plus-minus-markers = false
 
 # Styling:
 [color]
   ui = true
-[color "diff-highlight"]
-  oldNormal = red bold
-  oldHighlight = white bold 52
-  newNormal = green bold
-  newHighlight = white bold 22
 [color "diff"]
   meta = black
   frag = blue bold
@@ -82,12 +76,13 @@
   patch = "!git --no-pager diff"
   ch = "!git checkout $(echo \"$1\" | sd -s 'sobolevn:' '') #"
 
-# Allow local customizations in the .gitconfig_local file
-[include]
-  path = ~/.gitconfig_local
 [diff "generated"]
 	binary = true
 [pull]
 	rebase = false
 [init]
 	defaultBranch = master
+
+# Allow local customizations in the .gitconfig_local file
+[include]
+  path = ~/.gitconfig_local

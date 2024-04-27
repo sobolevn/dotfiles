@@ -12,18 +12,12 @@ zstyle ':completion:*' special-dirs true
 zstyle ':completion:*' ignored-patterns '.|..|.DS_Store|**/.|**/..|**/.DS_Store|**/.git'
 # hide `..` and `.` from file menu
 zstyle ':completion:*' ignore-parents 'parent pwd directory'
-# set descriptions format to enable group support
-zstyle ':completion:*:descriptions' format '[%d]'
 # force zsh not to show completion menu,
 # which allows fzf-tab to capture the unambiguous prefix
 zstyle ':completion:*' menu no
 
 # switch groups using `[` and `]`
 zstyle ':fzf-tab:*' switch-group '[' ']'
-# fzf-tab theme, setting the default color for suggestions (blue for me)
-# Test all colors: `msgcat --color=test`
-zstyle ':fzf-tab:*' default-color $'\x1b[30m'
-zstyle ':fzf-tab:*' fzf-flags '--color=hl:#5f87af'
 
 # Tools to autocomplete:
 # ----------------------
@@ -38,10 +32,10 @@ zstyle ':fzf-tab:complete:(\\|*/|)(ls|gls|bat|cat|cd):*' fzf-preview \
 zstyle ':fzf-tab:complete:(\\|*/|)make:*' fzf-preview \
   'case "$group" in
   "[make target]")
-    make -n "$word" | bat -lsh
+    make -n "$word" | bat -lsh --theme=$SOBOLE_SYNTAX_THEME
     ;;
   "[make variable]")
-    make -pq | ag "^$word =" | bat -lsh
+    make -pq | ag "^$word =" | bat -lsh --theme=$SOBOLE_SYNTAX_THEME
     ;;
   "[file]")
     _fzf_complete_realpath "$realpath"

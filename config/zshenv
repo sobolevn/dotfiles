@@ -14,7 +14,11 @@ _fzf_complete_realpath() {
       local default_width=$(( "$FZF_PREVIEW_COLUMNS" < 60 ? 60 : "$FZF_PREVIEW_COLUMNS" ))
       catimg -r2 -w "$default_width" "$realpath"
     else
-      bat -n --color=always --line-range :100 --theme=GitHub "$realpath"
+      bat -n \
+        --color=always \
+        --line-range :100 \
+        --theme=$SOBOLE_SYNTAX_THEME \
+        "$realpath"
     fi
   fi
 }

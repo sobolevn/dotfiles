@@ -23,17 +23,18 @@ module.exports = {
     // set to true for blinking cursor
     cursorBlink: false,
 
-    // color of the text
-    foregroundColor: '#000',
-
-    // terminal background color
-    backgroundColor: '#fff',
-
     // selection color
     selectionColor: 'rgb(102, 102, 102)',
 
-    // border color (window, tabs)
+    // light theme:
+    foregroundColor: '#000',
+    backgroundColor: '#fff',
     borderColor: '#fff',
+
+    // dark theme for testing:
+    // foregroundColor: '#fff',
+    // backgroundColor: '#0A0E14',
+    // borderColor: '#0A0E14',
 
     // custom css to embed in the main window
     css: '',
@@ -57,15 +58,16 @@ module.exports = {
     // including the 6 x 6 color cubes and the grayscale map, just provide
     // an array here instead of a color map object
     colors: {
-      black: '#000000',
-      red: 'rgb(151, 4, 12)',
+      black: '#0A0E14',
+      red: '#FF8F40',
       green: 'rgb(23, 164, 26)',
       yellow: 'rgb(153, 152, 29)',
       blue: 'rgb(5, 22, 175)',
       magenta: 'rgb(177, 25, 176)',
       cyan: 'rgb(26, 166, 177)',
       white: 'rgb(191, 191, 191)',
-      lightBlack: 'rgb(102, 102, 102)',
+      // This is not really `light` this is more like `bold`:
+      lightBlack: '#0A0E14',
       lightRed: 'rgb(227, 10, 23)',
       lightGreen: 'rgb(33, 215, 38)',
       lightYellow: 'rgb(229, 228, 49)',
@@ -94,9 +96,7 @@ module.exports = {
     shellArgs: ['--login'],
 
     // for environment variables
-    env: {
-      'SOBOLE_THEME_MODE': 'light',
-    },
+    env: {},
 
     // set to false for no bell
     bell: false,
