@@ -1,0 +1,18 @@
+# This file is sourced for all shells, not just interactive ones like `.zshrc`.
+
+_fzf_complete_realpath() {
+  # Used for `tab` completion in `shell/.completions` and `shell/.external`.
+  # Can be customized to behave differently for different objects.
+  local realpath="$1"
+  if [ -d "$realpath" ]; then
+    tree -a -C "$realpath" | head -100
+  else
+    mime="$(file -Lbs --mime-type "$realpath")"
+    category="${mime%%/*}"
+    if [ "$category" = 'image' ]; then
+      catimg -r2 -w "$FZF_PREVIEW_COLUMNS" "$realpath"
+    else
+      bat -n --color=always --line-range :100 --theme=GitHub "$realpath"
+    fi
+  fi
+}

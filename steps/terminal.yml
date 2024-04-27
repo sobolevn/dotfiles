@@ -22,6 +22,9 @@
   ~/.zshrc:
     path: config/zshrc
     force: true
+  ~/.zshenv:
+    path: config/zshenv
+    force: true
 
   ~/.hushlogin: config/hushlogin
   ~/.inputrc: config/inputrc

@@ -1,0 +1,50 @@
+#!/usr/bin/env bash
+
+# `.competions` handles all custom auto-completions.
+
+
+# === fzf-tab ===
+# https://github.com/Aloxaf/fzf-tab
+
+# switch group using `[` and `]`
+zstyle ':fzf-tab:*' switch-group '[' ']'
+# enable hidden files on completion
+zstyle ':completion:*' special-dirs true
+# hide parents
+zstyle ':completion:*' ignored-patterns '.|..|.DS_Store|**/.|**/..|**/.DS_Store|**/.git'
+# hide `..` and `.` from file menu
+zstyle ':completion:*' ignore-parents 'parent pwd directory'
+# set descriptions format to enable group support
+zstyle ':completion:*:descriptions' format '[%d]'
+# force zsh not to show completion menu,
+# which allows fzf-tab to capture the unambiguous prefix
+zstyle ':completion:*' menu no
+
+# fzf-tab theme, setting the default color for suggestions (dark grey for me)
+zstyle ":fzf-tab:*" default-color $'\x1b[30m'
+
+# default preview options
+zstyle ":fzf-tab:*" fzf-preview '--preview-window=wrap'
+
+# Tools to autocomplete:
+# ----------------------
+# Big source of inspiration:
+# https://github.com/Freed-Wu/fzf-tab-source
+
+# complete `ls` / `cat` / etc
+zstyle ':fzf-tab:complete:(\\|*/|)(ls|gls|bat|cat|cd):*' fzf-preview \
+  '_fzf_complete_realpath "$realpath"'
+
+# complete `make`
+zstyle ':fzf-tab:complete:(\\|*/|)make:*' fzf-preview \
+  'case "$group" in
+  "[make target]")
+    make -n "$word" | bat -lsh
+    ;;
+  "[make variable]")
+    make -pq | ag "^$word =" | bat -lsh
+    ;;
+  "[file]")
+    _fzf_complete_realpath "$realpath"
+    ;;
+  esac'

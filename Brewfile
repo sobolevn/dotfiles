@@ -26,8 +26,6 @@ brew "rtmpdump"
 brew "xz"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
-# Good-lookin' diffs with diff-highlight and more
-brew "diff-so-fancy"
 # Clean Docker containers, images, networks, and volumes
 brew "docker-clean"
 # Programming language for highly scalable real-time systems
@@ -120,10 +118,10 @@ brew "tig"
 brew "tree"
 # Internet file retriever
 brew "wget"
-# Tracks most-used directories to make cd smarter
-brew "z"
 # General-purpose lossless data-compression library
 brew "zlib"
+# Shell extension to navigate your filesystem faster
+brew "zoxide"
 # Next-generation plugin manager for zsh
 brew "zplug"
 # UNIX shell (command interpreter)

@@ -5,7 +5,8 @@
 	safecrlf = warn
 [pager]
   diff = "delta"
-  show = "diff-so-fancy | less --tabs=1,5 -RFXM"
+  blame = "delta"
+  show = "delta"
 [credential]
   helper = osxkeychain
 [http]
@@ -48,7 +49,6 @@
 	navigate = false
   inspect-raw-lines = false
   line-numbers = true
-  # diff-so-fancy = true
 
   # decorations
   file-style = none

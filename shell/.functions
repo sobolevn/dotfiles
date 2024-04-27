@@ -52,12 +52,3 @@ loadenv () {
   done < "$1"
   echo 'Loaded!'
 }
-
-
-# Sets up all my working env
-workon () {
-  if _z 2>&1 "$1"; then
-    source '.venv/bin/activate' || true  # There might be no `.venv`
-    code .
-  fi
-}

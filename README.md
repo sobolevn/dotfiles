@@ -45,6 +45,32 @@ to set things up. Steps:
 3. Run: [`bash ./install`](https://github.com/sobolevn/dotfiles/blob/master/install)
 
 
+## VSCode
+
+I loved [my `Sublime`](https://github.com/sobolevn/dotfiles/tree/34ee628e515f7fc782566b946a3b4ca906bad7ba/sublime3-conf).
+It was fast and beautiful.
+The main reason is that `Sublime` is almost unmaintained.
+Packages are also abandoned.
+
+So, I have switched to [`vscode`](https://formulae.brew.sh/cask/visual-studio-code).
+It solved almost all issues I had with `Sublime`.
+Here's how my new `vscode` setup looks like, using my own theme called [`pustota`](https://github.com/sobolevn/pustota):
+
+![sobolevn's vscode for Python](https://raw.githubusercontent.com/sobolevn/pustota/master/assets/minimal.png)
+
+Here's [a list of packages](https://github.com/sobolevn/dotfiles/blob/master/vscode/install.sh) I use:
+
+- [`pustota`](https://github.com/sobolevn/pustota) theme
+- [`Python`](https://github.com/Microsoft/vscode-python) plugin
+- [`editorconfig`](https://editorconfig.org/) integration
+
+I try to keep my `vscode` setup as simple as possible.
+It was also heavily influenced by [`makevscodeawesome`](https://makevscodeawesome.com/).
+
+I also use [powered-up `nano`](https://github.com/sobolevn/dotfiles/blob/master/config/nanorc)
+for in-terminal editing.
+
+
 ## CLI
 
 I am using [`hyper`](https://hyper.is/) as my main terminal.
@@ -52,7 +78,7 @@ I am using [`zsh`](https://github.com/zsh-users/zsh) with [`oh-my-zsh`](https://
 as the main shell.
 And [`zplug`](https://github.com/zplug/zplug) to manage shell [plugins](https://github.com/sobolevn/dotfiles/blob/master/config/zplugrc).
 I also have a some tools / scripts / aliases to make my working experience better.
-But, I try to keep them minimal: only ones I truly use.
+But, I try to keep them minimal: only ones I truly use. Including: `bat`, `zoxide`, `fzf`, `ag`, `fd`, `delta`, `gh`, `tig`, and many others.
 
 I mainly work with:
 
@@ -97,32 +123,6 @@ so the resulting [`Brewfile`](https://github.com/sobolevn/dotfiles/blob/master/B
 
 I try to containerize everything.
 So, [`docker`](https://formulae.brew.sh/cask/docker) is my main development and deployment tool.
-
-
-## VSCode
-
-I loved [my `Sublime`](https://github.com/sobolevn/dotfiles/tree/34ee628e515f7fc782566b946a3b4ca906bad7ba/sublime3-conf).
-It was fast and beautiful.
-The main reason is that `Sublime` is almost unmaintained.
-Packages are also abandoned.
-
-So, I have switched to [`vscode`](https://formulae.brew.sh/cask/visual-studio-code).
-It solved almost all issues I had with `Sublime`.
-Here's how my new `vscode` setup looks like, using my own theme called [`pustota`](https://github.com/sobolevn/pustota):
-
-![sobolevn's vscode for Python](https://raw.githubusercontent.com/sobolevn/pustota/master/assets/minimal.png)
-
-Here's [a list of packages](https://github.com/sobolevn/dotfiles/blob/master/vscode/install.sh) I use:
-
-- [`pustota`](https://github.com/sobolevn/pustota) theme
-- [`Python`](https://github.com/Microsoft/vscode-python) plugin
-- [`editorconfig`](https://editorconfig.org/) integration
-
-I try to keep my `vscode` setup as simple as possible.
-It was also heavily influenced by [`makevscodeawesome`](https://makevscodeawesome.com/).
-
-I also use [powered-up `nano`](https://github.com/sobolevn/dotfiles/blob/master/config/nanorc)
-for in-terminal editing.
 
 
 ## Local configuration

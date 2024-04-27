@@ -32,9 +32,13 @@ HIST_IGNORE_SPACE='true'
 
 plugins=(
   gitfast
+  gh
   macos
   safe-paste
 )
+
+# Enable hidden files on completion:
+setopt globdots
 
 # Sourcing the Oh-My-ZSH source:
 
@@ -63,6 +67,7 @@ if [ ! "$CODESPACES" = true ]; then
   source "$HOME/.shell/.aliases"
   source "$HOME/.shell/.functions"
   source "$HOME/.shell/.external"
+  source "$HOME/.shell/.completions"
 fi
 
 
