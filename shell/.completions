@@ -6,8 +6,6 @@
 # === fzf-tab ===
 # https://github.com/Aloxaf/fzf-tab
 
-# switch group using `[` and `]`
-zstyle ':fzf-tab:*' switch-group '[' ']'
 # enable hidden files on completion
 zstyle ':completion:*' special-dirs true
 # hide parents
@@ -20,8 +18,12 @@ zstyle ':completion:*:descriptions' format '[%d]'
 # which allows fzf-tab to capture the unambiguous prefix
 zstyle ':completion:*' menu no
 
-# fzf-tab theme, setting the default color for suggestions (dark grey for me)
-zstyle ":fzf-tab:*" default-color $'\x1b[30m'
+# switch groups using `[` and `]`
+zstyle ':fzf-tab:*' switch-group '[' ']'
+# fzf-tab theme, setting the default color for suggestions (blue for me)
+# Test all colors: `msgcat --color=test`
+zstyle ':fzf-tab:*' default-color $'\x1b[30m'
+zstyle ':fzf-tab:*' fzf-flags '--color=hl:#5f87af'
 
 # Tools to autocomplete:
 # ----------------------

@@ -93,7 +93,7 @@ But I don't use them on a daily basis:
 
 ### fzf goodies
 
-I use `fzf` for several tasks:
+I use `fzf` for several [code complition](https://github.com/sobolevn/dotfiles/blob/master/shell/.completions) tasks:
 
 - `tab` to autocomplete probably all the things using [`fzf-tab`](https://github.com/Aloxaf/fzf-tab)
 
@@ -110,6 +110,10 @@ I use `fzf` for several tasks:
 - `ctrl+g` to work with [`fzf-git`](https://github.com/junegunn/fzf-git.sh)
 
 ![fzf-git](https://raw.githubusercontent.com/sobolevn/dotfiles/master/media/fzf-git.png)
+
+- press `space` + `tab` after `z <path>` to enable fuzzy finder for `zoxide`
+
+![fzf-zoxide](https://raw.githubusercontent.com/sobolevn/dotfiles/master/media/fzf-zoxide.png)
 
 
 ## Apps

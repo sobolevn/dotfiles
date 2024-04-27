@@ -21,15 +21,20 @@ fi
 export FZF_DEFAULT_COMMAND='fd --hidden --strip-cwd-prefix --exclude .git'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_ALT_C_COMMAND='fd --type=d --hidden --strip-cwd-prefix --exclude .git'
-export FZF_CTRL_T_OPTS="--preview '_fzf_complete_realpath {}' --preview-window down:2"
+export FZF_CTRL_T_OPTS="--preview '_fzf_complete_realpath {}'"
 export FZF_ALT_C_OPTS="--preview '_fzf_complete_realpath {}'"
 
-# Theme: GitHub base24
+# Theme: Ayu Light base16
 # https://github.com/tinted-theming/tinted-fzf
-export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS"\
-" --color=bg+:#dce7f2,spinner:#4cbf99,hl:#36a3d9"\
-" --color=header:#36a3d9,info:#f2ae49,pointer:#4cbf99"\
-" --color=marker:#4cbf99,fg+:#121212,prompt:#f2ae49,hl+:#36a3d9"
+# Use generator to customize:
+# https://vitormv.github.io/fzf-themes/
+# To add wrap lines add:
+# --preview-window=wrap
+export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS
+ --color=bg:-1,fg:-1,bg+:#dce7f2,fg+:#121212
+ --color=hl:#5f87af,hl+:#00bfff
+ --color=header:#36a3d9,info:#f2ae49,pointer:#4cbf99
+ --color=marker:#4cbf99,prompt:#f2ae49,spinner:#4cbf99"
 
 # Use fd (https://github.com/sharkdp/fd) for listing path candidates.
 # - The first argument to the function ($1) is the base path to start traversal
