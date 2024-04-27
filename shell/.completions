@@ -23,9 +23,6 @@ zstyle ':completion:*' menu no
 # fzf-tab theme, setting the default color for suggestions (dark grey for me)
 zstyle ":fzf-tab:*" default-color $'\x1b[30m'
 
-# default preview options
-zstyle ":fzf-tab:*" fzf-preview '--preview-window=wrap'
-
 # Tools to autocomplete:
 # ----------------------
 # Big source of inspiration:
