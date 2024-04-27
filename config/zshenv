@@ -5,12 +5,14 @@ _fzf_complete_realpath() {
   # Can be customized to behave differently for different objects.
   local realpath="$1"
   if [ -d "$realpath" ]; then
-    tree -a -C "$realpath" | head -100
+    tree -a -I '.DS_Store|.localized' -C "$realpath" | head -100
   else
     mime="$(file -Lbs --mime-type "$realpath")"
     category="${mime%%/*}"
     if [ "$category" = 'image' ]; then
-      catimg -r2 -w "$FZF_PREVIEW_COLUMNS" "$realpath"
+      # I guessed `60` to be fine for my exact terminal size
+      local default_width=$(( "$FZF_PREVIEW_COLUMNS" < 60 ? 60 : "$FZF_PREVIEW_COLUMNS" ))
+      catimg -r2 -w "$default_width" "$realpath"
     else
       bat -n --color=always --line-range :100 --theme=GitHub "$realpath"
     fi
