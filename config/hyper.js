@@ -59,7 +59,7 @@ module.exports = {
     // an array here instead of a color map object
     colors: {
       black: '#0A0E14',
-      red: '#FF8F40',
+      red: 'rgb(151, 4, 12)',
       green: 'rgb(23, 164, 26)',
       yellow: 'rgb(153, 152, 29)',
       blue: 'rgb(5, 22, 175)',
@@ -96,7 +96,9 @@ module.exports = {
     shellArgs: ['--login'],
 
     // for environment variables
-    env: {},
+    env: {
+      'TERM': 'xterm-256color',
+    },
 
     // set to false for no bell
     bell: false,
