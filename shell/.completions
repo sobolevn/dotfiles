@@ -19,6 +19,9 @@ zstyle ':completion:*' menu no
 # switch groups using `[` and `]`
 zstyle ':fzf-tab:*' switch-group '[' ']'
 
+# use the same layout as others, respect my default
+zstyle ':fzf-tab:*' fzf-flags '--layout=reverse-list'
+
 # Tools to autocomplete:
 # ----------------------
 # Big source of inspiration:
