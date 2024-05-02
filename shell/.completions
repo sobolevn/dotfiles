@@ -19,8 +19,11 @@ zstyle ':completion:*' menu no
 # switch groups using `[` and `]`
 zstyle ':fzf-tab:*' switch-group '[' ']'
 
-# use the same layout as others, respect my default
-zstyle ':fzf-tab:*' fzf-flags '--layout=reverse-list'
+# use the same layout as others and respect my default
+local fzf_flags
+zstyle -a ':fzf-tab:*' fzf-flags fzf_flags
+fzf_flags=( "${fzf_flags[@]}" '--layout=reverse-list' )
+zstyle ':fzf-tab:*' fzf-flags $fzf_flags
 
 # Tools to autocomplete:
 # ----------------------

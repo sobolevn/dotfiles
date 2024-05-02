@@ -13,6 +13,11 @@ _fzf_complete_realpath() {
       # I guessed `60` to be fine for my exact terminal size
       local default_width=$(( "$FZF_PREVIEW_COLUMNS" < 60 ? 60 : "$FZF_PREVIEW_COLUMNS" ))
       catimg -r2 -w "$default_width" "$realpath"
+    elif [[ "$mime" =~ 'binary' ]]; then
+      hexyl --length 5KiB \
+        --border none \
+        --terminal-width "$FZF_PREVIEW_COLUMNS" \
+        "$realpath"
     else
       bat -n \
         --color=always \

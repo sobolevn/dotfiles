@@ -10,6 +10,8 @@ brew "bash"
 brew "bat"
 # Get/set bluetooth power and discoverable state
 brew "blueutil"
+# Insanely fast image printing in your terminal
+brew "catimg"
 # Mozilla CA bundle for Python
 brew "certifi"
 # GNU File, Shell, and Text utilities
@@ -62,6 +64,8 @@ brew "pinentry"
 brew "gnupg"
 # Library access to GnuPG
 brew "gpgme"
+# Command-line hex viewer
+brew "hexyl"
 # Powerful, lightweight programming language
 brew "lua"
 # Convert source code to formatted text with syntax highlighting
