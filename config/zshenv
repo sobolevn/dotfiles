@@ -1,9 +1,19 @@
 # This file is sourced for all shells, not just interactive ones like `.zshrc`.
 
-_fzf_complete_realpath() {
+_fzf_complete_realpath () {
   # Used for `tab` completion in `shell/.completions` and `shell/.external`.
   # Can be customized to behave differently for different objects.
-  local realpath="$1"
+  local realpath="${1:--}"  # read the first arg or stdin if arg is missing
+
+  if [ "$realpath" = '-' ]; then
+    # It is a stdin, always a text content:
+    local stdin="$(< /dev/stdin)"
+    echo "$stdin" \
+      | fold -w "$FZF_PREVIEW_COLUMNS" \
+      | bat --language=sh --plain --color=always --theme="$SOBOLE_SYNTAX_THEME"
+    return
+  fi
+
   if [ -d "$realpath" ]; then
     tree -a -I '.DS_Store|.localized' -C "$realpath" | head -100
   else
@@ -22,7 +32,7 @@ _fzf_complete_realpath() {
       bat -n \
         --color=always \
         --line-range :100 \
-        --theme=$SOBOLE_SYNTAX_THEME \
+        --theme="$SOBOLE_SYNTAX_THEME" \
         "$realpath"
     fi
   fi

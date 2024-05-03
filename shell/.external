@@ -28,7 +28,10 @@ export FZF_ALT_C_OPTS="--preview '_fzf_complete_realpath {}'"
 # https://vitormv.github.io/fzf-themes/
 # To add wrap lines add:
 # --preview-window=wrap
-export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS --layout=reverse-list"
+export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS
+--layout=reverse-list
+--bind '=:toggle'
+"
 
 # Use fd (https://github.com/sharkdp/fd) for listing path candidates.
 # - The first argument to the function ($1) is the base path to start traversal

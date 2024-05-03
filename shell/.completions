@@ -27,21 +27,23 @@ zstyle ':fzf-tab:*' fzf-flags $fzf_flags
 
 # Tools to autocomplete:
 # ----------------------
-# Big source of inspiration:
-# https://github.com/Freed-Wu/fzf-tab-source
+# Big sources of inspiration:
+# - https://github.com/Freed-Wu/fzf-tab-source
+# - https://github.com/DanielFGray/fzf-scripts
 
 # complete `ls` / `cat` / etc
-zstyle ':fzf-tab:complete:(\\|*/|)(ls|gls|bat|cat|cd):*' fzf-preview \
+zstyle ':fzf-tab:complete:(\\|*/|)(ls|gls|bat|cat|cd|cp|mv|ln):*' \
+  fzf-preview \
   '_fzf_complete_realpath "$realpath"'
 
 # complete `make`
 zstyle ':fzf-tab:complete:(\\|*/|)make:*' fzf-preview \
   'case "$group" in
   "[make target]")
-    make -n "$word" | bat -lsh --theme=$SOBOLE_SYNTAX_THEME
+    make -n "$word" | _fzf_complete_realpath
     ;;
   "[make variable]")
-    make -pq | ag "^$word =" | bat -lsh --theme=$SOBOLE_SYNTAX_THEME
+    make -pq | ag "^$word =" | _fzf_complete_realpath
     ;;
   "[file]")
     _fzf_complete_realpath "$realpath"
