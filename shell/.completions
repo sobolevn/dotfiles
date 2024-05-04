@@ -32,7 +32,7 @@ zstyle ':fzf-tab:*' fzf-flags $fzf_flags
 # - https://github.com/DanielFGray/fzf-scripts
 
 # complete `ls` / `cat` / etc
-zstyle ':fzf-tab:complete:(\\|*/|)(ls|gls|bat|cat|cd|cp|mv|ln):*' \
+zstyle ':fzf-tab:complete:(\\|*/|)(ls|gls|bat|cat|cd|rm|cp|mv|ln|code|open):*' \
   fzf-preview \
   '_fzf_complete_realpath "$realpath"'
 

@@ -2,7 +2,7 @@
 
 - clean: ['~']
 
-# See https://ohmyz.sh/
+# See https://ohmyz.sh
 - shell:
   - command: |
       sh -c \
@@ -55,3 +55,11 @@
     path: config/gpgagent
     force: true
     create: true
+
+# See https://python-poetry.org
+- shell:
+  - command: |
+      curl -sSL https://install.python-poetry.org | python3 -
+    description: Install poetry
+    stdout: true
+    stderr: true
