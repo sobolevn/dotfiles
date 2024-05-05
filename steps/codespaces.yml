@@ -1,8 +1,0 @@
----
-
-# Setting up Homebrew for codespaces:
-- shell:
-  - command: bash './vscode/codespaces.sh'
-    description: Setting up codespaces
-    stdout: true
-    stderr: true

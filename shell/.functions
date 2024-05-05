@@ -7,9 +7,9 @@
 
 pyclean () {
   # Cleans py[cod] and cache dirs in the current tree:
-  find . \
-    | grep -E '(__pycache__|\.(mypy_)?cache|\.hypothesis\.py[cod]$)' \
-    | xargs rm -rf
+  fd -I -H \
+    '(__pycache__|\.(pytest_|mypy_)?cache|\.hypothesis\.py[cod]$)' \
+  | xargs rm -rf
 }
 
 

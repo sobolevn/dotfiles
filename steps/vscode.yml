@@ -2,17 +2,13 @@
 
 # Setting up vscode:
 - link:
-    # macos:
     "~/Library/Application Support/Code/User/settings.json":
-      if: '[ `uname` = Darwin ]'
       path: vscode/settings.json
       create: true
     "~/Library/Application Support/Code/User/keybindings.json":
-      if: '[ `uname` = Darwin ]'
       path: vscode/keybindings.json
       create: true
     "~/Library/Application Support/Code/User/snippets":
-      if: '[ `uname` = Darwin ]'
       path: vscode/snippets
       create: true
 
