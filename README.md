@@ -58,11 +58,12 @@ Here's how my new `vscode` setup looks like, using my own theme called [`pustota
 
 ![sobolevn's vscode for Python](https://raw.githubusercontent.com/sobolevn/pustota/master/assets/minimal.png)
 
-Here's [a list of packages](https://github.com/sobolevn/dotfiles/blob/master/vscode/install.sh) I use:
+Here's [a list of packages](https://github.com/sobolevn/dotfiles/blob/master/Brewfile) (see `vscode` calls at the bottom) I use:
 
 - [`pustota`](https://github.com/sobolevn/pustota) theme
 - [`Python`](https://github.com/Microsoft/vscode-python) plugin
 - [`editorconfig`](https://editorconfig.org/) integration
+- [`drcika.apc-extension`](https://github.com/drcika/apc-extension) for better customization
 
 I try to keep my `vscode` setup as simple as possible.
 It was also heavily influenced by [`makevscodeawesome`](https://makevscodeawesome.com/).
