@@ -32,10 +32,6 @@ run_dotbot () {
 }
 
 run_dotbot 'steps/terminal.yml' || true
-if [ "$CODESPACES" = true ]; then
- run_dotbot 'steps/codespaces.yml' || true
-else
- run_dotbot 'steps/dependencies.yml' || true
-fi
+run_dotbot 'steps/dependencies.yml' || true
 run_dotbot 'steps/vscode.yml' || true
 run_dotbot 'steps/streamdeck.yml' || true

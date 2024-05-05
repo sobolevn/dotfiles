@@ -52,7 +52,9 @@ export HOMEBREW_NO_ANALYTICS=1  # disables statistics that brew collects
 #   -M   show more info at the bottom prompt line
 #   -x4  tabs are 4 instead of 8
 export LESS='-iRFXMx4'
-export PAGER='less'
+export PAGER='bat -p --theme="$SOBOLE_SYNTAX_THEME"'
+# I don't use `bat` here, because I don't like the highlight.
+# sh -c 'col -b | bat -l man -p --theme="$SOBOLE_SYNTAX_THEME"'
 export MANPAGER='less'
 
 

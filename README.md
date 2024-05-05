@@ -99,6 +99,9 @@ I use `fzf` for several [code completion](https://github.com/sobolevn/dotfiles/b
 
 ![fzf-tab](https://raw.githubusercontent.com/sobolevn/dotfiles/master/media/fzf-tab.png)
 
+Multiple tools have custom completions like: `zoxide`, `make`, `killall`
+that work well with `fzf`'s preview feature.
+
 - `ctrl+r` allows me to fuzzy search command history
 
 ![fzf-history](https://raw.githubusercontent.com/sobolevn/dotfiles/master/media/fzf-history.png)
@@ -110,10 +113,6 @@ I use `fzf` for several [code completion](https://github.com/sobolevn/dotfiles/b
 - `ctrl+g` to work with [`fzf-git`](https://github.com/junegunn/fzf-git.sh)
 
 ![fzf-git](https://raw.githubusercontent.com/sobolevn/dotfiles/master/media/fzf-git.png)
-
-- press `space` + `tab` after `z <path>` to enable fuzzy finder for `zoxide`
-
-![fzf-zoxide](https://raw.githubusercontent.com/sobolevn/dotfiles/master/media/fzf-zoxide.png)
 
 
 ## Apps

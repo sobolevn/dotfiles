@@ -31,17 +31,18 @@ export FZF_ALT_C_OPTS="--preview '_fzf_complete_realpath {}'"
 export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS
 --layout=reverse-list
 --bind '=:toggle'
+--cycle
 "
 
 # Use fd (https://github.com/sharkdp/fd) for listing path candidates.
 # - The first argument to the function ($1) is the base path to start traversal
 # - See the source code (completion.{bash,zsh}) for the details.
-_fzf_compgen_path() {
+_fzf_compgen_path () {
   fd --hidden --no-ignore-vcs --exclude .git . "$1"
 }
 
 # Use fd to generate the list for directory completion
-_fzf_compgen_dir() {
+_fzf_compgen_dir () {
   fd --type=d --hidden --no-ignore-vcs --exclude .git . "$1"
 }
 
@@ -51,12 +52,13 @@ _fzf_compgen_dir() {
 # === z ===
 # https://github.com/ajeetdsouza/zoxide
 
-# It uses `fzf` to provide completions
-export _ZO_FZF_OPTS="
-  $FZF_DEFAULT_OPTS
-  --cycle --keep-right
-  --exit-0 --select-1
-  --tabstop=1
-  --height=50%
-  --preview='_fzf_complete_realpath {2..}'"
-eval "$(zoxide init zsh)"
+# `zoxide` has an option to use `fzf` to provide completions natively,
+# but it works only for `z NAME<SPACE><TAB>`,
+# it does not work for `z NAME<TAB>`.
+# So, I have this usecase as a custom completion defined in `.completions`.
+eval "$(zoxide init zsh --no-cmd)"
+
+z () {
+  # I need this function to setup custom code completion for `zoxide`.
+  \__zoxide_z "$@"
+}

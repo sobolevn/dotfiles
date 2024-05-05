@@ -16,21 +16,6 @@
       path: vscode/snippets
       create: true
 
-    # codespaces:
-    "~/.vscode-remote/data/Machine/settings.json":
-      if: '[ "$CODESPACES" = true ]'
-      path: vscode/settings.json
-      create: true
-      force: true
-    "~/.vscode-remote/data/Machine/keybindings.json":
-      if: '[ "$CODESPACES" = true ]'
-      path: vscode/keybindings.json
-      create: true
-    "~/.vscode-remote/data/Machine/snippets":
-      if: '[ "$CODESPACES" = true ]'
-      path: vscode/snippets
-      create: true
-
 # Installing dependencies:
 - brewfile:
     file: Brewfile

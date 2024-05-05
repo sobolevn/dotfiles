@@ -33,8 +33,6 @@ HIST_IGNORE_SPACE='true'
 plugins=(
   gitfast
   gh
-  macos
-  safe-paste
 )
 
 # Enable hidden files on completion:
@@ -45,30 +43,23 @@ setopt globdots
 source "$ZSH/oh-my-zsh.sh"
 
 # This PATH needs to be set before all other modifications:
-export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/sbin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH='/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/sbin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
 
 
 # === Plugin management ===
 
-if [ "$CODESPACES" = true ]; then
-  ZPLUG_HOME="$HOME/.zplug"
-else
-  ZPLUG_HOME='/opt/homebrew/opt/zplug'
-fi
-
+ZPLUG_HOME='/opt/homebrew/opt/zplug'
 export ZPLUG_HOME
 source "$HOME/.zplugrc"
 
 
 # === Shell parts ===
 
-if [ ! "$CODESPACES" = true ]; then
-  source "$HOME/.shell/.exports"
-  source "$HOME/.shell/.aliases"
-  source "$HOME/.shell/.functions"
-  source "$HOME/.shell/.external"
-  source "$HOME/.shell/.completions"
-fi
+source "$HOME/.shell/.exports"
+source "$HOME/.shell/.aliases"
+source "$HOME/.shell/.functions"
+source "$HOME/.shell/.external"
+source "$HOME/.shell/.completions"
 
 
 # === Local variables and overrides ===

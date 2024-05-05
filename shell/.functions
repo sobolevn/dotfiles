@@ -15,40 +15,6 @@ pyclean () {
 
 mc () {
   # Create a new directory and enter it
-  mkdir -p "$@" && cd "$@"
-}
-
-
-cdf () {
-  # cd into whatever is the forefront Finder window.
-  local path=$(osascript -e 'tell app "Finder" to POSIX path of (insertion location as alias)')
-  echo "$path"
-  cd "$path"
-}
-
-
-# From Dan Ryan's blog - http://danryan.co/using-antigen-for-zsh.html
-man () {
-  # Shows pretty `man` page.
-  env \
-    LESS_TERMCAP_mb=$(printf '\e[1;31m') \
-    LESS_TERMCAP_md=$(printf '\e[1;31m') \
-    LESS_TERMCAP_me=$(printf '\e[0m') \
-    LESS_TERMCAP_se=$(printf '\e[0m') \
-    LESS_TERMCAP_so=$(printf '\e[1;44;33m') \
-    LESS_TERMCAP_ue=$(printf '\e[0m') \
-    LESS_TERMCAP_us=$(printf '\e[1;32m') \
-      man "$@"
-}
-
-
-# Loads `.env` file from a filename passed as an argument
-loadenv () {
-  while read line; do
-    if [ "${line:0:1}" = '#' ]; then
-      continue  # comments are ignored
-    fi
-    export $line > /dev/null
-  done < "$1"
-  echo 'Loaded!'
+  local dir_name="$1"
+  mkdir -p "$dir_name" && cd "$dir_name"
 }

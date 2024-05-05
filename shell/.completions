@@ -49,3 +49,21 @@ zstyle ':fzf-tab:complete:(\\|*/|)make:*' fzf-preview \
     _fzf_complete_realpath "$realpath"
     ;;
   esac'
+
+# complete `killall`
+zstyle ':completion:*:*:killall:*:*' command 'ps -u "$USERNAME" -o comm'
+zstyle ':fzf-tab:complete:(\\|*/|)killall:*' fzf-preview \
+  'ps aux | grep "$word" | _fzf_complete_realpath'
+
+# complete `zoxide`
+_z () {
+  # I have a custom completion, because I like `z NAME<TAB>`
+  # and not `z NAME<SPACE><TAB>`
+  local args
+  args="$(zoxide query -a -l)"
+  _arguments "1:paths:($args)"
+}
+
+compdef _z z
+zstyle ':fzf-tab:complete:(\\|*/|)z:*' fzf-preview \
+  '_fzf_complete_realpath "$word"'
