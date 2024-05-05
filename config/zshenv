@@ -16,7 +16,7 @@ _fzf_complete_realpath () {
 
   if [ -d "$realpath" ]; then
     tree -a -I '.DS_Store|.localized' -C "$realpath" | head -100
-  else
+  elif [ -f "$realpath" ]; then
     mime="$(file -Lbs --mime-type "$realpath")"
     category="${mime%%/*}"
     if [ "$category" = 'image' ]; then
@@ -35,5 +35,8 @@ _fzf_complete_realpath () {
         --theme="$SOBOLE_SYNTAX_THEME" \
         "$realpath"
     fi
+  else
+    # This is not a directory and not a file, just print the string.
+    echo "$realpath" | fold -w "$FZF_PREVIEW_COLUMNS"
   fi
 }
