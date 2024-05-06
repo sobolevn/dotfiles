@@ -74,7 +74,7 @@ for in-terminal editing.
 
 ## CLI
 
-I am using [`hyper`](https://hyper.is/) as my main terminal.
+I am using [`hyper`](https://hyper.is/) as my main terminal with my custom [`senya` theme](https://github.com/sobolevn/senya).
 I am using [`zsh`](https://github.com/zsh-users/zsh) with [`oh-my-zsh`](https://github.com/robbyrussell/oh-my-zsh)
 as the main shell.
 And [`zplug`](https://github.com/zplug/zplug) to manage shell [plugins](https://github.com/sobolevn/dotfiles/blob/master/config/zplugrc).
@@ -91,6 +91,7 @@ But I don't use them on a daily basis:
 - `node`
 - `elixir`
 - `rust`
+- `c`
 
 ### fzf goodies
 

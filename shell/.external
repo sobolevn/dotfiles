@@ -32,6 +32,7 @@ export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS
 --layout=reverse-list
 --bind '=:toggle'
 --cycle
+-i
 "
 
 # Use fd (https://github.com/sharkdp/fd) for listing path candidates.
