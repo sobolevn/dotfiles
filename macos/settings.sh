@@ -80,7 +80,7 @@ defaults write com.apple.dock autohide -bool true
 # === Menu bar ===
 
 # Make status icons smaller, so they will take less space:
-# https://flaky.build/built-in-workaround-for-applications-hiding-under-the-macbook-pro-notch 
+# https://flaky.build/built-in-workaround-for-applications-hiding-under-the-macbook-pro-notch
 defaults write -globalDomain NSStatusItemSelectionPadding -int 12
 defaults write -globalDomain NSStatusItemSpacing -int 12
 
@@ -119,6 +119,20 @@ defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 
 # Show Library folder
 chflags nohidden ~/Library
+
+# When performing a search, search the current folder by default
+defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
+
+# Avoid creating .DS_Store files on network or USB volumes
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
+
+# Expand the following File Info panes:
+# “General”, “Open with”, and “Sharing & Permissions”
+defaults write com.apple.finder FXInfoPanesExpanded -dict \
+	General -bool true \
+	OpenWith -bool true \
+	Privileges -bool true
 
 
 # === Safari ===
