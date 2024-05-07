@@ -11,6 +11,9 @@ alias ls='gls --color -h --group-directories-first -F'
 # `bat` styling:
 alias bat="\bat --theme=$SOBOLE_SYNTAX_THEME"
 
+# Use syntax highlight for `cat`:
+alias cat='bat --paging never --decorations never --plain'
+
 # Show local ip:
 alias localip='ipconfig getifaddr en0'
 

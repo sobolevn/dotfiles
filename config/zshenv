@@ -8,9 +8,14 @@ _fzf_complete_realpath () {
   if [ "$realpath" = '-' ]; then
     # It is a stdin, always a text content:
     local stdin="$(< /dev/stdin)"
-    echo "$stdin" \
-      | fold -w "$FZF_PREVIEW_COLUMNS" \
-      | bat --language=sh --plain --color=always --theme="$SOBOLE_SYNTAX_THEME"
+    echo "$stdin" | bat \
+      --language=sh \
+      --plain \
+      --color=always \
+      --theme="$SOBOLE_SYNTAX_THEME" \
+      --wrap=character \
+      --terminal-width="$FZF_PREVIEW_COLUMNS" \
+      --line-range :100
     return
   fi
 
@@ -29,7 +34,7 @@ _fzf_complete_realpath () {
         --terminal-width "$FZF_PREVIEW_COLUMNS" \
         "$realpath"
     else
-      bat -n \
+      bat --number \
         --color=always \
         --line-range :100 \
         --theme="$SOBOLE_SYNTAX_THEME" \
