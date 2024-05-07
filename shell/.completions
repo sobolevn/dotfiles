@@ -53,7 +53,7 @@ zstyle ':fzf-tab:complete:(\\|*/|)make:*' fzf-preview \
 # complete `killall`
 zstyle ':completion:*:*:killall:*:*' command 'ps -u "$USERNAME" -o comm'
 zstyle ':fzf-tab:complete:(\\|*/|)killall:*' fzf-preview \
-  'ps aux | grep "$word" | _fzf_complete_realpath'
+  'ps aux | ag "$word" | _fzf_complete_realpath'
 
 # complete `zoxide`
 _z () {
