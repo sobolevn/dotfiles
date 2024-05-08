@@ -31,6 +31,9 @@ zstyle ':fzf-tab:*' fzf-flags $fzf_flags
 # - https://github.com/Freed-Wu/fzf-tab-source
 # - https://github.com/DanielFGray/fzf-scripts
 
+# complete `fzf`
+compdef _gnu_generic fzf
+
 # complete `ls` / `cat` / etc
 zstyle ':fzf-tab:complete:(\\|*/|)(ls|gls|bat|cat|cd|rm|cp|mv|ln|code|open):*' \
   fzf-preview \
