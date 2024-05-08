@@ -35,7 +35,7 @@ zstyle ':fzf-tab:*' fzf-flags $fzf_flags
 compdef _gnu_generic fzf
 
 # complete `ls` / `cat` / etc
-zstyle ':fzf-tab:complete:(\\|*/|)(ls|gls|bat|cat|cd|rm|cp|mv|ln|code|open|tree):*' \
+zstyle ':fzf-tab:complete:(\\|*/|)(ls|gls|bat|cat|cd|rm|cp|mv|ln|code|open|tree|nano):*' \
   fzf-preview \
   '_fzf_complete_realpath "$realpath"'
 

@@ -18,3 +18,7 @@ set historylog
 # line numbers are copied with text,
 # it is not useful:
 # set linenumbers
+
+# Syntax highlight:
+include /opt/homebrew/opt/nano/share/nano/*.nanorc
+include /opt/homebrew/opt/nano/share/nano/extra/*.nanorc
