@@ -3,6 +3,7 @@
   "debug.allowBreakpointsEverywhere": true,
   "debug.javascript.codelens.npmScripts": "never",
   "editor.glyphMargin": false,  // hide breakpoints
+  "debug.console.closeOnEnd": true,
 
   // Editor:
   "editor.accessibilitySupport": "off",
