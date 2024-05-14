@@ -45,17 +45,24 @@ export HOMEBREW_NO_ANALYTICS=1  # disables statistics that brew collects
 # Pagers:
 # This affects every invocation of `less`.
 #
-#   -i   case-insensitive search unless search string contains uppercase letters
-#   -R   color
-#   -F   exit if there is less than one page of content
-#   -X   keep content on screen after exit
-#   -M   show more info at the bottom prompt line
-#   -x4  tabs are 4 instead of 8
-export LESS='-iRFXMx4'
+#   -i       smart case-insensitive search
+#   -R       color
+#   -F       exit if there is less than one page of content
+#   -X       keep content on screen after exit
+#   -M       show more info at the bottom prompt line
+#   -x4      tabs are 4 instead of 8
+#   --mouse  mouse support for scrolling
+export LESS='-iRFXMx4 --mouse'
 export PAGER='less'
 # I don't use `bat` here, because I don't like the highlight.
 # sh -c 'col -b | bat -l man -p --theme="$SOBOLE_SYNTAX_THEME"'
 export MANPAGER='less'
+
+
+# === bat ===
+# https://github.com/sharkdp/bat
+
+export BAT_THEME="$SOBOLE_SYNTAX_THEME"
 
 
 # === Version managers ===

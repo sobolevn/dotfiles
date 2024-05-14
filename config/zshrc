@@ -1,7 +1,7 @@
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-# Theme is set via `zplug`, see `config/zplug.txt`.
+# Theme is set via `zplug`, see `config/zplugrc`.
 # ZSH_THEME="sobole"
 
 # Uncomment the following line to use case-sensitive completion.
@@ -31,15 +31,11 @@ HIST_IGNORE_SPACE='true'
 # Add wisely, as too many plugins slow down shell startup.
 
 plugins=(
-  gitfast
+  # gitfast
   gh
 )
 
-# Enable hidden files on completion:
-setopt globdots
-
 # Sourcing the Oh-My-ZSH source:
-
 source "$ZSH/oh-my-zsh.sh"
 
 # This PATH needs to be set before all other modifications:

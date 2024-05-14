@@ -2,6 +2,13 @@
 
 # `.competions` handles all custom auto-completions.
 
+# Enable hidden files on completion:
+setopt globdots
+
+# Uncomment to set `CTRL-k` to show debug info:
+# Usage: `your command <CTRL-k>`
+# bindkey '^k' _complete_help
+
 
 # === fzf-tab ===
 # https://github.com/Aloxaf/fzf-tab
