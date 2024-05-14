@@ -79,7 +79,7 @@ module.exports = {
   },
 
   // a list of plugins to fetch and install from npm
-  plugins: ['hyperterm-summon', 'hyper-search', 'senya'],
+  plugins: ['hyperterm-summon', 'hyper-search', "senya"],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here

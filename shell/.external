@@ -17,12 +17,17 @@ if [[ ! "$PATH" == */opt/fzf/bin* ]]; then
   eval "$(fzf --zsh)"
 fi
 
-# Configuration:
+# fzf configuration:
 export FZF_DEFAULT_COMMAND='fd --hidden --strip-cwd-prefix --exclude .git'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_ALT_C_COMMAND='fd --type=d --hidden --strip-cwd-prefix --exclude .git'
 export FZF_CTRL_T_OPTS="--preview '_fzf_complete_realpath {}'"
 export FZF_ALT_C_OPTS="--preview '_fzf_complete_realpath {}'"
+
+# fzf-git configuration:
+export FZF_GIT_COLOR='never'
+export FZF_GIT_PREVIEW_COLOR='always'
+
 
 # Use generator to customize:
 # https://vitormv.github.io/fzf-themes/
