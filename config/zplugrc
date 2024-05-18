@@ -1,14 +1,14 @@
 source "$ZPLUG_HOME/init.zsh"
 
 # Must be the first one:
-zplug 'Aloxaf/fzf-tab'
+zplug 'Aloxaf/fzf-tab', depth:1
 
 # Sorted in order of appearance (new at the bottom):
-zplug 'zsh-users/zsh-syntax-highlighting'
-zplug 'junegunn/fzf-git.sh', as:command, use:'fzf-git.sh'
+zplug 'zsh-users/zsh-syntax-highlighting', depth:1
+zplug 'junegunn/fzf-git.sh', as:command, use:'fzf-git.sh', depth:1
 
 # Theme, should be the last:
-zplug 'sobolevn/sobole-zsh-theme', as:theme
+zplug 'sobolevn/sobole-zsh-theme', as:theme, depth:1
 
 # Others might also enjoy this plugin:
 # (but it is not for me)
