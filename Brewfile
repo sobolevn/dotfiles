@@ -79,7 +79,7 @@ brew "libxml2"
 # YAML Parser
 brew "libyaml"
 # Next-gen compiler infrastructure
-brew "llvm@16"
+brew "llvm"
 # Mac App Store command-line interface
 brew "mas"
 # Free (GNU) replacement for the Pico text editor
@@ -145,8 +145,6 @@ cask "flux"
 cask "font-consolas-for-powerline"
 # Free monospaced font with programming ligatures
 cask "font-fira-code"
-cask "font-roboto-mono"
-cask "font-roboto-mono-for-powerline"
 # Web browser
 cask "google-chrome"
 # Terminal built on web technologies
