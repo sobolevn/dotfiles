@@ -69,9 +69,19 @@ zstyle ':fzf-tab:complete:(\\|*/|)killall:*' fzf-preview \
 _z () {
   # I have a custom completion, because I like `z NAME<TAB>`
   # and not `z NAME<SPACE><TAB>`
-  local args
-  args="$(zoxide query -a -l)"
-  _arguments "1:paths:($args)"
+  local word
+  word=$words[-1]
+
+  local query
+  query="$(zoxide query -a -l "$word")"
+  if [ -z "$query" ]; then
+    # This is a new path, fallback to regular `ls` style:
+    _arguments "1:filename:_path_files"
+  else
+    local args
+    args="$(zoxide query -a -l)"
+    _arguments "1:paths:($args)"
+  fi
 }
 
 compdef _z z
