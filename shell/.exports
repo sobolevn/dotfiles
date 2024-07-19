@@ -51,8 +51,7 @@ export HOMEBREW_NO_ANALYTICS=1  # disables statistics that brew collects
 #   -X       keep content on screen after exit
 #   -M       show more info at the bottom prompt line
 #   -x4      tabs are 4 instead of 8
-#   --mouse  mouse support for scrolling
-export LESS='-iRFXMx4 --mouse'
+export LESS='-iRFXMx4'
 export PAGER='less'
 # I don't use `bat` here, because I don't like the highlight.
 # sh -c 'col -b | bat -l man -p --theme="$SOBOLE_SYNTAX_THEME"'
