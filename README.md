@@ -112,10 +112,6 @@ that work well with `fzf`'s preview feature.
 
 ![fzf-paths](https://raw.githubusercontent.com/sobolevn/dotfiles/master/media/fzf-paths.png)
 
-- `ctrl+g` to work with [`fzf-git`](https://github.com/junegunn/fzf-git.sh)
-
-![fzf-git](https://raw.githubusercontent.com/sobolevn/dotfiles/master/media/fzf-git.png)
-
 
 ## Apps
 
