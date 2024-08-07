@@ -9,10 +9,6 @@
 if [[ ! "$PATH" == */opt/fzf/bin* ]]; then
   export PATH="$PATH:$(brew --prefix)/opt/fzf/bin"
 
-  # Enable `fzf-git`:
-  # https://github.com/junegunn/fzf-git.sh
-  source 'fzf-git.sh'  # installed via `zplug`
-
   # Enable `fzf`:
   eval "$(fzf --zsh)"
 fi
@@ -23,10 +19,6 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_ALT_C_COMMAND='fd --type=d --hidden --strip-cwd-prefix --exclude .git'
 export FZF_CTRL_T_OPTS="--preview '_fzf_complete_realpath {}'"
 export FZF_ALT_C_OPTS="--preview '_fzf_complete_realpath {}'"
-
-# fzf-git configuration:
-export FZF_GIT_COLOR='never'
-export FZF_GIT_PREVIEW_COLOR='always'
 
 
 # Use generator to customize:

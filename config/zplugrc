@@ -16,6 +16,7 @@ zplug 'sobolevn/sobole-zsh-theme', as:theme, depth:1
 # Install plugins if there are plugins that have not been installed:
 if ! zplug check; then
   zplug install
+  zplug clean
 fi
 
 # Then, source plugins and add commands to $PATH
