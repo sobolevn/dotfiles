@@ -29,6 +29,9 @@ PATH="$HOME/.poetry/bin:$PATH"
 # npm:
 PATH="/usr/local/share/npm/bin:$PATH"
 
+# rustup:
+PATH="/opt/homebrew/opt/rustup/bin:$PATH"
+
 
 # === General ===
 

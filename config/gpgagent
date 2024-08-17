@@ -1,3 +1,1 @@
-default-cache-ttl 14400
-max-cache-ttl 86400
 pinentry-program /opt/homebrew/bin/pinentry-mac
