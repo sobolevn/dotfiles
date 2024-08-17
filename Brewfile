@@ -1,6 +1,4 @@
 tap "homebrew/bundle"
-tap "homebrew/cask-fonts"
-tap "homebrew/cask-versions"
 tap "homebrew/services"
 # C/C++ resolver library and DNS resolver utilities
 brew "adns"
@@ -20,6 +18,8 @@ brew "coreutils"
 brew "ctags"
 # International domain name library (IDNA2008, Punycode and TR46)
 brew "libidn2"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@3"
 # C library implementing the SSH2 protocol
 brew "libssh2"
 # Tool for downloading RTMP streaming media
@@ -44,6 +44,10 @@ brew "gh"
 brew "git"
 # Syntax-highlighting pager for git and diff output
 brew "git-delta"
+# Statically typed language for the Erlang VM
+brew "gleam"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.12"
 # Core application library for C
 brew "glib"
 # Asynchronous event library
@@ -54,6 +58,8 @@ brew "p11-kit"
 brew "unbound"
 # GNU Transport Layer Security (TLS) Library
 brew "gnutls"
+# Assuan IPC Library
+brew "libassuan"
 # Cryptographic library based on the code from GnuPG
 brew "libgcrypt"
 # New GNU portable threads library
@@ -90,12 +96,12 @@ brew "nghttp2"
 brew "node"
 # Manage multiple Node.js versions
 brew "nvm"
-# Cryptography and SSL/TLS Toolkit
-brew "openssl@1.1"
 # Pinentry for GPG on Mac
 brew "pinentry-mac"
 # Execute binaries from Python packages in isolated environments
 brew "pipx"
+# Manage compile and link flags for libraries
+brew "pkg-config"
 # Python version management
 brew "pyenv"
 # Interpreted, interactive, object-oriented programming language
@@ -107,7 +113,7 @@ brew "rbenv"
 # Powerful, clean, object-oriented scripting language
 brew "ruby"
 # Rust toolchain installer
-brew "rustup-init"
+brew "rustup"
 # Intuitive find & replace CLI
 brew "sd"
 # Static analysis and lint tool, for (ba)sh scripts
@@ -122,6 +128,8 @@ brew "tig"
 brew "tree"
 # Internet file retriever
 brew "wget"
+# Programming language designed for robustness, optimality, and clarity
+brew "zig"
 # General-purpose lossless data-compression library
 brew "zlib"
 # Shell extension to navigate your filesystem faster
@@ -143,7 +151,6 @@ cask "firefox"
 # Screen colour temperature controller
 cask "flux"
 cask "font-consolas-for-powerline"
-# Free monospaced font with programming ligatures
 cask "font-fira-code"
 # Web browser
 cask "google-chrome"
