@@ -194,4 +194,8 @@
       "display": "none !important",
     }
   },
+
+  // apc-extensions does not work with vscode>=1.94.0
+  // https://github.com/drcika/apc-extension/issues/230
+  "update.mode": "manual",
 }
