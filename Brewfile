@@ -138,6 +138,10 @@ brew "zoxide"
 brew "zplug"
 # UNIX shell (command interpreter)
 brew "zsh"
+# VPN client
+cask "amneziavpn"
+# Video editing and image design platform
+cask "capcut"
 # Voice and text chat software
 cask "discord"
 # App to build and share containerised applications and microservices
@@ -176,8 +180,8 @@ cask "telegram"
 cask "topnotch"
 # Open-source code editor
 cask "visual-studio-code"
-# Unofficial app for Yandex Music
-cask "yandex-music-unofficial"
+# Tune in to Yandex Music and get personal recommendations
+cask "yandex-music"
 # Video communication and virtual meeting platform
 cask "zoom"
 mas "Delete Apps", id: 1033808943
