@@ -5,15 +5,15 @@
 
 # === Commonly used functions ===
 
-pyclean () {
-  # Cleans py[cod] and cache dirs in the current tree:
-  fd -I -H \
-    '(__pycache__|\.(pytest_|mypy_)?cache|\.hypothesis\.py[cod]$)' \
-  | xargs rm -rf
-}
+# pyclean () {
+#   # Cleans py[cod] and cache dirs in the current tree:
+#   fd -I -H \
+#     '(__pycache__|\.(pytest_|mypy_)?cache|\.hypothesis\.py[cod]$)' \
+#   | xargs rm -rf
+# }
 
 
-mc () {
+mkd () {
   if [ $# -ne 1 ]; then
     echo 'usage: mc <dir-name>'
     return 137

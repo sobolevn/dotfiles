@@ -5,17 +5,49 @@
 
 # === Aliases ===
 
+# Alias'
+#########################################################################################################
+# Git CMD
+#########################################################################################################
+alias gs="git status"
+alias ga="git add"
+alias gcm="git commit -m $@"
+alias gpsh="git push"
+alias gpull='git pull $1'
+alias gdiff='git diff $1'
+alias glb='git branch'
+alias gbr='git branch -r'
+alias shout='echo hello: $@'
+#########################################################################################################
+# Docker CMD
+#########################################################################################################
+alias dVolPrune='docker volume rm $(docker volume ls -q)'
+alias dContCl='docker rm -f $(docker ps -a -q)'
+alias dCompUp="docker compose -f docker-compose.yml up -d"
+alias dCompDwn="docker-compose -f docker-compose.yml down"
+alias dPs='docker ps -a'
+alias dVolPrune='docker system prune --volumes'
+#########################################################################################################
+# linux CMD
+#########################################################################################################
+alias c="clear"
+alias client='cd ~/playground/goprojects/book-client/book-library-client'
+alias dg='cd ~/playground/goprojects/docker-go'
+alias dg1='cd ~/playground/goprojects/docker-go-2'
+alias dockerd="open -a docker && while ! docker info > /dev/null 2>&1; do sleep 1 ; done"
+#########################################################################################################
+
 # Sorts directories in top, colors, and prints `/` at directories:
-alias ls='gls --color -h --group-directories-first -F'
+# alias ls='gls --color -h --group-directories-first -F'
 
 # Use syntax highlight for `cat`:
-alias cat='bat --paging never --decorations never --plain'
+# alias cat='bat --paging never --decorations never --plain'
 
 # Lock the screen (when going AFK)
-alias afk='/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend'
+# alias afk='/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend'
 
 # Copy public key to clipboard:
-alias pubkey="cat ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pasteboard.'"
+# alias pubkey="cat ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pasteboard.'"
 
 # I use this a lot:
-alias shrug="echo '¯\_(ツ)_/¯' | pbcopy | echo '=> Copied to pasteboard.'"
+# alias shrug="echo '¯\_(ツ)_/¯' | pbcopy | echo '=> Copied to pasteboard.'"

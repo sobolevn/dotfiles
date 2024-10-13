@@ -22,44 +22,52 @@
   ~/.zshrc:
     path: config/zshrc
     force: true
-  ~/.zshenv:
-    path: config/zshenv
-    force: true
+  # ~/.zshenv:
+  #   path: config/zshenv
+  #   force: true
 
-  ~/.hushlogin: config/hushlogin
-  ~/.inputrc: config/inputrc
-  ~/.zplugrc: config/zplugrc
-  ~/.hyper.js: config/hyper.js
+  # ~/.hushlogin: config/hushlogin
+  # ~/.inputrc: config/inputrc
+  # ~/.zplugrc: config/zplugrc
+  # ~/.hyper.js: config/hyper.js
 
   # Git:
   ~/.gitconfig: config/gitconfig
   ~/.gitignore_global: config/gitignore
   ~/.gitattributes_global: config/gitattributes
 
-  # Tools:
-  ~/.psqlrc: config/psqlrc
-  ~/.sqliterc: config/sqliterc
+  # # Tools:
+  # ~/.psqlrc: config/psqlrc
+  # ~/.sqliterc: config/sqliterc
 
-  # Editors:
-  ~/.editorconfig: config/editorconfig
-  ~/.nanorc: config/nanorc
+  # # Editors:
+  # ~/.editorconfig: config/editorconfig
+  # ~/.nanorc: config/nanorc
 
-  # SSH:
-  ~/.ssh/config:
-    path: config/ssh_config
-    force: true
-    create: true
+  # # SSH:
+  # ~/.ssh/config:
+  #   path: config/ssh_config
+  #   force: true
+  #   create: true
 
-  # GPG:
-  ~/.gnupg/gpg-agent.conf:
-    path: config/gpgagent
-    force: true
-    create: true
+  # # GPG:
+  # ~/.gnupg/gpg-agent.conf:
+  #   path: config/gpgagent
+  #   force: true
+  #   create: true
 
 # See https://python-poetry.org
+# - shell:
+#   - command: |
+#       curl -sSL https://install.python-poetry.org | python3 -
+#     description: Install poetry
+#     stdout: true
+#     stderr: true
+
 - shell:
   - command: |
-      curl -sSL https://install.python-poetry.org | python3 -
-    description: Install poetry
+      ./scripts/utils
+    description: Install Utils
+    stdin: true
     stdout: true
     stderr: true

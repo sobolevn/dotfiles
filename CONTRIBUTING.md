@@ -1,18 +1,7 @@
 # Contributions Guide
 
-While developing this library I often use these shortcuts.
+Thanks to @sobolevn for putting this together.
+I'm using his collection as as a starter for mine.
 
+You'll notice most of the files are been commented out for now until I figured out what to and not to keep.
 
-## Dumping `brew` dependencies
-
-```bash
-brew bundle dump --force --describe --no-restart
-bash ./vscode/versions.sh
-```
-
-
-## Dumping `crontab` state
-
-```bash
-crontab -l > crontab/crontab
-```

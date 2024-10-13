@@ -1,0 +1,93 @@
+ #!/bin/zsh
+
+ # Usage: ./gvm-install-mac-version 1.23.2
+ # Define the Go version you want to download as the first argument
+ VERSION=$1
+ PROCTYPE=$2
+
+ # Define the URL for downloading the Go package
+ URL="https://go.dev/dl/go${VERSION}.${PROCTYPE}.tar.gz"
+
+ # Define the download and installation directory
+ INSTALL_DIR="$HOME/.gvm/gos"
+
+ # Define the environment directory
+ ENV_DIR="$HOME/.gvm/environments"
+
+ # Define the pkgsets directory
+ PKGSETS_DIR="$HOME/.gvm/pkgsets"
+
+ # Create the installation directory, environment directory, and pkgsets directory if they do not exist
+ mkdir -p "$INSTALL_DIR"
+ mkdir -p "$ENV_DIR"
+ mkdir -p "$PKGSETS_DIR"
+
+ # Define the path to save the downloaded file
+ TAR_FILE="${INSTALL_DIR}/go${VERSION}.${PROCTYPE}.tar.gz"
+
+ # Download the Go package using curl
+ echo "Downloading Go version ${VERSION} from ${URL}..."
+ curl -L -o "$TAR_FILE" "$URL"
+
+ # Check if the download was successful
+ if [[ $? -ne 0 ]]; then
+     echo "Failed to download Go version ${VERSION} from ${URL}"
+     exit 1
+ fi
+
+ # Unpack the tar.gz file
+ echo "Unpacking the Go package..."
+ tar -C "$INSTALL_DIR" -xzf "$TAR_FILE"
+
+ # Check if the unpacking was successful
+ if [[ $? -ne 0 ]]; then
+     echo "Failed to unpack the Go package"
+     exit 1
+ fi
+
+ # Rename the unpacked directory to the specified version
+ GO_DIR="${INSTALL_DIR}/go"
+ NEW_GO_DIR="${INSTALL_DIR}/go${VERSION}"
+
+echo "Renaming unpacked directory from go to go${VERSION}..."
+ mv "$GO_DIR" "$NEW_GO_DIR"
+
+ # Check if the rename was successful
+ if [[ $? -ne 0 ]]; then
+     echo "Failed to rename the unpacked directory"
+     exit 1
+ fi
+
+ # Cleanup the downloaded tar.gz file
+ echo "Cleaning up the downloaded file..."
+ rm "$TAR_FILE"
+
+ echo "Go version ${VERSION} downloaded, unpacked, and installed in ${NEW_GO_DIR}"
+
+ # Create the environment file in ~/.gvm/environments/go${VERSION}
+ ENV_FILE="${ENV_DIR}/go${VERSION}"
+
+ # Define the environment content
+ cat << EOF > "$ENV_FILE"
+ export GVM_ROOT; GVM_ROOT="$HOME/.gvm"
+ export gvm_go_name; gvm_go_name="go${VERSION}"
+ export gvm_pkgset_name; gvm_pkgset_name="global"
+ export GOROOT; GOROOT="\$GVM_ROOT/gos/go${VERSION}"
+ export GOPATH; GOPATH="\$GVM_ROOT/pkgsets/go${VERSION}/global"
+ export GVM_OVERLAY_PREFIX; GVM_OVERLAY_PREFIX="\${GVM_ROOT}/pkgsets/go${VERSION}/global/overlay"
+ export PATH; PATH="\${GVM_ROOT}/pkgsets/go${VERSION}/global/bin:\${GVM_ROOT}/gos/go${VERSION}/bin:\${GVM_OVERLAY_PREFIX}/bin:\${GVM_ROOT}/bin:\${PATH}"
+ export LD_LIBRARY_PATH; LD_LIBRARY_PATH="\${GVM_OVERLAY_PREFIX}/lib:\${LD_LIBRARY_PATH}"
+ export DYLD_LIBRARY_PATH; DYLD_LIBRARY_PATH="\${GVM_OVERLAY_PREFIX}/lib:\${DYLD_LIBRARY_PATH}"
+ export PKG_CONFIG_PATH; PKG_CONFIG_PATH="\${GVM_OVERLAY_PREFIX}/lib/pkgconfig:\${PKG_CONFIG_PATH}"
+ EOF
+
+ echo "Environment file created at ${ENV_FILE} with content:"
+ cat "$ENV_FILE"
+
+ # Create the pkgsets directory for the specific Go version
+ PKGSET_DIR="${PKGSETS_DIR}/go${VERSION}"
+
+ echo "Creating pkgsets directory at ${PKGSET_DIR}..."
+ mkdir -p "$PKGSET_DIR"
+
+ echo "Pkgsets directory created for Go version ${VERSION} at ${PKGSET_DIR}"

@@ -4,5 +4,5 @@
 # So this file only includes `brew` binaries.
 
 # global:
-PATH="/opt/homebrew/bin:/usr/local/bin:$PATH"
+PATH="/opt/homebrew/bin:/usr/local/bin::/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
 export PATH

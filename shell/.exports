@@ -7,10 +7,10 @@
 
 # This is required because `openssl` is keg-only in `brew`,
 # see: `brew info openssl` for more information.
-export LDFLAGS="-L$(brew --prefix)/opt/openssl/lib"
-export CPPFLAGS="-I$(brew --prefix)/opt/openssl/include"
-export CFLAGS="-I$(xcrun --show-sdk-path)/usr/include"
-export PKG_CONFIG_PATH="$(brew --prefix)/opt/openssl/lib/pkgconfig"
+# export LDFLAGS="-L$(brew --prefix)/opt/openssl/lib"
+# export CPPFLAGS="-I$(brew --prefix)/opt/openssl/include"
+# export CFLAGS="-I$(xcrun --show-sdk-path)/usr/include"
+# export PKG_CONFIG_PATH="$(brew --prefix)/opt/openssl/lib/pkgconfig"
 
 
 # === Path modifications ===
@@ -18,29 +18,29 @@ export PKG_CONFIG_PATH="$(brew --prefix)/opt/openssl/lib/pkgconfig"
 # These lines should be the first ones!
 
 # GPG agent:
-PATH="/usr/local/opt/gpg-agent/bin:$PATH"
+# PATH="/usr/local/opt/gpg-agent/bin:$PATH"
 
 # Adds `pipx` binary files:
 PATH="$HOME/.local/bin:$PATH"
 
 # Adds `poetry` binary, should be added to the end:
-PATH="$HOME/.poetry/bin:$PATH"
+# PATH="$HOME/.poetry/bin:$PATH"
 
 # npm:
-PATH="/usr/local/share/npm/bin:$PATH"
+# PATH="/usr/local/share/npm/bin:$PATH"
 
 # rustup:
-PATH="/opt/homebrew/opt/rustup/bin:$PATH"
+# PATH="/opt/homebrew/opt/rustup/bin:$PATH"
 
 
 # === General ===
 
 # Editor:
-export EDITOR="$(which nano)"
+# export EDITOR="$(which nano)"
 
 # GPG:
-export GPG_TTY="$(tty)"
-eval "$(gpg-agent --daemon --allow-preset-passphrase > /dev/null 2>&1)"
+# export GPG_TTY="$(tty)"
+# eval "$(gpg-agent --daemon --allow-preset-passphrase > /dev/null 2>&1)"
 
 # Homebrew:
 export HOMEBREW_NO_ANALYTICS=1  # disables statistics that brew collects
@@ -54,52 +54,52 @@ export HOMEBREW_NO_ANALYTICS=1  # disables statistics that brew collects
 #   -X       keep content on screen after exit
 #   -M       show more info at the bottom prompt line
 #   -x4      tabs are 4 instead of 8
-export LESS='-iRFXMx4'
-export PAGER='less'
+# export LESS='-iRFXMx4'
+# export PAGER='less'
 # I don't use `bat` here, because I don't like the highlight.
 # sh -c 'col -b | bat -l man -p --theme="$SOBOLE_SYNTAX_THEME"'
-export MANPAGER='less'
+# export MANPAGER='less'
 
 
 # === bat ===
 # https://github.com/sharkdp/bat
 
-export BAT_THEME="$SOBOLE_SYNTAX_THEME"
+# export BAT_THEME="$SOBOLE_SYNTAX_THEME"
 
 
 # === Version managers ===
 
 # nvm:
-export NVM_DIR="$HOME/.nvm"
-if [ -s "$(brew --prefix)/opt/nvm/nvm.sh" ]; then
-  source "$(brew --prefix)/opt/nvm/nvm.sh"
-fi
+# export NVM_DIR="$HOME/.nvm"
+# if [ -s "$(brew --prefix)/opt/nvm/nvm.sh" ]; then
+#   source "$(brew --prefix)/opt/nvm/nvm.sh"
+# fi
 
 # pyenv:
 eval "$(pyenv init --path)"
 
 # rbenv:
-eval "$(rbenv init -)"
+# eval "$(rbenv init -)"
 
 # rustup:
-source "$HOME/.cargo/env"
+# source "$HOME/.cargo/env"
 
 
 # === Poetry ===
 # https://python-poetry.org/docs/configuration/
 
-export POETRY_VIRTUALENVS_IN_PROJECT=true
+# export POETRY_VIRTUALENVS_IN_PROJECT=true
 
 
 # === Histories ===
 
 # Enable persistent REPL history for `node`.
-export NODE_REPL_HISTORY="$HOME/.node_history"
+# export NODE_REPL_HISTORY="$HOME/.node_history"
 # Use sloppy mode by default, matching web browsers.
-export NODE_REPL_MODE='sloppy'
+# export NODE_REPL_MODE='sloppy'
 
 # Erlang and Elixir shell history:
-export ERL_AFLAGS='-kernel shell_history enabled'
+# export ERL_AFLAGS='-kernel shell_history enabled'
 
 
 # === Code highlight ===

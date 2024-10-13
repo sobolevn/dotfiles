@@ -1,0 +1,140 @@
+#!/usr/bin/env bash
+
+# archType="$(uname -p)"
+# GO_VERSION="1.23.2"
+# PROCTYPE="darwin-arm64"
+# itermVer="iTerm2-3_5_5"
+ # Define the path to save the downloaded file
+#  ITERM_TAR_FILE="${HOME}/Documents/${itermVer}.zip"
+ GOPATH="$HOME/go"
+
+#  ITERM_URL="https://iterm2.com/downloads/stable/${itermVer}.zip"
+#  GOURL="https://go.dev/dl/go${GO_VERSION}.${PROCTYPE}.tar.gz"
+#  go_src_dir="${HOME}/Documents/"  #"/usr/local/"
+#  go_src_file="${HOME}/Documents/go${GO_VERSION}.${PROCTYPE}.tar.gz"
+#  go_dst_dir="/usr/local/"
+
+echo 'Are the Xcode command line tools installed?'
+echo 'If yes just hit enter and if not exit using CMD+C, and install with:'
+echo 'xcode-select -install'
+
+read answer
+
+# sudo -v #Give sudo privileges ahead of time, so that we hopefully only have to enter a password once
+
+
+# download and install iterm2
+# if [[ ! -d "/Applications/iTerm.app" ]]; then
+#     # proceed with installing iTerm
+#     /bin/bash -c "$(curl -L -o "$ITERM_TAR_FILE" "$ITERM_URL")"
+#     unzip "$ITERM_TAR_FILE" -d "/Applications/" > /dev/null
+
+# fi
+
+if [ -s "$(brew --prefix)" -o -z "$?" ]; then
+    echo "brew is already installed skip installation"
+else
+    #Installing homebrew
+    echo "###############################################"
+    echo "Installing Homebrew....."
+    echo "###############################################"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+fi
+
+# Download powerlevel10k themes for oh-my-zsh
+if [[ ! -d "$HOME/.oh-my-zsh/custom/themes/powerlevel10k" ]]; then
+    echo "###############################################"
+    echo "Download powerlevel10k themes for oh-my-zsh"
+    echo "###############################################"
+    /bin/bash -c "$(git clone https://github.com/romkatv/powerlevel10k.git)"
+
+    # Move powerlevel10k to .oh-my-zsh custom themes.
+    mv -f "powerlevel10k" "$HOME/.oh-my-zsh/custom/themes"
+else
+    echo "###############################################"
+    echo "Powerlevel10k is already installed...skip installation."
+    echo "###############################################"
+fi
+
+# Download zsh-autosuggestions for oh-my-zsh
+if [[ ! -d "$HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions" ]]; then
+    echo "###############################################"
+    echo "Downloading zsh-autosuggestions for oh-my-zsh"
+    echo "###############################################"
+    /bin/bash -c "$(git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions)"
+
+    echo "###############################################"
+    echo "Downloading zsh-syntax-highlighting for oh-my-zsh"
+    echo "###############################################"
+    /bin/bash -c "$(git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting)"
+else
+    echo "###############################################"
+    echo "zsh-autosuggestions is already installed...skip installation."
+    echo "###############################################"
+fi
+
+# Go package file installation for either arm or Intel processor
+# gvm can be use as an alternative if you run into 'bad CPU type in executable: go' error.
+if [ -z "$(which go)" ]; then
+    echo "Go is not installed or not in PATH"
+    user_name="$(id -un)"
+    mkdir -p "${GOPATH}"
+    mkdir -p "${GOPATH}/src"
+    mkdir -p "${GOPATH}/bin"
+    mkdir -p "${GOPATH}/src/github.com/${user_name}/dev"
+
+    # if [ "$archType" == "arm" ]; then
+    #     echo "This is an M1 machine with $archType proc"
+        # If you prefer to use the go version manager uncomment below if statement.
+########################################################################################################################
+#        if [[ -s "$HOME/.gvm/scripts/gvm" ]]; then        
+#            echo "GVM script exists and is not empty"
+#            source "$HOME/.gvm/scripts/gvm"
+            
+#            echo "$(gvm list)"
+            # gvm use $goVersion
+#        else
+#            echo "GVM script either doesn't exist or is empty"
+            # Installing Go version manager (gvm)
+#            /bin/bash -c "$(curl -sSL https://github.com/soulteary/gvm/raw/master/binscripts/gvm-installer)"
+#            source "$HOME/.gvm/scripts/gvm"
+            # Downloading go version for arm processor specificly.
+            # Modified this script to be able to download go versions for arm and intel processor type
+#            /bin/bash ./scripts/gvm-install-m1-version $GO_VERSION $PROCTYPE
+            # Selecting your go version from the go pkg manager
+            # gvm install "go${GO_VERSION}" -B
+#            gvm use "go${GO_VERSION}"
+#        fi
+############################################################################################################################
+            # Downloading go package file for arm processor specificly.
+        #     echo "###############################################"
+        #     echo "Downloading go package file from the internet"
+        #     echo "###############################################"
+        #    /bin/bash -c "$(curl -L -o "${go_src_file}" "$GOURL")"
+        #    echo "###############################################"
+        #     echo "Extracting the go package"
+        #     echo "###############################################"
+        #     tar -C "${go_src_dir}" -xzf "${go_src_file}"
+        #     echo "###############################################"
+        #     echo "Moving go pkg to /usr/local"
+        #     echo "###############################################"
+        #     sudo mv -f "${go_src_dir}/go" "${go_dst_dir}"
+
+    # else
+    #     echo "This is an intel machine with $arcType proc"
+    #     # Download and Install native Go version for intel processor
+    #     /bin/bash -c "$(curl -LO https://get.golang.org/$(uname)/go_installer && chmod +x go_installer && ./go_installer && rm go_installer)"
+
+    # fi
+fi
+
+# ls -l ~/.bash_profile ~/.bashrc ~/.zshrc ~/.zshenv | grep -q "Oh My Zsh"
+# curl -O https://iterm2.com/downloads/stable/iTerm2-3_5_5.zip
+# /bin/bash -c "$(curl -o golang.pkg https://dl.google.com/go/go1.23.2.darwin-amd64.pkg)"
+
+# /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/uninstall.sh)"
+
+# Run these commands in your terminal to add Homebrew to your PATH:
+#     echo >> /Users/jaym1l/.bash_profile
+#     echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/jaym1l/.bash_profile
+#     eval "$(/opt/homebrew/bin/brew shellenv)"

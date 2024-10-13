@@ -29,9 +29,11 @@ run_dotbot () {
     -d "$BASEDIR" \
     --plugin-dir dotbot-brewfile \
     -c "$config" $ARGS
+
+  source ~/.bash_profile
 }
 
 run_dotbot 'steps/terminal.yml' || true
 run_dotbot 'steps/dependencies.yml' || true
-run_dotbot 'steps/vscode.yml' || true
-run_dotbot 'steps/streamdeck.yml' || true
+# run_dotbot 'steps/vscode.yml' || true
+# run_dotbot 'steps/streamdeck.yml' || true

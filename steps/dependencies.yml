@@ -10,4 +10,4 @@
     # in a separate `brew bundle` call,
     # this is done because not everybody needs the same casks and apps,
     # but most of people would need the same formulas.
-    include: ['tap', 'brew']
+    include: ['tap', 'brew','cask']
