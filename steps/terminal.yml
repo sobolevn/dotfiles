@@ -5,36 +5,38 @@
 # See https://ohmyz.sh
 - shell:
   - command: |
-      sh -c \
-        "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-      || true
+      sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" || true
     description: Install Oh-My-Zsh
     stdout: true
     stderr: true
 
 - link:
   # Terminal:
-  ~/.shell:
-    path: shell
-    create: true
-  ~/.bash_profile: config/bash_profile
-  ~/.bashrc: config/bashrc
-  ~/.zshrc:
-    path: config/zshrc
-    force: true
-  # ~/.zshenv:
-  #   path: config/zshenv
-  #   force: true
+    ~/.shell:
+      path: shell
+      create: true
+    ~/.bash_profile:
+      path: config/bash_profile
+      create: true
+    ~/.bashrc:
+      path: config/bashrc
+      create: true
+    ~/.zshrc:
+      path: config/zshrc
+      force: true
+#    ~/.zshenv:
+#      path: config/zshenv
+#      force: true
+
+# Git:
+    ~/.gitconfig: config/gitconfig
+    ~/.gitignore_global: config/gitignore
+    ~/.gitattributes_global: config/gitattributes
 
   # ~/.hushlogin: config/hushlogin
   # ~/.inputrc: config/inputrc
   # ~/.zplugrc: config/zplugrc
   # ~/.hyper.js: config/hyper.js
-
-  # Git:
-  ~/.gitconfig: config/gitconfig
-  ~/.gitignore_global: config/gitignore
-  ~/.gitattributes_global: config/gitattributes
 
   # # Tools:
   # ~/.psqlrc: config/psqlrc
@@ -50,11 +52,11 @@
   #   force: true
   #   create: true
 
-  # # GPG:
-  # ~/.gnupg/gpg-agent.conf:
-  #   path: config/gpgagent
-  #   force: true
-  #   create: true
+# GPG:
+    ~/.gnupg/gpg-agent.conf:
+      path: config/gpgagent
+      force: true
+      create: true
 
 # See https://python-poetry.org
 # - shell:
@@ -66,7 +68,7 @@
 
 - shell:
   - command: |
-      ./scripts/utils
+      ./utils/setupterminal
     description: Install Utils
     stdin: true
     stdout: true

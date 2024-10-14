@@ -3,17 +3,17 @@ tap "homebrew/services"
 # C/C++ resolver library and DNS resolver utilities
 # brew "adns"
 # Bourne-Again SHell, a UNIX command interpreter
-brew "bash"
+# brew "bash"
 # Clone of cat(1) with syntax highlighting and Git integration
-brew "bat"
+# brew "bat"
 #install figlet
 brew "figlet"
 # Get/set bluetooth power and discoverable state
-brew "blueutil"
+# brew "blueutil"
 # Insanely fast image printing in your terminal
-brew "catimg"
+# brew "catimg"
 # Mozilla CA bundle for Python
-brew "certifi"
+# brew "certifi"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
 # Reimplementation of ctags(1)
@@ -39,9 +39,9 @@ brew "podman"
 # Functional metaprogramming aware language built on Erlang VM
 # brew "elixir"
 # Simple, fast and user-friendly alternative to find
-brew "fd"
+# brew "fd"
 # Command-line fuzzy finder written in Go
-brew "fzf"
+# brew "fzf"
 # GitHub command-line tool
 brew "gh"
 # Distributed revision control system
@@ -69,11 +69,11 @@ brew "python@3.12"
 # New GNU portable threads library
 # brew "npth"
 # Passphrase entry dialog utilizing the Assuan protocol
-# brew "pinentry"
+brew "pinentry"
 # GNU Pretty Good Privacy (PGP) package
-# brew "gnupg"
+brew "gnupg"
 # Library access to GnuPG
-# brew "gpgme"
+brew "gpgme"
 # Command-line hex viewer
 # brew "hexyl"
 # Powerful, lightweight programming language
