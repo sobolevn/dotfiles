@@ -15,8 +15,6 @@
   clean = git-lfs clean %f
   smudge = git-lfs smudge %f
   required = true
-[commit]
-  gpgsign = true
 [push]
   default = simple
 [fetch]
@@ -25,6 +23,8 @@
   pruneTags = true
 [user]
   useConfigOnly = true
+	email = jchrismilton@gmail.com
+	name = J4yM1l
 [diff]
   indentHeuristic = on
   noprefix = true
