@@ -9,11 +9,11 @@ brew "bat"
 #install figlet
 brew "figlet"
 # Get/set bluetooth power and discoverable state
-brew "blueutil"
+# brew "blueutil"
 # Insanely fast image printing in your terminal
-brew "catimg"
+# brew "catimg"
 # Mozilla CA bundle for Python
-brew "certifi"
+# brew "certifi"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
 # Reimplementation of ctags(1)

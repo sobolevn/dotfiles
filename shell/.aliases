@@ -12,12 +12,12 @@
 alias gs="git status"
 alias ga="git add"
 alias gcm="git commit -m $@"
-alias gpsh="git push"
-alias gpull='git pull $1'
-alias gdiff='git diff $1'
+alias gps="git push"
+alias gpu='git pull $1'
+alias gd='git diff $1'
 alias glb='git branch'
 alias gbr='git branch -r'
-alias shout='echo hello: $@'
+alias gsw='git switch'
 #########################################################################################################
 # Docker CMD
 #########################################################################################################
@@ -31,14 +31,11 @@ alias dVolPrune='docker system prune --volumes'
 # linux CMD
 #########################################################################################################
 alias c="clear"
-alias client='cd ~/playground/goprojects/book-client/book-library-client'
-alias dg='cd ~/playground/goprojects/docker-go'
-alias dg1='cd ~/playground/goprojects/docker-go-2'
 alias dockerd="open -a docker && while ! docker info > /dev/null 2>&1; do sleep 1 ; done"
 #########################################################################################################
 
 # Sorts directories in top, colors, and prints `/` at directories:
-# alias ls='gls --color -h --group-directories-first -F'
+alias lc='gls --color -h --group-directories-first -F'
 
 # Use syntax highlight for `cat`:
 # alias cat='bat --paging never --decorations never --plain'

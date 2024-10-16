@@ -25,6 +25,8 @@
   pruneTags = true
 [user]
   useConfigOnly = true
+	email = jchrismilton@gmail.com
+	name = J4yM1l
 [diff]
   indentHeuristic = on
   noprefix = true
