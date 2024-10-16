@@ -3,7 +3,7 @@
 - link:
     # Crontab:
     ~/.crontab/streamdeck.sh:
-      path: crontab/streamdeck.sh
+      path: crontab/dummy.sh
       create: true
       force: true
 
