@@ -3,7 +3,7 @@ tap "homebrew/services"
 # C/C++ resolver library and DNS resolver utilities
 # brew "adns"
 # Bourne-Again SHell, a UNIX command interpreter
-brew "bash"
+# brew "bash"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 #install figlet
@@ -71,9 +71,9 @@ brew "python@3.12"
 # Passphrase entry dialog utilizing the Assuan protocol
 # brew "pinentry"
 # GNU Pretty Good Privacy (PGP) package
-# brew "gnupg"
+brew "gnupg"
 # Library access to GnuPG
-# brew "gpgme"
+brew "gpgme"
 # Command-line hex viewer
 # brew "hexyl"
 # Powerful, lightweight programming language
@@ -93,7 +93,7 @@ brew "libyaml"
 # Mac App Store command-line interface
 brew "mas"
 # Free (GNU) replacement for the Pico text editor
-brew "nano"
+# brew "nano"
 # HTTP/2 C Library
 # brew "nghttp2"
 # Platform built on V8 to build network applications
@@ -101,7 +101,7 @@ brew "nano"
 # Manage multiple Node.js versions
 # brew "nvm"
 # Pinentry for GPG on Mac
-# brew "pinentry-mac"
+brew "pinentry-mac"
 # Execute binaries from Python packages in isolated environments
 brew "pipx"
 # Manage compile and link flags for libraries
