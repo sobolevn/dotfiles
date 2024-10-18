@@ -127,14 +127,3 @@ if [ -z "$(which go)" ]; then
 
     # fi
 fi
-
-# ls -l ~/.bash_profile ~/.bashrc ~/.zshrc ~/.zshenv | grep -q "Oh My Zsh"
-# curl -O https://iterm2.com/downloads/stable/iTerm2-3_5_5.zip
-# /bin/bash -c "$(curl -o golang.pkg https://dl.google.com/go/go1.23.2.darwin-amd64.pkg)"
-
-# /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/uninstall.sh)"
-
-# Run these commands in your terminal to add Homebrew to your PATH:
-#     echo >> /Users/jaym1l/.bash_profile
-#     echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/jaym1l/.bash_profile
-#     eval "$(/opt/homebrew/bin/brew shellenv)"

@@ -93,7 +93,7 @@ brew "libyaml"
 # Mac App Store command-line interface
 brew "mas"
 # Free (GNU) replacement for the Pico text editor
-brew "nano"
+# brew "nano"
 # HTTP/2 C Library
 # brew "nghttp2"
 # Platform built on V8 to build network applications
@@ -101,7 +101,7 @@ brew "nano"
 # Manage multiple Node.js versions
 # brew "nvm"
 # Pinentry for GPG on Mac
-# brew "pinentry-mac"
+brew "pinentry-mac"
 # Execute binaries from Python packages in isolated environments
 brew "pipx"
 # Manage compile and link flags for libraries

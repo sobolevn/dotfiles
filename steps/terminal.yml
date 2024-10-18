@@ -15,43 +15,39 @@
     ~/.shell:
       path: shell
       create: true
-    ~/.bash_profile:
-      path: config/bash_profile
-      create: true
-    ~/.bashrc:
-      path: config/bashrc
-      create: true
+    ~/.bash_profile: config/bash_profile
+    ~/.bashrc: config/bashrc
     ~/.zshrc:
       path: config/zshrc
       force: true
-#    ~/.zshenv:
-#      path: config/zshenv
-#      force: true
-
-# Git:
-    ~/.gitconfig: config/gitconfig
-    ~/.gitignore_global: config/gitignore
-    ~/.gitattributes_global: config/gitattributes
+  # ~/.zshenv:
+  #   path: config/zshenv
+  #   force: true
 
   # ~/.hushlogin: config/hushlogin
   # ~/.inputrc: config/inputrc
   # ~/.zplugrc: config/zplugrc
   # ~/.hyper.js: config/hyper.js
 
-  # # Tools:
+  # Git:
+    ~/.gitconfig: config/gitconfig
+    ~/.gitignore_global: config/gitignore
+    ~/.gitattributes_global: config/gitattributes
+
+  # Tools:
   # ~/.psqlrc: config/psqlrc
   # ~/.sqliterc: config/sqliterc
 
-  # # Editors:
+  # Editors:
   # ~/.editorconfig: config/editorconfig
   # ~/.nanorc: config/nanorc
 
-  # # SSH:
-  # ~/.ssh/config:
-  #   path: config/ssh_config
-  #   force: true
-  #   create: true
-
+  # SSH:
+    ~/.ssh/config:
+      path: config/ssh_config
+      force: true
+      create: true
+ 
 # GPG:
     ~/.gnupg/gpg-agent.conf:
       path: config/gpgagent
