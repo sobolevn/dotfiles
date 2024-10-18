@@ -47,8 +47,8 @@
       path: config/ssh_config
       force: true
       create: true
-
-  # GPG:
+ 
+# GPG:
     ~/.gnupg/gpg-agent.conf:
       path: config/gpgagent
       force: true
