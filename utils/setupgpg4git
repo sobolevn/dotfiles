@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+
+# To fix the " gpg: WARNING: unsafe permissions on homedir '/home/path/to/user/.gnupg' " error
+# Make sure that the .gnupg directory and its contents is accessibile by your user.
+chown -R $(whoami) ~/.gnupg/
+
+# Also correct the permissions and access rights on the directory
+chmod 600 ~/.gnupg/*
+chmod 700 ~/.gnupg
+# If gpg key doesn't exist then generate:
+# : <<'END'
+: '
+
+gpg --full-generate-key
+
+gpg --list-secret-keys --keyid-format LONG
+
+gpg --armor --export [email used for key gen]
+
+# Go to GitHub --> Settings --> SSH and GPG keys
+# Click New GPG key, paste your public key, and click Add GPG key
+
+
+git config --global user.signingkey YOUR-KEY-ID
+
+# To sign all commits by default in any local repository on your computer, run:
+git config --global commit.gpgsign true
+
+git config --global gpg.program gpg  
+
+git commit -S -m "your commit message"
+
+git verify-commit LocallySignedCommitHash
+# END
+'
