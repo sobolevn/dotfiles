@@ -177,7 +177,7 @@
   "editor.unicodeHighlight.nonBasicASCII": false,
 
   // https://github.com/drcika/apc-extension extension:
-  "apc.electron": {
+  "custom-ui-style.electron": {
     "frame": false,  // removes the title bar
     "transparent": true,  // removes white line from the top
     "titleBarStyle": "hidden",
@@ -188,14 +188,18 @@
   "window.titleBarStyle": "native",
   "window.customTitleBarVisibility": "never",
   // Hide unwanted elements from the UI:
-  "apc.stylesheet": {
+  "custom-ui-style.stylesheet": {
     ".monaco-toolbar": {
       "visible": "hidden !important",
       "display": "none !important",
+    }
+    ".monaco-workbench .editor-group-container>.title>.label-container>.title-label>.monaco-icon-label-container": {
+      "margin-left": "50px !important",
+      "margin-bottom": "7px !important",
     }
   },
 
   // apc-extensions does not work with vscode>=1.94.0
   // https://github.com/drcika/apc-extension/issues/230
-  "update.mode": "manual",
+  // "update.mode": "manual",
 }

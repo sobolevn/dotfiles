@@ -44,6 +44,8 @@ brew "gh"
 brew "git"
 # Syntax-highlighting pager for git and diff output
 brew "git-delta"
+# Open-source GitLab command-line tool
+brew "glab"
 # Statically typed language for the Erlang VM
 brew "gleam"
 # Interpreted, interactive, object-oriented programming language
@@ -193,9 +195,9 @@ mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Xcode", id: 497799835
 vscode "alexdima.copy-relative-path"
-vscode "drcika.apc-extension"
 vscode "editorconfig.editorconfig"
 vscode "ms-python.python"
 vscode "ms-python.vscode-pylance"
 vscode "sobolevn.pustota"
+vscode "subframe7536.custom-ui-style"
 vscode "teabyii.ayu"
