@@ -63,7 +63,7 @@ Here's [a list of packages](https://github.com/sobolevn/dotfiles/blob/master/Bre
 - [`pustota`](https://github.com/sobolevn/pustota) theme
 - [`Python`](https://github.com/Microsoft/vscode-python) plugin
 - [`editorconfig`](https://editorconfig.org/) integration
-- [`drcika.apc-extension`](https://github.com/drcika/apc-extension) for better customization
+- [`subframe7536.custom-ui-style`](https://github.com/subframe7536/vscode-custom-ui-style)for better customization
 
 I try to keep my `vscode` setup as simple as possible.
 It was also heavily influenced by [`makevscodeawesome`](https://makevscodeawesome.com/).
