@@ -135,10 +135,6 @@
     },
     {
         "key": "shift+cmd+r",
-        "command": "python.execSelectionInTerminal"
-    },
-    {
-        "key": "shift+cmd+r",
         "command": "-workbench.action.showAllSymbols"
     },
     {
@@ -357,5 +353,15 @@
         "key": "escape",
         "command": "-search.action.cancel",
         "when": "listFocus && searchViewletVisible && !inputFocus && !treestickyScrollFocused && searchState != '0'"
+    },
+    {
+        "key": "shift+enter",
+        "command": "-python.execSelectionInTerminal",
+        "when": "editorTextFocus && !findInputFocussed && !isCompositeNotebook && !jupyter.ownsSelection && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
+    },
+    {
+        "key": "shift+enter",
+        "command": "-python.execInREPL",
+        "when": "config.python.REPL.sendToNativeREPL && editorTextFocus && !isCompositeNotebook && !jupyter.ownsSelection && !notebookEditorFocused && editorLangId == 'python'"
     }
 ]
