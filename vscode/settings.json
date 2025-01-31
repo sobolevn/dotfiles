@@ -163,7 +163,6 @@
   "javascript.updateImportsOnFileMove.enabled": "never",
 
   // Theme:
-  // "workbench.colorTheme": "Ayu Dark",
   "workbench.colorTheme": "pustota",
   "workbench.iconTheme": "ayu",
 
@@ -198,8 +197,4 @@
       "margin-bottom": "7px !important",
     }
   },
-
-  // apc-extensions does not work with vscode>=1.94.0
-  // https://github.com/drcika/apc-extension/issues/230
-  // "update.mode": "manual",
 }

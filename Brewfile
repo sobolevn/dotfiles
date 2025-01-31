@@ -16,8 +16,6 @@ brew "certifi"
 brew "coreutils"
 # Reimplementation of ctags(1)
 brew "ctags"
-# International domain name library (IDNA2008, Punycode and TR46)
-brew "libidn2"
 # Cryptography and SSL/TLS Toolkit
 brew "openssl@3"
 # C library implementing the SSH2 protocol
@@ -48,12 +46,12 @@ brew "git-delta"
 brew "glab"
 # Statically typed language for the Erlang VM
 brew "gleam"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.12"
 # Core application library for C
 brew "glib"
 # Asynchronous event library
 brew "libevent"
+# International domain name library (IDNA2008, Punycode and TR46)
+brew "libidn2"
 # Library to load and enumerate PKCS#11 modules
 brew "p11-kit"
 # Validating, recursive, caching DNS resolver
@@ -102,12 +100,8 @@ brew "nvm"
 brew "pinentry-mac"
 # Execute binaries from Python packages in isolated environments
 brew "pipx"
-# Manage compile and link flags for libraries
-brew "pkg-config"
 # Python version management
 brew "pyenv"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.11"
 # Install various Ruby versions and implementations
 brew "ruby-build"
 # Ruby version manager
@@ -162,8 +156,6 @@ cask "font-fira-code"
 cask "google-chrome"
 # Terminal built on web technologies
 cask "hyper"
-# Keyboard customiser
-cask "karabiner-elements"
 # Desktop shield and keystroke interceptor
 cask "keyboard-cleaner"
 # Support for Logitech G gear
