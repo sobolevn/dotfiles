@@ -1,0 +1,19 @@
+#!/usr/bin/env zsh
+
+# `.std` provides customization for standard features.
+
+
+# === Colorize stderr ===
+# Taken from https://github.com/fniessen/shell-leuven
+
+
+color_stderr_red() {
+  # Sysread & syswrite are part of `zsh/system'.
+  emulate -LR zsh
+  local stderr_red_esc_code=$'\e[37;1;41m'
+  while sysread; do
+      syswrite -o 2 "${stderr_red_esc_code}${REPLY}$terminfo[sgr0]"
+  done
+}
+
+exec 2> >(color_stderr_red)

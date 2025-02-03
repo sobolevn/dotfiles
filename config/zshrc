@@ -51,12 +51,12 @@ source "$HOME/.zplugrc"
 
 # === Shell parts ===
 
+source "$HOME/.shell/.std"  # should be the first one
 source "$HOME/.shell/.exports"
 source "$HOME/.shell/.aliases"
 source "$HOME/.shell/.functions"
 source "$HOME/.shell/.external"
 source "$HOME/.shell/.completions"
-
 
 # === Local variables and overrides ===
 
