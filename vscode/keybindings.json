@@ -363,5 +363,39 @@
         "key": "shift+enter",
         "command": "-python.execInREPL",
         "when": "config.python.REPL.sendToNativeREPL && editorTextFocus && !isCompositeNotebook && !jupyter.ownsSelection && !notebookEditorFocused && editorLangId == 'python'"
+    },
+    {
+        "key": "cmd+d",
+        "command": "editor.action.revealDefinition",
+        "when": "editorHasDefinitionProvider && editorTextFocus"
+    },
+    {
+        "key": "f12",
+        "command": "-editor.action.revealDefinition",
+        "when": "editorHasDefinitionProvider && editorTextFocus"
+    },
+    {
+        "key": "cmd+d",
+        "command": "editor.action.revealDefinition",
+        "when": "editorHasDefinitionProvider && editorTextFocus && isWeb"
+    },
+    {
+        "key": "cmd+f12",
+        "command": "-editor.action.revealDefinition",
+        "when": "editorHasDefinitionProvider && editorTextFocus && isWeb"
+    },
+    {
+        "key": "cmd+t",
+        "command": "editor.action.goToTypeDefinition"
+    },
+    {
+        "key": "cmd+k cmd+i",
+        "command": "-list.showHover",
+        "when": "listFocus && !inputFocus && !treestickyScrollFocused"
+    },
+    {
+        "key": "cmd+i",
+        "command": "-toggleSuggestionDetails",
+        "when": "suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && textInputFocus"
     }
 ]

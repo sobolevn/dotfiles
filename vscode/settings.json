@@ -8,7 +8,7 @@
   // Editor:
   "editor.accessibilitySupport": "off",
   "editor.codeLens": true,
-  "editor.colorDecorators": true,
+  "editor.colorDecorators": false,
   "editor.dragAndDrop": false,
   "editor.folding": false,
   "editor.showFoldingControls": "mouseover",
@@ -62,14 +62,20 @@
   "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.acceptSuggestionOnEnter": "on",
   "editor.parameterHints.enabled": false,
-  "editor.tabCompletion": "off",
+  "editor.tabCompletion": "on",
   "editor.suggestSelection": "recentlyUsed",
   "editor.quickSuggestions": {
-    "other": true,
+    "other": false,
     "comments": false,
     "strings": false,
   },
   "editor.formatOnType": false,
+  "editor.inlineSuggest.enabled": false,
+
+  // Per-language settings:
+  "[css]": {
+    "editor.colorDecorators": true,
+  },
 
   // Files:
   "files.associations": {
@@ -107,7 +113,7 @@
   "terminal.integrated.shellIntegration.enabled": false,
   "terminal.integrated.shellIntegration.decorationsEnabled": "never",
   "terminal.integrated.stickyScroll.enabled": false,
-  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
   "terminal.integrated.defaultProfile.osx": "zsh",
   "terminal.integrated.defaultProfile.linux": "bash",
   "terminal.integrated.env.osx": {
@@ -191,7 +197,7 @@
     ".monaco-toolbar": {
       "visible": "hidden !important",
       "display": "none !important",
-    }
+    },
     ".monaco-workbench .editor-group-container>.title>.label-container>.title-label>.monaco-icon-label-container": {
       "margin-left": "50px !important",
       "margin-bottom": "7px !important",
