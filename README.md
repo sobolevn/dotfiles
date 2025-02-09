@@ -74,7 +74,7 @@ It was also heavily influenced by [`makevscodeawesome`](https://makevscodeawesom
 
 - `cmd` + `shift` + `f` opens global search
 
-![vscode cmd+shift+p widget](https://raw.githubusercontent.com/sobolevn/dotfiles/master/media/vscode-cmd-shift-p.png)
+![vscode cmd+shift+f widget](https://raw.githubusercontent.com/sobolevn/dotfiles/master/media/vscode-cmd-shift-f.png)
 
 - `cmd` + `t` opens global symbols index
 
