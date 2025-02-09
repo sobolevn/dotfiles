@@ -300,16 +300,6 @@
         "when": "listFocus && listSupportsFind"
     },
     {
-        "key": "cmd+t",
-        "command": "workbench.action.terminal.new",
-        "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
-    },
-    {
-        "key": "ctrl+shift+`",
-        "command": "-workbench.action.terminal.new",
-        "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
-    },
-    {
         "key": "cmd+w",
         "command": "-workbench.action.terminal.killEditor",
         "when": "terminalEditorFocus && terminalFocus && terminalHasBeenCreated || terminalEditorFocus && terminalFocus && terminalProcessSupported"
@@ -385,10 +375,6 @@
         "when": "editorHasDefinitionProvider && editorTextFocus && isWeb"
     },
     {
-        "key": "cmd+t",
-        "command": "editor.action.goToTypeDefinition"
-    },
-    {
         "key": "cmd+k cmd+i",
         "command": "-list.showHover",
         "when": "listFocus && !inputFocus && !treestickyScrollFocused"
@@ -397,5 +383,9 @@
         "key": "cmd+i",
         "command": "-toggleSuggestionDetails",
         "when": "suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && textInputFocus"
+    },
+    {
+        "key": "shift+cmd+t",
+        "command": "editor.action.goToTypeDefinition"
     }
 ]
