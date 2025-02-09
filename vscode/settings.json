@@ -72,6 +72,7 @@
   },
   "editor.formatOnType": false,
   "editor.inlineSuggest.enabled": false,
+  "editor.suggest.localityBonus": true,
   "editor.lightbulb.enabled": "off",
   "editor.detectIndentation": false,
   "editor.guides.indentation": false,
@@ -163,6 +164,7 @@
   "python.terminal.activateEnvInCurrentTerminal": false,
   "python.terminal.activateEnvironment": false,
   "python.languageServer": "Pylance",
+  "python.analysis.reportExtraTelemetry": false,
   "python.analysis.typeCheckingMode": "off",
   "python.analysis.autoImportCompletions": false,
   "python.experiments.enabled": false,
@@ -199,10 +201,12 @@
   "window.customTitleBarVisibility": "never",
   // Hide unwanted elements from the UI:
   "custom-ui-style.stylesheet": {
-    ".monaco-toolbar": {
+    // Hide extra items:
+    ".monaco-toolbar, .action-label.codicon-split-horizontal": {
       "visible": "hidden !important",
       "display": "none !important",
     },
+    // Center the title with the filename:
     ".monaco-workbench .editor-group-container>.title>.label-container>.title-label>.monaco-icon-label-container": {
       "margin-left": "50px !important",
       "margin-bottom": "7px !important",
