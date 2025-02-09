@@ -9,13 +9,13 @@
 #########################################################################################################
 # Git CMD
 #########################################################################################################
-alias gs="git status"
-alias ga="git add"
+alias gts="git status"
+alias gta="git add"
 alias gcm="git commit -m $@"
 alias gps="git push"
 alias gpu='git pull $1'
 alias gd='git diff $1'
-alias glb='git branch'
+alias gtb='git branch'
 alias gbr='git branch -r'
 alias gsw='git switch'
 #########################################################################################################
