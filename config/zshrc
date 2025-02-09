@@ -15,15 +15,15 @@ ZSH="$HOME/.oh-my-zsh"
 
 # If you come from bash you might have to change your $PATH.
 #GOPATH MUST BE OUTSIDE OF GOROOT directory!!!
-GVM_ROOT="$HOME/.gvm"
-GVM_GOROOT="$GVM_ROOT/gos/go1.23.2"
+# GVM_ROOT="$HOME/.gvm"
+# GVM_GOROOT="$GVM_ROOT/gos/go1.23.2"
 GOPATH="${HOME}/go"
 GOBIN="$GOPATH/bin"
 GOROOT="/usr/local/go/"
 # JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-17.0.2.jdk/Contents/Home
 # export PATH=$PATH:$JAVA_HOME/bin
 VENV_PATH="$HOME/dev/.virtual-env/"
-PATH="$HOME/bin:/opt/homebrew/bin:/usr/local/bin:$GOPATH/bin:$GOROOT/bin:$GVM_ROOT:$GVM_GOROOT:$GOBIN:$VENV_PATH:$PATH"
+PATH="$HOME/bin:/opt/homebrew/bin:/usr/local/bin:$GOPATH/bin:$GOROOT/bin:$GOBIN:$VENV_PATH:$PATH"
 
 export GO111MODULE=on
 
@@ -98,7 +98,7 @@ source "$ZSH/oh-my-zsh.sh"
 
 # === Shell parts ===
 
-# source "$HOME/.shell/.exports"
+source "$HOME/.shell/.exports"
 source "$HOME/.shell/.aliases"
 source "$HOME/.shell/.functions"
 # source "$HOME/.shell/.external"
