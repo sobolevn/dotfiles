@@ -1,6 +1,6 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 
-# `.competions` handles all custom auto-completions.
+# `.completions` handles all custom auto-completions.
 
 # Enable hidden files on completion:
 setopt globdots
