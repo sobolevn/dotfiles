@@ -202,7 +202,7 @@
   // Hide unwanted elements from the UI:
   "custom-ui-style.stylesheet": {
     // Hide extra items:
-    ".monaco-toolbar, .action-label.codicon-split-horizontal": {
+    ".monaco-toolbar, .action-label, .quick-input-list .scrollbar": {
       "visible": "hidden !important",
       "display": "none !important",
     },
@@ -213,6 +213,5 @@
     },
     // Customize the cmd+p behavior:
     ".quick-input-widget": "top: 25vh !important",
-    ".quick-input-list .scrollbar": "display: none",
   },
 }

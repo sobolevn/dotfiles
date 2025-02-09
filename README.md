@@ -56,7 +56,7 @@ So, I have switched to [`vscode`](https://formulae.brew.sh/cask/visual-studio-co
 It solved almost all issues I had with `Sublime`.
 Here's how my new `vscode` setup looks like, using my own theme called [`pustota`](https://github.com/sobolevn/pustota):
 
-![sobolevn's vscode for Python](https://raw.githubusercontent.com/sobolevn/pustota/master/assets/minimal.png)
+![sobolevn's vscode for Python](https://raw.githubusercontent.com/sobolevn/dotfiles/master/media/vscode.png)
 
 Here's [a list of packages](https://github.com/sobolevn/dotfiles/blob/master/Brewfile) (see `vscode` calls at the bottom) I use:
 
@@ -68,8 +68,17 @@ Here's [a list of packages](https://github.com/sobolevn/dotfiles/blob/master/Bre
 I try to keep my `vscode` setup as simple as possible.
 It was also heavily influenced by [`makevscodeawesome`](https://makevscodeawesome.com/).
 
-I also use [powered-up `nano`](https://github.com/sobolevn/dotfiles/blob/master/config/nanorc)
-for in-terminal editing.
+### DX
+
+- `cmd` + `p` opens up file navigation in the middle of the screen, so you don't have to move your eyes a lot to find most common UI element
+
+- `cmd` + `shift` + `f` opens global search
+
+![vscode cmd+shift+p widget](https://raw.githubusercontent.com/sobolevn/dotfiles/master/media/vscode-cmd-shift-p.png)
+
+- `cmd` + `t` opens global symbols index
+
+![vscode cmd+t widget](https://raw.githubusercontent.com/sobolevn/dotfiles/master/media/vscode-cmd-t.png)
 
 
 ## CLI
@@ -92,6 +101,11 @@ But I don't use them on a daily basis:
 - `elixir`
 - `rust`
 - `c`
+
+### nano
+
+I also use [powered-up `nano`](https://github.com/sobolevn/dotfiles/blob/master/config/nanorc)
+for in-terminal editing.
 
 ### fzf goodies
 
