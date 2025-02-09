@@ -35,6 +35,7 @@
   "editor.hover.enabled": false,
   "editor.stickyScroll.enabled": false,
   "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
   "explorer.decorations.badges": false,
   "extensions.ignoreRecommendations": true,
   "diffEditor.renderSideBySide": false,
@@ -71,6 +72,9 @@
   },
   "editor.formatOnType": false,
   "editor.inlineSuggest.enabled": false,
+  "editor.lightbulb.enabled": "off",
+  "editor.detectIndentation": false,
+  "editor.guides.indentation": false,
 
   // Per-language settings:
   "[css]": {
@@ -132,6 +136,7 @@
   "workbench.statusBar.visible": false,
   "workbench.tips.enabled": false,
   "workbench.tree.renderIndentGuides": "none",
+  "workbench.tree.enableStickyScroll": false,
   "workbench.editor.highlightModifiedTabs": false,
   "workbench.editor.showIcons": false,
   "workbench.editor.showTabs": "single",
@@ -201,6 +206,9 @@
     ".monaco-workbench .editor-group-container>.title>.label-container>.title-label>.monaco-icon-label-container": {
       "margin-left": "50px !important",
       "margin-bottom": "7px !important",
-    }
+    },
+    // Customize the cmd+p behavior:
+    ".quick-input-widget": "top: 25vh !important",
+    ".quick-input-list .scrollbar": "display: none",
   },
 }
