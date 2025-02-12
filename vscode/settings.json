@@ -66,7 +66,7 @@
   "editor.tabCompletion": "on",
   "editor.suggestSelection": "recentlyUsed",
   "editor.quickSuggestions": {
-    "other": false,
+    "other": false,  // change to "true" to enable regular code suggetions
     "comments": false,
     "strings": false,
   },
@@ -118,6 +118,7 @@
   "terminal.integrated.shellIntegration.enabled": false,
   "terminal.integrated.shellIntegration.decorationsEnabled": "never",
   "terminal.integrated.stickyScroll.enabled": false,
+  "terminal.integrated.suggest.enabled": false,
   "terminal.integrated.enableMultiLinePasteWarning": "never",
   "terminal.integrated.defaultProfile.osx": "zsh",
   "terminal.integrated.defaultProfile.linux": "bash",
@@ -125,9 +126,10 @@
     "SOBOLE_THEME_MODE": "dark",
   },
   "accessibility.signals.terminalBell": {
-    "sound": "on"
+    "sound": "on",
   },
   "terminal.integrated.enableVisualBell": true,
+  "terminal.integrated.fontLigatures.enabled": false,
 
   // Main editor:
   "window.clickThroughInactive": false,
@@ -163,6 +165,7 @@
   "python.createEnvironment.trigger": "off",
   "python.terminal.activateEnvInCurrentTerminal": false,
   "python.terminal.activateEnvironment": false,
+  "python.terminal.shellIntegration.enabled": false,
   "python.languageServer": "Pylance",
   "python.analysis.reportExtraTelemetry": false,
   "python.analysis.typeCheckingMode": "off",
@@ -202,8 +205,8 @@
   // Hide unwanted elements from the UI:
   "custom-ui-style.stylesheet": {
     // Hide extra items:
-    ".monaco-toolbar, .action-label, .quick-input-list .scrollbar": {
-      "visible": "hidden !important",
+    ".monaco-toolbar, .quick-input-list .scrollbar, .quick-input-list .action-label": {
+      "visiblity": "hidden !important",
       "display": "none !important",
     },
     // Center the title with the filename:

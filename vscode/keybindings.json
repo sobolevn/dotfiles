@@ -389,32 +389,22 @@
         "command": "editor.action.goToTypeDefinition"
     },
     {
-        "key": "shift+cmd+f",
+        "key": "ctrl+i",
+        "command": "editor.action.triggerSuggest",
+        "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
+    },
+    {
+        "key": "cmd+i",
+        "command": "-editor.action.triggerSuggest",
+        "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
+    },
+    {
+        "key": "ctrl+f",
         "command": "workbench.action.quickTextSearch"
     },
     {
-        "key": "alt+f",
-        "command": "workbench.view.search",
-        "when": "workbench.view.search.active && neverMatch =~ /doesNotMatch/"
-    },
-    {
-        "key": "shift+cmd+f",
-        "command": "-workbench.view.search",
-        "when": "workbench.view.search.active && neverMatch =~ /doesNotMatch/"
-    },
-    {
-        "key": "cmd+o",
-        "command": "editor.action.accessibleViewGoToSymbol",
-        "when": "accessibilityHelpIsShown && accessibleViewGoToSymbolSupported || accessibleViewGoToSymbolSupported && accessibleViewIsShown"
-    },
-    {
-        "key": "shift+cmd+o",
-        "command": "-editor.action.accessibleViewGoToSymbol",
-        "when": "accessibilityHelpIsShown && accessibleViewGoToSymbolSupported || accessibleViewGoToSymbolSupported && accessibleViewIsShown"
-    },
-    {
-        "key": "cmd+o",
-        "command": "-workbench.action.files.openFolderViaWorkspace",
-        "when": "!openFolderWorkspaceSupport && workbenchState == 'workspace'"
+        "key": "ctrl+f",
+        "command": "-cursorRight",
+        "when": "textInputFocus"
     }
 ]
