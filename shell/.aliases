@@ -13,11 +13,20 @@ alias gts="git status"
 alias gta="git add"
 alias gcm="git commit -m $@"
 alias gps="git push"
-alias gpu='git pull $1'
-alias gd='git diff $1'
-alias gtb='git branch'
-alias gbr='git branch -r'
-alias gsw='git switch'
+alias gpu="git pull $1"
+alias gd="git diff $1"
+alias gtb="git branch"
+alias gbr="git branch -r"
+alias gsw="git switch"
+alias gcid="git rev-parse --abbrev=8 --short HEAD"
+alias gcl="git clone $1"
+alias gco="git checkout $1"
+alias gswb="git switch -b $1"
+alias gswm="git switch -m $1"
+alias gswc="git switch -c \$1 \$2"
+alias gst="git stash"
+alias gsta="git stash apply stash@\{\$1\}"
+alias gstp="git stash pop stash@\{\$1\}"
 #########################################################################################################
 # Docker CMD
 #########################################################################################################
@@ -33,7 +42,10 @@ alias dVolPrune='docker system prune --volumes'
 alias c="clear"
 alias dockerd="open -a docker && while ! docker info > /dev/null 2>&1; do sleep 1 ; done"
 #########################################################################################################
-
+# Networking CMD
+#########################################################################################################
+alias ipAddr="ifconfig en0| grep \"inet[ ]\" | awk '{print \$2}'"
+#########################################################################################################
 # Sorts directories in top, colors, and prints `/` at directories:
 alias lc='gls --color -h --group-directories-first -F'
 
