@@ -21,12 +21,11 @@ alias gsw="git switch"
 alias gcid="git rev-parse --abbrev=8 --short HEAD"
 alias gcl="git clone $1"
 alias gco="git checkout $1"
-alias gswb="git switch -b $1"
-alias gswm="git switch -m $1"
-alias gswc="git switch -c \$1 \$2"
+alias gswc="git switch -c $1"
 alias gst="git stash"
-alias gsta="git stash apply stash@\{\$1\}"
-alias gstp="git stash pop stash@\{\$1\}"
+alias gsta="git stash apply $1"
+alias gstp="git stash pop $1"
+alias gdlb="git branch -D $1"
 #########################################################################################################
 # Docker CMD
 #########################################################################################################

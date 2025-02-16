@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+# Exit immediately if a command exits with a non-zero status.
 set -e
 
 # Exporting the specific shell we want to work with:
@@ -11,13 +12,18 @@ export SHELL
 
 readonly DOTBOT_DIR='dotbot'
 readonly DOTBOT_BIN='bin/dotbot'
+# Set BASEDIR to the directory where this script is located
 readonly BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-readonly ARGS="$@"
+readonly DOTBOT_ARGS="$@"
 
 cd "$BASEDIR"
-git submodule sync --quiet --recursive
-git submodule update --init --recursive
+if git submodule status | grep -q '^+'; then
+  git submodule sync --quiet --recursive
+fi
+if git submodule foreach 'git status --porcelain' | grep -q '^'; then
+  git submodule update --init --recursive
+fi
 
 # Linking dotfiles:
 
@@ -28,7 +34,7 @@ run_dotbot () {
   "$BASEDIR/$DOTBOT_DIR/$DOTBOT_BIN" \
     -d "$BASEDIR" \
     --plugin-dir dotbot-brewfile \
-    -c "$config" $ARGS
+    -c "$config" $DOTBOT_ARGS
 
   source ~/.bash_profile
 }
