@@ -49,7 +49,7 @@ brew "git"
 # Syntax-highlighting pager for git and diff output
 brew "git-delta"
 # Open-source GitLab command-line tool
-brew "glab"
+# brew "glab"
 # Statically typed language for the Erlang VM
 # brew "gleam"
 # Interpreted, interactive, object-oriented programming language
