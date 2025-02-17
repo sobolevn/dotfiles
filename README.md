@@ -72,9 +72,9 @@ It was also heavily influenced by [`makevscodeawesome`](https://makevscodeawesom
 
 - `cmd` + `p` opens up file navigation in the middle of the screen, so you don't have to move your eyes a lot to find most common UI element
 
-- `cmd` + `shift` + `f` opens global search
+- `ctrl` + `f` opens global search
 
-![vscode cmd+shift+f widget](https://raw.githubusercontent.com/sobolevn/dotfiles/master/media/vscode-cmd-shift-f.png)
+![vscode ctrl+f widget](https://raw.githubusercontent.com/sobolevn/dotfiles/master/media/vscode-cmd-shift-f.png)
 
 - `cmd` + `t` opens global symbols index
 
