@@ -6,6 +6,7 @@
   "debug.console.closeOnEnd": true,
 
   // Editor:
+  "editor.cursorBlinking": "solid",
   "editor.accessibilitySupport": "off",
   "editor.codeLens": true,
   "editor.colorDecorators": false,
@@ -76,8 +77,9 @@
   "editor.lightbulb.enabled": "off",
   "editor.detectIndentation": false,
   "editor.guides.indentation": false,
+  "editor.showUnused": false,
 
-  // Per-language settings:
+  // Per-language UI settings:
   "[css]": {
     "editor.colorDecorators": true,
   },
@@ -177,6 +179,8 @@
   "typescript.suggest.autoImports": false,
   "javascript.suggest.autoImports": false,
   "javascript.updateImportsOnFileMove.enabled": "never",
+
+  "C_Cpp.dimInactiveRegions": false,
 
   // Theme:
   "workbench.colorTheme": "pustota",
