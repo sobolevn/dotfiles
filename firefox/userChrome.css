@@ -1,0 +1,25 @@
+/* cmd + alt + shift + I to open debug */
+
+/* Hide "search tabs" button */
+#alltabs-button { display: none !important; }
+
+/* Hide "unified extensions" button */
+#unified-extensions-button { display: none !important; }
+
+/* Hide main settings button */
+#PanelUI-menu-button { display: none !important; }
+
+/* Hide page info from the left of address box */
+#identity-permission-box,
+#tracking-protection-icon-container { display: none !important; }
+
+/* Hide page actions from the right of address box */
+hbox.urlbar-page-action { display: none !important; }
+
+/*
+ * Zen browser specific
+ */
+
+/* Hide workspaces */
+#zen-current-workspace-indicator-container,
+#zen-workspaces-button { display: none !important; }

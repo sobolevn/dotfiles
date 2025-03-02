@@ -195,7 +195,7 @@
   },
   "editor.unicodeHighlight.nonBasicASCII": false,
 
-  // https://github.com/drcika/apc-extension extension:
+  // https://github.com/subframe7536/vscode-custom-ui-style extension:
   "custom-ui-style.electron": {
     "frame": false,  // removes the title bar
     "transparent": true,  // removes white line from the top
