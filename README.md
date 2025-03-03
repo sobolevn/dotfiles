@@ -133,6 +133,14 @@ I am using [`brew`](https://brew.sh/) to install all free apps for my mac.
 I also sync apps from AppStore with `brew` via [`mas`](https://formulae.brew.sh/formula/mas),
 so the resulting [`Brewfile`](https://github.com/sobolevn/dotfiles/blob/master/Brewfile) contains everything.
 
+### FireFox and Zen
+
+I use [`zen` browser](https://zen-browser.app) as my main browser. Yes, it does not have any visible UI, even in regular non-fullscreen mode. It is also harded with [`arkenfox`](github.com/arkenfox/user.js) for extra privacy.
+
+![zen](https://raw.githubusercontent.com/sobolevn/dotfiles/master/media/zen.png)
+
+Since `zen` is based on `firefox`, you can copy [all the configuration](https://github.com/sobolevn/dotfiles/tree/master/firefox) I have for `zen` and use with just regular `firefox`.
+
 
 ## Infrastructure
 

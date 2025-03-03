@@ -1,9 +1,13 @@
 # FireFox configuration
 
+
 ## FireFox settings
 
-Useful settings that I set:
-- `apz.overscroll.enabled` to `false`
+Copy https://github.com/arkenfox/user.js to `user.js` and copy [`user-overrides.js`](https://github.com/sobolevn/dotfiles/blob/master/firefox/user-overrides.js) from this repo.
+
+This way you will have the same browser settings as I do.
+
+Copy [`userChrome.css`](https://github.com/sobolevn/dotfiles/blob/master/firefox/userChrome.css) to [`chrome/` subfolder](https://www.userchrome.org) in your FireFox profile.
 
 
 ## Zen settings
