@@ -25,3 +25,12 @@ hbox.urlbar-page-action { display: none !important; }
 /* Hide workspaces */
 #zen-current-workspace-indicator-container,
 #zen-workspaces-button { display: none !important; }
+
+/* Hide shadow from navbar */
+#zen-appcontent-navbar-container { box-shadow: none !important; }
+
+/* Add extra space for tabbar, so navbar fits */
+#navigator-toolbox { top: 40px !important; }
+
+/* Make urlbar suggestions transparent */
+#urlbar { opacity: 0.95 !important; }

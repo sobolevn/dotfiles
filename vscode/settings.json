@@ -67,7 +67,7 @@
   "editor.tabCompletion": "on",
   "editor.suggestSelection": "recentlyUsed",
   "editor.quickSuggestions": {
-    "other": true,  // change to "true" to enable regular code suggetions
+    "other": false,  // change to "true" to enable regular code suggetions
     "comments": false,
     "strings": false,
   },

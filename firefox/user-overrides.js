@@ -1,7 +1,6 @@
 // Mozilla User Preferences
 
-// Docs: https://github.com/arkenfox/user.js
-// Copy this file into your `$(FireFox profile folder)` folder
+// Customize https://github.com/arkenfox/user.js
 
 user_pref("accessibility.tabfocus", 1);
 user_pref("accessibility.typeaheadfind.flashBar", 0);
@@ -21,8 +20,10 @@ user_pref("browser.download.viewableInternally.typeWasRegistered.webp", true);
 user_pref("browser.engagement.ctrlTab.has-used", true);
 user_pref("browser.engagement.fxa-toolbar-menu-button.has-used", true);
 user_pref("browser.firefox-view.view-count", 1);
-user_pref("browser.gesture.swipe.left", "Browser:PrevTab");
-user_pref("browser.gesture.swipe.right", "Browser:NextTab");
+user_pref("browser.gesture.swipe.left", "Browser:BackOrBackDuplicate");
+user_pref("browser.gesture.swipe.right", "Browser:ForwardOrForwardDuplicate");
+user_pref("browser.gesture.swipe.down", "Browser:NextTab");
+user_pref("browser.gesture.swipe.up", "Browser:PrevTab");
 user_pref("browser.laterrun.bookkeeping.sessionCount", 1);
 user_pref("browser.laterrun.enabled", true);
 user_pref("browser.newtabpage.activity-stream.section.highlights.includeBookmarks", false);
@@ -40,7 +41,7 @@ user_pref("browser.startup.homepage", "about:blank");
 user_pref("browser.theme.content-theme", 1);
 user_pref("browser.theme.toolbar-theme", 1);
 user_pref("browser.translations.panelShown", true);
-user_pref("browser.uiCustomization.state", "{\"placements\":{\"widget-overflow-fixed-list\":[],\"unified-extensions-area\":[\"jid1-mnnxcxisbpnsxq_jetpack-browser-action\",\"ublock0_raymondhill_net-browser-action\",\"jid1-zadieub7xozojw_jetpack-browser-action\",\"_f01b6ea5-5910-4359-afee-9f0de052c7a1_-browser-action\"],\"nav-bar\":[\"back-button\",\"forward-button\",\"vertical-spacer\",\"urlbar-container\",\"unified-extensions-button\"],\"TabsToolbar\":[\"firefox-view-button\",\"tabbrowser-tabs\"],\"vertical-tabs\":[],\"PersonalToolbar\":[\"import-button\",\"personal-bookmarks\"],\"zen-sidebar-top-buttons\":[],\"zen-sidebar-bottom-buttons\":[\"zen-workspaces-button\",\"developer-button\"]},\"seen\":[\"developer-button\",\"ublock0_raymondhill_net-browser-action\",\"jid1-mnnxcxisbpnsxq_jetpack-browser-action\",\"jid1-zadieub7xozojw_jetpack-browser-action\",\"_f01b6ea5-5910-4359-afee-9f0de052c7a1_-browser-action\"],\"dirtyAreaCache\":[\"nav-bar\",\"vertical-tabs\",\"zen-sidebar-bottom-buttons\",\"PersonalToolbar\",\"TabsToolbar\",\"unified-extensions-area\",\"zen-sidebar-top-buttons\"],\"currentVersion\":21,\"newElementCount\":15}");
+user_pref("browser.uiCustomization.state", "{\"placements\":{\"widget-overflow-fixed-list\":[],\"unified-extensions-area\":[\"jid1-mnnxcxisbpnsxq_jetpack-browser-action\",\"ublock0_raymondhill_net-browser-action\",\"jid1-zadieub7xozojw_jetpack-browser-action\",\"_f01b6ea5-5910-4359-afee-9f0de052c7a1_-browser-action\"],\"nav-bar\":[\"back-button\",\"forward-button\",\"vertical-spacer\",\"urlbar-container\",\"unified-extensions-button\"],\"TabsToolbar\":[\"firefox-view-button\",\"tabbrowser-tabs\"],\"vertical-tabs\":[],\"PersonalToolbar\":[\"import-button\",\"personal-bookmarks\"],\"zen-sidebar-top-buttons\":[],\"zen-sidebar-bottom-buttons\":[\"zen-workspaces-button\"]},\"seen\":[\"developer-button\",\"ublock0_raymondhill_net-browser-action\",\"jid1-mnnxcxisbpnsxq_jetpack-browser-action\",\"jid1-zadieub7xozojw_jetpack-browser-action\",\"_f01b6ea5-5910-4359-afee-9f0de052c7a1_-browser-action\"],\"dirtyAreaCache\":[\"nav-bar\",\"vertical-tabs\",\"zen-sidebar-bottom-buttons\",\"PersonalToolbar\",\"TabsToolbar\",\"unified-extensions-area\",\"zen-sidebar-top-buttons\"],\"currentVersion\":21,\"newElementCount\":15}");
 user_pref("browser.urlbar.maxRichResults", 10);
 user_pref("browser.urlbar.quicksuggest.scenario", "history");
 user_pref("browser.urlbar.shortcuts.bookmarks", false);
@@ -139,7 +140,7 @@ user_pref("uc.hidecontext.unloadactions", true);
 user_pref("zen.sidebar.close-on-blur", false);
 user_pref("zen.splitView.change-on-hover", true);
 user_pref("zen.tab-unloader.enabled", false);
-user_pref("zen.tabs.vertical.right-side", true);
+user_pref("zen.tabs.vertical.right-side", false);
 user_pref("zen.theme.color-prefs.use-workspace-colors", false);
 user_pref("zen.themes.updated-value-observer", true);
 user_pref("zen.urlbar.behavior", "normal");
@@ -153,3 +154,35 @@ user_pref("zen.welcome-screen.seen", true);
 user_pref("zen.workspaces.hide-deactivated-workspaces", true);
 user_pref("zen.workspaces.hide-default-container-indicator", false);
 user_pref("zen.workspaces.individual-pinned-tabs", false);
+
+// Archenfox fixes:
+
+// Do not clear history on shutdown:
+user_pref("privacy.cpd.cache", false);    // [DEFAULT: true]
+user_pref("privacy.clearHistory.cache", false);
+user_pref("privacy.cpd.formdata", false); // [DEFAULT: true]
+user_pref("privacy.cpd.history", true);  // [DEFAULT: true]
+user_pref("privacy.clearHistory.historyFormDataAndDownloads", false);
+user_pref("privacy.cpd.cookies", false);
+user_pref("privacy.cpd.sessions", false); // [DEFAULT: true]
+user_pref("privacy.cpd.offlineApps", false); // [DEFAULT: false]
+user_pref("privacy.clearHistory.cookiesAndStorage", false);
+user_pref("privacy.clearSiteData.cache", false);
+user_pref("privacy.clearSiteData.cookiesAndStorage", false);
+user_pref("privacy.clearSiteData.historyFormDataAndDownloads", false);
+user_pref("privacy.clearOnShutdown.cookies", false); // Cookies
+user_pref("privacy.clearOnShutdown.offlineApps", false); // Site Data
+user_pref("privacy.clearOnShutdown.sessions", false);  // Active Logins [DEFAULT: true]
+user_pref("privacy.clearOnShutdown_v2.cookiesAndStorage", false); // Cookies, Site Data, Active Logins [FF128+]
+user_pref("privacy.clearOnShutdown.cache", false);     // [DEFAULT: true]
+user_pref("privacy.clearOnShutdown_v2.cache", false);  // [FF128+] [DEFAULT: true]
+user_pref("privacy.clearOnShutdown.downloads", false); // [DEFAULT: true]
+user_pref("privacy.clearOnShutdown.formdata", false);  // [DEFAULT: true]
+user_pref("privacy.clearOnShutdown.history", false);   // [DEFAULT: true]
+user_pref("privacy.clearOnShutdown_v2.historyFormDataAndDownloads", false);
+user_pref("privacy.cpd.openWindows", false);
+user_pref("privacy.sanitize.timeSpan", 1);
+user_pref("privacy.sanitize.sanitizeOnShutdown", false);
+
+// Reopen previous session on browser close:
+user_pref("browser.startup.page", 3);
