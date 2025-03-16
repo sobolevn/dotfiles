@@ -1,5 +1,6 @@
 # FireFox configuration
 
+https://github.com/user-attachments/assets/34d94a70-083a-48b3-b955-37d2f2432551
 
 ## FireFox settings
 
