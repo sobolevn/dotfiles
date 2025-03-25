@@ -69,9 +69,9 @@ zstyle ':fzf-tab:complete:(\\|*/|)killall:*' fzf-preview \
 _z () {
   # I have a custom completion, because I like `z NAME<TAB>`
   # and not `z NAME<SPACE><TAB>`
-  local args
-  args="$(zoxide query -a -l)"
-  _arguments "1:paths:($args)"
+  local cmds
+  cmds=( ${(uf)"$(zoxide query -l)"} )
+  _describe 'filenames' cmds
 }
 
 compdef _z z
