@@ -216,9 +216,6 @@
     // Center the title with the filename:
     ".monaco-workbench .editor-group-container>.title>.label-container>.title-label>.monaco-icon-label-container": {
       "margin-left": "50px !important",
-      "margin-bottom": "7px !important",
     },
-    // Customize the cmd+p behavior:
-    ".quick-input-widget": "top: 25vh !important",
   },
 }

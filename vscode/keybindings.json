@@ -406,5 +406,9 @@
         "key": "ctrl+f",
         "command": "-cursorRight",
         "when": "textInputFocus"
+    },
+    {
+        "key": "shift+cmd+o",
+        "command": "outline.toggleVisibility"
     }
 ]
