@@ -34,3 +34,18 @@ hbox.urlbar-page-action { display: none !important; }
 
 /* Make urlbar suggestions transparent */
 #urlbar { opacity: 0.95 !important; }
+
+/* Change URL bar active color text, copied the style from zen.css */
+.urlbarView-row {
+  &[selected] {
+    & *, & .urlbarView-title-separator::before {
+      color: black !important;
+    }
+  }
+}
+
+/* Disable toast with "New tab opened" */
+#zen-toast-container
+> .zen-toast:has(> label[data-l10n-id="zen-background-tab-opened-toast"]) {
+    display: none !important;
+}

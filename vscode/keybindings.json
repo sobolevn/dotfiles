@@ -410,5 +410,9 @@
     {
         "key": "shift+cmd+o",
         "command": "outline.toggleVisibility"
+    },
+    {
+        "key": "shift+cmd+t",
+        "command": "workbench.action.toggleMaximizedPanel"
     }
 ]
