@@ -34,4 +34,6 @@ run_dotbot () {
 run_dotbot 'steps/terminal.yml' || true
 run_dotbot 'steps/dependencies.yml' || true
 run_dotbot 'steps/vscode.yml' || true
-run_dotbot 'steps/streamdeck.yml' || true
+
+# XXX: These are highly optional, uncomment if you need this:
+# run_dotbot 'steps/streamdeck.yml' || true

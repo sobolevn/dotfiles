@@ -5,9 +5,7 @@
 # See https://ohmyz.sh
 - shell:
   - command: |
-      sh -c \
-        "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-      || true
+      sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" || true
     description: Install Oh-My-Zsh
     stdout: true
     stderr: true

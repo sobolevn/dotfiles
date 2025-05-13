@@ -1,5 +1,3 @@
-tap "homebrew/bundle"
-tap "homebrew/services"
 # C/C++ resolver library and DNS resolver utilities
 brew "adns"
 # Bourne-Again SHell, a UNIX command interpreter
@@ -42,10 +40,6 @@ brew "gh"
 brew "git"
 # Syntax-highlighting pager for git and diff output
 brew "git-delta"
-# Open-source GitLab command-line tool
-brew "glab"
-# Statically typed language for the Erlang VM
-brew "gleam"
 # Core application library for C
 brew "glib"
 # Asynchronous event library
@@ -80,18 +74,12 @@ brew "highlight"
 brew "jpeg"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
-# GNOME XML library
-brew "libxml2"
 # YAML Parser
 brew "libyaml"
-# Next-gen compiler infrastructure
-brew "llvm"
 # Mac App Store command-line interface
 brew "mas"
 # Free (GNU) replacement for the Pico text editor
 brew "nano"
-# HTTP/2 C Library
-brew "nghttp2"
 # Platform built on V8 to build network applications
 brew "node"
 # Manage multiple Node.js versions
@@ -100,6 +88,8 @@ brew "nvm"
 brew "pinentry-mac"
 # Execute binaries from Python packages in isolated environments
 brew "pipx"
+# Package compiler and linker metadata toolkit
+brew "pkgconf"
 # Python version management
 brew "pyenv"
 # Install various Ruby versions and implementations
@@ -114,8 +104,6 @@ brew "rustup"
 brew "sd"
 # Static analysis and lint tool, for (ba)sh scripts
 brew "shellcheck"
-# Compression/decompression library aiming for high speed
-brew "snappy"
 # Code-search similar to ack
 brew "the_silver_searcher"
 # Text interface for Git repositories
@@ -124,8 +112,6 @@ brew "tig"
 brew "tree"
 # Internet file retriever
 brew "wget"
-# Programming language designed for robustness, optimality, and clarity
-brew "zig"
 # General-purpose lossless data-compression library
 brew "zlib"
 # Shell extension to navigate your filesystem faster
@@ -136,8 +122,6 @@ brew "zplug"
 brew "zsh"
 # VPN client
 cask "amneziavpn"
-# Video editing and image design platform
-cask "capcut"
 # Voice and text chat software
 cask "discord"
 # App to build and share containerised applications and microservices
@@ -176,6 +160,8 @@ cask "topnotch"
 cask "visual-studio-code"
 # Tune in to Yandex Music and get personal recommendations
 cask "yandex-music"
+# Gecko based web browser
+cask "zen"
 # Video communication and virtual meeting platform
 cask "zoom"
 mas "Delete Apps", id: 1033808943
