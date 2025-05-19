@@ -44,8 +44,7 @@ hbox.urlbar-page-action { display: none !important; }
   }
 }
 
-/* Disable toast with "New tab opened" */
-#zen-toast-container
-> .zen-toast:has(> label[data-l10n-id="zen-background-tab-opened-toast"]) {
-    display: none !important;
+/* Disable Zen toasts */
+#zen-toast-container .zen-toast {
+  display: none !important;
 }
