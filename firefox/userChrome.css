@@ -24,7 +24,8 @@ hbox.urlbar-page-action { display: none !important; }
 
 /* Hide workspaces */
 #zen-current-workspace-indicator-container,
-#zen-workspaces-button { display: none !important; }
+#zen-workspaces-button,
+vbox.zen-current-workspace-indicator { display: none !important; }
 
 /* Hide shadow from navbar */
 #zen-appcontent-navbar-container { box-shadow: none !important; }
@@ -46,5 +47,10 @@ hbox.urlbar-page-action { display: none !important; }
 
 /* Disable Zen toasts */
 #zen-toast-container .zen-toast {
+  display: none !important;
+}
+
+/* Disable media toolbox in sidebar */
+.zen-media-controls-toolbar {
   display: none !important;
 }
