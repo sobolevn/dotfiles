@@ -45,6 +45,9 @@ eval "$(gpg-agent --daemon --allow-preset-passphrase > /dev/null 2>&1)"
 # Homebrew:
 export HOMEBREW_NO_ANALYTICS=1  # disables statistics that brew collects
 
+# Docker:
+export DOCKER_CLI_HINTS=false  # disable ads in CLI :(
+
 # Pagers:
 # This affects every invocation of `less`.
 #
