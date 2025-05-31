@@ -106,8 +106,6 @@ brew "sd"
 brew "shellcheck"
 # Code-search similar to ack
 brew "the_silver_searcher"
-# Text interface for Git repositories
-brew "tig"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
 # Internet file retriever

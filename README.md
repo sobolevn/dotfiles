@@ -88,7 +88,7 @@ I am using [`zsh`](https://github.com/zsh-users/zsh) with [`oh-my-zsh`](https://
 as the main shell.
 And [`zplug`](https://github.com/zplug/zplug) to manage shell [plugins](https://github.com/sobolevn/dotfiles/blob/master/config/zplugrc).
 I also have a some tools / scripts / aliases to make my working experience better.
-But, I try to keep them minimal: only ones I truly use. Including: `bat`, `zoxide`, `fzf`, `ag`, `fd`, `delta`, `gh`, `tig`, and many others.
+But, I try to keep them minimal: only ones I truly use. Including: `bat`, `zoxide`, `fzf`, `ag`, `fd`, `delta`, `gh`, and many others.
 
 I mainly work with:
 
