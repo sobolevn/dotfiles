@@ -499,5 +499,9 @@
         "key": "alt+down",
         "command": "-editor.action.moveLinesDownAction",
         "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+cmd+c",
+        "command": "editor.action.clipboardCopyWithSyntaxHighlightingAction"
     }
 ]
