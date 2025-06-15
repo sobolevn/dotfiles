@@ -51,6 +51,6 @@ vbox.zen-current-workspace-indicator { display: none !important; }
 }
 
 /* Disable media toolbox in sidebar */
-.zen-media-controls-toolbar {
+#zen-media-controls-toolbar {
   display: none !important;
 }
