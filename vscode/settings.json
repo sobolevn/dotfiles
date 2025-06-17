@@ -128,7 +128,8 @@
     "SOBOLE_THEME_MODE": "dark",
   },
   "accessibility.signals.terminalBell": {
-    "sound": "on",
+    "sound": "off",
+    "announcement": "off",
   },
   "terminal.integrated.enableVisualBell": true,
   "terminal.integrated.fontLigatures.enabled": false,
