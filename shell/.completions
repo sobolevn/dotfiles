@@ -36,8 +36,6 @@ _fzf_git_hashes() {
 
   git log --date=short --format="%C(green)%C(bold)%cd %C(auto)%h%d %s (%an)" --graph "$@" |
   _fzf_git_fzf --ansi --no-sort \
-    --border-label 'Hashes ' \
-    --header-lines 2 \
     --bind "ctrl-d:execute:echo {} | cut -d' ' -f3 | xargs git diff > /dev/tty" \
     --bind "ctrl-o:execute:echo {} | cut -d' ' -f3 | xargs git show > /dev/tty" \
     --preview "echo {} | cut -d' ' -f3 | xargs git show | $(__fzf_git_pager)" "$@" |
@@ -48,6 +46,7 @@ _fzf_git_hashes() {
 # - `ctrl+h` will show the hashes or `diff` screen
 # - - from there `ctrl+d` will open a `diff` view since that commit
 # - - from there `ctrl+o` will open that commit with `show`
+# - - from there `ctrl+h` to toggle preview window
 zle -N _fzf_git_hashes
 bindkey ^h _fzf_git_hashes
 
