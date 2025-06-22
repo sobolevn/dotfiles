@@ -1,0 +1,13 @@
+# Custom keyboard shortcuts to spawn apps
+#
+# Docs can be found here:
+# https://github.com/koekeishiya/skhd
+
+# open vscode:
+ctrl - p : open -a 'Visual Studio Code'
+
+# open browser:
+ctrl - o : open -a 'Zen'
+
+# Hyper has its own hotkey with `ctrl + ;` in `hyper.js`,
+# because this app does not allow `;` as a hotkey for some reason.

@@ -54,6 +54,11 @@
     force: true
     create: true
 
+  # skhd:
+  ~/.skhdrc:
+    path: config/skhdrc
+    force: true
+
 # See https://python-poetry.org
 - shell:
   - command: |

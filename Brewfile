@@ -1,3 +1,4 @@
+tap "koekeishiya/formulae"
 # C/C++ resolver library and DNS resolver utilities
 brew "adns"
 # Bourne-Again SHell, a UNIX command interpreter
@@ -118,6 +119,8 @@ brew "zoxide"
 brew "zplug"
 # UNIX shell (command interpreter)
 brew "zsh"
+# Simple hotkey-daemon for macOS.
+brew "koekeishiya/formulae/skhd"
 # VPN client
 cask "amneziavpn"
 # Voice and text chat software
@@ -164,6 +167,7 @@ cask "zen"
 cask "zoom"
 mas "Delete Apps", id: 1033808943
 mas "Enpass", id: 732710998
+mas "G Authenticator App", id: 6479869138
 mas "HazeOver", id: 430798174
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
@@ -172,6 +176,7 @@ mas "Pages", id: 409201541
 mas "Xcode", id: 497799835
 vscode "alexdima.copy-relative-path"
 vscode "editorconfig.editorconfig"
+vscode "ms-python.debugpy"
 vscode "ms-python.python"
 vscode "ms-python.vscode-pylance"
 vscode "sobolevn.pustota"
