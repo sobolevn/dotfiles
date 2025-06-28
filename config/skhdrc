@@ -9,5 +9,8 @@ ctrl - p : open -a 'Visual Studio Code'
 # open browser:
 ctrl - o : open -a 'Zen'
 
+# open telegram:
+ctrl - a : open -a 'Telegram'
+
 # Hyper has its own hotkey with `ctrl + ;` in `hyper.js`,
 # because this app does not allow `;` as a hotkey for some reason.

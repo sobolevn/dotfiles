@@ -2,21 +2,33 @@
 # Full list of settings might be shown via `man nano`
 # or here: https://www.nano-editor.org/dist/v3/nanorc.5.html
 
-# Editor:
-set tabstospaces
-set trimblanks
+# Influenced by:
+# https://bash-prompt.net/guides/nanorc-settings
 
-set softwrap
-set atblanks
+# Editor:
+set tabsize 4      # set tab-to-spaces size to 4
+set tabstospaces   # convert TAB key press to spaces
+set trimblanks     # trim extra spaces
+
+set softwrap       # enable softwrap of lines
+set atblanks       # wrap line at blanks
 set constantshow
+set nohelp         # disable help, ctrl+g to view it
+set autoindent     # next line will have the same indent as the current one
+set casesensitive  # case insensitive search
+set historylog     # save the last 100 history searches for later use
+set positionlog    # save the cursor position between editing sessions
+set zap            # highlight text (CTRL+SHIFT+ARROW) and delete it with backspace
+set cutfromcursor  # cut to end of line with CTRL+K
+set indicator      # display a scroll bar on the right
+set minibar        # information in the bottom bar, removes top bar
 
 # Extra files:
 set backup
 set backupdir "~/.nano-backups"
 set historylog
 
-# line numbers are copied with text,
-# it is not useful:
+# line numbers are copied with text, it is not useful:
 # set linenumbers
 
 # Syntax highlight:
