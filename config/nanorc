@@ -15,7 +15,6 @@ set atblanks       # wrap line at blanks
 set constantshow
 set nohelp         # disable help, ctrl+g to view it
 set autoindent     # next line will have the same indent as the current one
-set casesensitive  # case insensitive search
 set historylog     # save the last 100 history searches for later use
 set positionlog    # save the cursor position between editing sessions
 set zap            # highlight text (CTRL+SHIFT+ARROW) and delete it with backspace
@@ -34,3 +33,10 @@ set historylog
 # Syntax highlight:
 include /opt/homebrew/opt/nano/share/nano/*.nanorc
 include /opt/homebrew/opt/nano/share/nano/extra/*.nanorc
+
+# Hotkeys:
+# Full list: https://www.nano-editor.org/dist/latest/cheatsheet.html
+
+unbind ^w main
+bind ^f whereis main
+bind ^z undo main
