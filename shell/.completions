@@ -101,6 +101,11 @@ zstyle ':fzf-tab:complete:(\\|*/|)make:*' fzf-preview \
     ;;
   esac'
 
+# complete `man`
+zstyle ':completion:*:*:man:*:*' command 'compgen -c'
+zstyle ':fzf-tab:complete:(\\|*/|)man:*' fzf-preview \
+  'man "$word"'
+
 # complete `killall`
 zstyle ':completion:*:*:killall:*:*' command 'ps -u "$USERNAME" -o comm'
 zstyle ':fzf-tab:complete:(\\|*/|)killall:*' fzf-preview \
