@@ -102,7 +102,6 @@ zstyle ':fzf-tab:complete:(\\|*/|)make:*' fzf-preview \
   esac'
 
 # complete `man`
-zstyle ':completion:*:*:man:*:*' command 'compgen -c'
 zstyle ':fzf-tab:complete:(\\|*/|)man:*' fzf-preview \
   'man "$word"'
 
