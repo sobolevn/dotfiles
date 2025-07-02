@@ -103,7 +103,7 @@ zstyle ':fzf-tab:complete:(\\|*/|)make:*' fzf-preview \
 
 # complete `man`
 zstyle ':fzf-tab:complete:(\\|*/|)man:*' fzf-preview \
-  'man "$word"'
+  'tldr -p osx -C -V "$word" || man "$word"'
 
 # complete `killall`
 zstyle ':completion:*:*:killall:*:*' command 'ps -u "$USERNAME" -o comm'

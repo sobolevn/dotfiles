@@ -13,7 +13,7 @@ set trimblanks     # trim extra spaces
 set softwrap       # enable softwrap of lines
 set atblanks       # wrap line at blanks
 set constantshow
-set nohelp         # disable help, ctrl+g to view it
+set nohelp         # disable help, CTRL+G to view it
 set autoindent     # next line will have the same indent as the current one
 set historylog     # save the last 100 history searches for later use
 set positionlog    # save the cursor position between editing sessions

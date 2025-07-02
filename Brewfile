@@ -107,6 +107,8 @@ brew "sd"
 brew "shellcheck"
 # Code-search similar to ack
 brew "the_silver_searcher"
+# Simplified and community-driven man pages
+brew "tldr"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
 # Internet file retriever
@@ -126,7 +128,7 @@ cask "amneziavpn"
 # Voice and text chat software
 cask "discord"
 # App to build and share containerised applications and microservices
-cask "docker"
+cask "docker-desktop"
 # Control your Elgato key lights
 cask "elgato-control-center"
 # Assign keys, and then decorate and label them
@@ -134,7 +136,7 @@ cask "elgato-stream-deck"
 # Web browser
 cask "firefox"
 # Screen colour temperature controller
-cask "flux"
+cask "flux-app"
 cask "font-consolas-for-powerline"
 cask "font-fira-code"
 # Web browser
@@ -179,6 +181,7 @@ vscode "editorconfig.editorconfig"
 vscode "ms-python.debugpy"
 vscode "ms-python.python"
 vscode "ms-python.vscode-pylance"
+vscode "ms-vscode.cpptools"
 vscode "sobolevn.pustota"
 vscode "subframe7536.custom-ui-style"
 vscode "teabyii.ayu"
