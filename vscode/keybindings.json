@@ -518,5 +518,25 @@
         "key": "ctrl+t",
         "command": "-editor.action.transposeLetters",
         "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+cmd+[",
+        "command": "editor.fold",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+cmd+[",
+        "command": "-editor.fold",
+        "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+        "key": "alt+cmd+]",
+        "command": "editor.unfold",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+cmd+]",
+        "command": "-editor.unfold",
+        "when": "editorTextFocus && foldingEnabled"
     }
 ]

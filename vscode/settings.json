@@ -11,7 +11,7 @@
   "editor.codeLens": true,
   "editor.colorDecorators": false,
   "editor.dragAndDrop": false,
-  "editor.folding": false,
+  "editor.folding": false,  // change to `true` and use `cmd+alt` + `[` or `]`
   "editor.showFoldingControls": "mouseover",
   "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true,

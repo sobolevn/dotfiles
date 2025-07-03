@@ -101,9 +101,9 @@ zstyle ':fzf-tab:complete:(\\|*/|)make:*' fzf-preview \
     ;;
   esac'
 
-# complete `man`
+# complete `man`:
 zstyle ':fzf-tab:complete:(\\|*/|)man:*' fzf-preview \
-  'tldr -p osx -C -V "$word" || man "$word"'
+  '[ "$(tldr -l | ag -Q -w "$word")" ] && tldr -C "$word" || man "$word"'
 
 # complete `killall`
 zstyle ':completion:*:*:killall:*:*' command 'ps -u "$USERNAME" -o comm'
