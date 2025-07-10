@@ -75,6 +75,7 @@
   main = "!git checkout main > /dev/null 2>&1 || git checkout master"
   patch = "!git --no-pager diff"
   ch = "!git checkout $(echo \"$1\" | sd -s 'sobolevn:' '') #"
+  full-clean = "!git reset -q && git checkout -- . && git clean -fd"
 
 [diff "generated"]
 	binary = true
