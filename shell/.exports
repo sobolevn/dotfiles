@@ -57,7 +57,7 @@ export DOCKER_CLI_HINTS=false  # disable ads in CLI :(
 #   -X       keep content on screen after exit
 #   -M       show more info at the bottom prompt line
 #   -x4      tabs are 4 instead of 8
-export LESS='-iRFXMx4'
+export LESS='-iRXFMx4 --mouse --wheel-lines=3'
 export PAGER='less'
 # I don't use `bat` here, because I don't like the highlight.
 # sh -c 'col -b | bat -l man -p --theme="$SOBOLE_SYNTAX_THEME"'
