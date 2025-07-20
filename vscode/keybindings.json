@@ -505,7 +505,7 @@
         "command": "editor.action.clipboardCopyWithSyntaxHighlightingAction"
     },
     {
-        "key": "ctrl+t",
+        "key": "shift+cmd+t",
         "command": "workbench.action.terminal.new",
         "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
     },
@@ -599,5 +599,10 @@
         "key": "cmd+up",
         "command": "-cursorTop",
         "when": "textInputFocus"
+    },
+    {
+        "key": "cmd+w",
+        "command": "workbench.action.terminal.killEditor",
+        "when": "terminalEditorFocus"
     }
 ]

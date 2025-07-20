@@ -117,6 +117,7 @@
   "telemetry.telemetryLevel": "off",
 
   // Terminal:
+  "terminal.integrated.defaultLocation": "editor",
   "terminal.integrated.shellIntegration.enabled": false,
   "terminal.integrated.shellIntegration.decorationsEnabled": "never",
   "terminal.integrated.stickyScroll.enabled": false,
