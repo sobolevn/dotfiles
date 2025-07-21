@@ -178,7 +178,6 @@ mas "Pages", id: 409201541
 mas "Xcode", id: 497799835
 vscode "alexdima.copy-relative-path"
 vscode "editorconfig.editorconfig"
-vscode "ms-python.debugpy"
 vscode "ms-python.python"
 vscode "ms-python.vscode-pylance"
 vscode "ms-vscode.cpptools"

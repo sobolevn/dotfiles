@@ -165,6 +165,7 @@
   "git.autorefresh": true,
   "git.decorations.enabled": true,
   "git.openRepositoryInParentFolders": "never",
+  "git.blame.editorDecoration.enabled": false,
 
   "python.analysis.completeFunctionParens": false,
   "python.createEnvironment.trigger": "off",
