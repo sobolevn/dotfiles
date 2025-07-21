@@ -172,6 +172,8 @@
   "python.terminal.shellIntegration.enabled": false,
   "python.languageServer": "Pylance",
   "python.analysis.reportExtraTelemetry": false,
+  "python.analysis.addHoverSummaries": false,
+  "python.analysis.exclude": ["**/*.py"],  // do not run typechecking
   "python.analysis.typeCheckingMode": "off",
   "python.analysis.autoImportCompletions": false,
   "python.experiments.enabled": false,
