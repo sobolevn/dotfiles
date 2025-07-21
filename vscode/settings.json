@@ -134,6 +134,7 @@
   },
   "terminal.integrated.enableVisualBell": true,
   "terminal.integrated.fontLigatures.enabled": false,
+  "terminal.integrated.sendKeybindingsToShell": true,
 
   // Main editor:
   "window.clickThroughInactive": false,
@@ -176,6 +177,7 @@
   "python.analysis.exclude": ["**/*.py"],  // do not run typechecking
   "python.analysis.typeCheckingMode": "off",
   "python.analysis.autoImportCompletions": false,
+  "python.analysis.autoSearchPaths": false,
   "python.experiments.enabled": false,
   "python.testing.autoTestDiscoverOnSaveEnabled": false,
 

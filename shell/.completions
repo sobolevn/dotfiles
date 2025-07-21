@@ -73,6 +73,8 @@ local fzf_flags
 zstyle -a ':fzf-tab:*' fzf-flags fzf_flags
 fzf_flags=( "${fzf_flags[@]}" '--layout=reverse-list' )
 zstyle ':fzf-tab:*' fzf-flags $fzf_flags
+# use `FZF_DEFAULT_OPTS` by default:
+zstyle ':fzf-tab:*' use-fzf-default-opts yes
 
 # Tools to autocomplete:
 # ----------------------
