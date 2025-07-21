@@ -25,25 +25,92 @@ alias gswc="git switch -c $1"
 alias gst="git stash"
 alias gsta="git stash apply $1"
 alias gstp="git stash pop $1"
+alias gstd="git stash drop $1"
+alias gstc="git stash clear"
 alias gdlb="git branch -D $1"
 #########################################################################################################
-# Docker CMD
+# Docker CMD & Podman CMD
 #########################################################################################################
-alias dVolPrune='docker volume rm $(docker volume ls -q)'
-alias dContCl='docker rm -f $(docker ps -a -q)'
-alias dCompUp="docker compose -f docker-compose.yml up -d"
-alias dCompDwn="docker-compose -f docker-compose.yml down"
-alias dPs='docker ps -a'
-alias dVolPrune='docker system prune --volumes'
+alias pdm='podman'
+# alias pcc='pdm rm -f $(pdm ps -a -q)'
+# alias pdmps='pdm ps -ap'
+alias pimgs='pdm images'
+alias pimg='pdm image'
+alias pvr='pdm volume rm $(pdm volume ls -q)'
+alias pcc='pdm rm -f $(pdm ps -a -q)'
+alias pdcu="pdm compose -f docker-compose.yml up -d"
+alias pdcd="docker-compose -f docker-compose.yml down"
+alias pps='pdm ps -a'
+alias pvp='pdm system prune --volumes'
 #########################################################################################################
 # linux CMD
 #########################################################################################################
 alias c="clear"
 alias dockerd="open -a docker && while ! docker info > /dev/null 2>&1; do sleep 1 ; done"
+alias ..="cd .."
+alias pyenv="mkd ~/py-venv/appenv; python3 -m venv appvenv; source appvenv/bin/activate"
+# alias act="source myenv/bin/activate"
+alias dact="deactivate"
+alias src="source ~/.zshrc"
+alias psg="ps aux | grep $1"
+alias h="history"
+alias j="jobs -l"
+alias p="pwd"
+alias l="ls -lh"
+alias ll="ls -lah"
+alias la="ls -A"
+alias lsd="ls -d */"
+alias lt="ls -lt"
+alias ltr="ls -ltr"
+alias md="mkdir -p $1"
+alias rd="rmdir $1"
+alias rm="rm -i"
+alias cpr="cp -r $1 $2"
+alias mv="mv -i $1 $2"
+alias please="sudo $@"
+alias psg="ps aux | grep $1"
+alias flushdns="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder;say DNS cache flushed"
+alias now="date +'%Y-%m-%d %H:%M:%S'"
+alias timer="echo 'Timer started. Stop with Ctrl-D.'; date +%s; time cat; date +%s"
+alias path='echo -e ${PATH//:/\\n}'
+alias top="htop"
+alias update="sudo softwareupdate -ia --verbose"
+alias ip="curl ifconfig.me/ip"
+alias ping="ping -c 5 $1"
+alias myip="curl ifconfig.me"
+alias wget="wget -c"
+alias cdl="cd $HOME/Downloads"
+alias cdt="cd $HOME/Desktop"
+alias cdp="cd $HOME/Projects"
+alias cda="cd $HOME/Apps"
+alias cdm="cd $HOME/Music"
+alias cdpic="cd $HOME/Pictures"
+alias cdd="cd $HOME/Documents"
+alias cda="cd $HOME/Apps"
+alias cdev="cd $HOME/dev"
+alias cls="clear && ls -lh"
+alias showhidden="defaults write com.apple.finder AppleShowAllFiles YES; killall Finder"
+alias hidehidden="defaults write com.apple.finder AppleShowAllFiles NO; killall Finder"
+alias flushdns="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder;say DNS cache flushed"
+alias ql="qlmanage -p $1 >& /dev/null"
+alias reload="source ~/.zshrc"
+alias zshconfig="code ~/.zshrc"
+alias bashconfig="code ~/.bash_profile"
+alias aliases="code ~/.aliases"
+alias functions="code ~/.functions"
+alias pathfile="code ~/.path"
+alias p10kconfig="code ~/.p10k.zsh"
+alias hosts="sudo nano /etc/hosts"
+alias ports="sudo lsof -i -P | grep LISTEN"
+
 #########################################################################################################
 # Networking CMD
 #########################################################################################################
 alias ipAddr="ifconfig en0| grep \"inet[ ]\" | awk '{print \$2}'"
+#########################################################################################################
+# Make CMD
+alias gpg-doc="make -f ~/scripts/gitScripts/gpgOps/Makefile"
+
 #########################################################################################################
 # Sorts directories in top, colors, and prints `/` at directories:
 alias lc='gls --color -h --group-directories-first -F'

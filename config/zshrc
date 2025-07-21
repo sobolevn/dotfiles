@@ -31,6 +31,8 @@ export ZSH
 
 export PATH
 
+export KIND_EXPERIMENTAL_PROVIDER=podman
+
 figlet -f ogre '{ be open to }'
 echo -e "\e[1;4;36m Learn, \e[1;4;33m Unlearn,\e[0m \e[1;4;35m Relearn\e[2m. \e[1m Coz knowledge is Power...\e[0m"
 
@@ -113,3 +115,6 @@ fi
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
