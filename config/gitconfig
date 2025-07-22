@@ -45,7 +45,8 @@
 
 # Custom plugins:
 [delta]
-  navigate = false
+  # use n and N to move between diff sections
+  navigate = true
   inspect-raw-lines = false
   line-numbers = true
 

@@ -45,8 +45,3 @@ _fzf_complete_realpath () {
     echo "$realpath" | fold -w "$FZF_PREVIEW_COLUMNS"
   fi
 }
-
-__fzf_awk_commit () {
-  # Helper script to work with `ctlr+h` git and fzf util:
-  echo "$1" | awk 'match($0, /[a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9]*/) { print substr($0, RSTART, RLENGTH) }'
-}

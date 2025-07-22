@@ -10,49 +10,6 @@ setopt globdots
 # bindkey '^k' _complete_help
 
 
-# === fzf-git ===
-# This is a copy-paste with modifications from
-# https://github.com/junegunn/fzf-git.sh
-# Which is cool, but very complex for my use-case,
-# I only need commit log with interactive diffs.
-
-__fzf_git_check () {
-  git rev-parse HEAD > /dev/null 2>&1 && return
-  return 1
-}
-
-_fzf_git_pager () {
-  echo "delta --syntax-theme="$SOBOLE_SYNTAX_THEME""
-}
-
-_fzf_git_fzf () {
-  fzf --no-separator --multi --min-height 30 \
-    --layout reverse \
-    --preview-window 'right,55%' "$@"
-}
-
-_fzf_git_hashes () {
-  __fzf_git_check || return
-
-  git log --date=short --format="%C(green)%C(bold)%cd %C(auto)%h%d %s (%an)" --graph "$@" |
-  _fzf_git_fzf \
-    --ansi --no-sort \
-    --bind 'ctrl-d:execute:(git diff "$(__fzf_awk_commit {})") > /dev/tty' \
-    --bind 'ctrl-s:execute:(git show "$(__fzf_awk_commit {})") > /dev/tty' \
-    --header 'ctlr-h to hide preview, ctlr-s for show, ctlr-d for diff' \
-    --preview "__fzf_awk_commit {} | xargs git show | $(_fzf_git_pager)" \
-    "$@"
-}
-
-# USAGE:
-# - `ctrl+h` will show the hashes or `diff` screen
-# - - from there `ctrl+d` will open a `diff` view since that commit
-# - - from there `ctrl+s` will open that commit with `show`
-# - - from there `ctrl+h` to toggle preview window
-zle -N _fzf_git_hashes
-bindkey ^h _fzf_git_hashes
-
-
 # === fzf-tab ===
 # https://github.com/Aloxaf/fzf-tab
 
@@ -105,9 +62,9 @@ zstyle ':fzf-tab:complete:(\\|*/|)make:*' fzf-preview \
     ;;
   esac'
 
-# complete `man`:
+# complete `man`
 zstyle ':fzf-tab:complete:(\\|*/|)man:*' fzf-preview \
-  '[ "$(tldr -l | ag -Q -w "$word")" ] && tldr -C "$word" || man "$word"'
+  'man "$word"'
 
 # complete `killall`
 zstyle ':completion:*:*:killall:*:*' command 'ps -u "$USERNAME" -o comm'

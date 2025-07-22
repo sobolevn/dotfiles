@@ -33,6 +33,7 @@ HIST_IGNORE_SPACE='true'
 plugins=(
   gitfast
   gh
+  fzf-simple-git
 )
 
 # Sourcing the Oh-My-ZSH source:
