@@ -588,7 +588,8 @@
     },
     {
         "key": "alt+down",
-        "command": "cursorBottom"
+        "command": "cursorBottom",
+        "when": "textInputFocus"
     },
     {
         "key": "alt+up",

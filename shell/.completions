@@ -16,31 +16,32 @@ setopt globdots
 # Which is cool, but very complex for my use-case,
 # I only need commit log with interactive diffs.
 
-__fzf_git_check() {
+__fzf_git_check () {
   git rev-parse HEAD > /dev/null 2>&1 && return
   return 1
 }
 
-__fzf_git_pager() {
+_fzf_git_pager () {
   echo "delta --syntax-theme="$SOBOLE_SYNTAX_THEME""
 }
 
-_fzf_git_fzf() {
+_fzf_git_fzf () {
   fzf --no-separator --multi --min-height 30 \
     --layout reverse \
     --preview-window 'right,55%' "$@"
 }
 
-_fzf_git_hashes() {
+_fzf_git_hashes () {
   __fzf_git_check || return
 
-  local hash_pattern='match($0, /[a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9]*/) { print substr($0, RSTART, RLENGTH) }'
-
   git log --date=short --format="%C(green)%C(bold)%cd %C(auto)%h%d %s (%an)" --graph "$@" |
-  _fzf_git_fzf --ansi --no-sort \
-    --bind "ctrl-d:execute:echo {} | awk '${hash_pattern}' | xargs git diff > /dev/tty" \
-    --bind "ctrl-s:execute:echo {} | awk '${hash_pattern}' | xargs git show > /dev/tty" \
-    --preview "echo {} | awk '${hash_pattern}' | xargs git show | $(__fzf_git_pager)" "$@" | awk "${hash_pattern}"
+  _fzf_git_fzf \
+    --ansi --no-sort \
+    --bind 'ctrl-d:execute:(git diff "$(__fzf_awk_commit {})") > /dev/tty' \
+    --bind 'ctrl-s:execute:(git show "$(__fzf_awk_commit {})") > /dev/tty' \
+    --header 'ctlr-h to hide preview, ctlr-s for show, ctlr-d for diff' \
+    --preview "__fzf_awk_commit {} | xargs git show | $(_fzf_git_pager)" \
+    "$@"
 }
 
 # USAGE:

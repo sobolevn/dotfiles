@@ -4,6 +4,8 @@
 	autocrlf = input
 	safecrlf = warn
 [pager]
+  # We need `--syntax-theme` here, because I have both dark and light themes,
+  # they switch dynamically:
   diff = "delta --syntax-theme=$SOBOLE_SYNTAX_THEME"
   blame = "delta --syntax-theme=$SOBOLE_SYNTAX_THEME"
   show = "delta --syntax-theme=$SOBOLE_SYNTAX_THEME"

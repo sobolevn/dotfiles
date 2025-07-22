@@ -64,12 +64,6 @@ export PAGER='less'
 export MANPAGER='less'
 
 
-# === bat ===
-# https://github.com/sharkdp/bat
-
-export BAT_THEME="$SOBOLE_SYNTAX_THEME"
-
-
 # === Version managers ===
 
 # nvm:

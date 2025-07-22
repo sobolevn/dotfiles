@@ -126,6 +126,10 @@ that work well with `fzf`'s preview feature.
 
 ![fzf-paths](https://raw.githubusercontent.com/sobolevn/dotfiles/master/media/fzf-paths.png)
 
+- `ctrl+h` in a `git` repository to show interactive `git log`. Press `ctrl-s` to see `git show` for a specific commit or `ctrl-d` to see `git diff` since then
+
+![fzf-git-diff](https://raw.githubusercontent.com/sobolevn/dotfiles/master/media/fzf-git-diff.png)
+
 
 ## Apps
 
