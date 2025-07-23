@@ -175,7 +175,7 @@
   "python.languageServer": "Pylance",
   "python.analysis.reportExtraTelemetry": false,
   "python.analysis.addHoverSummaries": false,
-  "python.analysis.exclude": ["**/*.py"],  // do not run typechecking
+  "python.analysis.ignore": ["**/*.py"],  // do not run typechecking
   "python.analysis.typeCheckingMode": "off",
   "python.analysis.autoImportCompletions": false,
   "python.analysis.autoSearchPaths": false,
