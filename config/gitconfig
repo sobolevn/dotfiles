@@ -4,6 +4,7 @@
 	autocrlf = input
 	safecrlf = warn
 [pager]
+  # It is set in `sobole` zsh theme. Feel free to redefine for any other.
   # We need `--syntax-theme` here, because I have both dark and light themes,
   # they switch dynamically:
   diff = "delta --syntax-theme=$BAT_THEME"
