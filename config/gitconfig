@@ -6,9 +6,9 @@
 [pager]
   # We need `--syntax-theme` here, because I have both dark and light themes,
   # they switch dynamically:
-  diff = "delta --syntax-theme=$SOBOLE_SYNTAX_THEME"
-  blame = "delta --syntax-theme=$SOBOLE_SYNTAX_THEME"
-  show = "delta --syntax-theme=$SOBOLE_SYNTAX_THEME"
+  diff = "delta --syntax-theme=$BAT_THEME"
+  blame = "delta --syntax-theme=$BAT_THEME"
+  show = "delta --syntax-theme=$BAT_THEME"
 [credential]
   helper = osxkeychain
 [http]
@@ -32,7 +32,7 @@
   noprefix = true
   colorMoved = default
 [interactive]
-  diffFilter = "delta --color-only --features=interactive --syntax-theme=$SOBOLE_SYNTAX_THEME"
+  diffFilter = "delta --color-only --features=interactive --syntax-theme=$BAT_THEME"
 [diff "nodiff"]
 	command = true
 [rerere]

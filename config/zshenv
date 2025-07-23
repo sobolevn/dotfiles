@@ -12,7 +12,7 @@ _fzf_complete_realpath () {
       --language=sh \
       --plain \
       --color=always \
-      --theme="$SOBOLE_SYNTAX_THEME" \
+      --theme="$BAT_THEME" \
       --wrap=character \
       --terminal-width="$FZF_PREVIEW_COLUMNS" \
       --line-range :100
@@ -37,7 +37,7 @@ _fzf_complete_realpath () {
       bat --number \
         --color=always \
         --line-range :100 \
-        --theme="$SOBOLE_SYNTAX_THEME" \
+        --theme="$BAT_THEME" \
         "$realpath"
     fi
   else
