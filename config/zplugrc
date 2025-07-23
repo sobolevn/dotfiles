@@ -5,6 +5,7 @@ zplug 'Aloxaf/fzf-tab', depth:1
 
 # Sorted in order of appearance (new at the bottom):
 zplug 'zsh-users/zsh-syntax-highlighting', depth:1
+zplug 'sobolevn/fzf-simple-git', depth:1
 
 # Theme, should be the last:
 zplug 'sobolevn/sobole-zsh-theme', as:theme, depth:1

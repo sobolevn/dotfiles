@@ -27,7 +27,7 @@ export FZF_ALT_C_OPTS="--preview '_fzf_complete_realpath {}'"
 # --preview-window=wrap
 export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS
 --layout=reverse-list
---bind 'ctrl-a:toggle'
+--bind 'ctrl-t:toggle'
 --bind 'ctrl-h:change-preview-window(hidden|)'
 --cycle
 -i
