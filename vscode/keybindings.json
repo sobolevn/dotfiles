@@ -643,5 +643,10 @@
         "key": "ctrl+down",
         "command": "cursorDown",
         "when": "textInputFocus"
+    },
+    {
+        "key": "cmd+k shift+alt+cmd+c",
+        "command": "-copyRelativeFilePath",
+        "when": "editorFocus"
     }
 ]

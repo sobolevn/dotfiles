@@ -27,6 +27,8 @@ brew "xz"
 brew "curl"
 # Clean Docker containers, images, networks, and volumes
 brew "docker-clean"
+# ODBC 3 connectivity for UNIX
+brew "unixodbc"
 # Programming language for highly scalable real-time systems
 brew "erlang"
 # Functional metaprogramming aware language built on Erlang VM
@@ -111,8 +113,6 @@ brew "the_silver_searcher"
 brew "tree"
 # Internet file retriever
 brew "wget"
-# General-purpose lossless data-compression library
-brew "zlib"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
 # Next-generation plugin manager for zsh
@@ -143,6 +143,8 @@ cask "google-chrome"
 cask "hyper"
 # Desktop shield and keystroke interceptor
 cask "keyboard-cleaner"
+# Open-source keystroke visualiser
+cask "keycastr"
 # Support for Logitech G gear
 cask "logitech-g-hub"
 # Clipboard manager
@@ -174,7 +176,6 @@ mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Xcode", id: 497799835
-vscode "alexdima.copy-relative-path"
 vscode "editorconfig.editorconfig"
 vscode "ms-python.python"
 vscode "ms-python.vscode-pylance"
