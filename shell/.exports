@@ -60,7 +60,7 @@ export DOCKER_CLI_HINTS=false  # disable ads in CLI :(
 export LESS='-iRXFMx4 --mouse --wheel-lines=3'
 export PAGER='less'
 # I don't use `bat` here, because I don't like the highlight.
-# sh -c 'col -b | bat -l man -p --theme="$BAT_THEME"'
+# sh -c 'col -b | bat -l man -p'
 export MANPAGER='less'
 
 

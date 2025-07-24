@@ -408,10 +408,6 @@
         "when": "textInputFocus"
     },
     {
-        "key": "shift+cmd+o",
-        "command": "outline.toggleVisibility"
-    },
-    {
         "key": "shift+cmd+t",
         "command": "workbench.action.toggleMaximizedPanel"
     },
@@ -648,5 +644,9 @@
         "key": "cmd+k shift+alt+cmd+c",
         "command": "-copyRelativeFilePath",
         "when": "editorFocus"
+    },
+    {
+        "key": "shift+cmd+o",
+        "command": "outline.focus"
     }
 ]

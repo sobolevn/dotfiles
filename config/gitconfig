@@ -7,9 +7,9 @@
   # It is set in `sobole` zsh theme. Feel free to redefine for any other.
   # We need `--syntax-theme` here, because I have both dark and light themes,
   # they switch dynamically:
-  diff = "delta --syntax-theme=$BAT_THEME"
-  blame = "delta --syntax-theme=$BAT_THEME"
-  show = "delta --syntax-theme=$BAT_THEME"
+  diff = "delta"
+  blame = "delta"
+  show = "delta"
 [credential]
   helper = osxkeychain
 [http]
@@ -33,7 +33,7 @@
   noprefix = true
   colorMoved = default
 [interactive]
-  diffFilter = "delta --color-only --features=interactive --syntax-theme=$BAT_THEME"
+  diffFilter = "delta --color-only --features=interactive"
 [diff "nodiff"]
 	command = true
 [rerere]
