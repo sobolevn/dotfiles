@@ -549,7 +549,7 @@
         "when": "!activeEditorGroupEmpty"
     },
     {
-        "key": "ctrl+s",
+        "key": "cmd+s",
         "command": "workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup",
         "when": "!activeEditorGroupEmpty"
     },
@@ -603,7 +603,7 @@
         "when": "terminalEditorFocus"
     },
     {
-        "key": "cmd+s",
+        "key": "ctrl+s",
         "command": "workbench.action.files.save"
     },
     {
@@ -648,5 +648,5 @@
     {
         "key": "shift+cmd+o",
         "command": "outline.focus"
-    }
+    },
 ]

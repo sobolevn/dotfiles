@@ -79,6 +79,11 @@
   "editor.guides.indentation": false,
   "editor.showUnused": false,
 
+  // Search
+  "search.quickAccess.preserveInput": true,
+  "search.quickOpen.includeSymbols": true,  // NOTE: try both!
+  "search.quickOpen.history.filterSortOrder": "recency",
+
   // Per-language UI settings:
   "[css]": {
     "editor.colorDecorators": true,

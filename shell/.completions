@@ -5,9 +5,15 @@
 # Enable hidden files on completion:
 setopt globdots
 
+# Uncomment to view all binds:
+# bindkey
+
 # Uncomment to set `CTRL-k` to show debug info:
 # Usage: `your command <CTRL-k>`
 # bindkey '^k' _complete_help
+
+# Unbind things that I don't use but accidentally press:
+bindkey -r '^S'
 
 
 # === fzf-tab ===
