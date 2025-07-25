@@ -355,26 +355,6 @@
         "when": "config.python.REPL.sendToNativeREPL && editorTextFocus && !isCompositeNotebook && !jupyter.ownsSelection && !notebookEditorFocused && editorLangId == 'python'"
     },
     {
-        "key": "cmd+d",
-        "command": "editor.action.revealDefinition",
-        "when": "editorHasDefinitionProvider && editorTextFocus"
-    },
-    {
-        "key": "f12",
-        "command": "-editor.action.revealDefinition",
-        "when": "editorHasDefinitionProvider && editorTextFocus"
-    },
-    {
-        "key": "cmd+d",
-        "command": "editor.action.revealDefinition",
-        "when": "editorHasDefinitionProvider && editorTextFocus && isWeb"
-    },
-    {
-        "key": "cmd+f12",
-        "command": "-editor.action.revealDefinition",
-        "when": "editorHasDefinitionProvider && editorTextFocus && isWeb"
-    },
-    {
         "key": "cmd+k cmd+i",
         "command": "-list.showHover",
         "when": "listFocus && !inputFocus && !treestickyScrollFocused"
@@ -549,7 +529,7 @@
         "when": "!activeEditorGroupEmpty"
     },
     {
-        "key": "cmd+s",
+        "key": "cmd+d",
         "command": "workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup",
         "when": "!activeEditorGroupEmpty"
     },
@@ -603,7 +583,7 @@
         "when": "terminalEditorFocus"
     },
     {
-        "key": "ctrl+s",
+        "key": "cmd+s",
         "command": "workbench.action.files.save"
     },
     {
