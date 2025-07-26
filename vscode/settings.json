@@ -78,10 +78,13 @@
   "editor.detectIndentation": false,
   "editor.guides.indentation": false,
   "editor.showUnused": false,
+  "editor.pasteAs.preferences": [
+    "text.plain",
+  ],
 
   // Search
   "search.quickAccess.preserveInput": true,
-  "search.quickOpen.includeSymbols": true,  // NOTE: try both!
+  "search.quickOpen.includeSymbols": false,  // NOTE: try both!
   "search.quickOpen.history.filterSortOrder": "recency",
 
   // Per-language UI settings:
