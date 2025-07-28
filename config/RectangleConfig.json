@@ -218,10 +218,10 @@
       "int" : 0
     },
     "unsnapRestore" : {
-      "int" : 0
+      "int" : 2
     },
     "windowSnapping" : {
-      "int" : 0
+      "int" : 2
     }
   },
   "shortcuts" : {
