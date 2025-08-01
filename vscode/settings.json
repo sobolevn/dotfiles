@@ -87,6 +87,7 @@
   "search.quickAccess.preserveInput": true,
   "search.quickOpen.includeSymbols": false,  // NOTE: try both!
   "search.quickOpen.history.filterSortOrder": "recency",
+  "workbench.quickOpen.preserveInput": false,  // NOTE: try both!
 
   // Per-language UI settings:
   "[css]": {
