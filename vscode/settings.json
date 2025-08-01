@@ -81,6 +81,7 @@
   "editor.pasteAs.preferences": [
     "text.plain",
   ],
+  "chat.agent.enabled": false,
 
   // Search
   "search.quickAccess.preserveInput": true,
@@ -89,6 +90,9 @@
 
   // Per-language UI settings:
   "[css]": {
+    "editor.colorDecorators": true,
+  },
+  "[jsonc]": {
     "editor.colorDecorators": true,
   },
 
