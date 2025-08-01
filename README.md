@@ -1,4 +1,4 @@
-:# sobolevn's dotfiles
+# sobolevn's dotfiles
 
 ![sobolevn's dotfiles](https://raw.githubusercontent.com/sobolevn/dotfiles/master/media/hyper.png)
 
@@ -11,6 +11,7 @@ Here are some articles I wrote about my environment:
 And talks / podcasts:
 
 - ["Veged and Code podcast"](https://www.youtube.com/watch?v=nEF0I3VkmPA) \[in RU\]
+- ["minimal vscode"](https://www.youtube.com/watch?v=frZkPK_1Ui4&list=PLbr8rVGhPD0UriABMtqJ6oybD2d2ScT3u&pp=gAQB) series \[in RU\]
 
 
 ## Contents
