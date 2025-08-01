@@ -49,11 +49,11 @@
   "editor.scrollbar.horizontal": "hidden",
 
   // Use simple navigation:
-  "editor.gotoLocation.multipleReferences": "peek",
-  "editor.gotoLocation.multipleDefinitions": "peek",
-  "editor.gotoLocation.multipleDeclarations": "peek",
-  "editor.gotoLocation.multipleImplementations": "peek",
-  "editor.gotoLocation.multipleTypeDefinitions": "peek",
+  "editor.gotoLocation.multipleReferences": "goto",
+  "editor.gotoLocation.multipleDefinitions": "goto",
+  "editor.gotoLocation.multipleDeclarations": "goto",
+  "editor.gotoLocation.multipleImplementations": "goto",
+  "editor.gotoLocation.multipleTypeDefinitions": "goto",
 
   // Do not modify my code, please:
   "editor.autoClosingBrackets": "never",
