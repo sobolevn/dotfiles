@@ -4,11 +4,11 @@ source "$ZPLUG_HOME/init.zsh"
 zplug 'Aloxaf/fzf-tab', depth:1
 
 # Sorted in order of appearance (new at the bottom):
-zplug 'zsh-users/zsh-syntax-highlighting', depth:1
 zplug 'sobolevn/fzf-simple-git', depth:1
 
-# Theme, should be the last:
+# Order is important:
 zplug 'sobolevn/sobole-zsh-theme', as:theme, depth:1
+zplug 'zsh-users/zsh-syntax-highlighting', depth:1
 
 # Others might also enjoy this plugin:
 # (but it is not for me)
