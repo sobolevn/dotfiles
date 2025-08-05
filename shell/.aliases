@@ -17,5 +17,8 @@ alias afk='/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 # Copy public key to clipboard:
 alias pubkey="cat ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pasteboard.'"
 
+# Find WiFi password, add the name:
+alias wifi_pass='security find-generic-password -wa'
+
 # I use this a lot:
 alias shrug="echo '¯\_(ツ)_/¯' | pbcopy | echo '=> Copied to pasteboard.'"
