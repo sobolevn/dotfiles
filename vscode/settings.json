@@ -230,7 +230,7 @@
   "custom-ui-style.stylesheet": {
     // Hide extra items:
     ".monaco-toolbar, .quick-input-list .scrollbar, .quick-input-list .action-label": {
-      "visiblity": "hidden !important",
+      "visibility": "hidden !important",
       "display": "none !important",
     },
     // Center the title with the filename:
