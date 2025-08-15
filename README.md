@@ -28,7 +28,7 @@ What's in there?
 
 ## Main principles
 
-- Minimalism in everything: tooling, styling,
+- Minimalism in everything: tooling, styling
 - Simplicity
 - Reduced visual noise, only important things should be shown
 - "Please, do not touch my code": no auto-formatting or code flow interruptions
