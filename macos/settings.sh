@@ -58,6 +58,9 @@ defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 0
 
+# Disable language selection popup:
+defaults write kCFPreferencesAnyApplication TSMLanguageIndicatorEnabled 0
+
 
 # === Dock ===
 
