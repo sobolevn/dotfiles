@@ -241,5 +241,10 @@
     ".composite.title.has-composite-bar": {
       "margin-left": "50px !important",
     },
+    // Remove "Merge in merge editor" button
+    ".floating-click-widget": {
+      "visibility": "hidden !important",
+      "display": "none !important",
+    },
   },
 }
