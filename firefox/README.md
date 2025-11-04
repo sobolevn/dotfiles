@@ -26,6 +26,4 @@ Plugins:
 ## Zen settings
 
 Plugins:
-- [`No Gaps`](https://zen-browser.app/mods/bfcc400a-4ecb-4752-bfd2-a68f116a2722)
 - [`Zen Back Forward`](https://zen-browser.app/mods/c8d9e6e6-e702-4e15-8972-3596e57cf398)
-- [`Left Close Button`](https://zen-browser.app/mods/6f11c932-b992-433e-8c80-56a613cc511e)

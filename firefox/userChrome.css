@@ -31,18 +31,11 @@ vbox.zen-current-workspace-indicator { display: none !important; }
 #zen-appcontent-navbar-container { box-shadow: none !important; }
 
 /* Add extra space for tabbar, so navbar fits */
-#navigator-toolbox { top: 40px !important; }
+#navigator-toolbox { top: 45px !important; }
 
-/* Make urlbar suggestions transparent */
-#urlbar { opacity: 0.95 !important; }
-
-/* Change URL bar active color text, copied the style from zen.css */
-.urlbarView-row {
-  &[selected] {
-    & *, & .urlbarView-title-separator::before {
-      color: black !important;
-    }
-  }
+/* Disable toast with "New tab opened" */
+#zen-toast-container .zen-toast {
+  display: none !important;
 }
 
 /* Disable Zen toasts */

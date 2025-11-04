@@ -142,6 +142,8 @@ user_pref("zen.tab-unloader.enabled", false);
 user_pref("zen.tabs.vertical.right-side", false);
 user_pref("zen.theme.color-prefs.use-workspace-colors", false);
 user_pref("zen.themes.updated-value-observer", true);
+user_pref("zen.theme.content-element-separation", 0);
+user_pref("zen.theme.hide-unified-extensions-button", 1);
 user_pref("zen.urlbar.behavior", "normal");
 user_pref("zen.urlbar.replace-newtab", false);
 user_pref("zen.view.compact.hide-toolbar", true);
