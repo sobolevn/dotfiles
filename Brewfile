@@ -43,6 +43,8 @@ brew "gh"
 brew "git"
 # Syntax-highlighting pager for git and diff output
 brew "git-delta"
+# Open-source GitLab command-line tool
+brew "glab"
 # Core application library for C
 brew "glib"
 # Asynchronous event library
@@ -83,7 +85,7 @@ brew "libyaml"
 brew "mas"
 # Free (GNU) replacement for the Pico text editor
 brew "nano"
-# Platform built on V8 to build network applications
+# Open-source, cross-platform JavaScript runtime environment
 brew "node"
 # Manage multiple Node.js versions
 brew "nvm"
@@ -95,8 +97,6 @@ brew "pipx"
 brew "pkgconf"
 # Python version management
 brew "pyenv"
-# Install various Ruby versions and implementations
-brew "ruby-build"
 # Ruby version manager
 brew "rbenv"
 # Powerful, clean, object-oriented scripting language
@@ -105,8 +105,6 @@ brew "ruby"
 brew "rustup"
 # Intuitive find & replace CLI
 brew "sd"
-# Static analysis and lint tool, for (ba)sh scripts
-brew "shellcheck"
 # Code-search similar to ack
 brew "the_silver_searcher"
 # Display directories as trees (with optional color/HTML output)
@@ -153,29 +151,22 @@ cask "maccy"
 cask "obs"
 # Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
+# Music streaming service
+cask "spotify"
 # Quicklook extension for source files
 cask "syntax-highlight"
 # Messaging app with a focus on speed and security
 cask "telegram"
+# Unpacks archive files
+cask "the-unarchiver"
 # Utility to hide the notch
 cask "topnotch"
 # Open-source code editor
 cask "visual-studio-code"
-# Tune in to Yandex Music and get personal recommendations
-cask "yandex-music"
 # Gecko based web browser
 cask "zen"
 # Video communication and virtual meeting platform
 cask "zoom"
-mas "Delete Apps", id: 1033808943
-mas "Enpass", id: 732710998
-mas "G Authenticator App", id: 6479869138
-mas "HazeOver", id: 430798174
-mas "iMovie", id: 408981434
-mas "Keynote", id: 409183694
-mas "Numbers", id: 409203825
-mas "Pages", id: 409201541
-mas "Xcode", id: 497799835
 vscode "editorconfig.editorconfig"
 vscode "ms-python.python"
 vscode "ms-python.vscode-pylance"
