@@ -167,6 +167,15 @@ cask "visual-studio-code"
 cask "zen"
 # Video communication and virtual meeting platform
 cask "zoom"
+mas "Delete Apps", id: 1033808943
+mas "Enpass", id: 732710998
+mas "G Authenticator App", id: 6479869138
+mas "HazeOver", id: 430798174
+mas "iMovie", id: 408981434
+mas "Keynote", id: 409183694
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "Xcode", id: 497799835
 vscode "editorconfig.editorconfig"
 vscode "ms-python.python"
 vscode "ms-python.vscode-pylance"
