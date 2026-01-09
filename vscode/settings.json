@@ -33,7 +33,7 @@
   "editor.formatOnPaste": false,
   "editor.wordWrap": "on",
   "editor.wordWrapColumn": 80,
-  "editor.hover.enabled": false,
+  "editor.hover.enabled": "off",
   "editor.stickyScroll.enabled": false,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,

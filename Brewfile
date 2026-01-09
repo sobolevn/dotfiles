@@ -1,4 +1,5 @@
 tap "koekeishiya/formulae"
+tap "tw93/tap"
 # C/C++ resolver library and DNS resolver utilities
 brew "adns"
 # Bourne-Again SHell, a UNIX command interpreter
@@ -65,7 +66,7 @@ brew "libgcrypt"
 brew "npth"
 # Passphrase entry dialog utilizing the Assuan protocol
 brew "pinentry"
-# GNU Pretty Good Privacy (PGP) package
+# GNU Privacy Guard (OpenPGP)
 brew "gnupg"
 # Library access to GnuPG
 brew "gpgme"
@@ -119,6 +120,8 @@ brew "zplug"
 brew "zsh"
 # Simple hotkey-daemon for macOS.
 brew "koekeishiya/formulae/skhd"
+# Comprehensive macOS cleanup and application uninstall tool
+brew "tw93/tap/mole"
 # VPN client
 cask "amneziavpn"
 # Voice and text chat software
@@ -167,15 +170,6 @@ cask "visual-studio-code"
 cask "zen"
 # Video communication and virtual meeting platform
 cask "zoom"
-mas "Delete Apps", id: 1033808943
-mas "Enpass", id: 732710998
-mas "G Authenticator App", id: 6479869138
-mas "HazeOver", id: 430798174
-mas "iMovie", id: 408981434
-mas "Keynote", id: 409183694
-mas "Numbers", id: 409203825
-mas "Pages", id: 409201541
-mas "Xcode", id: 497799835
 vscode "editorconfig.editorconfig"
 vscode "ms-python.python"
 vscode "ms-python.vscode-pylance"

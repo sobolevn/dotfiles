@@ -51,6 +51,7 @@ module.exports = {
     // for environment variables
     env: {
       'TERM': 'xterm-256color',
+      'SOBOLE_THEME_MODE': 'light',
     },
 
     // set to false for no bell
