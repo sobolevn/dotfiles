@@ -601,16 +601,6 @@
         "command": "cursorWordRight"
     },
     {
-        "key": "up",
-        "command": "cursorUp",
-        "when": "textInputFocus"
-    },
-    {
-        "key": "up",
-        "command": "-cursorUp",
-        "when": "textInputFocus"
-    },
-    {
         "key": "ctrl+up",
         "command": "cursorUp",
         "when": "textInputFocus"

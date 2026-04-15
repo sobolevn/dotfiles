@@ -40,6 +40,8 @@ brew "fd"
 brew "fzf"
 # GitHub command-line tool
 brew "gh"
+# Diff that understands syntax
+brew "difftastic"
 # Distributed revision control system
 brew "git"
 # Syntax-highlighting pager for git and diff output
