@@ -180,6 +180,7 @@
   "git.decorations.enabled": true,
   "git.openRepositoryInParentFolders": "never",
   "git.blame.editorDecoration.enabled": false,
+  "git.blame.statusBarItem.enabled": false,
 
   "python.analysis.completeFunctionParens": false,
   "python.createEnvironment.trigger": "off",
@@ -196,12 +197,11 @@
   "python.experiments.enabled": false,
   "python.testing.autoTestDiscoverOnSaveEnabled": false,
 
-  "typescript.updateImportsOnFileMove.enabled": "never",
-  "typescript.suggest.autoImports": false,
-  "javascript.suggest.autoImports": false,
-  "javascript.updateImportsOnFileMove.enabled": "never",
-
   "C_Cpp.dimInactiveRegions": false,
+
+  // Error lens plugin:
+  "errorLens.scrollbarHackEnabled": true,
+  "errorLens.enabled": false,
 
   // Theme:
   "workbench.colorTheme": "pustota",
@@ -248,8 +248,4 @@
       "display": "none !important",
     },
   },
-
-  // Plugin:
-  "errorLens.scrollbarHackEnabled": true,
-  "errorLens.enabled": false,
 }

@@ -1,9 +1,13 @@
-tap "koekeishiya/formulae"
-tap "tw93/tap"
+tap "koekeishiya/formulae", trusted: true
+tap "tw93/tap", trusted: true
 # C/C++ resolver library and DNS resolver utilities
 brew "adns"
 # Bourne-Again SHell, a UNIX command interpreter
 brew "bash"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@3"
+# C library implementing the SSH2 protocol
+brew "libssh2"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Get/set bluetooth power and discoverable state
@@ -16,12 +20,6 @@ brew "certifi"
 brew "coreutils"
 # Reimplementation of ctags(1)
 brew "ctags"
-# Cryptography and SSL/TLS Toolkit
-brew "openssl@3"
-# C library implementing the SSH2 protocol
-brew "libssh2"
-# Tool for downloading RTMP streaming media
-brew "rtmpdump"
 # General-purpose data compression with high compression ratio
 brew "xz"
 # Get a file from an HTTP, HTTPS or FTP server
@@ -40,6 +38,8 @@ brew "elixir"
 brew "fd"
 # Command-line fuzzy finder written in Go
 brew "fzf"
+# GNU debugger
+brew "gdb"
 # GitHub command-line tool
 brew "gh"
 # Distributed revision control system
@@ -50,14 +50,10 @@ brew "git-delta"
 brew "glab"
 # Core application library for C
 brew "glib"
-# Asynchronous event library
-brew "libevent"
 # International domain name library (IDNA2008, Punycode and TR46)
 brew "libidn2"
 # Library to load and enumerate PKCS#11 modules
 brew "p11-kit"
-# Validating, recursive, caching DNS resolver
-brew "unbound"
 # GNU Transport Layer Security (TLS) Library
 brew "gnutls"
 # Assuan IPC Library
@@ -84,6 +80,8 @@ brew "hyperfine"
 brew "jpeg"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
+# Asynchronous event library
+brew "libevent"
 # YAML Parser
 brew "libyaml"
 # Next-gen compiler infrastructure
@@ -107,7 +105,7 @@ brew "pyenv"
 # Ruby version manager
 brew "rbenv"
 # Powerful, clean, object-oriented scripting language
-brew "ruby"
+brew "ruby", link: false
 # Rust toolchain installer
 brew "rustup"
 # Intuitive find & replace CLI
@@ -146,20 +144,18 @@ cask "font-consolas-for-powerline"
 cask "font-fira-code"
 # Web browser
 cask "google-chrome"
+# Platform for building proxies to bypass network restrictions
+cask "happ"
 # Terminal built on web technologies
 cask "hyper"
 # Desktop shield and keystroke interceptor
 cask "keyboard-cleaner"
-# Open-source keystroke visualiser
-cask "keycastr"
 # Support for Logitech G gear
 cask "logitech-g-hub"
 # Clipboard manager
 cask "maccy"
 # Open-source software for live streaming and screen recording
 cask "obs"
-# IDE for professional Python development
-cask "pycharm"
 # Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
 # Music streaming service
@@ -180,6 +176,16 @@ cask "vlc"
 cask "zen"
 # Video communication and virtual meeting platform
 cask "zoom"
+mas "Authenticator", id: 6479869138
+mas "CapCut", id: 1500855883
+mas "Enpass", id: 732710998
+mas "GoPro Webcam", id: 6477835262
+mas "HazeOver", id: 430798174
+mas "iMovie", id: 408981434
+mas "Keynote", id: 409183694
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "Xcode", id: 497799835
 vscode "editorconfig.editorconfig"
 vscode "ms-python.python"
 vscode "ms-python.vscode-pylance"

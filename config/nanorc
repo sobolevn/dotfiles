@@ -32,7 +32,6 @@ set historylog
 
 # Syntax highlight:
 include /opt/homebrew/opt/nano/share/nano/*.nanorc
-include /opt/homebrew/opt/nano/share/nano/extra/*.nanorc
 
 # Hotkeys:
 # Full list: https://www.nano-editor.org/dist/latest/cheatsheet.html
