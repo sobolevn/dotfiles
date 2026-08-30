@@ -56,5 +56,5 @@ claude () {
         curl -fsSL https://claude.ai/install.sh | bash
       fi
       exec claude "$@"
-    ' _ "${@:3}"
+    ' _ "$@"
 }
