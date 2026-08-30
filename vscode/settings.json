@@ -30,7 +30,6 @@
   "editor.snippetSuggestions": "none",
   "editor.cursorSurroundingLines": 3,
   "editor.useTabStops": true,
-  "editor.formatOnPaste": false,
   "editor.wordWrap": "on",
   "editor.wordWrapColumn": 80,
   "editor.hover.enabled": "off",
@@ -73,15 +72,17 @@
     "strings": false,
   },
   "editor.formatOnType": false,
+  "editor.formatOnPaste": false,
+  "editor.defaultFormatter": null,
+  "editor.autoIndent": "keep",
   "editor.inlineSuggest.enabled": false,
   "editor.suggest.localityBonus": true,
   "editor.lightbulb.enabled": "off",
   "editor.detectIndentation": false,
   "editor.guides.indentation": false,
   "editor.showUnused": false,
-  "editor.pasteAs.preferences": [
-    "text.plain",
-  ],
+  "editor.pasteAs.showPasteSelector": "never",
+  "editor.pasteAs.preferences": ["text.plain"],
   "chat.agent.enabled": false,
 
   // Search

@@ -183,6 +183,10 @@ erl_crash.dump
 *.ez
 *.beam
 
+#### ai slop ####
+.claude/
+.cursor/
+
 #### custom ####
 .vscode/tags
 .pyre

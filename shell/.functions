@@ -22,3 +22,39 @@ mc () {
   local dir_name="$1"
   mkdir -p "$dir_name" && cd "$dir_name"
 }
+
+
+# === Running agents in docker containers ===
+
+claude () {
+  # How it works:
+  # 1. First run: the native installer drops the binary into ~/.local
+  #    (volume `claude-bin`), then you go through the normal login /
+  #    onboarding flow in the CLI.
+  # 2. Everything Claude Code writes — auth, settings, .claude.json,
+  #    session history, memory — lands in `claude-settings`, because
+  #    CLAUDE_CONFIG_DIR redirects all of it there.
+  # 3. Later runs: binary and config are already in the volumes, so no
+  #    reinstall and no re-auth. `claude update` inside the container
+  #    also persists, since it writes to ~/.local/share/claude.
+  # 4. The project is mounted at its host path (not /workspace), so
+  #    each repo keeps its own per-project sessions and memory.
+
+  local project="$(readlink -f '.')"
+  local image='buildpack-deps:bookworm-scm'  # has curl, git, bash
+
+  docker run -it --rm \
+    -e CLAUDE_CONFIG_DIR=/claude-config \
+    -e PATH="/root/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin" \
+    -v claude-settings:/claude-config \
+    -v claude-bin:/root/.local \
+    -v "$project":"$project" \
+    -w "$project" \
+    "$image" \
+    bash -c '
+      if [ ! -x "$HOME/.local/bin/claude" ]; then
+        curl -fsSL https://claude.ai/install.sh | bash
+      fi
+      exec claude "$@"
+    ' _ "${@:3}"
+}
