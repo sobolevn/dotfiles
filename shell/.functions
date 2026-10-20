@@ -39,12 +39,15 @@ claude () {
   #    also persists, since it writes to ~/.local/share/claude.
   # 4. The project is mounted at its host path (not /workspace), so
   #    each repo keeps its own per-project sessions and memory.
+  # Pass `DOTFILES_CLAUDE_EVAL` variable to execute
+  # its contents before the run.
 
   local project="$(readlink -f '.')"
   local image='buildpack-deps:bookworm-scm'  # has curl, git, bash
 
   docker run -it --rm \
     -e CLAUDE_CONFIG_DIR=/claude-config \
+    -e DOTFILES_CLAUDE_EVAL \
     -e PATH="/root/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin" \
     -v claude-settings:/claude-config \
     -v claude-bin:/root/.local \
@@ -52,6 +55,9 @@ claude () {
     -w "$project" \
     "$image" \
     bash -c '
+      if [ ! -z "$DOTFILES_CLAUDE_EVAL" ]; then
+        eval "$DOTFILES_CLAUDE_EVAL"
+      fi
       if [ ! -x "$HOME/.local/bin/claude" ]; then
         curl -fsSL https://claude.ai/install.sh | bash
       fi

@@ -110,6 +110,7 @@
 
     "**/__pycache__": true,
     "**/.cache": true,
+    "**/.claude": true,
     "**/.idea": true,
     "**/.pytest_cache": true,
     "**/.mypy_cache": true,
