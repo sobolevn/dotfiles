@@ -87,6 +87,9 @@
   "workbench.quickOpen.preserveInput": false,  // NOTE: try both!
 
   // Per-language UI settings:
+  "[rust]": {
+    "editor.fontLigatures": true,
+  },
   "[css]": {
     "editor.colorDecorators": true,
   },
