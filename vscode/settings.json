@@ -88,7 +88,7 @@
 
   // Per-language UI settings:
   "[rust]": {
-    "editor.fontLigatures": true,
+    "editor.fontLigatures": false,
   },
   "[css]": {
     "editor.colorDecorators": true,
@@ -212,7 +212,7 @@
   "workbench.colorTheme": "pustota",
   "workbench.iconTheme": "ayu",
 
-  "editor.semanticHighlighting.enabled": false,
+  "editor.semanticHighlighting.enabled": true,
   "workbench.colorCustomizations": {
     // I customize these two, because other people might
     // want to have error and warning decorations even in `pustota` theme.
